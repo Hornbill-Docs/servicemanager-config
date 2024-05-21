@@ -94,67 +94,67 @@ An email can be sent to a user that is assigned an authorization task. The user 
 
 #### Only Show Supported Requests
 `app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests`
-- The default setting for this is 'Off'.
-- This setting determines whether a Service Manager user is granted visibility to unsupported customer requests in the 'Customer Search', 'Contact Search' or 'Co-worker Search' forms in Intelligent Capture. - When set to 'Off' a Service Manager user will have visibility to unsupported customer requests. This should be set to 'On' in multiple service desks environments (e.g. IT and HR).
+- The default setting for this is `OFF`.
+- This setting determines whether a Service Manager user is granted visibility to unsupported customer requests in the 'Customer Search', 'Contact Search' or 'Co-worker Search' forms in Intelligent Capture. - When set to `OFF` a Service Manager user will have visibility to unsupported customer requests. This should be set to 'On' in multiple service desks environments (e.g. IT and HR).
 
 #### Show All Requests for an External Organization
 `app.itsm.progressiveCapture.organizationDetails.allowOrgRequestsList`
-- The default setting for this is 'Off'.
+- The default setting for this is `OFF`.
 - When the setting is 'On' the analyst viewing the [Organization Details form](/servicemanager-config/customize/service-manager-capture-forms#organization-details), will see the active requests for the organization in the righthand panel.
 - The requests returned will be active, and will only display the requests raised against services which the viewing user supports.
 
 ### Customized Forms
-The following settings influence how information from [customized forms](/servicemanager-config/customize/customized-forms) in Intelligent Capture are made available within the Questions section of a reqeust.
+The following settings influence how information from [customized forms](/servicemanager-config/customize/customized-forms) in Intelligent Capture are made available within the Questions section of a request.
 
 #### Hide Unanswered Questions in the Service Manager App
 `app.request.questions.hideUnansweredQuestions`
-- The default setting for this is 'Off'
+- The default setting for this is `OFF`
 - Fields on a customized form in Intelligent Capture can be set so they require a value or if they are optional.  If a value is not required, a user can move on withouth providing a response.
 - When this setting is 'On' any unanswered questions from custom forms used in Intelligent Capture will not be displayed in the Questions section of a request.
 
 
 #### Hide Unsanswered Questions on the Customper Portal
 `guest.servicemanager.customer.request.questions.hideUnansweredQuestions`
-- The default setting for this is 'Off'.
+- The default setting for this is `OFF`.
 - Turn this setting ON to hide unanswered fields in the Questions section of a request from contacts in the Customer Portal.
 
 #### Hide Unanswered Questions on the Employee Portal
 `guest.servicemanager.portal.request.questions.hideUnansweredQuestions`
-- The default setting for this is 'Off'.
+- The default setting for this is `OFF`.
 - Turn this setting ON to hide unanswered fields in the Questions section of a request from users in the Employee Portal.
 
 #### Hide Unused Conditional Questions
 `app.request.questions.excludeConditionalQuestions`
-- The default setting for this is 'Off'.
+- The default setting for this is `OFF`.
 - When designing an Intelligent Capture script, some fields on a customized form may only be displayed to a user under certain conditions.
 - Turn this setting ON to prevent conditional questions that are not displayed to the user from being stored in the Questions section of a request.
 
 #### Hide Questions That Are Not Visiable on Forms
 `guest.request.questions.excludeHiddenQuestions`
-- The default setting for this is 'Off'.
-- Each field has an opiton to make it visiable on the form. 
-- Turn this setting ON to exclude fields on customized Intelligent Capture forms that are not set to being visible from the Questions section of a request when viewed from either the Customer or Employee Portal.
+- The default setting for this is `OFF`.
+- Each field has an opiton to make it visiable on the customized form. 
+- Turn this setting `ON` to exclude fields on customized forms that are not set to being visible from the Questions section of a request when viewed from either the Customer or Employee Portal.
 
 ## Request List Settings
 `com.hornbill.servicemanager.requestList.restrictions.service`
-- The default setting for this is 'ON'
+- The default setting for this is `ON`
 - When this setting is on, it is only possible to perform multi-select actions against requests logged against the same service. If selecting requests logged against different services the multi-select action buttons will be hidden
 - When the setting is off, it is possible to perform multi-select actions against requests logged against different services
 
 `com.hornbill.servicemanager.requestList.restrictions.type`
-- The default setting for this is 'ON'
+- The default setting for this is `ON`
 - When this setting is on, it is only possible to perform multi-select actions against requests of the same type. If selecting requests of different types, the multi-select action buttons will be hidden
 - When the setting is off, it is possible to perform multi-select actions against requests of any types.
 Information By turning off the multi-select restrictions, the supporting teams logic is disabled on the assign option on the request list, making it possible to assign requests to teams which are not listed as supporting the services which requests are logged against.
 
 `webapp.view.ITSM.serviceDesk.requests.list.enableNoTeamAllUsers`
-- The default setting for this is 'OFF'
+- The default setting for this is `OFF`
 - When the setting is on, it is possible for ANY Service Manager subscriber to see any requests which are not assigned to any team
 - When the setting is off, it is only possible for Service Manager subscribers with the Service Desk Admin role to see any requests which are not assigned to any teams
 Request Settings
 
 `app.request.questions.excludeConditionalQuestions`
-- The default setting for this in 'OFF'
+- The default setting for this in `OFF`
 - When the setting is off, conditional progressive capture questions which were not displayed in progressive capture flows will appear in the Questions section on the request forms
 - When the setting is on, conditional progressive capture questions which were not displayed in progressive capture flows will not appear in the Questions section on the request forms
 
