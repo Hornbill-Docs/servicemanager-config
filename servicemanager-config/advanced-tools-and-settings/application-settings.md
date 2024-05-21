@@ -103,7 +103,7 @@ An email can be sent to a user that is assigned an authorization task. The user 
 - When the setting is 'On' the analyst viewing the [Organization Details form](/servicemanager-config/customize/service-manager-capture-forms#organization-details), will see the active requests for the organization in the righthand panel.
 - The requests returned will be active, and will only display the requests raised against services which the viewing user supports.
 
-### Customized Forms
+### Request Questions Section Visibility
 The following settings influence how information from [customized forms](/servicemanager-config/customize/customized-forms) in Intelligent Capture are made available within the Questions section of a request.
 
 #### Hide Unanswered Questions in the Service Manager App
