@@ -110,24 +110,24 @@ The following settings influence how information from [customized forms](/servic
 `app.request.questions.hideUnansweredQuestions`
 - The default setting for this is `OFF`
 - Fields on a customized form in Intelligent Capture can be set so they require a value or if they are optional.  If a value is not required, a user can move on withouth providing a response.
-- When this setting is 'On' any unanswered questions from custom forms used in Intelligent Capture will not be displayed in the Questions section of a request.
+- When this setting is `ON` any unanswered questions from custom forms used in Intelligent Capture will not be displayed in the Questions section of a request.
 
 
 #### Hide Unsanswered Questions on the Customper Portal
 `guest.servicemanager.customer.request.questions.hideUnansweredQuestions`
 - The default setting for this is `OFF`.
-- Turn this setting ON to hide unanswered fields in the Questions section of a request from contacts in the Customer Portal.
+- Turn this setting `ON` to hide unanswered fields in the Questions section of a request from contacts in the Customer Portal.
 
 #### Hide Unanswered Questions on the Employee Portal
 `guest.servicemanager.portal.request.questions.hideUnansweredQuestions`
 - The default setting for this is `OFF`.
-- Turn this setting ON to hide unanswered fields in the Questions section of a request from users in the Employee Portal.
+- Turn this setting `ON` to hide unanswered fields in the Questions section of a request from users in the Employee Portal.
 
 #### Hide Unused Conditional Questions
 `app.request.questions.excludeConditionalQuestions`
 - The default setting for this is `OFF`.
 - When designing an Intelligent Capture script, some fields on a customized form may only be displayed to a user under certain conditions.
-- Turn this setting ON to prevent conditional questions that are not displayed to the user from being stored in the Questions section of a request.
+- Turn this setting `ON` to prevent conditional questions that are not displayed to the user from being stored in the Questions section of a request.
 
 #### Hide Questions That Are Not Visiable on Forms
 `guest.request.questions.excludeHiddenQuestions`
@@ -143,7 +143,7 @@ The following settings influence how information from [customized forms](/servic
 
 `com.hornbill.servicemanager.requestList.restrictions.type`
 - The default setting for this is `ON`
-- When this setting is on, it is only possible to perform multi-select actions against requests of the same type. If selecting requests of different types, the multi-select action buttons will be hidden
+- When this setting is `ON`, it is only possible to perform multi-select actions against requests of the same type. If selecting requests of different types, the multi-select action buttons will be hidden
 - When the setting is off, it is possible to perform multi-select actions against requests of any types.
 Information By turning off the multi-select restrictions, the supporting teams logic is disabled on the assign option on the request list, making it possible to assign requests to teams which are not listed as supporting the services which requests are logged against.
 
