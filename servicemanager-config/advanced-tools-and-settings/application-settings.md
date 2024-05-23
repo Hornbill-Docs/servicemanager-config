@@ -133,8 +133,11 @@ The following settings influence how information from [customized forms](/servic
 #### Hide Questions That Are Not Visiable on Forms
 `guest.request.questions.excludeHiddenQuestions`
 - The default setting for this is `OFF`.
-- Each field has an opiton to make it visiable on the customized form. 
+- On a Customized Capture form, Each field has an opiton to make it visiable. 
 - Turn this setting `ON` to exclude fields on customized forms that are not set to being visible from the Questions section of a request when viewed from either the Customer or Employee Portal.
+- When this setting is `ON` all questions will still be visible on the Questions section when viewed in the Service Manager app.
+- When this setting is `ON`, all fields will still be added to the h_itsm_questions table. This enables "hidden" questions with default values to still be utilized in a workflowBPM.
+
 
 ## Request List Settings
 `com.hornbill.servicemanager.requestList.restrictions.service`
