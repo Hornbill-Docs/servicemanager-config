@@ -29,8 +29,34 @@ When creating a human task it is possible to define this in one or multiple lang
     * Do not allow completion of the task unless it is 100% complete - this option becomes available if Checklists have been enabled on the task, and you do not want to allow the task to be completed whilst there are outstanding checklist items.
     * Decide if you want to display the Time Spent option to the user who is completing the human task
 * **Outcomes**<br>Configure what possible options the user completing the human task can choose from when completing the human task. By default two are provided, Completed and Not Completed.
-* **Capture Task Fields**<br>Enable custom fields on the task.
 * ***Set Stage Checkpoints**<br>Optionally configure which stage checkpoints will be set on the completion of the task.
+
+## Capture Task Fields
+### Configuring Capture Task Fields
+
+* **Field Properties**<br>Provide a title for the field, add a custom field id or leave as standard and add placeholder text if needed.
+* **Default Flags**<br>Configure if the field is mandatory, visible on the form, in read only view etc.
+* **Field Type Settings**<br>Configure the type of capture you wish to use - single, multi-line, static or dynamic drop down, check box, radio box, label etc and provide the context based attributes as required.
+
+Click Apply Settings to add the capture field to the task
+
+* Use the Language option to define different language versions of the capture field, which will be displayed to a user based on the language set in their profile.
+* Repeat the process for any additional capture fields which are required for the task.
+
+### Considerations
+* **Default Reason field**<br>You may decide that the Reason field on the task is no longer relevant if you have added your own capture fields, and this can be hidden from the task by ticking the Hide reason option under the Task Options settings.
+* **Setting Capture Fields Per Outcome**<br>It is possible to configure capture fields which are tied to the selection of an outcome on a task, and will only be presented and visible once a specific outcome has been chosen. This is covered in detail in the Outcomes wiki page.
+
+:::tip
+Information It is possible to use both task capture fields and outcome capture fields on the same task, but you are advised to check and ensure that none of the capture fields are using the same field id.
+:::
+
+### Using the Answers to Capture Task Fields
+Once a task has been completed and any capture task fields completed, the answers from these fields are available to be used elsewhere in the lifecycle of the business process.
+
+* Branch and make decisions on the answers using the custom expression builder and selecting the relevant task and capture field to evaluate.
+* Inject the answers from capture task fields into request fields, or other tasks using the variable picker following the task but in the same stage of the process.
+* The task and capture field answers will be written to the timeline of the entity the task has been completed against.
 
 ## Checklists
 Add To Do checklists to a task
@@ -54,3 +80,4 @@ If you wish to prevent the completion of the task while there are any outstandin
 
 <!-- https://wiki.hornbill.com/index.php?title=BPM_Human_Tasks-->
 <!-- https://wiki.hornbill.com/index.php?title=Checklists -->
+<!-- https://wiki.hornbill.com/index.php?title=Capture_Task_Fields -->
