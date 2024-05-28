@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "audience": [
     "public"
   ],
@@ -100,6 +100,10 @@
               {
                 "text": "Authorization",
                 "link": "servicemanager-config/customize/workflows/authorization"
+              },
+              {
+                "text": "Human Task",
+                "link": "servicemanager-config/customize/workflows/human-task"
               },
               {
                 "text": "Hornbill Automation",
