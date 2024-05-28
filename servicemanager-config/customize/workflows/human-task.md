@@ -32,3 +32,26 @@ When creating a human task it is possible to define this in one or multiple lang
 * **Outcomes**<br>Configure what possible options the user completing the human task can choose from when completing the human task. By default two are provided, Completed and Not Completed.
 * **Capture Task Fields**<br>Enable custom fields on the task.
 * ***Set Stage Checkpoints**<br>Optionally configure which stage checkpoints will be set on the completion of the task.
+
+## Checklists
+Add To Do checklists to a task
+
+Click on Manage Checklists on a task and Add Group
+1. Give the Checklist Group a Name
+1. Click on the + button to add your first and subsequent checklist items
+1. Use the arrows to re-order the checklist items in the checklist group
+1. Use the trashcan to remove checklist items and or the checklist group
+1. Use the Add Group to add subsequent checklist groups to the same task
+1. Use the arrows to re-order the checklist groups on the task
+1. Click Apply to add the checklist group/s to the task
+
+### Managing Checklists
+Click on Manage Checklists to edit or delete the checklists associated to the task.
+
+### Considerations
+When a user ticks a checklist item as having been complete on the task, the % progression through the checklist items will be indicated on the task.
+
+If you wish to prevent the completion of the task while there are any outstanding checklist items on the task, select the Do not allow completion unless it is 100% complete within the Task Details section when configuring the task.
+
+<!-- https://wiki.hornbill.com/index.php?title=BPM_Human_Tasks-->
+<!-- https://wiki.hornbill.com/index.php?title=Checklists -->
