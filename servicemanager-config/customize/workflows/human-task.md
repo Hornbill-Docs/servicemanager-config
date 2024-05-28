@@ -28,7 +28,6 @@ When creating a human task it is possible to define this in one or multiple lang
     * Hide the completion Reason when completing the task - decide if the reason field is not required when completing the task via an outcome.
     * Do not allow completion of the task unless it is 100% complete - this option becomes available if Checklists have been enabled on the task, and you do not want to allow the task to be completed whilst there are outstanding checklist items.
     * Decide if you want to display the Time Spent option to the user who is completing the human task
-* **Manage Checklists**<br>Optionally add checklists that need completing as part of the task.
 * **Outcomes**<br>Configure what possible options the user completing the human task can choose from when completing the human task. By default two are provided, Completed and Not Completed.
 * **Capture Task Fields**<br>Enable custom fields on the task.
 * ***Set Stage Checkpoints**<br>Optionally configure which stage checkpoints will be set on the completion of the task.
