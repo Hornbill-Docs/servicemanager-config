@@ -2,7 +2,7 @@
 This workflow automation allows you to add authorizations to a workflow. One or more Hornbill Users can be added to a single authorization and the workflow is suspended until an outcome for the authorization has been provided.
 
 ## Authorization Owner
-The owner of an authorisation is someone that may not be participating in the authorization, but require visibility and control of the authorization. An example of this may be the manager of the person that is providing the authorization or someone who is overseeing the authorization and requires the ability to authorize on behalf of the authorizers.
+The owner of an authorization is someone that may not be participating in the authorization, but require visibility and control of the authorization. An example of this may be the manager of the person that is providing the authorization or someone who is overseeing the authorization and requires the ability to authorize on behalf of the authorizers.
 
 * **User**<br>Use this option to select from available users that have access to authorizations. Basic Users are not available to be selected.
 * **Variable**<br>Using variables can be a great way to allocate authorizers where the participants are not static. It is still important to remember that only Users with a Collaboration Subscription can participate and you need to assure that users that don't have a subscription are not accidentally allocated as an authorizer. The provided variable must contain the User's ID
@@ -44,7 +44,7 @@ The Authorization Details are the content of the authorization task that is bein
 ## Set Stage Checkpoints
 You are able to select stage checkpoints that are met when this node is reached. Checkpoints must first be defined under the Manage Current Stage button located in the BPM designer toolbar.
 
-## Service Manager Authorisations
+## Service Manager Authorizations
 A Hornbill user that does not have a subscription to Service Manager has the opportunity to view the Change or Service Request that requires their authorization in a View Only mode. The Authorization task provides a link to the request which will open the request via the Employee Portal.
 
 <!-- https://wiki.hornbill.com/index.php?title=BPM_Authorization -->
