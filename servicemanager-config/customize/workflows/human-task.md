@@ -31,6 +31,53 @@ When creating a human task it is possible to define this in one or multiple lang
 * **Outcomes**<br>Configure what possible options the user completing the human task can choose from when completing the human task. By default two are provided, Completed and Not Completed.
 * ***Set Stage Checkpoints**<br>Optionally configure which stage checkpoints will be set on the completion of the task.
 
+## Outcomes
+Configure what possible options the user completing the human task can choose from when completing the human task. By default two are provided, Completed and Not Completed.
+
+### Add Outcomes
+Add a new Outcome using the Add New option:
+* Define the outcome value, a display name, and if the user completing the task is required to provide a reason when selecting this specific outcome.
+* Optional provide the outcome a display color and make the outcome available in multiple languages.
+* Apply Settings to save.
+
+### Optional Outcome Capture Fields
+It is possible that you may have a need to record additional information against the chosen Outcome of a task. In order to do this you can enable Outcome Capture Fields, and use these to add additional fields to capture additional information when a specific Outcome is chosen on a task.
+
+### Enabling Outcome Capture Fields
+in the admin console navigate to Home > System > Settings > Advanced and enable the following setting:
+* experimental.feature.bpm.allowcustomtaskfields
+
+With this setting enabled it is now possible to configure both capture fields per outcome on a task, as well as at the task level.
+
+### Configuring Outcome Capture Fields
+On the Outcome click on Add Field
+
+Configure:
+* **Field Properties**<br>Provide a title for the field, add a custom field id or leave as standard and add placeholder text if needed
+* **Default Flags**<br>Configure if the field is mandatory, visible on the form, in read only view etc
+* **Field Type Settings**<br>Configure the type of capture you wish to use - single, multi-line, static or dynamic drop down, check box, radio box, label etc and provide the context based attributes as required.
+
+Click Apply Settings to add the capture field to this specific outcome
+* Use the Language option to define different language versions of the capture field, which will be displayed to a user based on the language set in their profile.
+* Repeat the process for any additional capture fields which are required for the task.
+
+### Considerations
+* **Default Reason field**<br>You may decide that the Reason field on the task is no longer relevant if you have added your own capture fields, and this can be hidden from the task by ticking the Hide reason option under the Task Options settings.
+* **Setting Capture Fields Per Outcome**<br>It is possible to configure capture fields which are tied to the selection of an outcome on a task, and will only be presented and visible once a specific outcome has been chosen. This is covered in detail in the Outcomes wiki page.
+
+:::tip
+It is possible to use both task capture fields and outcome capture fields on the same task, but you are advised to check and ensure that none of the capture fields are using the same field id.
+:::
+
+### Manage Outcomes
+* **Edit Outcomes**<br>To edit any of the above values for an existing outcome click the edit icon next to the outcome you wish to edit.
+* **Delete an Outcome**<br>To remove an outcome option click the trash can icon next to the outcome you wish to delete.
+
+### Using Outcomes
+* It is not required to add a specific expiry outcome, this will be automatically enabled if you have configured an Expires After in the lifespan settings.
+* Using Outcomes and or outcome capture fields to branch in the business process - If you require different behavior in your business process depending on the outcome of the human task or based on answers to capture fields tied to a chosen outcome, use a Decision node directly after the human task and use the outcomes defined in the task as the decision branch options.
+<!-- https://wiki.hornbill.com/index.php?title=Outcomes -->
+
 ## Capture Task Fields
 ### Configuring Capture Task Fields
 
