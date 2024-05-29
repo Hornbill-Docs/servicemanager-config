@@ -79,3 +79,5 @@ Request variables are fairly self explanatory, and a list is provided below. Ans
 &[global["flowcode"]["withinFixTime"]]<br>
 &[global["flowcode"]["withinResponseTime"]]<br>
 Plus custom fields in the format : &[global["flowcode"]["customFieldA"]]
+
+<!-- https://wiki.hornbill.com/index.php?title=Request_Variables -->
