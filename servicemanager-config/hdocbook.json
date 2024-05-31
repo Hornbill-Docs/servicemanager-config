@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "audience": [
     "public"
   ],
@@ -100,6 +100,10 @@
               {
                 "text": "Request Variables",
                 "link": "servicemanager-config/customize/workflows/request-variables"
+              },
+              {
+                "text": "Variable Picker",
+                "link": "servicemanager-config/customize/workflows/variable-picker"
               },
               {
                 "text": "Authorization",
