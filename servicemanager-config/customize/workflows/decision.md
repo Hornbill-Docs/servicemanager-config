@@ -44,3 +44,5 @@ When more than one rule (expression) exists you can add conditions which can be 
 * Select a rule (expression) to either edit or delete it
 * Select a grouping bracket to delete it
 *Use the `Delete All` option to delete all the rules (expressions)
+
+<!-- https://wiki.hornbill.com/index.php?title=Custom_Expression_Builder -->
