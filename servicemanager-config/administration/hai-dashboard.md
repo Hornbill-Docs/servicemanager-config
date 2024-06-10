@@ -1,7 +1,7 @@
 ---
 title: Hornbill AI Dashboard
 description: Discover how to maximize the potential of the HAi Dashboard in your organization with roles tailored to your needs. Get insights on usage statistics, estimated hours saved through generative AI, and track your organization's performance over time. Learn about the key features and application settings that drive the value dashboard, providing valuable metrics for decision-making and efficiency improvements.
-coverImage: /_books/servicemanager-config/administration/images/hai_cover.jpg
+coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
 # HAi Dashboard
@@ -21,7 +21,7 @@ The first two line charts show the savings per month over the last 12 months. Th
 
 The second two charts show (1) Usage per day for the last 30 days by product area and (2) The top 4 most active users based on prompt usage over the last 30 days.
 Currently, no additional filters can be applied to the dashboard. 
-<img src="/_books/servicemanager-config/administration/images/hai_dashboard.png" alt="Hornbill Ai Dashboard" ></img>
+<img src="/_books/servicemanager-config/administration/images/hai-dashboard.png" alt="Hornbill Ai Dashboard" ></img>
 
 
 

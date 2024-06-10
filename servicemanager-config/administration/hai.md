@@ -1,7 +1,7 @@
 ---
 title: Hornbill AI Configuration
 description: This guide covers the configuration and implementation of HAi (Hornbill Ai) features within your environment. The document outlines step-by-step instructions on enabling HAi capabilities for your user account, specifying the necessary roles, and accessing the necessary settings in Hornbill.
-coverImage: /_books/servicemanager-config/administration/images/hai_cover.jpg
+coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
 # Configure HAi
@@ -25,7 +25,7 @@ Additionally, any user with the application right **rightA.administerServiceDesk
 * Click on HAi under Administration in the left-hand menu.
 * Enable the required feature(s).
 
-<img src="/_books/servicemanager-config/administration/images/hai_config.png" alt="Hornbill Ai Configuration" ></img>
+<img src="/_books/servicemanager-config/administration/images/hai-config.png" alt="Hornbill Ai Configuration" ></img>
 
 ## Grant Users Access to HAi features
 To access the HAi capability of Hornbill Service Manager, your User Account must have one of the following roles associated.

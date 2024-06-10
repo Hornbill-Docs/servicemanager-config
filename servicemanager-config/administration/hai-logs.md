@@ -1,7 +1,7 @@
 ---
 title: Hornbill AI Logs
 description: This guide covers the functionality of the HAi Logs, Discover how to filter logs by User, Product Area, and Prompt to track the last 30 days' usage.
-coverImage: /_books/servicemanager-config/administration/images/hai_cover.jpg
+coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
 # HAi Logs
@@ -17,7 +17,7 @@ Additionally, any user with the application right **rightA.administerServiceDesk
 
 ## Overview
 The HAi Usage Logs show the last 30 days' usage with the latest first limited to 1000 rows. These logs can be filtered by User, Product Area, and Prompt. The Tokens Input/Output are an indication of the volume of input and text generated as an output when using prompts - and are the values that supply the dashboard with savings. Accepted is whether the output was accepted after generation or not. The Detailed Log allows you to view the unformatted input and output and is very useful for debugging output formatting errors.
-<img src="/_books/servicemanager-config/administration/images/hai_logs.png" alt="Hornbill Ai Logs" ></img>
+<img src="/_books/servicemanager-config/administration/images/hai-logs.png" alt="Hornbill Ai Logs" ></img>
 
 ## Monitoring of Logs
 Unlike AI-Assist which does not log its usage, HAi Usage is logged so customers can demonstrate the value being added to their business and debug issues. Hornbill will from time to time use these logs for both usage monitoring as well as improve the quality of the prompts output and to improve the overall service. Customer data confidentiality is maintained. Details can be found in section 6 of the [Hornbill Subscription agreement](https://www.hornbill.com/subscription-agreements). 
