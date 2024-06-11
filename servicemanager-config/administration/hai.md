@@ -38,6 +38,7 @@ To access the HAi capability of Hornbill Service Manager, your User Account must
 ### OpenAI Processor
 By enabling any of these optional HAi features, you are agreeing to allow a third party to process your data (OpenAI), Data from prompts and underlying request data is passed to OpenAI under their [business terms](https://openai.com/policies/business-terms) of use and their [enterprise privacy policy](https://openai.com/enterprise-privacy). This prevents usage data from being used for training new models, the input and output of prompts is currently stored by OpenAI as outlined in their [Documentation](https://platform.openai.com/docs/models/how-we-use-your-data), all data is sent using encrypted connection.
 
+OpenAIs [Data Processing Adendum covers](https://openai.com/policies/data-processing-addendum/) any specifics they have documented on any possible international transfer of data.
 
 The following areas of functionality send request data during each invocation and are document as follows:
 ### Request Summariser 
