@@ -66,3 +66,5 @@ This node will allow you to set a visible indicator that a task / or important m
 This node can be used where there is a need in a workflow stage to invoke more than one stream of actions, and for these to run in parallel. Adding this node, will enable multiple process streams to be defined, and these will run independently until brought back together by the Finish Parallel Processing node. An examples of where this would be used, would be where two tasks need to be assigned to different teams, but there is no dependency or need for one to be completed before the other, so they can be created and invoked in parallel.
 ### Finish Parallel Processing
 Use this node to bring together and finish the individual process lines which had been initiated from a Start Parallel Processing node.
+
+<!--https://wiki.hornbill.com/index.php?title=Business_Process_Designer -->
