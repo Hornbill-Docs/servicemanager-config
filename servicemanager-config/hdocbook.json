@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "audience": [
     "public"
   ],
@@ -311,6 +311,14 @@
               {
                 "text": "Configuration",
                 "link": "servicemanager-config/administration/hai"
+              },
+              {
+                "text": "Request Summariser",
+                "link": "servicemanager-config/administration/hai-request-summariser"
+              },
+              {
+                "text": "Sentiment Analysis",
+                "link": "servicemanager-config/administration/hai-sentiment-analysis"
               },
               {
                 "text": "Dashboard",

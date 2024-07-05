@@ -50,7 +50,7 @@ When summarizing a request the following data from the request you are in is pro
     h_itsm_requests.h_fk_user_name
 
 ```
-The timeline of the request is filtered down with the following filters '["Update","Email",'Customer']'
+The timeline of the request is filtered down with the following filters '["Authorization","Customer","Email","Escalate","Task","update"]' and can be updated (here)[/servicemanager-config/administration/hai-request-summariser}]
 
 Each post in the timelines sends the follownig
 ```
@@ -117,6 +117,40 @@ When generating a knowedge draft from a resolved or closed request the following
 ### Text Assist
 Text assist combined with snippets or used withing a workflow and passing in variables can pass any data a user has selected to pass to OpenAI, nothing is sent automatically. In the case of snippets, when the snippet is selected the analayst will see the data before the text is passed as part of the prompt when using Text Assist after a snippet. 
 
+### Sentiment Analysis
+When using sentiment analysis for a request the following data from the request you are in is processed:
+```
+
+    h_itsm_requests.h_description
+    h_itsm_requests.h_summary
+    h_itsm_requests.h_fk_user_name
+
+```
+The timeline of the request is filtered down with the following filters '["Customer","Email","update"]'
+
+Each post in the timelines sends the follownig
+```
+
+    actorInfo.name
+    content
+
+```
+
+Each comment associated to any filtered posts in the timelines sends the follownig
+```
+
+    actorInfo.name
+    comment
+
+```
+
+Custom Questions (first 100) are passed, excluding the type `file-upload` and `label` and are paired with the question text as follows:
+```
+
+    h_question
+    h_answer_value
+
+```
 
 
 ## OpenAI Usage
