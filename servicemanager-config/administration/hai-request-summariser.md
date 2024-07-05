@@ -11,7 +11,7 @@ HAi is currently in a closed beta, speak to customer success should you want to 
 
 ## Setup
 
-Once [enabled](/administration/hai#enabling-hai-features) there are some settings explained in the table below that allow for some customisation on the amount of date and what timeline update types are used when generating the request summary, these can be updated by access [application settings](/advanced-tools-and-settings/application-settings) for service manager.
+Once [enabled](/servicemanager-config/administration/hai#enabling-hai-features) there are some settings explained in the table below that allow for some customisation on the amount of date and what timeline update types are used when generating the request summary, these can be updated by access [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) for service manager.
 
 |Setting|Description|
 |-|-|
