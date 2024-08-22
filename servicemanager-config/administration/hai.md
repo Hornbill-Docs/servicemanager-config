@@ -52,7 +52,7 @@ When summarizing a request the following data from the request you are in is pro
 ```
 The timeline of the request is filtered down with the following filters '["Authorization","Customer","Email","Escalate","Task","update"]' and can be updated [here](/servicemanager-config/administration/hai-request-summariser)
 
-Each post in the timelines sends the follownig
+Each post in the timelines sends the following
 ```
 
     actorInfo.name
@@ -60,7 +60,7 @@ Each post in the timelines sends the follownig
 
 ```
 
-Each comment associated to any filtered posts in the timelines sends the follownig
+Each comment associated to any filtered posts in the timelines sends the following
 ```
 
     actorInfo.name
@@ -103,7 +103,7 @@ Each comment associated to any filtered posts in the timelines sends the followi
 
 ```
 ### Knowledge Draft
-When generating a knowedge draft from a resolved or closed request the following data is sent:
+When generating a knowledge draft from a resolved or closed request the following data is sent:
 
 ```
 
@@ -115,7 +115,7 @@ When generating a knowedge draft from a resolved or closed request the following
 
 
 ### Text Assist
-Text assist combined with snippets or used withing a workflow and passing in variables can pass any data a user has selected to pass to OpenAI, nothing is sent automatically. In the case of snippets, when the snippet is selected the analayst will see the data before the text is passed as part of the prompt when using Text Assist after a snippet. 
+Text assist combined with snippets or used withing a workflow and passing in variables can pass any data a user has selected to pass to OpenAI, nothing is sent automatically. In the case of snippets, when the snippet is selected the analyst will see the data before the text is passed as part of the prompt when using Text Assist after a snippet. 
 
 ### Sentiment Analysis
 When using sentiment analysis for a request the following data from the request you are in is processed:
@@ -128,7 +128,7 @@ When using sentiment analysis for a request the following data from the request 
 ```
 The timeline of the request is filtered down with the following filters '["Customer","Email","update"]'
 
-Each post in the timelines sends the follownig
+Each post in the timelines sends the following
 ```
 
     actorInfo.name
@@ -136,7 +136,7 @@ Each post in the timelines sends the follownig
 
 ```
 
-Each comment associated to any filtered posts in the timelines sends the follownig
+Each comment associated to any filtered posts in the timelines sends the following
 ```
 
     actorInfo.name

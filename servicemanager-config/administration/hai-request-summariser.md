@@ -11,7 +11,7 @@ HAi is currently in a closed beta, speak to customer success should you want to 
 
 ## Setup
 
-Once [enabled](/servicemanager-config/administration/hai#enabling-hai-features) there are some settings explained in the table below that allow for some customisation on the amount of date and what timeline update types are used when generating the request summary, these can be updated by access [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) for service manager.
+Once [enabled](/servicemanager-config/administration/hai#enabling-hai-features) there are some settings explained in the table below that allow for some customization on the amount of date and what timeline update types are used when generating the request summary, these can be updated by access [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) for service manager.
 
 |Setting|Description|
 |-|-|
@@ -21,4 +21,4 @@ Once [enabled](/servicemanager-config/administration/hai#enabling-hai-features) 
 |generativeAi.limits.activitySteamContentLength|Limit on the maximum content length of a post or comment, anything longer is truncated and passed to the summariser, by default this is set to  ```1000```|
 
 ## Limits
-The reason for the limits is to minamise the likely hood of a request summary request to our AI Services maxinum out the total number of input tokens allowed, currently 128,000. Very long timelines with lots of large posts can go over this limit. Internally there is a safe guard that even if you crank the limits up a very large timeline will still end up truncated in an effort to provent the AI Service returning an error. The maximum input tokens has been slowly increasing over the months and some services allow for much much larger inputs, something that may be investigated should the limits prove problematic for customers. 
+The reason for the limits is to minimise the likely hood of a request summary request to our AI Services reaching the total number of input tokens allowed, currently 128,000. Very long timelines with lots of large posts can go over this limit. Internally there is a safe guard that even if you crank the limits up a very large timeline will still end up truncated in an effort to prevent the AI Service returning an error. The maximum input tokens has been slowly increasing over the months and some services allow for much much larger inputs, something that may be investigated should the limits prove problematic for customers. 

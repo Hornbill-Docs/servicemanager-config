@@ -14,4 +14,4 @@ We recognize the importance of addressing these concerns and are dedicated to mi
 Both Azure and OpenAI are hosted on Azure hardware and are there for covered by the [Azure sustainability policy](https://azure.microsoft.com/en-gb/explore/global-infrastructure/sustainability)
 
 ## Private Models and the HAi Lab
-As outlined in our [Corporate Social Responsibility](https://www.hornbill.com/hubfs/Policies/Corporate%20Social%20Responsibility.pdf) policy, our data center supplier are commited to net zero carbon emitions by 2050. 
+As outlined in our [Corporate Social Responsibility](https://www.hornbill.com/hubfs/Policies/Corporate%20Social%20Responsibility.pdf) policy, our data center supplier are committed to net zero carbon emissions by 2050. 
