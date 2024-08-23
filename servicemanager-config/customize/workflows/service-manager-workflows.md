@@ -141,7 +141,8 @@ Using these options in your workflows, please be aware of where you are invoking
 ### Request Service
 Use the Request Service node, if you wish to automate the availability status setting of the service associated to a request, or to automate adding related services of the request service to the request.
 
-* Add Related Services
+* **Add Related Services**<br>A business service can be underpinned by technical services or an issue with a technical service may impact the services that depend on it.  This automation will look at the service under which the request was raised and then link all of the related services based on a particular type of relationship. 
+* **Add Linked Service**<br>This automation allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
 * Update Service Status
 
 ### Suspend
