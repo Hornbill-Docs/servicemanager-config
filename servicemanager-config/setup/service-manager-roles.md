@@ -2,28 +2,35 @@
 layout: article-toc
 ---
 # Roles
-Service Manager roles are collections of rights that provide access to different features and functionality within Service Manager. System roles are provided with preset rights that are required for users to perform common job roles within the Service Desk.  User defined roles can also be created.
+Service Manager roles are collections of rights that provide access to different features and functionality within Service Manager. System roles are provided with preset rights that are required for users to perform common job roles within the service desk. User-defined roles can also be created.
 
-## Topics Covered
-* Asset Management Roles
-* Change Management Roles
-* Incident Management Roles
-* Problem Management Roles
-* Release Management Roles
-* Service Request Roles
-* System and Application Roles
-* Configuration Management Roles
+## Topics covered
+This article covers the following roles:
+* [Asset management](/#asset-management-roles) 
+* [Change management](/#change-management-roles) 
+* [Incident management](/#incident-management-roles)
+* [Problem management](#problem-management-roles)
+* [Release management](#release-management-roles)
+* [Service request](#change-management-roles)
+* [Services](#services)
+* [Administration](#administration-roles)
+* [Self Service](#self-service)
+* [Reporting](#reporting)
+* [Configuration management](#configuration-management-roles)
 
-## Before you Begin
+As well as:
+[How to create custom (user-created) roles](#user-created-roles)
+
+## Before you begin
 * Have an understanding of how [roles are managed](/esp-config/organizational-data/roles)
 ::: tip
  Assigning a role with a privilege level of `user` or higher to a user can automatically allocate a Service Manager subscription license to that user.
 :::
 
-## System Roles
+## System roles
 System roles are provided when Service Manager is installed or updated.  These roles can not be modified, other than assigning users to the roles.
 
-### Asset Management Roles
+### Asset management roles
 |Role|Description|
 |-|-|
 |Asset Management Admin|This role is for an Asset Management administrator. It includes rights to define new and edit existing Asset Types as well as being able to add detailed Asset information|
@@ -31,7 +38,7 @@ System roles are provided when Service Manager is installed or updated.  These r
 |Asset Manager|This role should be granted to Asset Managers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Software Asset Management User|This role is for a Software Asset Management User. It includes rights to view Software Asset Management records.|
 
-### Change Management Roles
+### Change management roles
 |Role|Description|
 |-|-|
 |CAB Approver|This role should be granted to CAB Approvers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
@@ -41,14 +48,14 @@ System roles are provided when Service Manager is installed or updated.  These r
 |Change Manager|This role should be granted to Change Managers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Change Request Assignee|This role should be granted to Users who have the 'Change Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 
-### Incident Management Roles
+### Incident management roles
 |Role|Description|
 |-|-|
 Incident Assignee|This role should be assigned to Users who have the 'Incident Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Incident Management Full Access|This role is for a senior user of Incident Management. It supersedes the Incident Management User role and includes rights to cancel and reopen Incidents.|
 |Incident Management User|This role is for a users that perform day to day work within Incident Management where they are required to raise, manage, and close Incident records.|
 
-### Problem Management Roles
+### Problem management roles
 |Role|Description|
 |-|-|
 |Known Error Assignee|This role should be assigned to Users who have the 'Problem Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
@@ -56,7 +63,7 @@ Incident Assignee|This role should be assigned to Users who have the 'Incident M
 |Problem Management Full Access|This role is for a senior user of Problem Management. It supersedes the Problem Management User role and includes rights to cancel and reopen Problems.|
 |Problem Management User|This role is for a user of Problem Management. It includes rights to view, edit and resolve Problems.|
 
-### Release Management Roles
+### Release management roles
 |Role|Description|
 |-|-|
 |Release Assignee|This role should be granted to Users who have the 'Release Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager|
@@ -64,7 +71,7 @@ Incident Assignee|This role should be assigned to Users who have the 'Incident M
 |Release Management User|This role is for a user of Release Management. It includes rights to view, edit and complete Releases|
 |Release Manager|This role should be granted to Release Managers. It is used for task/activity assignment in the Hornbill Business Process Manager|
 
-### Service Request Roles
+### Service request roles
 |Role|Description|
 |-|-|
 |Service Request Assignee|This role should be granted to Users who have the 'Service Request User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
@@ -76,7 +83,7 @@ Incident Assignee|This role should be assigned to Users who have the 'Incident M
 |-|-|
 |Services Manager|This roles provides administrative options to manage services and their content within Service Portfolio area. A user who is assigned this role will be able to see Services that they own and non-private Services that they support. To see all the Services in the system, you'll need to be in context of a user who is assigned a role that has "admin" privilege level (E.g. Admin Role or Super User Role).|
 
-### Administration Roles
+### Administration roles
 |Role|Description|
 |-|-|
 |Service Desk Admin|This role is for a Service Desk Administrator. It includes all rights to administrative functions such as setting up support teams as well as being able to cancel requests. Please be aware that assigning this role gives the user the ability to see the details and perform actions on any request on your instance, regardless of their team visibility. This is effectively a Request "Super User" role.|
@@ -85,7 +92,7 @@ Incident Assignee|This role should be assigned to Users who have the 'Incident M
 |Service Manager Delete Questions|This role allows Users to delete questions from a Request, designed to help remove sensitive information that cannot otherwise be removed or amended.|
 |Hornbill Service Manager Integrations|This role is only intended for accounts used to enable integrations or to perform imports.|
 
-### Self Service
+### Self service
 |Role|Description|
 |-|-|
 |Self Service User|This role is for a self service User that requires access to Self Service Portal to be able to raise and view Requests.|
@@ -99,13 +106,13 @@ Incident Assignee|This role should be assigned to Users who have the 'Incident M
 |Service Manager In-App Reporting|This role provides access to the Reports feature in Service Manager.|
 
 
-### Configuration Management Roles
+### Configuration management roles
 |Role|Description|
 |-|-|
 |Configuration Manager Admin|This role gives someone the ability to add and modify CI configuration settings such as setting which CIs are in policy and the configuring the two way relationships between the CI. Assign this role to the main users of the full Configuration Manager app.|
 |Configuration Manager User|This role is great for giving a user read-only access to the CI explorer. This lets them browse through the linked CIs to help with Incident investigation, problem management, or a view of the impact that something may have. Assign this role to user of Service Manager that need to be able to launch the CI Explorer from a request, asset, or a service, but do not need full access to the Configuration Manager app.|
 
-## User Created Roles
+## User-created roles
 When a unique set of right is required that is not covered by the system roles, a custom role can be created.
 
 1. Click on `+ Create New Role`
@@ -114,10 +121,10 @@ When a unique set of right is required that is not covered by the system roles, 
 1. Select the [type of role](/esp-config/organizational-data/roles#role-types).
 1. Save the role.
 
-### Application Rights
+### Application rights
 A role created under the context of an application will have a `Application Rights` tab where rights that are specific to the app are provided.
 
-#### Service Desk
+#### Service desk
 |Right|Description|
 |-|-|
 |View Service Desk||
@@ -154,7 +161,7 @@ A role created under the context of an application will have a `Application Righ
 |manageSnippets||
 |All Request Access||
 
-#### Problem Management
+#### Problem management
 |Right|Description|
 |-|-|
 |View Problem Management|| 
@@ -176,7 +183,7 @@ A role created under the context of an application will have a `Application Righ
 |Update Locked Known Errors|| 
 |Reopen Known Errors|| 
 
-#### Change and Release Management
+#### Change and release Management
 |Right|Description|
 |-|-|
 |View Change Management|| 
@@ -201,7 +208,7 @@ A role created under the context of an application will have a `Application Righ
 |Update Locked Releases|| 
 |restrictChangeCalendar||
 
-#### Asset Management
+#### Asset management
 |Right|Description|
 |-|-|
 |View Asset Management|| 
@@ -215,7 +222,7 @@ A role created under the context of an application will have a `Application Righ
 |viewSoftwareInventory||
 |View Configuration Management||
 
-#### Service Level Management
+#### Service level management
 |Right|Description|
 |-|-|
 |View Service Level Management|| 
@@ -233,7 +240,7 @@ A role created under the context of an application will have a `Application Righ
 |Delete Service Level Reports|| 
 |updateRequestServiceLevel||
 
-#### Service Management
+#### Service management
 |Right|Description|
 |-|-|
 |View Service Records|| 
@@ -243,7 +250,7 @@ A role created under the context of an application will have a `Application Righ
 |Manage Subscriptions|| 
 |Manage Service Owners|| 
 
-#### Self Service
+#### Self service
 |Right|Description|
 |-|-|
 |viewIncidents|| 
@@ -263,7 +270,7 @@ A role created under the context of an application will have a `Application Righ
 |reopenServiceRequests||
 |reopenChangeRequests||
 
-#### Entities Access Control
+#### Entities access control
 |Right|Description|
 |-|-|
 |Allow execution of application queries|| 

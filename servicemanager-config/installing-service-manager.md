@@ -3,17 +3,18 @@ layout: article-toc
 ---
 # Installing Service Manager
 
-## Before You Begin
-* Service Manager is a premium application and requires subscription licenses.  
-* You will need a login to the Hornbill Success Portal to request subscription licenses.
-* You must be an authoritative contact to request subscriptions.
+## Prerequisites
+Service Manager is a premium application and requires subscription licenses.  
+
+To request subscription licenses, you will need:
+* to have a login to the Hornbill Success Portal
+* to be an authoritative contact
 
 ## Hornbill App Store
 
-Hornbill apps are installed from the Hornbill App Store.
-1. Open `Configuration`.
-1. Select `Hornbill Solution Center`.
-1. Select `Hornbill App Store`.
-1. From the list of premium apps select `Service Manager`.
-1. Click on the `Install` button.
-
+You install Hornbill apps from the Hornbill App Store, which you access through Configuration.
+1. At the bottom of the left-hand menu bar, click the cog icon to open Configuration. (A shortcut is to use CTRL+SHIFT+S on your keyboard.)
+1. Select **Hornbill Solution Center**.
+1. Select **Hornbill App Store**.
+1. From the list of premium apps select **Service Manager**.
+1. Click **Install**.
