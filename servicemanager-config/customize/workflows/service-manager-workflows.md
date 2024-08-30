@@ -60,12 +60,12 @@ Use these Hornbill Automations for managing assets that are associated to the re
 ### Assignment
 Use the Assignment node to automatically assign a request to different Service Manager users or teams.
 
-* Assign to Service Team
-* Assign to Team
-* Assign to Owner
-* Assign to Owner (Variable)
+* **Assign to Service Team**<br>Assign to Service Team assigns the request to the team that supports the service. If no team supports the service that the request is logged against then the request is not assigned. If more than one team supports the service, the request is assigned to the team that has supported the service the longest. This automated task does not assign the request to an individual within the team(s) supported by the service.
+* **Assign to Team**<br>Use this option to assign the request to a specified team.
+* **Assign to Owner**<br>Use this option to assign the request to a specific Service Manager agent.
+* **Assign to Owner (Variable)**<br>Use this option to assign the request to a specific Service Manager analyst using a dynamic value provided by a runtime variable that has been populated using Progressive Capture or through the Get Information nodes.
 * **Unassign Owner**<br>This automation can be used to remove the current owner from the request without affecting the team to which the request is assigned.  
-* Assign to Request Creator
+* **Assign to Request Creator**<br>Use this option to automatically assign the request to the Service Manager agent who raised the request.
 * **Assign to Most Available Analyst**<br>This automation works on the basis of capacity. The system will look through the members of the selected team and will assign the request to the member who has the least amount of open requests. If more than one team member have an equal number of open requests and have the least amount of assigned requests, the system will allocate the request to the team member who has had the greatest amount of time pass since their last assignment.
 * **Assign on Round Robin Basis**<br>Round robin assignement is a great way to automatically assign requests to the members of a team. The system will look through the members of the selected team and will assign the request to the member who has had the greatest amount of time pass since their last assignment. The system will take into account the user's status which is found on their profile. If the user's status is set to anything other than 'Available' that user will not be considered for assignment. This does not take into account the volume of requests assigned to each user.
 
