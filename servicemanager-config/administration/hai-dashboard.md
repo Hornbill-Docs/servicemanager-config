@@ -21,7 +21,7 @@ The first two line charts show the savings per month over the last 12 months. Th
 
 The second two charts show (1) Usage per day for the last 30 days by product area and (2) The top 4 most active users based on prompt usage over the last 30 days.
 Currently, no additional filters can be applied to the dashboard. 
-<img src="/_books/servicemanager-config/administration/images/hai-dashboard.png" alt="Hornbill Ai Dashboard" ></img>
+<img src="/_books/servicemanager-config/administration/images/hai-dashboard.png" alt="Hornbill AI Dashboard" ></img>
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Hornbill AI Usage 
-description: This guide covers the usage and fair usage policy of HAi (Hornbill Ai) features within your environment. 
+description: This guide covers the usage and fair usage policy of HAi (Hornbill AI) features within your environment. 
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
@@ -8,7 +8,7 @@ layout: article-toc
 # Hornbill AI Usage 
 
 ## Hornbill AI Usage Policy
-The usage of Hornbill AI is governed by the [Hornbill Artificial Intelligence Agreement](https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf) as well as section 3.4 of the [Hornbill Subscription Agreement](https://www.hornbill.com/subscription-agreements) however HAI is subject to additional terms based on which AI Provider is being used, Azure AI Services or OpenAI.
+The usage of Hornbill AI is governed by the [Hornbill Artificial Intelligence Agreement](https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf) as well as section 3.4 of the [Hornbill Subscription Agreement](https://www.hornbill.com/subscription-agreements) however HAI is subject to additional terms based on which [HAi Provider](/servicemanager-config/administration/hai-providers) is being used, Azure AI Services or OpenAI.
 
 ## Third Party Terms
 ### Azure Open AI Services

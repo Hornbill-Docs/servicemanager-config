@@ -313,6 +313,10 @@
                 "link": "servicemanager-config/administration/hai"
               },
               {
+                "text": "Providers",
+                "link": "servicemanager-config/administration/hai-providers"
+              },
+              {
                 "text": "Request Summariser",
                 "link": "servicemanager-config/administration/hai-request-summariser"
               },

@@ -1,6 +1,6 @@
 ---
 title: Hornbill AI Configuration
-description: This guide covers the configuration and implementation of HAi (Hornbill Ai) features within your environment. The document outlines step-by-step instructions on enabling HAi capabilities for your user account, specifying the necessary roles, and accessing the necessary settings in Hornbill.
+description: This guide covers the configuration and implementation of HAi (Hornbill AI) features within your environment. The document outlines step-by-step instructions on enabling HAi capabilities for your user account, specifying the necessary roles, and accessing the necessary settings in Hornbill.
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
@@ -25,7 +25,7 @@ Additionally, any user with the application right **rightA.administerServiceDesk
 * Click on HAi under Administration in the left-hand menu.
 * Enable the required feature(s).
 
-<img src="/_books/servicemanager-config/administration/images/hai-config.png" alt="Hornbill Ai Configuration" ></img>
+<img src="/_books/servicemanager-config/administration/images/hai-config.png" alt="Hornbill AI Configuration" ></img>
 
 ## Grant Users Access to HAi features
 To access the HAi capability of Hornbill Service Manager, your User Account must have one of the following roles associated.
@@ -35,10 +35,8 @@ To access the HAi capability of Hornbill Service Manager, your User Account must
 |HAi User|This role allows users to access HAi functionality inside of Service Manager|
 
 ## Data 
-### OpenAI Processor
-By enabling any of these optional HAi features, you are agreeing to allow a third party to process your data (OpenAI), Data from prompts and underlying request data is passed to OpenAI under their [business terms](https://openai.com/policies/business-terms) of use and their [enterprise privacy policy](https://openai.com/enterprise-privacy). This prevents usage data from being used for training new models, the input and output of prompts is currently stored by OpenAI as outlined in their [Documentation](https://platform.openai.com/docs/models/how-we-use-your-data), all data is sent using encrypted connection.
-
-OpenAIs [Data Processing Adendum covers](https://openai.com/policies/data-processing-addendum/) any specifics they have documented on any possible international transfer of data.
+### HAi Providers
+By enabling any of these optional HAi features, you are agreeing to allow a third party to process your data ([HAi Providers](/servicemanager-config/administration/hai-providers)), Data from prompts and underlying request data is passed to a Provider using encrypted connections see [HAi Providers](/servicemanager-config/administration/hai-providers) for further details. 
 
 The following areas of functionality send request data during each invocation and are document as follows:
 ### Request Summariser 
@@ -115,7 +113,7 @@ When generating a knowledge draft from a resolved or closed request the followin
 
 
 ### Text Assist
-Text assist combined with snippets or used withing a workflow and passing in variables can pass any data a user has selected to pass to OpenAI, nothing is sent automatically. In the case of snippets, when the snippet is selected the analyst will see the data before the text is passed as part of the prompt when using Text Assist after a snippet. 
+Text assist combined with snippets or used withing a workflow and passing in variables can pass any data a user has selected to pass to a [HAi Provider](/servicemanager-config/administration/hai-providers), nothing is sent automatically. In the case of snippets, when the snippet is selected the analyst will see the data before the text is passed as part of the prompt when using Text Assist after a snippet. 
 
 ### Sentiment Analysis
 When using sentiment analysis for a request the following data from the request you are in is processed:
@@ -151,9 +149,3 @@ Custom Questions (first 100) are passed, excluding the type `file-upload` and `l
     h_answer_value
 
 ```
-
-
-## OpenAI Usage
-Usage of the OpenAI API's goes through an API Key provided by hornbill. Currently there are no usage limits outside the limits provided by OpenAI. It is possible to override the API to use an API Key of your organization's choice by overriding the system setting **integration.openai.apiKey**.
-
-Further details on this here: https://docs.hornbill.com/esp-fundamentals/productivity/ai-assist

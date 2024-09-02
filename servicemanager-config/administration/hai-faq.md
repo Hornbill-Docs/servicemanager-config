@@ -1,6 +1,6 @@
 ---
 title: Hornbill AI FAQ
-description: This guide covers the frequently asked questions of HAi (Hornbill Ai).
+description: This guide covers the frequently asked questions of HAi (Hornbill AI).
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
@@ -35,8 +35,12 @@ layout: article-toc
 
 Details on audit log storage is [detailed here](/servicemanager-config/administration/hai-logs#monitoring-of-logs).
 
-Data is passed to an AI Processor (Azure, OpenAI) via encrypted SSL connections only .
+Data is passed to an [HAi Provider](/servicemanager-config/administration/hai-providers) (Azure, OpenAI) via encrypted SSL connections only .
 
 **Q: Who owns the rights to the input and outputs of Hornbill AI?**
 
 **A:** The customer owns 100% rights to the input and output of Hornbill AI that are logged in the HAi Audit Logs made up of user imputed data or business data passed, System Prompts that make up the generative AI Functionality are proprietary to Hornbill and as such not covered by this and are not logged in the HAi Audit Logs.
+
+**Q: How does Hornbill identify and manage potential issues or risks with the validity and reliability of the output?**
+
+**A:** Out of the box Hornbill AI functionality is regularly tested especially when new [models are available](https://www.hornbill.com/blog/how-the-hai-lab-team-test-new-genai-models-like-gpt-4o) for the quality and accuracy of the output. The risks are detailed in section 4 of the [Hornbill Artificial Intelligence Agreement](https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf) and Hornbill is constantly monitoring and reviewing advancements in AI especially Generative AI for new or emerging risks and if appropriate how to they can be mitigated. 

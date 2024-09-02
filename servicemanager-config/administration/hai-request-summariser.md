@@ -1,6 +1,6 @@
 ---
 title: Hornbill AI Request Summariser 
-description: This guide covers the configuration of Request Summariser for HAi (Hornbill Ai) within your environment. .
+description: This guide covers the configuration of Request Summariser for HAi (Hornbill AI) within your environment. .
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---

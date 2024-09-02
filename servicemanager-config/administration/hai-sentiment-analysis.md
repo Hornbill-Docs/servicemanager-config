@@ -1,6 +1,6 @@
 ---
 title: Hornbill AI Sentiment Analysis
-description: This guide covers the configuration of Sentiment Analysis for HAi (Hornbill Ai) within your environment. .
+description: This guide covers the configuration of Sentiment Analysis for HAi (Hornbill AI) within your environment. .
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---

@@ -17,7 +17,7 @@ Additionally, any user with the application right **rightA.administerServiceDesk
 
 ## Overview
 The HAi Usage Logs show the last 30 days' usage with the latest first limited to 1000 rows. These logs can be filtered by User, Product Area, and Prompt. The Tokens Input/Output are an indication of the volume of input and text generated as an output when using prompts - and are the values that supply the dashboard with savings. Accepted is whether the output was accepted after generation or not. The Detailed Log allows you to view the unformatted input and output and is very useful for debugging output formatting errors.
-<img src="/_books/servicemanager-config/administration/images/hai-logs.png" alt="Hornbill Ai Logs" ></img>
+<img src="/_books/servicemanager-config/administration/images/hai-logs.png" alt="Hornbill AI Logs" ></img>
 
 ## Retention
 Currently all log history is kept, the UI restricts logs to the last 30 days and in the future the input and output text will be pruned after 30 days leaving only the details of the request. 
