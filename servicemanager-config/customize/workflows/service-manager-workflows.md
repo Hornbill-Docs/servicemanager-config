@@ -139,11 +139,11 @@ Using these options in your workflows, please be aware of where you are invoking
 * Delete Questions
 
 ### Request Service
-Use the Request Service node, if you wish to automate the availability status setting of the service associated to a request, or to automate adding related services of the request service to the request.
+The Request Service Tasks are used to automate the linking of related services that may underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
 
-* **Add Related Services**<br>A business service can be underpinned by technical services or an issue with a technical service may impact the services that depend on it.  This automation will look at the service under which the request was raised and then link all of the related services based on a particular type of relationship. 
-* **Add Linked Service**<br>This automation allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
-* Update Service Status
+* **Add Related Services**<br>A business service can be underpinned by technical services or an issue with a technical service may impact the services that depend on it.  This task will look at the service under which the request was raised and then link all of the related services based on a particular type of relationship. 
+* **Add Linked Service**<br>This task allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
+* **Update Service Status**<br>This task allows for the [Service Status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on all of the linked services to help determine the availability of those services.  
 
 ### Suspend
 Use the Suspend nodes if you wish to suspend the progress of the workflow until a defined action is performed manually on the Request. This could include waiting for a Priority to be set, a Customer added, Ownership set or the Resolution defined. Configuration options include the ability to specify the context (which Action Bar icon) the Request will appear in whilst waiting for the Suspend (manual action) to be performed.
