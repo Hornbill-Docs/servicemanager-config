@@ -7,8 +7,8 @@ layout: article-toc
 Service Manager is a premium application and requires subscription licenses.  
 
 To request subscription licenses, you will need:
-* to have a login to the Hornbill Success Portal
-* to be an authoritative contact
+* A login to the Hornbill Success Portal.
+* To be an authoritative contact.
 
 ## Hornbill App Store
 
@@ -18,3 +18,5 @@ You install Hornbill apps from the Hornbill App Store, which you access through 
 1. Select **Hornbill App Store**.
 1. From the list of premium apps select **Service Manager**.
 1. Click **Install**.
+
+Read the [Installing an App](/esp-config/getting-started/installing-an-app) documentation for more details.
