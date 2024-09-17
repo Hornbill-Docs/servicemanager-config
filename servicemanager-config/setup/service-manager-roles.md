@@ -9,6 +9,7 @@ This article covers the following roles:
 * [Asset management](/#asset-management-roles) 
 * [Change management](/#change-management-roles) 
 * [Incident management](/#incident-management-roles)
+* [Knowledge](/#knowledge-roles)
 * [Problem management](#problem-management-roles)
 * [Release management](#release-management-roles)
 * [Service request](#change-management-roles)
@@ -54,6 +55,17 @@ System roles are provided when Service Manager is installed or updated.  These r
 Incident Assignee|This role should be assigned to Users who have the 'Incident Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Incident Management Full Access|This role is for a senior user of Incident Management. It supersedes the Incident Management User role and includes rights to cancel and reopen Incidents.|
 |Incident Management User|This role is for a users that perform day to day work within Incident Management where they are required to raise, manage, and close Incident records.|
+
+### Knowledge roles
+These roles are for an upcoming release. They cannot currently be used.
+
+|Role|Description|
+|:----|:----|
+|Knowledge User|This role grants access to browse and view knowledge manager content|
+|Knowledge Manager|This role grants access to create and manage knowledge bases. A user with this role should be able to perform all of the required tasks in knowledge manager.|
+|Knowledge Guest Portal|This role grants access to knowledge manager content from the Hornbill Customer Portal. It should only be applied to the portal and never granted to any user or guest.|
+|Knowledge Contributor|This role grants access to create and update knowledge base articles. Additional access will need to be granted to perform these functions on private knowledge bases|
+|Knowledge Administrator|This role grants access to configuration functionality in knowledge manager, including changing ownership of knowledge bases. It should only be assigned to a user on a temporary basis as and when required.|
 
 ### Problem management roles
 |Role|Description|
