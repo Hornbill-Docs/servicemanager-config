@@ -2,7 +2,7 @@
 layout: article-toc
 ---
 # Roles
-Service Manager roles are collections of rights that provide access to different features and functionality within Service Manager. System roles are provided with preset rights that are required for users to perform common job roles within the service desk. User-defined roles can also be created.
+Service Manager roles are collections of rights that provide access to the features and functionality within Service Manager. There are system roles and user-defined roles. System roles come with preset rights that are required for users to perform common job roles within the service desk. User-defined roles are for when you need to grant a unique set of rights to a user.
 
 ## Topics covered
 This article covers the following roles:
@@ -24,18 +24,18 @@ As well as:
 
 ## Before you begin
 * Have an understanding of how [roles are managed](/esp-config/organizational-data/roles)
-::: tip
+::: note
  Assigning a role with a privilege level of `user` or higher to a user can automatically allocate a Service Manager subscription license to that user.
 :::
 
 ## System roles
-System roles are provided when Service Manager is installed or updated.  These roles can not be modified, other than assigning users to the roles.
+System roles are provided when Service Manager is installed or updated. You can assign users to these roles, but the roles cannot be modified.
 
 ### Asset management roles
 |Role|Description|
 |-|-|
-|Asset Management Admin|This role is for an Asset Management administrator. It includes rights to define new and edit existing Asset Types as well as being able to add detailed Asset information|
-|Asset Management User|This role is for an Asset Management user. It includes rights to define new and edit existing Assets as well as being able to add detailed Asset information.|
+|Asset Management Admin|This role is for an Asset Management administrator. It includes rights to define new and edit existing Asset Types, as well as to add detailed Asset information.|
+|Asset Management User|This role is for an Asset Management user. It includes rights to define new and edit existing Assets, as well as to add detailed Asset information.|
 |Asset Manager|This role should be granted to Asset Managers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Software Asset Management User|This role is for a Software Asset Management User. It includes rights to view Software Asset Management records.|
 
@@ -43,98 +43,98 @@ System roles are provided when Service Manager is installed or updated.  These r
 |Role|Description|
 |-|-|
 |CAB Approver|This role should be granted to CAB Approvers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
-|Change Calendar Viewer|This roles grant read only access to the Change Calendar and scheduled Change Requests.
+|Change Calendar Viewer|This roles grant read-only access to the Change Calendar and scheduled Change Requests.
 |Change Management Full Access|This role is for a senior user of Change Management. It supersedes the Change Management User role and includes rights to cancel and reopen Change Requests.|
-|Change Management User|This role is for a user of Change Management. It includes rights to view, edit and complete Change Requests.|
+|Change Management User|This role is for a user of Change Management. It includes rights to view, edit, and complete Change Requests.|
 |Change Manager|This role should be granted to Change Managers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
-|Change Request Assignee|This role should be granted to Users who have the 'Change Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
+|Change Request Assignee|This role should be granted to Users who have the Change Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 
 ### Incident management roles
 |Role|Description|
 |-|-|
-Incident Assignee|This role should be assigned to Users who have the 'Incident Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
+Incident Assignee|This role should be assigned to Users who have the Incident Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Incident Management Full Access|This role is for a senior user of Incident Management. It supersedes the Incident Management User role and includes rights to cancel and reopen Incidents.|
-|Incident Management User|This role is for a users that perform day to day work within Incident Management where they are required to raise, manage, and close Incident records.|
+|Incident Management User|This role is for users that perform day-to-day work within Incident Management where they are required to raise, manage, and close Incident records.|
 
 ### Knowledge roles
-These roles are for an upcoming release. They cannot currently be used.
+These roles are for an upcoming release; they cannot currently be used.
 
 |Role|Description|
 |:----|:----|
-|Knowledge User|This role grants access to browse and view knowledge manager content|
-|Knowledge Manager|This role grants access to create and manage knowledge bases. A user with this role should be able to perform all of the required tasks in knowledge manager.|
-|Knowledge Guest Portal|This role grants access to knowledge manager content from the Hornbill Customer Portal. It should only be applied to the portal and never granted to any user or guest.|
-|Knowledge Contributor|This role grants access to create and update knowledge base articles. Additional access will need to be granted to perform these functions on private knowledge bases|
-|Knowledge Administrator|This role grants access to configuration functionality in knowledge manager, including changing ownership of knowledge bases. It should only be assigned to a user on a temporary basis as and when required.|
+|Knowledge User|This role grants access to browse and view Knowledge content.|
+|Knowledge Manager|This role grants access to create and manage knowledge bases. A user with this role should be able to perform all of the required tasks in Knowledge.|
+|Knowledge Guest Portal|This role grants access to Knowledge content from the Hornbill Customer Portal. It should only be applied to the portal and never granted to any user or guest.|
+|Knowledge Contributor|This role grants access to create and update knowledge base articles. Additional access must be granted to perform these functions on private knowledge bases.|
+|Knowledge Administrator|This role grants access to configuration functionality in Knowledge, including changing ownership of knowledge bases. It should only be assigned to a user on a temporary basis as and when required.|
 
 ### Problem management roles
 |Role|Description|
 |-|-|
-|Known Error Assignee|This role should be assigned to Users who have the 'Problem Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
-|Problem Investigation Assignee|This role should be granted to Users who have the 'Problem Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
+|Known Error Assignee|This role should be assigned to Users who have the Problem Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
+|Problem Investigation Assignee|This role should be granted to Users who have the Problem Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Problem Management Full Access|This role is for a senior user of Problem Management. It supersedes the Problem Management User role and includes rights to cancel and reopen Problems.|
-|Problem Management User|This role is for a user of Problem Management. It includes rights to view, edit and resolve Problems.|
+|Problem Management User|This role is for a user of Problem Management. It includes rights to view, edit, and resolve Problems.|
 
 ### Release management roles
 |Role|Description|
 |-|-|
-|Release Assignee|This role should be granted to Users who have the 'Release Management User' role. It is used for task/activity assignment in the Hornbill Business Process Manager|
-|Release Management Full Access|This role is for a senior user of Release Management. It supersedes the Release Management User role and includes rights to cancel and reopen Release
-|Release Management User|This role is for a user of Release Management. It includes rights to view, edit and complete Releases|
-|Release Manager|This role should be granted to Release Managers. It is used for task/activity assignment in the Hornbill Business Process Manager|
+|Release Assignee|This role should be granted to Users who have the Release Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
+|Release Management Full Access|This role is for a senior user of Release Management. It supersedes the Release Management User role and includes rights to cancel and reopen Releases.
+|Release Management User|This role is for a user of Release Management. It includes rights to view, edit, and complete Releases.|
+|Release Manager|This role should be granted to Release Managers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 
 ### Service request roles
 |Role|Description|
 |-|-|
-|Service Request Assignee|This role should be granted to Users who have the 'Service Request User' role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
+|Service Request Assignee|This role should be granted to Users who have the Service Request User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Service Request Full Access|This role is for a senior user of Service Request Management. It supersedes the Service Request User role and includes rights to cancel and reopen Service Requests.|
-|Service Request User|This role is for a user of Service Request Management. It includes rights to view, edit and fulfill Service Requests.|
+|Service Request User|This role is for a user of Service Request Management. It includes rights to view, edit, and fulfill Service Requests.|
 
 ### Services
 |Role|Description|
 |-|-|
-|Services Manager|This roles provides administrative options to manage services and their content within Service Portfolio area. A user who is assigned this role will be able to see Services that they own and non-private Services that they support. To see all the Services in the system, you'll need to be in context of a user who is assigned a role that has "admin" privilege level (E.g. Admin Role or Super User Role).|
+|Services Manager|This roles provides administrative options to manage services and their content within the Service Portfolio area. A user who is assigned this role can see Services that they own and non-private Services that they support. To see all the Services in the system, you'll need to be in the context of a user who is assigned a role that has "admin" privilege level (e.g. Admin Role or Super User Role).|
 
 ### Administration roles
 |Role|Description|
 |-|-|
 |Service Desk Admin|This role is for a Service Desk Administrator. It includes all rights to administrative functions such as setting up support teams as well as being able to cancel requests. Please be aware that assigning this role gives the user the ability to see the details and perform actions on any request on your instance, regardless of their team visibility. This is effectively a Request "Super User" role.|
-|Advanced Request Task Completer|This role is for a user who can complete tasks that are assigned to another person. This only applies to requests in Service Manager. Supporting teams of a service that is associated to a request will be respected otherwise if a request is not associated to a service, then the user can complete tasks that are assigned to the user's team(s) members.|
-|All Request Access|This role provides super user functionality as it grants underlying access to all requests, not just those inside an individual user's service subscription model. Note, with this role a user will not see requests outside of their service subscription model on the request list or when searching for requests through the global search.|
-|Service Manager Delete Questions|This role allows Users to delete questions from a Request, designed to help remove sensitive information that cannot otherwise be removed or amended.|
+|Advanced Request Task Completer|This role is for a user who can complete tasks that are assigned to another person. This only applies to requests in Service Manager. Supporting teams of a service that is associated to a request will be respected; otherwise if a request is not associated to a service, then the user can complete tasks that are assigned to the user's team(s) members.|
+|All Request Access|This role provides "Super User" functionality as it grants underlying access to all requests, not just those inside an individual user's service subscription model. Note that with this role, a user cannot see requests outside of their service subscription model on the Requests list or when searching for requests through the global search.|
+|Service Manager Delete Questions|This role allows Users to delete questions from a Request. It is designed to help remove sensitive information that cannot otherwise be removed or amended.|
 |Hornbill Service Manager Integrations|This role is only intended for accounts used to enable integrations or to perform imports.|
 
 ### Self service
 |Role|Description|
 |-|-|
-|Self Service User|This role is for a self service User that requires access to Self Service Portal to be able to raise and view Requests.|
-|Self Service Request Cancel|This role is for a SelfService User that requires access to Cancel Service Requests in the SelfService Portal|
+|Self Service User|This role is for a self service User who requires access to the Self Service Portal to be able to raise and view Requests.|
+|Self Service Request Cancel|This role is for a self service User who requires access to cancel Service Requests in the Self Service Portal.|
 |Service Manager Authorized Guest|This role is for guests accessing the Hornbill Customer Portal.|
 
 ### Reporting
 |Role|Description|
 |-|-|
-|Service Manager Reporting|This Role grants the user the ability to create, update, and manage all aspects of reporting within Service Manager. This includes measures, widgets, dashboards, slideshows, and reports|
+|Service Manager Reporting|This role grants the user the ability to create, update, and manage all aspects of reporting within Service Manager. This includes measures, widgets, dashboards, slideshows, and reports.|
 |Service Manager In-App Reporting|This role provides access to the Reports feature in Service Manager.|
 
 
 ### Configuration management roles
 |Role|Description|
 |-|-|
-|Configuration Manager Admin|This role gives someone the ability to add and modify CI configuration settings such as setting which CIs are in policy and the configuring the two way relationships between the CI. Assign this role to the main users of the full Configuration Manager app.|
-|Configuration Manager User|This role is great for giving a user read-only access to the CI explorer. This lets them browse through the linked CIs to help with Incident investigation, problem management, or a view of the impact that something may have. Assign this role to user of Service Manager that need to be able to launch the CI Explorer from a request, asset, or a service, but do not need full access to the Configuration Manager app.|
+|Configuration Manager Admin|This role grants the user the ability to add and modify CI configuration settings such as setting which CIs are in policy and then configuring the two-way relationships between the CI. Assign this role to the main users of the full Configuration Manager app.|
+|Configuration Manager User|This role grants a user read-only access to the CI Explorer. This lets the user browse through the linked CIs to help with Incident investigation, problem management, or a view of the impact that something may have. Assign this role to users of Service Manager who need to be able to launch the CI Explorer from a request, asset, or a service, but who do not need full access to the Configuration Manager app.|
 
 ## User-created roles
-When a unique set of right is required that is not covered by the system roles, a custom role can be created.
+When you need to grant a unique set of rights that is not covered by the system roles, you can create a custom role.
 
-1. Click on `+ Create New Role`
-1. Provide a unique ID.  This can not be the same as any other role.
+1. Click **+ Create New Role**.
+1. Provide a unique ID.  This cannot be the same as any other role.
 1. Choose a [privilege level](/esp-config/organizational-data/roles#privileges).
 1. Select the [type of role](/esp-config/organizational-data/roles#role-types).
 1. Save the role.
 
 ### Application rights
-A role created under the context of an application will have a `Application Rights` tab where rights that are specific to the app are provided.
+A role created under the context of an application will have an `Application Rights` tab where rights that are specific to the app are provided.
 
 #### Service desk
 |Right|Description|
