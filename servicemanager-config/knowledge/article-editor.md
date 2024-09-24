@@ -14,3 +14,12 @@ The toolbar options are broken down into the following categories.
 * Media Options
 * Other Options
 
+## Editor Options
+* Undo
+* Redo
+* Hot Keys
+* Fullscreen
+
+![Editor Options](_books/servicemanager-config/images/article-toolbar-editor-options.png)
+
+The Editor Options sit on the right side of the toolbar, separate from the formatting options.
