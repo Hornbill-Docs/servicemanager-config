@@ -12,6 +12,3 @@ xxx
 * 
 
 x
-
-
-<!-- service-manager-config/knowledge/tags>
