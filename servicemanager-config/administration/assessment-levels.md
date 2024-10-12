@@ -9,7 +9,7 @@ Assessment Levels are defined under the Service Manager configuration.
 
 or
 
-1. Open conifiguration and select `Service Manager` from the navigation dropdown.
+1. Open configuration and select `Service Manager` from the navigation dropdown.
 2. In the navigation panel locate the section titled *Administration*.
 3. Select `Assessments`.
 4. Select the `Levels` tab.
