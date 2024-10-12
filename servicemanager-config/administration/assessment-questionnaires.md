@@ -2,7 +2,7 @@
 layout: article-toc
 ---
 # Questionnaires
-Assessments are a collection of questions that can be created and presented in the assessment tab of a request. Rather than having someone assume or apply their perception of the level, the questions can present criteria to make that decision.
+Assessment questionnaires are a collection of questions that can be created and presented in the Assessment tab of a request. Rather than having someone assume or apply their perception of the level, the questions can present criteria to make that decision.
 
 ## How To Access
 Assessment questionnaires are defined under the Service Manager configuration.
@@ -13,7 +13,7 @@ Assessment questionnaires are defined under the Service Manager configuration.
 
 or
 
-1. Open conifiguration and select `Service Manager` from the navigation dropdown.
+1. Open configuration and select `Service Manager` from the navigation dropdown.
 2. In the navigation panel locate the section titled *Administration*.
 3. Select `Assessments`.
 4. Select the `Assessments` tab.
