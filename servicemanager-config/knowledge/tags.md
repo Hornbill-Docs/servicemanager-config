@@ -1,26 +1,26 @@
 # Knowledge Tags
-Tags can be used to help search for knowledge, identify trends, or possibly identify areas that might be lacking in information. The tag configuration lets you manage the tags that have been created and manage tags within your tag cloud.
+Tags can be used to help search for knowledge, identify trends, and identify areas that might be lacking in information. Navigate to Configuration > Service Manager > Knowledge to create tags and manage the tags within your tag cloud.
 
 You must have the Knowledge Administrator role to create tags. All Knowledge managers and contributors can then select from existing tags to attach to their articles.
 
 ## Cloud View
-The Cloud View is the default view when entering the tags. It is on this same view where new tags can be added.
+The Cloud View is the default view when entering the tags. This is where you add new tags.
 
 ![Tag Cloud](_books/servicemanager-config/images/tag-cloud.png)
 
-### Add a new tag
-In the add a new tag file type in the name of the tag that you wish to add.  Once added, it will be added to the tag cloud.  
+### Adding a new tag
+In the text field beside the **Add Tag** button, type the name of the tag that you wish to add and click **Add Tag**. The new tag is then visible in the tag cloud.  
 
-The size of the text in the cloud tag represents how used the tag is.  The larger the text the more the tag has been used.
+The size of the text in the cloud tag represents how often the tag.  The larger the text, the more the tag has been used.
 
 ## List View
-This view is used to manage the existing tags.
+From the Cloud view, click the **List View** button to access the List view. Here you can manage all existing tags.
 
 ![Tag List](_books/servicemanager-config/images/tag-list.png)
 
-Each tag can be modified by clicking on the edit icon within its row.
+To modify a tag, click the edit icon within its row. You can:
 * Change the name of the tag.
 * Add a new translation for the tag.
 * Delete a tag.
 
-Each tag in the list shows the number of times it has been used in different articles.
+Next to each tag's name in the list, a number shows how many times the tag has been used in articles.
