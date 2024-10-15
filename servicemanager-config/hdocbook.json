@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "audience": [
     "public"
   ],
@@ -355,7 +355,7 @@
       {
         "text": "Knowledge",
         "expand": false,
-        "draft": true,
+        "draft": false,
         "items": [
           {
             "text": "Article Editor",
@@ -364,12 +364,12 @@
           {
             "text": "Article Types",
             "link": "servicemanager-config/knowledge/article-types",
-            "draft": true
+            "draft": false
           },
           {
             "text": "Tags",
             "link": "servicemanager-config/knowledge/tags",
-            "draft": true
+            "draft": false
           }
         ]
       }
