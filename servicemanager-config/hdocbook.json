@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "audience": [
     "public"
   ],
@@ -285,6 +285,16 @@
                 "text": "Questionnaires",
                 "link": "servicemanager-config/administration/assessment-questionnaires",
                 "draft": false
+              }
+            ]
+          },
+          {
+            "text": "Custom Lookups",
+            "expand": false,
+            "items": [
+              {
+                "text": "Using Custom Lookups",
+                "link": "servicemanager-config/administration/custom-lookups"
               }
             ]
           },
