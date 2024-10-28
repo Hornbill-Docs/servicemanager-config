@@ -1,26 +1,31 @@
-# Assessment Levels
-Assessment Levels help define the importance of a request.  These levels can be allocated to three types of assessment which include priority, impact, and urgency.  Levels can be applied to a request using the `Assessment` action when viewing a request record.
+# Assessment levels
+Assessment levels help define the importance of a request. There are four types of assessment that can be allocated levels: priority, impact, urgency, and risk.  Users can apply assessment levels to a request using the **Assessment** action when viewing a request record.
 
-## How To Access
-Assessment Levels are defined under the Service Manager configuration.
-1. On the keyboard use the key combination `Ctrl+Shift+s`.
-1. Search [Configuration](/esp-config/getting-started/using-configuration) for *Assessment*.
-1. In the results list select `Assessments`.
+![Assessment types](_books/servicemanager-config/administration/images/assessment-types.png)
+
+## How to access
+Administrators can define assessment levels under the Service Manager configuration.
+1. Use the keyboard combination CTRL+SHIFT+S.
+1. Search [Configuration](/esp-config/getting-started/using-configuration) for `Assessments`.
+1. In the results list, select **Assessments**.
 
 or
+1. Select the **Configuration** cog at the bottom of the left-hand application menu bar.
+1. In Configuration, from the navigation dropdown, select **Service Manager**.
+1. In the navigation panel, scroll to locate the *Administration* section.
+1. Click **Assessments**.
 
-1. Open configuration and select `Service Manager` from the navigation dropdown.
-2. In the navigation panel locate the section titled *Administration*.
-3. Select `Assessments`.
-4. Select the `Levels` tab.
-
-## Default Levels
-Four default levels are provided for each assessment type. This includes Low, Medium, High, and Critical. The `Levels` tab provides options to delete, add, rename, and provide translations for the available levels.
+## Default levels
+Four default levels are provided for each assessment type: Low, Medium, High, and Critical. In the **Levels** tab, you can add new levels, rename and delete levels, and provide translations for the level names.
 
 ![Assessment Levels](_books/servicemanager-config/administration/images/assessment-levels.png)
 
-## Changing the Order
-On the left side of each level, an icon is visible that allows you to drag and drop to change the order in they are displayed in picklists, where they are selected.  This is commonly used when adding new levels.  A new level will be automatically placed at the bottom of the list.  You can then move the new level to a suitable position.
+## Changing the display order
+Levels are displayed in picklists for users to select. When you add a new assessment level, it is automatically placed at the bottom of the list. You may want to move the new level to a suitable position. 
+
+**To change the display order of assessment levels:**
+1. In Assessments, select an assessment type.
+1. In the list of levels, drag and drop the levels into your preferred order using the grab handle icons to the left of each level.
 
 ## Priority
 Priority is available to any request that is using the Assessment action.  The priority can be viewed as a column in the request list and can be sorted to bring the most important requests to the top of the list.
@@ -33,15 +38,26 @@ Priority is available to any request that is using the Assessment action.  The p
 Impact is currently only available by using an assessment questionnaire. The assessment questionnaire is initiated through a workflow automation.
 
 ## Urgency
-Urgency is not available on the request's assessment action by default.  There are two options to using urgency.
+Urgency is not available on the request's assessment action by default.  There are two options to using the Urgency assessment type:
 
-Using the following setting, the urgency picklist can be made available on the request's assessment action. This is a global setting and it will apply to all requests.
+* Using the following setting, the urgency picklist can be made available on the request's assessment action. This is a global setting and it will apply to all requests.
 
-|Name|Description|
-|-|-|
-|app.com.hornbill.servicemanager.request.assessment.visibility|This setting enables the urgency selector in the assessment action tab when viewing a request. When this selector is not required, select the 'None' option.|
+    |Name|Description|
+    |-|-|
+    |app.com.hornbill.servicemanager.request.assessment.visibility|This setting enables the urgency selector in the assessment action tab when viewing a request. When this selector is not required, select the `None` option.|
 
-Urgency can be enabled from a workflow, which includes providing a questionnaire. The benefit of using the workflow automation is that the urgency can be presented at a set point within the workflow.
+* Urgency can be enabled from a workflow, which includes providing a questionnaire. The benefit of using the workflow automation is that the urgency can be presented at a set point within the workflow.
+
+## Risk
+Risk is not available on the request's assessment action by default.  There are two options to using the Risk assessment type:
+
+* Using the following setting, the risk picklist can be made available on the request's assessment action. This is a global setting and it will apply to all requests.
+
+    |Name|Description|
+    |-|-|
+    |app.com.hornbill.servicemanager.request.assessment.visibility|This setting enables the risk selector in the assessment action tab when viewing a request. When this selector is not required, select the `None` option.|
+
+* Risk can be enabled from a workflow, which includes providing a questionnaire. The benefit of using the workflow automation is that the risk can be presented at a set point within the workflow.
 
 <!-- :::note
 If new levels are added when there are existing questions with defined Thresholds, these thresholds will need to be revisited and adjusted to include the new impact level.

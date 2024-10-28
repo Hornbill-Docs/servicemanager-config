@@ -13,8 +13,10 @@ To request subscription licenses, you will need:
 ## Hornbill App Store
 
 You install Hornbill apps from the Hornbill App Store, which you access through Configuration.
-1. At the bottom of the left-hand menu bar, click the cog icon to open Configuration. (A shortcut is to use CTRL+SHIFT+S on your keyboard.)
-1. Select **Hornbill Solution Center**.
+
+**To access the Hornbill App Store:**
+1. Open Configuration using the cog at the bottom of the left-hand menu bar (or with CTRL+SHIFT+S on your keyboard).
+1. Click the down arrow next to *My Personal Settings*, then select **Hornbill Solution Center**.
 1. Select **Hornbill App Store**.
 1. From the list of premium apps select **Service Manager**.
 1. Click **Install**.

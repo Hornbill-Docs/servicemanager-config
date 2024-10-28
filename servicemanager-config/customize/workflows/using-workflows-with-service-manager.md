@@ -30,3 +30,19 @@ There is a hierarchy of where workflows can be set to determine which workflow i
     The Workflow Tracker is a graphical representation of the workflow that is displayed at the top of a request. This is an optional display which uses stages and checkpoints within a workflow to visualize the progress. The workflow tracker will be displayed when:
     * On a single stage workflow, at least one checkpoint has been set up.
     * There is more than one stage in a workflow.
+
+## Using Workflow Utilities
+Hornbill provides [a set of workflow utilities](https://www.hornbill.com/hubfs/LMS/Course-Resources/Live%20-%20Workflow%20automation/Hornbill%20Workflow%20Utilities.pdf) that can be used to facilitate date-related functions as well as operations to convert and manipulate data.
+
+cleanse data
+concatenate strings
+get dates and timestamps
+format dates
+
+For example, you can ____
+to convert characters in a string from uppercase to lowercase
+
+
+## Further Learning
+Explore courses in Hornbill Academy:
+* [Workflow automations overview](https://academy.hornbill.com/app/courses/6ef4aeb5-26ba-45c5-bc89-78181d2ab62b)
