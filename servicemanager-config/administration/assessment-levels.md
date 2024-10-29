@@ -1,5 +1,7 @@
-# Assessment levels
-Assessment levels help define the importance of a request. There are four types of assessment that can be allocated levels: priority, impact, urgency, and risk.  Users can apply assessment levels to a request using the **Assessment** action when viewing a request record.
+# Levels for priority, impact, urgency, and risk
+Assessments help users define the importance of a request using the **Assessment** action when viewing a request record.
+
+In Assessments, administrators can configure assessments of type Impact, Urgency, Priority, and Risk. These assessments contain impact levels, urgency levels, priority levels, and risk levels, respectively.
 
 ![Assessment types](_books/servicemanager-config/administration/images/assessment-types.png)
 
