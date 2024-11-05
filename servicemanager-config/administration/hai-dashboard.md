@@ -4,8 +4,11 @@ description: Discover how to maximize the potential of the HAi Dashboard in your
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
+
 # HAi Dashboard
+
 ## Dashboard Access
+
 The HAi Dashboard is available to any user associated with one of the following roles: 
 
 |Role|Description|
@@ -15,19 +18,20 @@ The HAi Dashboard is available to any user associated with one of the following 
 Additionally, any user with the application right **rightA.administerServiceDesk** can enable HAi features.
 
 ## Overview
+
 The HAi Value Dashboard is designed to show you your organization's usage of HAi and estimate hours saved through generative AI (summarizing as generating text output). These calculations are estimates and are configurable. The top-line widgets show rolling 30-day usage and savings.
 
 The first two line charts show the savings per month over the last 12 months. This will take a few weeks of usage before output is properly populated.
 
 The second two charts show (1) Usage per day for the last 30 days by product area and (2) The top 4 most active users based on prompt usage over the last 30 days.
-Currently, no additional filters can be applied to the dashboard. 
-<img src="/_books/servicemanager-config/administration/images/hai-dashboard.png" alt="Hornbill AI Dashboard" ></img>
-
-
+Currently, no additional filters can be applied to the dashboard.
+![Hornbill AI Dashboard](/_books/servicemanager-config/administration/images/hai-dashboard.png)
 
 ## Configuration
+
 The following application settings control the calculations on the value dashboard
-|Setting|Description|Default
+
+|Setting|Description|Default|
 |-|-|-|
 |generativeAi.dashboard.currencySymbol|Currency to use when displaying value saved based on ratePerMinute.|£|
 |generativeAi.dashboard.ratePerMinute|Lowest FTE cost per minute based on currency from currencySymbol.|0.2|
