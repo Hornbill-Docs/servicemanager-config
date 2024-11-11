@@ -49,6 +49,12 @@ The Type and Task fields will auto-populate with the default settings.
 
 In subsequent nodes, you can use the variable picker to inject Custom Lookup entities.
 
+:::important
+When assigning a team using a custom lookup, in the Hornbill Automation node that follows the custom lookup, make sure the input parameter Team contains the Team ID, not the team name.
+:::
+
+
+
 ## Further Learning 
 
 [Watch this video](https://youtu.be/0H3r9eYI3Mg) for an overview on how to use Custom Lookups to improve your Workflows. 
