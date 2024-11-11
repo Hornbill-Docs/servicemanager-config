@@ -5,7 +5,12 @@
     "exclude_paths": []
   },
   "validation": {
-    "exclude_links": []
+    "exclude_links": [
+      "https://openai.com/policies/business-terms",
+      "https://openai.com/enterprise-privacy",
+      "https://platform.openai.com/docs/*",
+      "https://openai.com/policies/*"
+    ]
   },
   "redirects": [
     { "url": "/servicemanager-config/administration/service-manager-assessments", "location": "/servicemanager-config/administration/assessment-levels", "code": 301 }
