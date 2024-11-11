@@ -12,7 +12,7 @@ layout: article-toc
 **Q: What types of data are required for Hornbill AI?**
 **A:** Data inputs for HAi can be categorized into two areas:
 
-1. Text inputs from an input field, these are primarily for [Text Assist](https://docs.hornbill.com/servicemanager-user-guide/hai/text-assist) prompts and only use the data in the text felid or highlighted text before the prompt is requested. 
+1. Text inputs from an input field, these are primarily for [Text Assist](/servicemanager-user-guide/hai/text-assist) prompts and only use the data in the text felid or highlighted text before the prompt is requested.
 2. Prompts that pass business data not directly input by a user, all of these are [documented](/servicemanager-config/administration/hai#data) and can be disabled separately from Text Assist. The only type of personal data passed is Name, this is used to differentiate updates on request timelines for the purposes of summarization.
 
 **Q: What output does Hornbill AI produce?**
