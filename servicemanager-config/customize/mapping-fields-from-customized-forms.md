@@ -13,7 +13,7 @@ The way the data is stored in the table h_itsm_questions does not offer us much 
 ## Configuring a Custom Field for Mapping
 When creating a custom question on a customized form, each question requires a Field ID and it is here that the mapping can be performed. When defining the Field ID, if you use any of the following values, the answer to this question will be mapped to the database column you have specified.
 
-![Custom Form Field Settings](_books/servicemanager-config/customize/images/custom-form-field-settings.png
+![Custom Form Field Settings](/_books/servicemanager-config/customize/images/custom-form-field-settings.png
 )
 
 Field mapping takes place when a supported database column name is specified as the field ID of a custom field.

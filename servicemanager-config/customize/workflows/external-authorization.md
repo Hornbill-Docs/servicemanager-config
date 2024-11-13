@@ -29,7 +29,7 @@ Admin console > System > Email > Outbound Routing Rules
 ## Completing An External Authorisation
 When a recipient receives an external email authorisation, the email will contain a link to a web page, where the recipient can review the details contained in the Authorisation Details, and will be presented with the configured outcomes.
 
-![External Authorization](_books/servicemanager-config/customize/workflows/images/external-authorization-email.png)
+![External Authorization](/_books/servicemanager-config/customize/workflows/images/external-authorization-email.png)
 
 * The recipient does not need to login to any interface to complete their external authorization
 * The web page is currently available in English
@@ -38,6 +38,6 @@ When a recipient receives an external email authorisation, the email will contai
 * On submission of the outcome, the recipient will see confirmation of their decision, and the business process will resume. It is critical to follow an external authorization with a Decision node, which is subsequently configured with branches which cater for all possible outcomes including Expired. If you have used the option to have an additional outcome you will need 2 chained Decision nodes to cater for all possible outcomes.
 * The outcome of an external authorization is not automatically written to the entity activity stream, which the process it is used in, is running against. In the case of a request in Service Manager, the process designer can use a Update Request > Post to Timeline node after an external authorisation and use the variable picker to include values such as the external authorization outcome, and any supporting reasons as output params from the External Authorisation node.
 
-![External Authorization](_books/servicemanager-config/customize/workflows/images/completing-external-authorization.png)
+![External Authorization](/_books/servicemanager-config/customize/workflows/images/completing-external-authorization.png)
 
 <!-- https://wiki.hornbill.com/index.php?title=External_Authorisation -->

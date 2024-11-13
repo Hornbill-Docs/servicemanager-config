@@ -6,7 +6,7 @@ You must have the Knowledge Administrator role to create tags. All Knowledge man
 ## Cloud View
 The Cloud View is the default view when entering the tags. This is where you add new tags.
 
-![Tag Cloud](_books/servicemanager-config/images/tag-cloud.png)
+![Tag Cloud](/_books/servicemanager-config/images/tag-cloud.png)
 
 ### Adding a new tag
 In the text field beside the **Add Tag** button, type the name of the tag that you wish to add and click **Add Tag**. The new tag is then visible in the tag cloud.  
@@ -16,7 +16,7 @@ The size of the text in the cloud tag represents how often the tag.  The larger 
 ## List View
 From the Cloud view, click the **List View** button to access the List view. Here you can manage all existing tags.
 
-![Tag List](_books/servicemanager-config/images/tag-list.png)
+![Tag List](/_books/servicemanager-config/images/tag-list.png)
 
 To modify a tag, click the edit icon within its row. You can:
 * Change the name of the tag.

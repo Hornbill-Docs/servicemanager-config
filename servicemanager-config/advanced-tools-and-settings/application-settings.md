@@ -17,7 +17,7 @@ The various application settings associated with Hornbill Service Manager can be
 ## Filters
 At the top of the list there are some options available to help you find the different available settings.
 
-![Advanced Settings](_books/servicemanager-config/advanced-tools-and-settings/images/include-advanced-settings.png)
+![Advanced Settings](/_books/servicemanager-config/advanced-tools-and-settings/images/include-advanced-settings.png)
 
 Advanced settings are less used and potentially more complex to change.  Advanced settings are not displayed in the list of settings by default. If you are unable to find a particular setting, you may find that it is classed as an advanced setting and selecting this option will make it visible in the list.
 

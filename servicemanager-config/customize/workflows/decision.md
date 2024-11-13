@@ -1,7 +1,7 @@
 # Decision Node
 A Decision Node within a Workflow allows the workflow to branch down different paths based on the outcomes of previous nodes within the workflow stage. Default outcomes are available to test the outcomes of the node that immediately precedes the decision node.
 
-![Decision Outcomes](_books/servicemanager-config/customize/workflows/images/workflow-decision.png)
+![Decision Outcomes](/_books/servicemanager-config/customize/workflows/images/workflow-decision.png)
 
 The outcomes available will depend on the node that precedes the decision node and may include:
 * Failure

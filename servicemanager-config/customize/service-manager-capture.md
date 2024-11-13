@@ -4,7 +4,7 @@ layout: article-toc
 # Using Intelligent Capture
 Intelligent Capture allows you to configure what information is collected or captured when a request is being manually raised. This may consist of a single question or a collection of questions that are presented to a user. The captured information can help with the fulfillment of the request.  
 <br>
-![Capture Question](_books/servicemanager-config/customize/images/portal-custom-capture-question.png)
+![Capture Question](/_books/servicemanager-config/customize/images/portal-custom-capture-question.png)
 
 Intelligent Capture scripts are initiated from the different locations where a new request can be raised. This might be a support person raising a new request from their request list or a customer raising a request on a self-service portal.
 
@@ -21,7 +21,7 @@ When raising a request from the [Request List](/servicemanager-user-guide/reques
 
 The `Raise New` option located at the top right of the Request List is split into two functional areas.
 
-![Raise New Request](_books/servicemanager-config/customize/images/raise-new-request-button.png)
+![Raise New Request](/_books/servicemanager-config/customize/images/raise-new-request-button.png)
 
 * **Raise New**<br>Clicking on the main button labeled `Raise New` will initiate an Intelligent Capture that is not specific to any request type. When the service desk receives a phone call they can click on this button to immediately follow a capture script that can present them with questions to help determine the type of request and who it should be assigned to. The `Raise New` button uses the capture that is specified in the following setting: 
     * **New Request**<br>app.itsm.progressiveCapture.newRequest
@@ -40,7 +40,7 @@ The `Raise New` button can also be configured to only show one of the above opti
 ## Email
 From the Email View, a new request can be manually raised from an email. Clicking on `Raise Request` from the `More` button will by default initiate the Intelligent Capture specified in the *app.itsm.progressiveCapture.newRequest* setting. This is the same capture used by the `Raise New` button on the request list.
 
-![Raise Request](_books/servicemanager-config/customize/images/raise-request-from-email.png)
+![Raise Request](/_books/servicemanager-config/customize/images/raise-request-from-email.png)
 :::tip
 If an alternative capture script is required when raising requests from an email, the setting *app.itsm.progressiveCapture.newReqeustFromEmail* can be used to specify the capture script to use.
 :::
@@ -48,7 +48,7 @@ If an alternative capture script is required when raising requests from an email
 ## Employee and Customer Portals
 Each service that is available to a user or contact on the portals has a [request catalog](/servicemanager-user-guide/service-portfolio/request-catalog) that can include serveral request models.  Each request model can have an associated Intelligent Capture that is used to collect information specific to that request.
 
-![Request Model](_books/servicemanager-config/customize/images/request-model-capture.png)
+![Request Model](/_books/servicemanager-config/customize/images/request-model-capture.png)
 
 :::tip
 Some capture forms are hidden from users on the portals.  For example, the [Services Form](/servicemanager-config/customize/service-manager-capture-forms#services) is not presented to the user because they are already raising the request from the Service and this is automatically captured. See the [Service Manager Forms](/servicemanager-config/customize/service-manager-capture-forms) documenatation for more information on the visibility of each individual form.

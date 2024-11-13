@@ -9,7 +9,7 @@ When users create a new article, the article type is a mandatory field. For this
 ## Examples
 When Service Manager is installed, it comes with seven examples of article types. These can be edited or removed as needed.
 
-![Article Types](_books/servicemanager-config/images/article-types.png)
+![Article Types](/_books/servicemanager-config/images/article-types.png)
 
 Each article type has the following attributes:
 * Name

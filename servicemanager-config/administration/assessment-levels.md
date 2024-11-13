@@ -3,7 +3,7 @@ Assessments help users define the importance of a request using the **Assessment
 
 In Assessments, administrators can configure assessments of type Impact, Urgency, Priority, and Risk. These assessments contain impact levels, urgency levels, priority levels, and risk levels, respectively.
 
-![Assessment types](_books/servicemanager-config/administration/images/assessment-types.png)
+![Assessment types](/_books/servicemanager-config/administration/images/assessment-types.png)
 
 ## How to access
 Administrators can define assessment levels under the Service Manager configuration.
@@ -20,7 +20,7 @@ or
 ## Default levels
 Four default levels are provided for each assessment type: Low, Medium, High, and Critical. In the **Levels** tab, you can add new levels, rename and delete levels, and provide translations for the level names.
 
-![Assessment Levels](_books/servicemanager-config/administration/images/assessment-levels.png)
+![Assessment Levels](/_books/servicemanager-config/administration/images/assessment-levels.png)
 
 ## Changing the display order
 Levels are displayed in picklists for users to select. When you add a new assessment level, it is automatically placed at the bottom of the list. You may want to move the new level to a suitable position. 

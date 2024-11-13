@@ -20,6 +20,6 @@ The toolbar options are broken down into the following categories.
 * Hot Keys
 * Fullscreen
 
-![Editor Options](_books/servicemanager-config/images/article-toolbar-editor-options.png)
+![Editor Options](/_books/servicemanager-config/images/article-toolbar-editor-options.png)
 
 The Editor Options sit on the right side of the toolbar, separate from the formatting options.

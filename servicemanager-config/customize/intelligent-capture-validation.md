@@ -3,7 +3,7 @@ The Progressive Capture Design Canvas offers the ability to validate a Progressi
 
 ## Information Messages
 
-![Information messages are light blue](_books/servicemanager-config/customize/images/form-option-updates.jpg)
+![Information messages are light blue](/_books/servicemanager-config/customize/images/form-option-updates.jpg)
 
 Information messages will be displayed in light blue.
 
@@ -14,7 +14,7 @@ What it means: This message refers to default progressive capture forms (blue no
 
 ## Warning Messages
 
-![Warning messages are yellow](_books/servicemanager-config/customize/images/process-warnings.jpg)
+![Warning messages are yellow](/_books/servicemanager-config/customize/images/process-warnings.jpg)
 
 Warning messages will be displayed in yellow. A warning message may not have a detrimental effect on a progressive capture design but its important to identify the reason for the warning and understand if any corrective action is necessary. Some warnings will prevent the flow from being activated, however others will still allow activation.
 
