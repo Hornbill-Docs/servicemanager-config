@@ -2,7 +2,7 @@
 layout: article-toc
 ---
 # Service Manager Forms
-Service Manager provides several default forms that are available to use when building an Intelligent Capture script. These forms can be made available to an intelligent capture script by adding a form node to your intelligent capture and selecting the form name from within the properties of the node.
+Service Manager provides several default forms that are available to use when building an Intelligent Capture script. These forms can be made available to an Intelligent Capture script by adding a form node to your Intelligent Capture and selecting the form name from within the properties of the node.
 
 ## Before You Begin
 * Become familiar with the [Intelligent Capture designer](/servicemanager-config/customize/intelligent-capture-designer).
@@ -26,7 +26,7 @@ Attachments are regulated by the following system settings that restrict size an
 :::
 
 :::tip
-More than one attachment form can be included within a single Intelligent Capture workflow. Any subsequent Attachment Form needs to be set to mandatory for the Intelligent Capture to stop and prompt the user on that form.
+More than one attachment form can be included within a single Intelligent Capture workflow. Any subsequent attachment form needs to be set to mandatory for the Intelligent Capture to stop and prompt the user on that form.
 :::
 
 ## Assignment
@@ -37,18 +37,18 @@ The Assignment form provides options for assigning the request to a team and an 
 * Branch nodes that follow this will be able to use Team Name, Team ID, Analyst Name, and Analyst ID as criteria for branching.
 
 ### Options
-* **Owner is manadatory**<br>When set to `Yes` the owner or analyst field becomes mandatory and must be selected to continue 
+* **Owner is mandatory**<br>When set to `Yes`, the owner or analyst field becomes mandatory and must be selected to continue. 
 
 ## Assets
-The Asset form allows an analyst or customer to associate assets with a request. By default, all assets that are associated with the customer are shown however it is also possible to associate assets that are shared with the customer, or perform general searches on assets that reside at the customer site, or more widely in the system. It's possible to associate multiple assets to each request.
+The Asset form allows an analyst or customer to associate assets with a request. By default, all assets that are associated with the customer are shown; however, it is also possible to associate assets that are shared with the customer, or perform general searches on assets that reside at the customer site, or more widely in the system. It is possible to associate multiple assets to each request.
 
 * View assets owned and used directly by a customer.
-* View Assets shared with a customer (directly or via their membership to groups or organizations the asset has been shared with).
+* View assets shared with a customer (directly or via their membership to groups or organizations the asset has been shared with).
 * Search assets by site or more widely.
-* Input: Following a Search Co-worker / Contact or Customer form the assets belonging to or shared with the customer will be displayed.
+* Input: Following a Search Co-worker/Contact or Customer form, the assets belonging to or shared with the customer will be displayed.
 * Visibility: Analysts and Customers.
 * Branch Options: None.
-* If this node is preceded by the Sites node, the Sites Tab will be automatically filtered to only display assets located at the selected site.
+* If this node is preceded by the Sites node, the Sites tab will be automatically filtered to only display assets located at the selected site.
 
 ### Options
 * **Asset Title**<br>Displays a title at the top of the Asset form.
@@ -62,50 +62,50 @@ The Asset form allows an analyst or customer to associate assets with a request.
 * **Select Asset Class**<br>On the Asset Search, set the Asset Class to be searched.
 * **Select Asset Type**<br>On the Asset Search, set the Asset Type to be searched.
 * **Select Asset Status**<br>On the Asset Search, set the Asset Status to be searched.
-* **Select Asset Relationship**<br>Specify the default asset relationship which will be the focus of the asset search.
-* **Asset Search Term**<br>On the Asset Search, set a default Search Term to be searched.
-* **Select Asset Search Type**<br>On the Asset Search, set if the results return assets with an exact match, contains, or begins with the specified search term.
+* **Select Asset Relationship**<br>Specify the default asset relationship that will be the focus of the asset search.
+* **Asset Search Term**<br>On the Asset Search, set a default search term to be searched.
+* **Select Asset Search Type**<br>On the Asset Search, specify whether the results return assets with an exact match of, *contains*, or *begins with* the specified search term.
 
 :::note
-The "Select Asset ..." parameters only affect tabs that search for assets. The Customer's Assets and Shared Assets tabs will show all Assets that are Owned By or Shared With the Customer respectively.
+The "Select Asset ..." parameters only affect tabs that search for assets. The customer's Assets and Shared Assets tabs will show all Assets that are Owned By or Shared With the customer respectively.
 :::
 
 ## Categories
 The Category form will display the request category profile structure to the user.  The category used will be based on the category root specified on the request type configuration on the Service details form.  When a category is selected, the [description of the category](/esp-config/data/profiles#editor) will be displayed to the user.
 * Request Category selector.
-* When preceded by the Service Details form the category will display the configured root category for the selected service.
+* When preceded by the Service Details form, the category will display the configured root category for the selected service.
 * Use the Mandatory option to force a user to pick a category before exiting the form.
 * If you want to ensure the user chooses a category from the lowest level of the available category tree structure, ensure the following system setting is enabled: guest.servicemanager.request.category.request.enforceLastItem.
 
 
 ## Change Type
-The 'Change Type' form allows an analyst to select the type of change request that will be raised. This form is usually only seen on the new Change capture flow:
+The Change Type form allows an analyst to select the type of change request that will be raised. This form is usually only seen on the new Change capture flow:
 * **Select Change Type**
 
 ## Connections
 The Connections form allows the support person to select a connected customer at the time of raising the request. This form is only used by and visible to support staff when raising the request in Service Manager when using the full client.
 * **Connection Search**<br>Search for one or more customers that you would like to add as a connection to the request.
-* **Connection Type**<br>A pick list of available Connection Types is available to allow you to select the type of connection being added.
+* **Connection Type**<br>A pick list of available connection types is available to allow you to select the type of connection being added.
 
 ## Customer Search
-The 'Customer Search' form allows an analyst to select a customer for the request. This search returns both Contacts and Co-workers. This form is useful when a support team is supporting both external and internal customers.
+The Customer Search form allows an analyst to select a customer for the request. This search returns both Contacts and Co-workers. This form is useful when a support team is supporting both external and internal customers.
 
-* Search on both Contacts and Co-workers
-* Filter on Contacts or Co-workers
+* Search on both Contacts and Co-workers.
+* Filter on Contacts or Co-workers.
 * The customer's active requests are displayed when a customer is selected.
-    * The list of the customer's requests can be filtered to only show those that the logging agent supports via the linked service: app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests. When disabled, an agent will have visibility to unsupported customer Requests, this must be avoided for customers with multiple service desks (e.g. IT and HR).
+    * The list of the customer's requests can be filtered to only show those that the logging agent supports via the linked service: app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests. When disabled, an agent will have visibility to unsupported customer requests; this must be avoided for customers with multiple service desks (e.g. IT and HR).
     * An option to add a new Contact can be displayed on this form if the following system setting is enabled: app.itsm.progressiveCapture.customerSearch.allowAddContact
-* Advanced filtering
-    * By appending one or more of the following keys you can narrow the search to specific areas:
+* Advanced filtering.
+    * By appending one or more of the following keys, you can narrow the search to specific areas:
         * org: - this filters by Organization
         * site: - this filters by Site
         * type: - this filters by Co-Worker Type
         * tel: - this filters by the primary telephone number
-        * phone: - this is a synonym for tel:
-Example:
-Joe org: ACME
-would return all customers named Joe from the ACME Organization
-* Additional Display Fields<br>These can be used to display selected fields within the right-hand side of the Intelligent Capture during the capture process. When one or more fields are added, the default fields will no longer be displayed.  If this option is left blank the following default fields will be displayed
+        * phone: - this is a synonym for tel:<br>
+
+    **Example:**
+`Joe org: ACME` would return all customers named Joe from the ACME Organization<br>
+* Additional Display Fields<br>These can be used to display selected fields within the right-hand side of the Intelligent Capture during the capture process. When one or more fields are added, the default fields will no longer be displayed.  If this option is left blank, the following default fields will be displayed:
     * Job Title
     * Phone
     * E-mail
@@ -113,15 +113,15 @@ would return all customers named Joe from the ACME Organization
     * Feedback
 
 ## Contact Search
-The 'Contact Search' form provides a search option for adding a contact as the customer for the request. The search results only display contact records and is recommended to use when only providing external support.
+The Contact Search form provides a search option for adding a contact as the customer for the request. The search results only display contact records. Contact Search is recommended to use when only providing external support.
 * Search all contacts.
 * Configure fields to be displayed on the right-hand side.
-* The Contacts active Requests are displayed when a contact is resolved.
-    * The list of the contact's Requests can be filtered to only show those that the logging agent supports via the linked service: app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests. When disabled, an agent will have visibility to unsupported customer Requests, this must be avoided for customers with multiple service desks (e.g. IT and HR).
+* The Contact's active Requests are displayed when a contact is resolved.
+    * The list of the contact's Requests can be filtered to only show those that the logging agent supports via the linked service: app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests. When disabled, an agent will have visibility to unsupported customer Requests; this must be avoided for customers with multiple service desks (e.g. IT and HR).
     * An option to add a new Contact can be displayed on this form if the following system setting is enabled: app.itsm.progressiveCapture.contactSearch.allowAddContact.
 
 ## Co-worker Search
-The 'Co-worker Search' form provides a search option for adding a Co-worker as the customer for the request. This search results only display co-worker records and is recommended to use when only providing internal support.
+The Co-worker Search form provides a search option for adding a Co-worker as the customer for the request. This search results only display co-worker records and is recommended to use when only providing internal support.
 * Search all Co-workers.
 * Configurable field to be displayed on the right-hand side.
 * The Co-worker's active Requests are displayed when a co-worker is resolved. The list of the Co-worker's Requests can be filtered to only show those that the logging agent supports via the linked service: app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests. When disabled, an agent will have visibility to unsupported customer Requests, this must be avoided for customers with multiple service desks (e.g. IT and HR).
@@ -131,51 +131,51 @@ The Co-worker Search includes an additional option to show archived users in the
 :::
 
 ## Known Error Details 
-The 'Known Error Details' form allows an analyst to specify the root cause and workaround details for a known error. This form is usually only seen on the new Known Error Intelligent Capture script:
+The Known Error Details form allows an analyst to specify the root cause and workaround details for a known error. This form is usually only seen on the new Known Error Intelligent Capture script:
 * Provide the root cause and workaround details.
 
 ## Organization Details
-The 'Organization Details' form allows an analyst to see additional information about the customer's organization that is defined by a Hornbill administrator. There is no data captured in this form - it is informational only.
+The Organization Details form allows an analyst to see additional information about the customer's organization that is defined by a Hornbill administrator. There is no data captured in this form; it is informational only.
 * Display only.
 * Will display the organization of a previously selected contact.
 * Recommended use after the Contact Search.
 * Configurable organization fields for the right-hand side.
 
 ## Release Type
-The 'Release Type' form allows an analyst to select the type of release request that will be raised. This form is usually only seen on the new Release Intelligent Capture Script:
+The Release Type form allows an analyst to select the type of release request that will be raised. This form is usually only seen on the new Release Intelligent Capture Script:
 * Select Release Type.
 
 ## Request Details
-The 'Request Details' form allows an analyst to enter both a summary and a description for the request.
+The Request Details form allows an analyst to enter both a summary and a description for the request.
 * Add a summary to the request.
 * Add a detailed description to the request.
 
 ## Request Priority
-The 'Request Priority' form allows the priority of the request to be set.
+The Request Priority form allows the priority of the request to be set.
 * Select the Priority for the request.
 
 ## Select Site
-The 'Select Site' form allows an analyst or customer to specify a site when logging a request:
-The All Sites filter allows you to search for a site by name
-If preceded by the customer / co-worker form, this will show the option to pick the site associated to the customer
-If a customer belongs to a Company internal organizational group, and that Company also has associated sites, then a Company site filter will appear and you can search for sites which are associated to the customers company.
-If preceded by the asset form, will show the option to pick the site associated to any of the assets
-Branch Options: The name of the selected site can be used in a branch node
+The Select Site form allows an analyst or customer to specify a site when logging a request:
+* The All Sites filter allows you to search for a site by name.
+* If preceded by the customer/co-worker form, this will show the option to pick the site associated to the customer.
+* If a customer belongs to a Company internal organizational group, and that Company also has associated sites, then a Company site filter will appear and you can search for sites that are associated to the customers company.
+* If preceded by the asset form, it will show the option to pick the site associated to any of the assets.
+* Branch Options: The name of the selected site can be used in a branch node.
 
 ### Options
-* **Limit Portal Search to Name**<br>If set to No the post code and site ID are included in the search. If set to Yes then only the name of the site name is searched on.
+* **Limit Portal Search to Name**<br>If set to NO, the postcode and site ID are included in the search. If set to YES, then only the name of the site name is searched on.
 * **Info Message**<br>Add a longer descriptive explaining to the user how to use the form.
 * **Hide Customer's Site**<br>Select `Yes` to always have this tab hidden.
-* **Hide Company Sites**<br>Select Yes to always have this tab hidden.
-* **Hide Asset Sites**<br>Select Yes to always have this tab hidden.
-* **Hide All Sites**<br>Select Yes to always have this tab hidden.
-* **Hide All Sites in Portals** (if all sites option is not hidden)<br>Select Yes to always have the sites tab hidden when viewing on the portals.
+* **Hide Company Sites**<br>Select `Yes` to always have this tab hidden.
+* **Hide Asset Sites**<br>Select `Yes` to always have this tab hidden.
+* **Hide All Sites**<br>Select `Yes` to always have this tab hidden.
+* **Hide All Sites in Portals** (if All Sites option is not hidden)<br>Select `Yes` to always have the Sites tab hidden when viewing on the portals.
 
 ## Services
-The Services form allows Service Manager user to select a service when capturing information during request creation.  Each service will also display their assocaited request catalog if available.
+The Services form allows a Service Manager user to select a service when capturing information during request creation.  Each service will also display their associated request catalog if available.
 * Displays Request Catalog Items under each Service.
-* If preceded by the Customer, Co-worker, or Contact Search the Service Details will only show the subscribed services for the selected person.
-* If preceded by the Requets Type form, only the Request Catalog Items that match that type will be displayed.
+* If preceded by the Customer, Co-worker, or Contact Search, the Service Details will only show the subscribed services for the selected person.
+* If preceded by the Requests Type form, only the Request Catalog Items that match that type will be displayed.
 * Filter option by Service Category.
 * Setting: servicemanager.progressiveCapture.servicedetails.enableSupportVisibility - restricts the view so that the list of services also only includes the services supported by the analyst.
 * Setting: servicemanager.progressiveCapture.servicedetails.catalogRequired - enforces the selection of a request catalog item if one exists under a Service.
@@ -185,11 +185,11 @@ This form will not be displayed to anyone raising requests through the Customer 
 :::
 
 ### Form Features
-* Filter services by name
-* Displays Request Catalog under each Service
-* If this form is preceded by the Customer, Co-worker, or Contact Search the Service Details will only show the subscribed services for the selected person
-* If this form is preceded by the Request Type form, only the Request Catalog Items that match that type will be displayed
-* Filter option by Service Category
+* Filter services by name.
+* Displays Request Catalog under each Service.
+* If this form is preceded by the Customer, Co-worker, or Contact Search, the Service Details will only show the subscribed services for the selected person.
+* If this form is preceded by the Request Type form, only the Request Catalog Items that match that type will be displayed.
+* Filter option by Service Category.
 
 ### Branching
 The name of the selected service can be used in a branch node that follows this node.
