@@ -56,5 +56,6 @@ When assigning a team using a custom lookup, in the Hornbill Automation node tha
 
 
 ## Further Learning 
+Watch this video for an overview on how to use Custom Lookups to improve your Workflows.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0H3r9eYI3Mg?si=GRCUjXgd8circRSp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
