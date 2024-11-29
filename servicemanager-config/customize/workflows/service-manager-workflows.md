@@ -94,35 +94,35 @@ Use the Email Notification nodes to send email templates to different Request st
 * Email Request Owner
 
 ### Get Request Information
-Use the Get Request Information node at any stage in a workflow and preceding another workflow node when you want to make the variables of the Request available. Variables may include Customer, Status, Site, Priority, or any Answers to Customer defined questions from different Progressive capture forms or attributes of the customer or organization of the request the workflow is running against.
+Use the Get Request Information node at any stage in a workflow and preceding another workflow node when you want to make the variables of the Request available. Variables may include Customer, Status, Site, Priority, or any answers to customer-defined questions from different Intelligent Capture forms or attributes of the customer or organization of the request the workflow is running against.
 
-* **Category Details**<br>This is designed to get information about both the request category and the resolution category. Ideal for making decisions based on the selected category.
+* **Category Details**<br>This is designed to get information about both the request category and the resolution category. Use this for making decisions based on the selected category.
 * **Customer Details**<br>Get more information about the customer to help drive the workflow.  Find out who their manager is. Check the custom fields for things like VIP status.
 * **Source Email Details**<br>If the request was raised from an email, you can use this to get details such as the email of the sender.  This is particularly useful when the contact or user does not exist in your system.
 * **Organization Details**<br>Use when supporting external organizations.  This can be particularly useful to check for information stored in the custom fields of the organization.  Find out the location of the organization to determine which service desk or team to assign the request to.
-* **Owner Details**<br>Can be used if you need more detail about the request owner than what the Request Details provide. A commonly used output is the owner's manager.
+* **Owner Details**<br>Use this if you need more detail about the request owner than what the Request Details provide. A commonly used output is the owner's manager.
 * **Raised By Details**<br>Gather information about who raised the request.  This can be particularly useful on request types that don't include customers.  For example, you may want to include some automation on a change workflow that communicates back to the person who raised the change.
-* **Request Details**<br>This returns all the key information about a request.  Possibly one of the most used automations in a request workflow. 
-* **Progressive Capture Answers**<br>This lets you interrogate the answers that were provided during the capture phase of a request.  Make decisions based on the provided answers to drive your workflow.   
-* **Service Details**<br>Get the details of the associated service. When a request is first raised you may want to check the status of the service and send an automated email to the customer about the service not being available.  
-* **Site Details**<br>Your workflow may have location specific responses to an issue.  Use the Manager IDs to help communicate issues at a site.  You could add the managers as a connection or send them a notification of high priority incidents.
-* **Team Details**<br>Get information about the team that the request is currently assigned to.  Two useful outputs are the IDos of the team's manager and leader, allowing you to send notifications, escalate, or add as a member.
+* **Request Details**<br>This returns all the key information about a request.  This is one of the most-used automations in a request workflow. 
+* **Intelligent Capture Answers**<br>This lets you interrogate the answers that were provided during the capture phase of a request.  Make decisions based on the provided answers to drive your workflow.   
+* **Service Details**<br>Get the details of the associated service. When a request is first raised, you may want to check the status of the service and send an automated email to the customer about the service not being available.  
+* **Site Details**<br>Your workflow may have location-specific responses to an issue.  Use the Manager IDs to help communicate issues at a site.  You could add the managers as a connection or send them a notification of high-priority incidents.
+* **Team Details**<br>Get information about the team that the request is currently assigned to.  Two useful outputs are the IDs of the team's manager and leader, allowing you to send notifications, escalate, or add as a member.
 
 ### Integration
-Use the Integration node at any stage of a workflow, where you wish to invoke specific actions against a 3rd party application from the available list of applications.
+Use the Integration node at any stage of a workflow, where you wish to invoke specific actions against a third-party application from the available list of applications.
 
 * Create Jira Request
 * Add Jira Request Comment
 * Log New Service Request
 
 ### Linked Requests
-Use the Linked Requests node to automatically post updates and resolve linked Requests. Linked requests are those that have been linked using the Link Action Item on a request form.
+Use the Linked Requests node to automatically post updates and resolve linked requests. Linked requests are those that have been linked using the Link Action Item on a request form.
 
 * Resolve Linked Requests
 * Update Linked Requests
 
 ### Log Requests
-Use the Log Request to automatically raise another request at a particular point in the workflow.
+Use the Log Requests node to automatically raise another request at a particular point in the workflow.
 
 * Log New Change
 * Log New Incident
@@ -132,7 +132,7 @@ Use the Log Request to automatically raise another request at a particular point
 * Log New Request
 
 :::note
-Using these options in your workflows, please be aware of where you are invoking them / placing them in the workflow, and in turn which workflows are going to be invoked against the new Incident or Service Request raised. Please avoid scenario's where one workflow may invoke the logging of a new request, where the new request's workflow immediately is configured to log a new request which again has a workflow which again logs another request immediately creating a loop. The result of which may be a lot of unwanted requests. In the event this occurs, disable the causing workflow and resolve the issue.
+When using these options, carefully consider where in the workflow you are placing them, and in turn which workflows are going to be invoked against the new Incident or Service Request raised. Avoid scenarios where one workflow may invoke the logging of a new request, and then the new request's workflow immediately is configured to log a new request that again has a workflow and that again logs another request, creating a loop. What results could be a lot of unwanted requests. If this happens, disable the causing workflow and resolve the issue.
 :::
 
 ### Questions
@@ -141,12 +141,12 @@ Using these options in your workflows, please be aware of where you are invoking
 ### Request Service
 The Request Service Tasks are used to automate the linking of related services that may underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
 
-* **Add Related Services**<br>A business service can be underpinned by technical services or an issue with a technical service may impact the services that depend on it.  This task will look at the service under which the request was raised and then link all of the related services based on a particular type of relationship. 
+* **Add Related Services**<br>A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the related services based on a particular type of relationship. 
 * **Add Linked Service**<br>This task allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
 * **Update Service Status**<br>This task allows for the [Service Status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on all of the linked services to help determine the availability of those services.  
 
 ### Suspend
-Use the Suspend nodes if you wish to suspend the progress of the workflow until a defined action is performed manually on the Request. This could include waiting for a Priority to be set, a Customer added, Ownership set or the Resolution defined. Configuration options include the ability to specify the context (which Action Bar icon) the Request will appear in whilst waiting for the Suspend (manual action) to be performed.
+Use a Suspend node if you wish to suspend the progress of the workflow until a defined action is performed manually on the request. This could include waiting for a priority to be set, a customer added, ownership set, or the resolution defined. Configuration options include the ability to specify the context (which Action Bar icon) the request will appear in while waiting for the Suspend (manual action) to be performed.
 
 * Await Expiry
 * Wait for List of Request Authorizers
@@ -181,7 +181,7 @@ Use the Suspend nodes if you wish to suspend the progress of the workflow until 
 * Wait for Urgency Assessment
 
 ### Update Request
-Use the Update Request node to automatically update the values of specific Request attributes at any stage in the workflow. Examples being updating the Logging or Closing Categories of a Request.
+Use the Update Request node to automatically update the values of specific request attributes at any stage in the workflow. Examples include updating the Logging or Closure categories of a request.
 
 * Logging Category
 * Closure Category
@@ -196,25 +196,26 @@ Use the Update Request node to automatically update the values of specific Reque
 * Service
 * Service Level
 * Site
-* Site (Customer' Site)
+* Site (Customer's Site)
 * Source
-* Status / Sub-status
+* Status
 * Timeline
 
 ### Request Timers
-Use the Request Timer nodes at any stage in the workflow to either start or stop the Response and or Resolution timers. It is not a perquisite to have to use any timers within workflows or to have to use both Response and Resolution timers when timers are used.
+Use the Request Timer nodes at any stage in the workflow to either start or stop the Response and or Resolution timers. It is not a prerequisite to use timers within workflows or to use both Response and Resolution timers when timers are used.
 
 There are some settings that control the default behavior of the Service Level Timers. The settings provided to pause or stop the resolution timer when resolving a request are as follows:
 
-app.request.pauseResolutionTimerOnResolve (Default OFF)
-app.request.resumeResolutionTimerOnReopen (Default OFF)
-app.request.stopResolutionTimerOnResolve (Default ON)
-app.request.stopResolutionTimerOnClose (Default OFF)
+* app.request.pauseResolutionTimerOnResolve (Default OFF)
+* app.request.resumeResolutionTimerOnReopen (Default OFF)
+* app.request.stopResolutionTimerOnResolve (Default ON)
+* app.request.stopResolutionTimerOnClose (Default OFF)
 
-Using settings to control resolution timers
-You should choose the relevant settings to meet your needs, but note that app.request.stopResolutionTimerOnResolve will take precedence over app.request.pauseResolutionTimerOnResolve so ensure only the one you want to use is enabled.
-Using BPM nodes to control resolution timers
-If you are using this BPM node to control resolution timers the four settings above should all be turned off; If any settings are enabled then they will take precedence over BPM actions. To enable pause/resume of a resolved request you can add the Timer > Pause Resolution Timer or Timer > Resume Resolution Timer BPM nodes as required in your workflow.
+#### Using settings to control resolution timers
+You should choose the relevant settings to meet your needs, but note that app.request.stopResolutionTimerOnResolve will take precedence over app.request.pauseResolutionTimerOnResolve. So, ensure only the one you want to use is enabled.
+
+#### Using BPM nodes to control resolution timers
+If you are using this BPM node to control resolution timers, the four settings above should all be turned off. If any settings are enabled, then they will take precedence over BPM actions. To enable pause/resume of a resolved request, you can add the Timer > Pause Resolution Timer or Timer > Resume Resolution Timer BPM nodes as required in your workflow.
 
 * Start Resolver Timer
 * Stop Resolution Timer
