@@ -6,7 +6,7 @@ The Service Manager Workflows are used to automate the processing of the request
 
 
 ### Access Control
-Use the Access Control to lock or unlock the Details section or the Actions on a request. Only users with the appropriate application right ([updateLockedServiceRequests](/servicemanager-api-api/rights/content/updatelockedservicerequests) or [updateLockedChangeRequests](/servicemanager-api-api/rights/content/updatelockedchangerequests)) will be able to modify the details or use an Action once locked. This right has been added to the following roles: Incident Management Full Access, Change Management Full Access, Problem Management Full Access, Release Management Full Access, Service Request Full Access, and Service Desk Admin.
+Use the Access Control to lock or unlock the Details section or the Actions on a request. Only users with the appropriate application right (i.e. updateLocked rights such as [updateLockedServiceRequests](/servicemanager-api-api/rights/content/updatelockedservicerequests) or [updateLockedChangeRequests](/servicemanager-api-api/rights/content/updatelockedchangerequests)) will be able to modify the details or use an Action once locked. This right has been added to the following roles: Incident Management Full Access, Change Management Full Access, Problem Management Full Access, Release Management Full Access, Service Request Full Access, and Service Desk Admin.
 
 * Lock / Unlock Request Actions
 * Lock Request Details
