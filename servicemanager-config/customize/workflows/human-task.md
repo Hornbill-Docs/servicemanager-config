@@ -23,7 +23,7 @@ When creating a human task it is possible to define this in one or multiple lang
     When using variables for the Lifespan Settings these must be in the ISO Date/Time format, e.g. 2021-11-26T11:30:00.000Z.     Values from a Date/Time picker will be in this format, but values from a Date Picker will not.
     :::
 
-* **Task Details**<br>Define the details for the human task, this can be a combination of text and if required variables from the parent request which the task is related too, this could be the summary or description fields, custom fields, or even answers to progressive capture questions - see more about inserting request variables here.
+* **Task Details**<br>Define the details for the human task, this can be a combination of text and if required variables from the parent request which the task is related too, this could be the summary or description fields, custom fields, or even answers to progressive capture questions - see more about inserting request variables [here](/servicemanager-config/customize/workflows/variable-picker).
 * **Task Options**<br>
     * Hide the completion Reason when completing the task - decide if the reason field is not required when completing the task via an outcome.
     * Do not allow completion of the task unless it is 100% complete - this option becomes available if Checklists have been enabled on the task, and you do not want to allow the task to be completed whilst there are outstanding checklist items.
