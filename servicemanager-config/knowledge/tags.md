@@ -1,7 +1,7 @@
 # Knowledge Tags
-Tags can be used to help search for knowledge, identify trends, and identify areas that might be lacking in information. Navigate to Configuration > Service Manager > Knowledge to create tags and manage the tags within your tag cloud.
+Tags can be used to help search for knowledge, identify trends, and identify areas that might be lacking in information. Navigate to Configuration > Service Manager > Knowledge to create tags and manage the tags within your tag cloud. 
 
-You must have the Knowledge Administrator role to create tags. All Knowledge managers and contributors can then select from existing tags to attach to their articles.
+To create tags, you must have either the Knowledge Administrator role, or a custom role with the `canAdministerKnowledge` application right. All Knowledge managers and contributors can then select from existing tags to attach to their articles.
 
 ## Cloud View
 The Cloud View is the default view when entering the tags. This is where you add new tags.
