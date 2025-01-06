@@ -131,6 +131,13 @@ Use the Log Requests node to automatically raise another request at a particular
 * Log New Release
 * Log New Request
 
+This can be used when an additional request is required to fulfill the original request.  For example, an incident might result in the raising of a problem or change request. 
+
+Another example might be a service request for initiating a new starter.  Additional requests can be raised for different teams or areas within the business to fulfill. 
+
+#### Output
+The output of this Hornbill Automation is the ID of the new request.  This can be used within the same workflow to make additional updates to the new request(s) after they have been created.
+
 :::note
 When using these options, carefully consider where in the workflow you are placing them, and in turn which workflows are going to be invoked against the new Incident or Service Request raised. Avoid scenarios where one workflow may invoke the logging of a new request, and then the new request's workflow immediately is configured to log a new request that again has a workflow and that again logs another request, creating a loop. What results could be a lot of unwanted requests. If this happens, disable the causing workflow and resolve the issue.
 :::
