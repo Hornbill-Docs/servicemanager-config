@@ -1,5 +1,6 @@
 ---
 layout: article-toc
+keywords: progressive capture,app.itsm.progressiveCapture.new
 ---
 # Using Intelligent Capture
 Intelligent Capture allows you to configure what information is collected or captured when a request is being manually raised. This may consist of a single question or a collection of questions that are presented to a user. The captured information can help with the fulfillment of the request.  
