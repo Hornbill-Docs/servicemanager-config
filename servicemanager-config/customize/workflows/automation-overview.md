@@ -17,10 +17,12 @@ The properties of a Hornbill Automation can be accessed by either hovering the m
 * **Display**<br>This is the name of the node that will be displayed in the node when viewing the workflow. This is also displayed when using the variable picker. The display should easily identify the node and its purpose.
 
 ### Process
+* **Help**. Each Hornbill Automation includes help information that is accessible from the Process section.
+![Access Process Help](/_books/servicemanager-config/customize/workflows/images/automation-help.png)
 
-:::tip
-Each Hornbill Automation includes help information. This is accessed by clicking on the ?. This help information includes valuable information about the inputs and outputs of each Hornbill Automation. The help information displayed will be in context with the selected Task.
-:::
+    This help information includes valuable information about the inputs and outputs of each Hornbill Automation. The help information displayed will be in context with the selected Task.
+    ![Process Help](/_books/servicemanager-config/customize/workflows/images/automation-help-popup.png)
+
 
 * **Application**<br>Each application can provide a set of Hornbill Automations to select from. A workflow that is executed in one app can perform an automation in another app. This option allows you to browse and select from the applications that provide automations. This node will run under the context of the selected application.
 
