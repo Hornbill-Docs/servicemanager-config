@@ -208,8 +208,8 @@ Use the Update Request node to automatically update the values of specific reque
 * Status
 * Timeline
 
-### Request Timers
-The request timers are used to assess the progress of a request against a [service level target](/servicemanager-user-guide/service-portfolio/service-level-agreements/service-levels#service-level-targets). Use the Timers at any point within a workflow to either start or stop the response and resolution timers.
+### Timers
+The timers are used to assess the progress of a request against a [service level target](/servicemanager-user-guide/service-portfolio/service-level-agreements/service-levels#service-level-targets). Use the timers at any point within a workflow to either start or stop the response and resolution timers.
 
 #### Using settings to control resolution timers
 There are some [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) that control the default behavior of the resolution timers. The settings available to pause or stop the resolution timer when resolving a request are as follows:
@@ -227,9 +227,9 @@ If you are using the workflow automation to control resolution timers, the four 
 ![Timers](/_books/servicemanager-config/customize/workflows/images/timers.png)
 * **Start Response Timer**. The Start Response Timer works in conjunction with the Mark Response Timer. While the timer is running, it is used to assess the service level response target based on the service level that has been associated with the request.
 * **Mark Response Time**. The Mark Response Time works in conjunction with the Start Response Timer.  When the Mark Response Time is reached in the workflow, the Response Timer is stopped and the date and time of the response is recorded in the request.  
-* **Start Resolve Timer**. The Start Resolve Timer works in conjunction with the Mark Resolve Time.  While the timer is running, it is used to assess the service level resolution target based on the service level that has been associated with the request.
-* **Mark Resolve Time**. The Mark Resolve Time works in conjunction with the Start Resolve Timer. When the Mark Resolve Time is reached in the workflow, the Response Timer is stopped and the date and time of the resolution is recorded in the request. 
-* **Pause Resolution Timer**.  This automation needs to be between a Start Resolve Timer and a Mark Resolve Time.  This will pause the resolve timer until either the Resume Resolution Timer or Mark Resolve Time is reached.
-* **Resume Resolution Timer**. This will resume a Resolve Timer that has been paused using the Pause Resolution Timer.
+* **Start Resolution Timer**. The Start Resolution Timer works in conjunction with the Mark Resolution Time.  While the timer is running, it is used to assess the service level resolution target based on the service level that has been associated with the request.
+* **Mark Resolution Time**. The Mark Resolution Time works in conjunction with the Start Resolution Timer. When the Mark Resolution Time is reached in the workflow, the Resolution Timer is stopped and the date and time of the resolution is recorded in the request. 
+* **Pause Resolution Timer**.  This automation needs to be between a Start Resolution Timer and a Mark Resolution Time.  This will pause the resolution timer until either the Resume Resolution Timer or Mark Resolution Time is reached.
+* **Resume Resolution Timer**. This will resume a Resolution Timer that has been paused using the Pause Resolution Timer.
 
 <!-- https://wiki.hornbill.com/index.php?title=Service_Manager_Business_Process_Workflow -->
