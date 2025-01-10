@@ -209,26 +209,27 @@ Use the Update Request node to automatically update the values of specific reque
 * Timeline
 
 ### Request Timers
-Use the Request Timer nodes at any stage in the workflow to either start or stop the Response and or Resolution timers. It is not a prerequisite to use timers within workflows or to use both Response and Resolution timers when timers are used.
+The request timers are used to assess the progress of a request against a [service level target](/servicemanager-user-guide/service-portfolio/service-level-agreements/service-levels#service-level-targets). Use the Timers at any point within a workflow to either start or stop the response and resolution timers.
 
-There are some settings that control the default behavior of the Service Level Timers. The settings provided to pause or stop the resolution timer when resolving a request are as follows:
+#### Using settings to control resolution timers
+There are some [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) that control the default behavior of the resolution timers. The settings available to pause or stop the resolution timer when resolving a request are as follows:
 
 * app.request.pauseResolutionTimerOnResolve (Default OFF)
 * app.request.resumeResolutionTimerOnReopen (Default OFF)
 * app.request.stopResolutionTimerOnResolve (Default ON)
 * app.request.stopResolutionTimerOnClose (Default OFF)
 
-#### Using settings to control resolution timers
-You should choose the relevant settings to meet your needs, but note that app.request.stopResolutionTimerOnResolve will take precedence over app.request.pauseResolutionTimerOnResolve. So, ensure only the one you want to use is enabled.
+You should choose the relevant settings to meet your needs, but note that `app.request.stopResolutionTimerOnResolve` will take precedence over `app.request.pauseResolutionTimerOnResolve`. So, ensure only the one you want to use is enabled.
 
-#### Using BPM nodes to control resolution timers
-If you are using this BPM node to control resolution timers, the four settings above should all be turned off. If any settings are enabled, then they will take precedence over BPM actions. To enable pause/resume of a resolved request, you can add the Timer > Pause Resolution Timer or Timer > Resume Resolution Timer BPM nodes as required in your workflow.
+#### Using workflow nodes to control resolution timers
+If you are using the workflow automation to control resolution timers, the four settings above should all be turned to `OFF`. If any of the settings are enabled, then they will take precedence over the workflow automation.
 
-* Start Resolver Timer
-* Stop Resolution Timer
-* Start Response Timer
-* Stop Response Timer
-* Pause Resolution Timer
-* Resume Resolution Timer
+![Timers](/_books/servicemanager-config/customize/workflows/images/timers.png)
+* **Start Response Timer**. The Start Response Timer works in conjunction with the Mark Response Timer. While the timer is running, it is used to assess the service level response target based on the service level that has been associated with the request.
+* **Mark Response Time**. The Mark Response Time works in conjunction with the Start Response Timer.  When the Mark Response Time is reached in the workflow, the Response Timer is stopped and the date and time of the response is recorded in the request.  
+* **Start Resolve Timer**. The Start Resolve Timer works in conjunction with the Mark Resolve Time.  While the timer is running, it is used to assess the service level resolution target based on the service level that has been associated with the request.
+* **Mark Resolve Time**. The Mark Resolve Time works in conjunction with the Start Resolve Timer. When the Mark Resolve Time is reached in the workflow, the Response Timer is stopped and the date and time of the resolution is recorded in the request. 
+* **Pause Resolution Timer**.  This automation needs to be between a Start Resolve Timer and a Mark Resolve Time.  This will pause the resolve timer until either the Resume Resolution Timer or Mark Resolve Time is reached.
+* **Resume Resolution Timer**. This will resume a Resolve Timer that has been paused using the Pause Resolution Timer.
 
 <!-- https://wiki.hornbill.com/index.php?title=Service_Manager_Business_Process_Workflow -->
