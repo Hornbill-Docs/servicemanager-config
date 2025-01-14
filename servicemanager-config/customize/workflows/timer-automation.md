@@ -4,7 +4,7 @@ The timers are used to track the progress of a request against a [service level 
 The benefit of using timers within a workflow is to provide control over what conditions need to be met before a timer is started, paused, or marked.  
 
 ## Before you begin
-Before timers can be utilized, at least one [Service Level Agreement (SLA)](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview) needs to be defined with service levels that include response and resolution target.
+Before timers can be utilized, at least one [Service Level Agreement (SLA)](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview) needs to be defined with service levels that include response and resolution targets.
 * A request that utilizes a workflow with timers needs to be associated with a [service](/servicemanager-user-guide/service-portfolio/services/overview). Service selection is typically done using the [Services Form](/servicemanager-config/customize/service-manager-capture-forms#services) in [Intelligent Capture](/servicemanager-config/customize/service-manager-capture).
 * A request that uses a workflow with a response timer must be associated with a service that has a [Service Level Agreement (SLA)](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview) with a response target set up.  
 * A request that uses a workflow with a resolution timer must be associated with a service that has a [Service Level Agreement (SLA)](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview) with a resolution target set up.
@@ -26,7 +26,7 @@ Response Time refers to the amount of time it takes from the moment a new reques
 * An acknowledgment to the customer that the request has been received.
 
 ### Response tasks
-* **Start Response Timer**. The Start Response Timer works in conjunction with the Mark Response Timer. While the timer is running, it is used to track the service level response target based on the service level that has been associated with the request.
+* **Start Response Timer**. The Start Response Timer works in conjunction with the Mark Response Time. While the timer is running, it is used to track the service level response target based on the service level that has been associated with the request.
 * **Mark Response Time**. The Mark Response Time works in conjunction with the Start Response Timer.  When the Mark Response Time is reached in the workflow, the Response Timer is stopped and the date and time are marked in the request.  
 
 ## Resolution Timers
