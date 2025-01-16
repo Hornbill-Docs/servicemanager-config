@@ -198,7 +198,7 @@ Use the Update Request node to automatically update the values of specific reque
 * External Reference
 * First Time Fix
 * Place On Hold
-* Priority
+* **Priority**. This automation for updating the priority of a request uses the priority levels that are defined under the [Priority Assessments](/servicemanager-config/administration/assessment-levels#priority).  Within the Options section of the automation settings, Priority is a mandatory field.  This needs to be set to `Manual` and then an appropriate priority selected.
 * Resolution Text
 * Service
 * Service Level
