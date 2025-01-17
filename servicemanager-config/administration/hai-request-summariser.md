@@ -17,7 +17,9 @@ Once [enabled](/servicemanager-config/administration/hai#enabling-hai-features) 
 
 |Setting|Description|
 |-|-|
-|generativeAi.requestSummary.availablePostTypes|List of timeline update types sent to the summariser, this allows you to add in or remove certain update types to be included or excluded from the request summary by default this is set to  ```Authorization,Customer,Email,Escalate,Task,update```|
+|generativeAi.requestSummary.availablePostTypes|List of timeline update types sent to the summariser, this allows you to add in or remove certain update types to be included or excluded from the request summary by default this is set to  ```Authorization,Customer,Email,Escalate,update```|
+|generativeAi.requestSummary.format| Format the request summary is generated in (Structured or Conversational) |
+|generativeAi.requestSummaryAutoUpdates|Auto generate Request Summary when a request is opened|
 |generativeAi.limits.activitySteamPosts|Limit on the number of posts returned and passed to the summariser, by default this is set to ```100``` ordered by most recent activity|
 |generativeAi.limits.activitySteamComments|Limit on the number of comments per post returned and passed to the summariser, by default this is set to  ```100```|
 |generativeAi.limits.activitySteamContentLength|Limit on the maximum content length of a post or comment, anything longer is truncated and passed to the summariser, by default this is set to  ```1000```|

@@ -24,7 +24,7 @@ The HAi Usage Logs show the last 30 days' usage with the latest first limited to
 
 ## Retention
 
-Currently all log history is kept, the UI restricts logs to the last 30 days and in the future the input and output text will be pruned after 30 days leaving only the details of the request. 
+Currently all log history is kept, the UI restricts logs to the last 30 days and in the future the input and output text will be pruned after 30 days leaving only the details of the request.
 
 ## Monitoring of Logs
 

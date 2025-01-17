@@ -13,13 +13,15 @@ HAi is currently in a closed beta, speak to customer success should you want to 
 
 ## Enabling HAi features
 
-All HAi features are *disabled* by default and must be individually enabled before they can be used by end users. To enable any of the HAi capabilities, your User Account must be associated with one of the following roles: 
+Your instance needs a [HAi Service](/esp-fundamentals/core-capabilities/integration/hai-services) set before enabling any of the HAi Features in Service Manager.
 
-|Role|Description|
-|-|-|
-|Service Desk Admin|This role is for a Service Desk Administrator. This includes, an elevated visibility to Requests and associated actions, the ability to configure Service Manager features via the Administration Tool and the option to restart a failed BPM within a Request.|
+All HAi features within Service Manager are *disabled* by default and must be individually enabled before they can be used by end users. To enable any of the HAi capabilities in Service Manager, your User Account must be associated with the following roles:
 
-Additionally, any user with the application right **rightA.administerServiceDesk** can enable HAi features.
+|Role|Application|Description|
+|-|-|-|
+|Service Desk Admin|Service Manager|This role is for a Service Desk Administrator. This includes, an elevated visibility to Requests and associated actions, the ability to configure Service Manager features via the Administration Tool and the option to restart a failed BPM within a Request.|
+|HAi User|Service Manager|This role allows users to access HAi functionality inside of Service Manager|
+|HAi Manager|Platform|This role should only be used for managing HAi configurations.|
 
 ## How to enable HAi features
 
@@ -33,7 +35,7 @@ Additionally, any user with the application right **rightA.administerServiceDesk
 
 ## Grant Users Access to HAi features
 
-To access the HAi capability of Hornbill Service Manager, your User Account must have one of the following roles associated.
+To access the HAi capabilities of Hornbill Service Manager, your User Account must have one of the following Service Manager roles associated.
 
 |Role|Description|
 |-|-|
@@ -59,7 +61,7 @@ When summarizing a request the following data from the request you are in is pro
 
 ```
 
-The timeline of the request is filtered down with the following filters '["Authorization","Customer","Email","Escalate","Task","update"]' and can be updated [here](/servicemanager-config/administration/hai-request-summariser)
+The timeline of the request is filtered down with the following filters '["Authorization","Customer","Email","Escalate","update"]' and can be updated [here](/servicemanager-config/administration/hai-request-summariser)
 
 Each post in the timelines sends the following
 
@@ -85,6 +87,21 @@ Custom Questions (first 100) are passed, excluding the type `file-upload` and `l
 
     h_question
     h_answer_value
+
+```
+
+Completed Tasks information as follows:
+
+```JSON
+
+    title
+    category
+    owner
+    outcome
+    completedon
+    details
+    assigned
+    reference
 
 ```
 

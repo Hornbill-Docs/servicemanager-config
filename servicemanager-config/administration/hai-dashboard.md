@@ -35,6 +35,5 @@ The following application settings control the calculations on the value dashboa
 |-|-|-|
 |generativeAi.dashboard.currencySymbol|Currency to use when displaying value saved based on ratePerMinute.|£|
 |generativeAi.dashboard.ratePerMinute|Lowest FTE cost per minute based on currency from currencySymbol.|0.2|
-|generativeAi.dashboard.readingRate|Average words per minute reading a document.|200|
-|generativeAi.dashboard.typeingRate|Average words per minute when typing a document.|40|
-|generativeAi.dashboard.wordsPerToken|Estimate the number of words per token to convert tokens from prompts to words.|1.3|
+|generativeAi.dashboard.readingRate|Average characters per minute reading a document.|800|
+|generativeAi.dashboard.typingRate|Average characters per minute when typing a document.|150|
