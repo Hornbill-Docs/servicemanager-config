@@ -188,24 +188,38 @@ Use a Suspend node if you wish to suspend the progress of the workflow until a d
 * Wait for Urgency Assessment
 
 ### Update Request
-Use the Update Request node to automatically update the values of specific request attributes at any stage in the workflow. Examples include updating the Logging or Closure categories of a request.
+Use the Update Request node to automatically update the values of specific request attributes at any stage in the workflow. 
 
-* Logging Category
-* Closure Category
-* Update Customer
-* Update Custom Fields
-* Details
-* External Reference
-* First Time Fix
-* Place On Hold
+#### How to add a request update
+1. Add a Hornbill Automation node to the workflow.
+1. Open the node’s settings by clicking on the cog icon.
+1. Under the `Scope` field select `Entity`.
+1. Under the `Type` field select `Update Request`.
+1. Under the `Task` field select an update task.
+
+![Update Request](/_books/servicemanager-config/customize/workflows/images/update-request.png)
+
+#### Common Task Options
+Some options are common to all of the Update Request types.  
+* **Request ID**. In almost all cases this should be set to `Auto`. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
+
+#### Tasks
+* **Logging Category**.
+* **Closure Category**.
+* **Update Customer**.
+* **Update Custom Fields**.
+* **Details**.
+* **External Reference**.
+* **First Time Fix**.
+* **Place On Hold**.
 * **Priority**. This automation for updating the priority of a request uses the priority levels that are defined under the [Priority Assessments](/servicemanager-config/administration/assessment-levels#priority).  Within the Options section of the automation settings, Priority is a mandatory field.  This needs to be set to `Manual` and then an appropriate priority selected.
-* Resolution Text
-* Service
-* Service Level
-* Site
-* Site (Customer's Site)
-* Source
-* Status
-* Timeline
+* **Resolution Text**.
+* **Service**.
+* **Service Level**.
+* **Site**.
+* **Site (Customer's Site)**.
+* **Source**.
+* **Status**.
+* **Timeline**.
 
 <!-- https://wiki.hornbill.com/index.php?title=Service_Manager_Business_Process_Workflow -->
