@@ -40,7 +40,7 @@ The workflow definitions are those that you create and define within the [workfl
 * Workflow settings
 
 ### Workflow Instances
-When a request is created, an *instance* or copy of the associated workflow definition is also created. This workflow instance is taken from the active version of the published workflow. These workflow instances can be viewed and managed under the `Manage Executed Workflows`.  If a workflow definition is updated and a new version is published, the workflow instances are not updated. Once a workflow instance is created, it will continue to use the workflow version under which it was created.
+When a request is created, an *instance* or copy of the associated workflow definition is also created. This workflow instance is taken from the active version of the published workflow. These workflow instances can be viewed and managed under the [Manage Executed Workflows](/servicemanager-config/manage-executed-workflows/manage-executed-workflows) section of configuration.  If a workflow definition is updated and a new version is published, the workflow instances are not updated. A workflow instance will continue to use the workflow definition version under which it was created.
 
 :::info
 Each workflow instance is still dependant on the workflow definition from which it was created.  A workflow instance will reference the workflow definition for language translations and other settings.  Because of this dependency, a workflow definition cannot be deleted while there are active instances of that workflow.

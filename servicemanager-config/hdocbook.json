@@ -197,14 +197,7 @@
       },
       {
         "text": "Manage Executed Workflows",
-        "expand": false,
-        "draft": true,
-        "items": [
-          {
-            "text": "Manage Executed Workflows",
-            "link": "servicemanager-config/manage-executed-workflows/manage-executed-workflows"
-          }
-        ]
+        "link": "servicemanager-config/manage-executed-workflows/manage-executed-workflows"
       },
       {
         "text": "Advanced Analytics",
