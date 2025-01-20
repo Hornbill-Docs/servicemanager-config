@@ -26,10 +26,25 @@ There is a hierarchy of where workflows can be set to determine which workflow i
     |app.requests.defaultBPMProcess.release|The default workflow to be used when logging a Release and no process is specified.|
     |app.requests.defaultBPMProcess.service|The default workflow to be used when logging a Service Request and no process is specified.|
 
-    ## Workflow Tracker
-    The Workflow Tracker is a graphical representation of the workflow that is displayed at the top of a request. This is an optional display which uses stages and checkpoints within a workflow to visualize the progress. The workflow tracker will be displayed when:
-    * On a single stage workflow, at least one checkpoint has been set up.
-    * There is more than one stage in a workflow.
+## Workflow Tracker
+The Workflow Tracker is a graphical representation of the workflow that is displayed at the top of a request. This is an optional display which uses stages and checkpoints within a workflow to visualize the progress. The workflow tracker will be displayed when:
+* On a single stage workflow, at least one checkpoint has been set up.
+* There is more than one stage in a workflow.
+
+## How Workflows Work
+### Workflow Definitions
+The workflow definitions are those that you create and define within the [workflow designer](/servicemanager-config/customize/workflows/workflow-designer). Each workflow definition includes:
+* Workflow nodes and logic.
+* Language definitions.
+* All previous versions for that workflow.
+* Workflow settings
+
+### Workflow Instances
+When a request is created, an *instance* or copy of the associated workflow definition is also created. This workflow instance is taken from the active version of the published workflow. These workflow instances can be viewed and managed under the `Manage Executed Workflows`.  If a workflow definition is updated and a new version is published, the workflow instances are not updated. Once a workflow instance is created, it will continue to use the workflow version under which it was created.
+
+:::info
+Each workflow instance is still dependant on the workflow definition from which it was created.  A workflow instance will reference the workflow definition for language translations and other settings.  Because of this dependency, a workflow definition cannot be deleted while there are active instances of that workflow.
+:::
 
 ## Using Workflow Utilities
 Hornbill provides [a set of workflow utilities](https://www.hornbill.com/hubfs/LMS/Course-Resources/Live%20-%20Workflow%20automation/Hornbill%20Workflow%20Utilities.pdf) that can be used to facilitate date-related functions as well as operations to convert and manipulate data.
