@@ -63,8 +63,37 @@ This node will end the workflow and will cause the heads up display to show as r
 ### Set Checkpoint
 This node will allow you to set a visible indicator that a task / or important milestone in the workflow has been met - In order to use this node, checkpoints must have been defined for the stage of the workflow (Stage Properties). It is also possible to mark a checkpoint as having been met on the all the above nodes as a configuration option.
 ### Start Parallel Processing
-This node can be used where there is a need in a workflow stage to invoke more than one stream of actions, and for these to run in parallel. Adding this node, will enable multiple process streams to be defined, and these will run independently until brought back together by the Finish Parallel Processing node. An examples of where this would be used, would be where two tasks need to be assigned to different teams, but there is no dependency or need for one to be completed before the other, so they can be created and invoked in parallel.
+This node can be used when there is a need to invoke more than one stream of processing at the same time. This is commonly used with [human tasks](/servicemanager-config/customize/workflows/workflow-designer#human-tasks) that can be assigned and worked on independantly, but they must all be completed before the workflow can continue.
+
+![Parallel Processing](/_books/servicemanager-config/customize/workflows/images/parallel-processing.png)
+
+:::tip
+The use of [Suspend automations](/servicemanager-config/customize/workflows/service-manager-workflows#suspend) is not recommended within a parallel process. Suspend automations are designed to suspend the entire workflow and not an individual stream within a parallel process.
+:::
+
+#### Settings
+Open the settings by clicking on the node and selecting the cog icon or double-click on the node. 
+
+Two settings are available: 
+* **Positioning**. Lets you change the orientation of the node.
+* **Size**.  Change the size to better accommodate the number of streams.
+
+![Parallel Processing Settings](/_books/servicemanager-config/customize/workflows/images/parallel-processing-settings.png)
+
 ### Finish Parallel Processing
-Use this node to bring together and finish the individual process lines which had been initiated from a Start Parallel Processing node.
+Use this node to bring together and finish the individual process streams that had been initiated from a Start Parallel Processing node.
+
+* The workflow will not progress past this node until all process streams have reached this point. 
+* When designing a parallel process it is important to design each stream with a successful path or outcome to reach the Finish Parallel Processing node.
+* Each stream should be kept separate from other streams.  Do not connect one stream to another stream. 
+
+#### Settings
+Open the settings by clicking on the node and selecting the cog icon or double-click on the node. 
+
+Two settings are available: 
+* **Positioning**. Lets you change the orientation of the node.
+* **Size**.  Change the size to better accommodate the number of streams.
+
+![Parallel Processing Settings](/_books/servicemanager-config/customize/workflows/images/parallel-processing-settings.png)
 
 <!--https://wiki.hornbill.com/index.php?title=Business_Process_Designer -->

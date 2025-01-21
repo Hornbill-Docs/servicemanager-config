@@ -17,7 +17,7 @@ The executed workflows are divided by their current status.
     Logs get deleted after 1 week for a succesfully completed workflow, and after 3 months for a failed or canceled workflows. 
     :::
 * **Workflow Info**. Displays the Workflow Tracker, the date of the last update, and details of an error if the workflow has failed.
-* **Restart Workflow**. This will restart the workflow from the very start. This should be used carefully as it may result in some automations being repeated.
-* **Resume Workflow**. This will resume the workflow from the current node. This can be used when a failed node has been corrected.
+* **Restart Workflow**. This will restart the workflow following a failure. Failures can sometimes be caused by invalid or missing data.  After making the appropriate corrections, the current node will be restarted. 
+* **Resume Workflow**. This will resume the workflow from the current node. This can be used to progress a workflow that has suspended the workflow.
 * **Cancel Workflow**. Stops the workflow at its current location.  The [Workflow Tracker](/servicemanager-config/customize/workflows/using-workflows-with-service-manager#workflow-tracker) on the request will continue to be displayed and show at what point it was canceled. Canceled workflows cannot be restarted.
 * **Delete Workflow**. A deleted workflow will be completely removed from the assocated request.  The Workflow Tracker will no longer be visible on the request.
