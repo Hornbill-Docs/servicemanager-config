@@ -87,7 +87,7 @@ Use this node to bring together and finish the individual process streams that h
 * When designing a parallel process it is important to design each stream with a successful path or outcome to reach the Finish Parallel Processing node. 
 
     :::important
-    If a human task fails in one stream, all other tasks within the parallel processing will be cancelled. 
+    If a human task fails in one stream, all other tasks within the parallel processing will be canceled. 
     :::
 * Each stream should be kept separate from other streams.  Do not connect one stream to another stream.
 
