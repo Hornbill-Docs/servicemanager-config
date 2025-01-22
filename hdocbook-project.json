@@ -6,6 +6,7 @@
   },
   "validation": {
     "exclude_links": [
+      "https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS",
       "https://openai.com/policies/business-terms",
       "https://openai.com/enterprise-privacy",
       "https://platform.openai.com/docs/*",

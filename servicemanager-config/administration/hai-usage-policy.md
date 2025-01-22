@@ -17,7 +17,7 @@ The usage of Hornbill AI is governed by the [Hornbill Artificial Intelligence Ag
 
 If you are configured to use Azure Open AI Services then you usage of HAI is subject to certain terms and conditions imposed by Microsoft relating to its provision of OpenAI product access and related products and functionality, including, without limitation, those set forth at
 
-<!-- * [Azure AI Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS) > Azure Open AI Service subsection -->
+* [Azure AI Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS) > Azure Open AI Service subsection
 * [Code of conduct for Azure OpenAI Service](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/code-of-conduct)
 * any restrictions on use described in [Microsoft’s related documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
 
