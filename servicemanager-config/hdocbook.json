@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.65",
+  "version": "1.0.66",
   "audience": [
     "public"
   ],
@@ -312,6 +312,7 @@
           },
           {
             "text": "Scheduled Requests",
+            "link": "servicemanager-config/administration/scheduled-requests",
             "draft": false
           },
           {
@@ -323,8 +324,8 @@
                 "text": "Using Webhooks",
                 "link": "servicemanager-config/administration/integration-webhooks"
               }
-            ]   
-          }, 
+            ]
+          },
           {
             "text": "HAi",
             "link": "servicemanager-config/administration/hai",

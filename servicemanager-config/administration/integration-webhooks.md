@@ -19,8 +19,5 @@ If you plan to use webhook services in your Hornbill implementation, then it is 
 
 If you want to use custom field values in the webhooks, you should reserve the first 30 custom fields for those values that need to be expressed for webhook triggers. While in Service Manager there are 80 custom fields, the webhook options in the trigger expression only go up to Custom 30.
 
-### Custom fields and data
-
-
 ## Triggering webhooks in Hornbill
 In Hornbill, webhooks function on entities. Because webhooks are entity-bound, you cannot trigger a webhook for one entity on an event in another entity. Consider this when making use of the custom fields available for webhooks, and when creating your trigger expressions.
