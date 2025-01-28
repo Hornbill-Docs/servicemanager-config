@@ -312,9 +312,19 @@
           },
           {
             "text": "Scheduled Requests",
-            "link": "servicemanager-config/administration/scheduled-requests",
             "draft": false
           },
+          {
+            "text": "Integrations",
+            "link": "servicemanager-config/administration/integration-webhooks",
+            "draft": false,
+            "items": [
+              {
+                "text": "Using Webhooks",
+                "link": "servicemanager-config/administration/integration-webhooks"
+              }
+            ]   
+          }, 
           {
             "text": "HAi",
             "link": "servicemanager-config/administration/hai",
