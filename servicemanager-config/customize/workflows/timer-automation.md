@@ -29,7 +29,7 @@ Response Time refers to the amount of time it takes from the moment a new reques
 * **Start Response Timer**. The Start Response Timer works in conjunction with the Mark Response Time. While the timer is running, it is used to track the service level response target based on the service level that has been associated with the request.
 * **Mark Response Time**. The Mark Response Time works in conjunction with the Start Response Timer.  When the Mark Response Time is reached in the workflow, the Response Timer is stopped and the date and time are marked in the request.  
 
-## Resolution Timers
+## Resolution timers
 Resolution time refers to the amount of time it takes to resolve a request. The point at which a resolution timer starts can vary from workflow to workflow.  In some cases, the resolution timer may start at the same time as the response timer.  The response timer could also start after the response time has been marked, at which point the request has been assessed, assigned, and can now be worked on.
 
 ### Settings
