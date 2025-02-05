@@ -51,15 +51,7 @@ Urgency is not available on the request's assessment action by default.  There a
 * Urgency can be enabled from a workflow, which includes providing a questionnaire. The benefit of using the workflow automation is that the urgency can be presented at a set point within the workflow.
 
 ## Risk
-Risk is not available on the request's assessment action by default.  There are two options to using the Risk assessment type:
-
-* Using the following setting, the risk picklist can be made available on the request's assessment action. This is a global setting and it will apply to all requests.
-
-    |Name|Description|
-    |-|-|
-    |app.com.hornbill.servicemanager.request.assessment.visibility|This setting enables the risk selector in the assessment action tab when viewing a request. When this selector is not required, select the `None` option.|
-
-* Risk can be enabled from a workflow, which includes providing a questionnaire. The benefit of using the workflow automation is that the risk can be presented at a set point within the workflow.
+Risk is currently only available by using an assessment questionnaire. The assessment questionnaire is initiated through a workflow automation.
 
 <!-- :::note
 If new levels are added when there are existing questions with defined Thresholds, these thresholds will need to be revisited and adjusted to include the new impact level.
