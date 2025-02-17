@@ -31,32 +31,32 @@ When creating a custom lookup, you can associate records from a list of existing
     :::
 1. Click **Create**.
 
-**To add a record to a custom lookup:**
+**To associate a record to a custom lookup:**
 1. In the list of custom lookups, click the **View** button (the eye icon) in the row of the custom lookup you want to configure.
 1. In the Details & Records view, go to the Records tab.
 1. Click the **Add** button (the plus sign) to create a new record.
 1. In the Reference field, give the new record a name.
-1. In the Configurations section to the right, click the down arrow to access the **Please select an entity** dropdown.
+1. In the Configurations section to the right, click the down arrow to access the *Please select an entity* dropdown.
 1. Select an entity.
     1. (Optional) If the entity you want is not in the list, you can use a custom field to make it available. See [Using custom fields in custom lookups](/servicemanager-config/administration/custom-lookups#using-custom-fields-in-custom-lookups).
 1. Click **Create**.
 
 ## Using custom fields in custom lookups
-Within each custom Lookup, you define a set of one or more records. To do this, select the eye icon on the Custom Lookup entry to access the Custom Lookup Details and Records tabs.
+Within each custom lookup, you define a set of one or more associated records. To do this, select the eye icon on the custom lookup entry to access the Custom Lookup Details and Records tabs. For creating records of association in custom lookups, Custom Fields 1 through 5 are reserved and available to use.
 
-**To create a record:**
+**To create a record for use in a custom lookup:**
 1. In the list of custom lookups, find the row of the custom lookup you want to configure, and click the **View** button (the eye icon).
 1. In the Details & Records view, go to the Details tab.
 1. In the list of custom fields (or if the list is empty, where it says *No Custom Fields Defined...*), click the **Add** button (the plus sign).
-1. In the **Field** dropdown, select one of the custom fields.
-1. (Optional) In the Label field, give the record a descriptive name. (Consider what you want to use this entity for.)
+1. In the **Field** dropdown, select one of the available custom fields.
+1. (Optional) In the Label field, give the record a name. This name will appear in the *Please select an entity* dropdown when associating a record to a custom lookup.
 1. Click **Update**.
 
 When you create a record, the following settings and fields are available:
-- **Reference.** This is the name of the associated record, and its *Please select an entity* dropdown provides the options for reference types specified in the custom lookup. For example, if you specified a Service Catalog Item, the dropdown will display a list of your catalog items.  
-- **Status.** This specifies whether the record will be applied when the custom lookup is used in a workflow. Choose either Active or Offline.
-- **Entity.** This defines the type of entity that is associated with the reference type.
-- **Value.** This defines the entity value that is associated with the reference type.
+- **Reference.** The name of the associated record.
+- **Status.** This specifies whether the record will be applied when the custom lookup is used in a workflow. Choose either Active (for use in a workflow) or Offline.
+- **Entity.** The entity that is associated with the reference. There are a number of entities available to select from the dropdown, such as Approver, Request Category, and Risk. If you need more options, you can use Custom Fields 1 to 5 to add more as described above.
+- **Value.** The entity value that is associated with the reference.
 
 ## Using custom lookups in workflows
 You can use custom lookups in workflows as a way of invoking pre-defined associations when performing automations. For example, when performing team assignment in a workflow, you can use a custom lookup record to automatically assign a specific team to all requests that were raised against a specific catalog item. This is because the record contains an association between the catalog item and the team. 
