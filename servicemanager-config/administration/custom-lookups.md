@@ -4,7 +4,9 @@ layout: article-toc
 # Custom lookups
 Custom lookups allow you to define sets of records that associate values together.  
 
-For example, you can associate a specific catalog item with a supporting team. These records of association do not need to be created within workflows and can simply be called into a process at the point of need. As a result, custom lookups remove the need for using Decision nodes to route information for separate tasks. Instead, a single task, usually within a Hornbill Automation node, can be used.
+For example, you can associate a specific catalog item with a supporting team. These records of association do not need to be created within workflows; they can simply be called into a process at the point of need.
+
+In this way, custom lookups remove the need to have complex and multiple Decision nodes inside each workflow wherein  choices must be made (e.g. whom to assign to or who should approve), or when values need to be set (e.g. impact, urgency, or risk). Custom lookups simplify this by storing those values inside each record of the custom lookup, and allowing you to invoke and use the relevant record values based on things such as the specific service or catalog item the workflow is running against.
 
 ## Topics covered
 * [Before you begin](/servicemanager-config/administration/custom-lookups#before-you-begin)
@@ -61,15 +63,32 @@ When you create a record, the following settings and fields are available:
 ## Using custom lookups in workflows
 You can use custom lookups in workflows as a way of invoking pre-defined associations when performing automations. For example, when performing team assignment in a workflow, you can use a custom lookup record to automatically assign a specific team to all requests that were raised against a specific catalog item. This is because the record contains an association between the catalog item and the team. 
 
- To use a custom lookup in a workflow, add a Hornbill Automation node with these settings: 
+ **To use a custom lookup in a workflow:**
+ 1. Add a Hornbill Automation node with these settings: 
+ <p style="margin-left: 20px;">
+<table>
+  <tr>
+    <td>Application</td>
+    <td>Service Manager</td>
+  </tr>
+  <tr>
+    <td>Scope</td>
+    <td>Entity</td>
+  </tr>
+  <tr>
+    <td>Entity</td>
+    <td>Custom Lookups</td>
+  </tr>
+</table>
+</p>
 
-- Application: Service Manager 
-- Scope: Entity 
-- Entity: Custom Lookups 
+ <p style="margin-left: 20px;">The Type and Task fields will auto-populate with the default settings.
+ </p>
 
-The Type and Task fields will auto-populate with the default settings. 
+2. In the Options section, for Custom Lookup, use the dropdown to change Auto to Manual, then use the dropdown beside Manual to select the custom lookup you want to use.
+3. In Reference (which refers to the record reference for the chosen custom lookup), choose Manual in the first dropdown, then in the dropdown next to it, enter the record reference.
 
-In subsequent nodes, you can use the variable picker to inject custom lookup entities.
+When configured like this, what the Hornbill Automation node does is it loads the custom lookup reference entity values --- in the form of output parameters --- into the workflow, which can then be called from a subsequent node or nodes using the variable picker.
 
 :::important
 When assigning a team using a custom lookup, in the Hornbill Automation node that follows the custom lookup, make sure the input parameter Team contains the Team ID, not the team name.
