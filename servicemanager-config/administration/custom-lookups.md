@@ -16,7 +16,8 @@ In this way, custom lookups remove the need to have complex and multiple Decisio
 * [Further learning](/servicemanager-config/administration/custom-lookups#further-learning)
 
 ## Before you begin
-You must have the Service Desk Admin role to create and manage custom lookups.
+- You must have the Service Desk Admin role to create and manage custom lookups.
+- Be familiar with general [workflow automation](/servicemanager-config/customize/workflows/using-workflows-with-service-manager). 
 
 ## Creating custom lookups 
 A custom lookup can contain one or more records of associations.
@@ -64,29 +65,18 @@ When you create a record, the following settings and fields are available:
 You can use custom lookups in workflows as a way of invoking pre-defined associations when performing automations. For example, when performing team assignment in a workflow, you can use a custom lookup record to automatically assign a specific team to all requests that were raised against a specific catalog item. This is because the record contains an association between the catalog item and the team. 
 
  **To use a custom lookup in a workflow:**
- 1. Add a Hornbill Automation node with these settings: 
- <p style="margin-left: 20px;">
-<table>
-  <tr>
-    <td>Application</td>
-    <td>Service Manager</td>
-  </tr>
-  <tr>
-    <td>Scope</td>
-    <td>Entity</td>
-  </tr>
-  <tr>
-    <td>Entity</td>
-    <td>Custom Lookups</td>
-  </tr>
-</table>
-</p>
+ 1. Add a Hornbill Automation node with these settings:
 
- <p style="margin-left: 20px;">The Type and Task fields will auto-populate with the default settings.
- </p>
+    Application: Service Manager
 
-2. In the Options section, for Custom Lookup, use the dropdown to change Auto to Manual, then use the dropdown beside Manual to select the custom lookup you want to use.
-3. In Reference (which refers to the record reference for the chosen custom lookup), choose Manual in the first dropdown, then in the dropdown next to it, enter the record reference.
+    Scope: Entity
+
+    Entity: Custom Lookups
+
+    (The Type and Task fields will auto-populate with the default settings.)
+
+2. In the Options section, for Custom Lookup, use the dropdown to select your custom lookup.
+3. In Reference (which refers to the record reference for the chosen custom lookup), manually set your reference to the name of the associated record. If the associated-records information is accessible using a variable, then use the [variable picker](/servicemanager-config/customize/workflows/variable-picker) to select it.
 
 When configured like this, what the Hornbill Automation node does is it loads the custom lookup reference entity values --- in the form of output parameters --- into the workflow, which can then be called from a subsequent node or nodes using the variable picker.
 

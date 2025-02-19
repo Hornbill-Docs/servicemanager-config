@@ -1,48 +1,55 @@
-# Variable Picker
-The variable picker is available to use in most business process nodes and their fields, this includes:
+# Variable picker
+The variable picker is available to use in most workflow nodes and their fields, including:
 * Human Tasks
-* Custom Expressions following Decision nodes
-* Integration Calls
-* Automated Tasks
-* Authorisations
-The variable picker allows for the injecting or overwriting of variable values into node fields.
+* Custom expressions following Decision nodes
+* Integration calls
+* Automated tasks
+* Authorizations
 
-## Using the Variable Picker
-It is possible to manually insert variables into node fields and this is covered in the Request Variables section, here we are focusing on the use of the variable picker.
+You can use the variable picker to inject or overwrite variable values into node fields.
 
-The Variable picker can be opened in one of two ways:
-* In most fields in business process nodes the Variable picker icon.png icon will be present and clicking on the icon will open the variable picker.
-* Select ctrl or cmd and left mouse click, this will also open the variable picker if it is available and the Variable picker icon.png icon is not displayed
+## Using the variable picker
+While you can manually insert variables into node fields (see [Request Variables](/servicemanager-config/customize/workflows/request-variables)), you also have the option of using the variable picker.
 
-The variables which are available to use will be governed by which nodes precede the node you want to use the variable picker on in your business process, and therefore what information (variables) are available to you.
+You can open the variable picker in multiple ways:
+* In most fields in workflow nodes, click the variable picker icon --- the epsilon, or ε.
+* When the variable picker is available but not displayed, use CTRL (or CMD) with a left mouse click.
+
+The variables that are available to use are governed by the nodes preceding the node you want to use the variable picker on in your workflow.
 
 Available variables:
-* **Global Inputs**<br>This option will contain any globally available variables such as requestid
-* **Flowcodes**<br>This will list any variable data related to the entity in which the variable picker is being used. In order to have options presented here, the designer must use the relevant business process Get information nodes in the process stage prior to the node they want to make the variables available in.
-Below is a list of the variable containers which can be used and their related Get Information node
-    * Customer Details - Automated Tasks > Requests > Get Request Information > Customer Details
-    * Organization Details - Automated Tasks > Requests > Get Request Information > Organization Details
-    * Owner Details- Automated Tasks > Requests > Get Request Information > Owner Details
-    * Request Details - Automated Tasks > Requests > Get Request Information > Request Details
-    * Progressive Capture Answers - Automated Tasks > Requests > Get Request Information > Progressive Capture Answers
-    * Service Details - Automated Tasks > Requests > Get Request Information > Service Details
-    * Site Details- Get Request Information > Site Details
-* **Tasks**<br>This will contain any tasks which precede the node into which you are looking to use the variable picker in the current stage of the business process.
-Task variables which can be used include:
+* **Global Inputs.** This option will contain any globally available variables such as `requestId`.
+* **Flowcodes.** This will list any variable data related to the entity in which the variable picker is being used. In order to have options presented here, you must use the relevant workflow Get Information nodes in the workflow stage prior to the node you want to make the variables available in.
+
+    The variable containers that can be used, and their related Get Information nodes, are the following:
+    * **Customer Details.** Automated Tasks > Requests > Get Request Information > Customer Details
+    * **Organization Details.** Automated Tasks > Requests > Get Request Information > Organization Details
+    * **Owner Details.** Automated Tasks > Requests > Get Request Information > Owner Details
+    * **Request Details.** Automated Tasks > Requests > Get Request Information > Request Details
+    * **Intelligent Capture Answers.** Automated Tasks > Requests > Get Request Information > Progressive Capture Answers
+    * **Service Details.** Automated Tasks > Requests > Get Request Information > Service Details
+    * **Site Details.** Get Request Information > Site Details
+* **Tasks.** This will contain any tasks that precede the node into which you are looking to use the variable picker in the current stage of the workflow.
+
+    Task variables that can be used include the following:
     * Outcomes
     * Completion Details
     * Completion Date
     * Owner
     * Custom Field Answers
-* **Integrations**<br>This will contain any output parameter variables which are returned from any integration nodes which precede the node you are looking to use the variable picker in the current stage of the business process
+* **Integrations.** This will contain any output parameter variables that are returned from any integration nodes preceding the node in which you are looking to use the variable picker in the current stage of the workflow.
 
-## Inject or Overwrite
+## Inject or overwrite
 With the variable picker open and having navigated to the variable you wish to insert, you have two options to choose from:
 
-* **Inject**<br>Clicking this option will add the variable to any other content which is currently in the node field (other variables, and or manual added content etc)
-* **Overwrite**<br>Clicking this option will remove any existing content in the node field and replace it with the variable you have chosen.  
+* **Inject.** This adds the variable to any other content that is currently in the node field (other variables, manually added content, etc.).
+* **Overwrite.** This removes any existing content in the node field and replaces it with the variable you have chosen.  
 
-The variable picker allows for the adding of one variable at a time and the above process would need to be repeated where multiple variables are required to be added to the same node field, using the inject rather than overwrite option.
+The variable picker allows for the adding of one variable at a time. When you need to add multiple variables to the same node field, the above process would need to be repeated, using the inject option rather than the overwrite option.
 
-## Raw or Display Value
-When choosing to inject or overwrite with a variable, it is possible to choose to use either the raw value or the display value of the variable. A good example of this is when you are configuring your progressive capture custom questions you may define a possible answer with both a value and a display value - these may be the same or they may differ. If you are creating different language versions of the question, you may want the raw value to remain the same but the display value may be different depending on the different language versions you have created, and as such you may choose to inject or overwrite with the display value rather than the raw value. The raw value will still be important elsewhere. You may make branching decisions in your process based on the raw value, as this value will always remain constant regardless of if the display value changes, this maybe the case depending on the users language settings or if you wish to edit how the display name is presented to the users in the future.
+## Raw value or display value
+When choosing to inject a variable or overwrite with a variable, you can choose to use either the raw value or the display value of the variable.
+
+A good example of this is when you are configuring your Intelligent Capture custom questions, you may define a possible answer with both a value and a display value. These values may be the same or they may differ. If you are creating different language versions of the question, you may want the raw value to remain the same while the display value is different depending on the different language versions you have created. As such, you may choose to inject or overwrite with the display value rather than the raw value. The raw value will still be important elsewhere.
+
+You may make branching decisions in your workflow based on the raw value, because this value will always remain constant regardless of whether the display value changes. This may be the case depending on the user's language settings, or if you wish to edit how the display name is presented to users.
