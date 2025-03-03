@@ -57,8 +57,6 @@ Incident Assignee|This role should be assigned to Users who have the Incident Ma
 |Incident Management User|This role is for users that perform day-to-day work within Incident Management where they are required to raise, manage, and close Incident records.|
 
 ### Knowledge roles
-These roles are for an upcoming release; they cannot currently be used.
-
 |Role|Description|
 |:----|:----|
 |Knowledge User|This role grants access to browse and view Knowledge content.|
