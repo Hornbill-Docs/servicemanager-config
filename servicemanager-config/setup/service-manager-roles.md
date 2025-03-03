@@ -62,7 +62,7 @@ These roles are for an upcoming release; they cannot currently be used.
 |Role|Description|
 |:----|:----|
 |Knowledge User|This role grants access to browse and view Knowledge content.|
-|Knowledge Manager|This role grants access to create and manage knowledge bases. A user with this role should be able to perform all of the required tasks in Knowledge.|
+|Knowledge Manager|This role grants access to create and manage knowledge bases. A user must have this role in order to be an owner of a knowledge base. A user with this role can only manage the knowledge bases that they are the owner of.|
 |Knowledge Guest Portal|This role grants access to Knowledge content from the Hornbill Customer Portal. It should only be applied to the portal and never granted to any user or guest.|
 |Knowledge Contributor|This role grants access to create and update knowledge base articles. Additional access must be granted to perform these functions on private knowledge bases.|
 |Knowledge Administrator|This role grants access to configuration functionality in Knowledge, including changing ownership of knowledge bases. It should only be assigned to a user on a temporary basis as and when required.|
