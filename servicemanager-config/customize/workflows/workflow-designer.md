@@ -26,6 +26,22 @@ A stage is a container for a set of actions or tasks that fulfill a particular a
 * The workflow cannot go back to a previous stage.
 * A stage can be skipped.
 * The output of a node is only available within the stage where it is located.
+
+## Manage Workflow Options
+### Access Granted to
+In situations where it is necessary to regulate access to workflows, this feature provides the capability to designate specific individuals who are permitted to access the workflow directly from the workflow list.
+
+:::important
+Before access control can be applied to workflows, this feature must be enabled by an administrator. The [platform setting](/esp-config/advanced-tools-and-settings/advanced-system-settings) **security.bpm_access_controls.enabled** must be set to `ON`. 
+:::
+
+* Access is automatically granted to the person who created the workflow and the Hornbill admin (superuser).
+* If access has not been granted to anyone, only the creator and the Hornbill admin will see the workflow.
+* Access can be granted to individual users, roles, or groups.
+* Any user that requires access to a workflow must also have the **Business Process Manager** [role](/esp-config/organizational-data/roles).
+
+![Access Granted to](/_books/servicemanager-config/customize/workflows/images/access-granted-to.png)
+
 ## Nodes
 A stage contains a series of nodes that make up the workflow.
 ### Via
