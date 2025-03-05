@@ -32,7 +32,7 @@ A stage is a container for a set of actions or tasks that fulfill a particular a
 In situations where it is necessary to regulate access to workflows, this feature provides the capability to designate specific individuals who are permitted to access the workflow directly from the workflow list.
 
 :::important
-Before access control can be applied to workflows, this feature must be enabled by an administrator. The [platform setting](/esp-config/advanced-tools-and-settings/advanced-system-settings) **security.bpm_access_controls.enabled** must be set to `ON`. 
+Before access control can be applied to workflows, this feature must be enabled by an administrator. The [platform setting](/esp-config/advanced-tools-and-settings/advanced-system-settings) **security.bpm_access_controls.enabled** must be set to `ON`. Before setting to `ON` access control should be reviewed on all existing workflows to ensure appropriate access is in place. 
 :::
 
 * Access is automatically granted to the person who created the workflow and the Hornbill admin (superuser).
