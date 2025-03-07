@@ -220,7 +220,7 @@ Some options are common to all of the Update Request types.
 * **Source**.
 * **Status**.
 * **Timeline**.
-* **Urgency**. This workflow automation is used for updating the urgency of a request, using the urgency levels that are defined under the [Urgency Assessments](/servicemanager-config/administration/assessment-levels#urgency).  Within the **Options** section of the automation settings, **Urgency** is a mandatory field.  This needs to be set to `Manual` and then an appropriate urgency selected.
+* **Urgency**. This workflow automation is used for updating the urgency of a request, using the urgency levels that are defined under the [Urgency Assessments](/servicemanager-config/administration/assessment-levels#urgency).  Within the **Options** section of the automation settings, **Urgency** is a mandatory field.  This needs to be set to `Manual` and then an appropriate urgency level selected.
 
     ![Update Urgency](/_books/servicemanager-config/customize/workflows/images/update-request-urgency.png)
 
