@@ -226,6 +226,4 @@ Some options are common to all of the Update Request types.
 
     * When using this workflow automation, you can assess information stored in a request and automatically set the urgency level accordingly.
     * When using this workflow automation, the urgency can be set without having to enable it in the assessment action or create an assessment questionnaire.
-    * When the urgency can only be set using workflow automation, it prevents users from manually changing it using the [Assessment Action](/servicemanager-user-guide/service-portfolio/requests/assessment-action#urgency) on a request. The urgency level that has been set will be displayed in the request information box.
-
-        ![Request Information Box](/_books/servicemanager-config/customize/workflows/images/request-info-box.png)
+    * When the urgency can only be set using workflow automation, it prevents users from manually changing it using the [Assessment Action](/servicemanager-user-guide/service-portfolio/requests/assessment-action#urgency) on a request.
