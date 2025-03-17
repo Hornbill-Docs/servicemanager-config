@@ -1,5 +1,5 @@
 # Intelligent Capture Designer
-Intelligent Capture is a graphical workflow tool that provides a simple way to define the capturing of information. Intelligent Capture includes several types of forms for collecting information. These forms can be added, ordered, and different paths being taken depending on the information being captured.
+Intelligent Capture is a graphical workflow tool that provides a simple way to define the capturing of information. Intelligent Capture includes several types of forms for collecting information. These forms can be added, and ordered, and have different paths defined that can be taken depending on the information being captured.
 
 ## Before you begin
 * Be familiar with using [Configuration](/esp-config/getting-started/using-configuration).
@@ -26,7 +26,7 @@ The decision node allows the workflow designer to send the user down different p
 
 A decision node inherits the outcomes from all of the preceding forms. For example, if you place a decision node after the [Request Details form](/servicemanager-config/customize/service-manager-capture-forms#request-details), you can change the path based on the information held in the Summary and Description fields.
 * Each decision node connector includes a *Goto if* statement that determines if that path will be taken. 
-* To define the *Goto if* statement, you must first connect the decisino node to the next node in the workflow.
+* To define the *Goto if* statement, you must first connect the decision node to the next node in the workflow.
 * The first connector will automatically have the *Goto if* statement set to *No Match*.
 * Subsequent connectors will require a *Goto if* statement to be set up before the workflow can be validated.
 * Click on the connector's label to change the *Goto if* statement.
@@ -58,7 +58,7 @@ Using this node will in effect continue from the initial capture workflow, into 
 
 **Advantages of using the switch capture node**
 * When switching processes, the user experience for the analyst is smooth as you are linking one process to another, not replacing one with another.
-* The ability to return to the forms in the initial process capture flow, once you have switched or linked to a second process capture flow in order to change choices or even change which capture to switch to.
+* The ability to return to the forms in the initial process capture flow, once you have switched or linked to a second process capture flow to change choices or even change which capture to switch to.
 * You don't need to include the same forms in both captures. For example, the Customer Search form could just be used in the initial capture, and removed from the catalog item capture (if it already exists, it will be ignored).
 
 #### Example
@@ -70,11 +70,11 @@ Following the use of the Services Details form, you may include a decision node 
 On the Switch Capture node, you can configure this to link to a specific new process or use a Variable to link to the capture linked to the request catalog item that has been chosen. In this example, this is what we will do and the Variable to use would be Service details -> catalogProgressiveCaptureId
 
 :::tip
-With the introduction of the Switch Capture option, the behavior will alter slightly on the Services Details form, in as much as the user will now have to click **Next** if they are selecting either the Service or the Request Catalog Item in order to progress the capture workflow. Previously, if a Request Catalog Item was chosen, the capture would immediately progress without the need to click **Next**.
+With the introduction of the Switch Capture option, the behavior will alter slightly on the Services Details form, in as much as the user will now have to click **Next** if they are selecting either the Service or the Request Catalog Item to progress the capture workflow. Previously, if a Request Catalog Item was chosen, the capture would immediately progress without the need to click **Next**.
 :::
 
 ## Sharing and visibility
-Intelligent Capture owners will be able to view their own captures, and captures that have been shared with them from the capture workflow list.
+Intelligent Capture owners will be able to view their own captures scripts as well as capture scripts that have been shared with them from the capture workflow list.
 
 When creating or editing a capture, it is possible via the Manage Process Settings and Grant Access To option to share your process with:
 
