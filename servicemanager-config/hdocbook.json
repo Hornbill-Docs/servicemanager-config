@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.83",
+  "version": "1.0.84",
   "audience": [
     "public"
   ],
@@ -407,10 +407,6 @@
           {
             "text": "Widgets",
             "link": "servicemanager-config/employee-portal/widgets"
-          },
-          {
-            "text": "General Widgets",
-            "link": "esp-config/customize/employee-portal/employee-portal-widgets"
           }
         ]
       }
