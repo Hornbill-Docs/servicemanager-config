@@ -250,6 +250,7 @@ Some options are common to all of the Update Request types.
 * **Place On Hold**.
 * **Priority**. This automation for updating the priority of a request uses the priority levels that are defined under the [Priority Assessments](/servicemanager-config/administration/assessment-levels#priority).  Within the Options section of the automation settings, Priority is a mandatory field.  This needs to be set to `Manual` and then an appropriate priority selected.
 * **Resolution Text**.
+* **Risk**. This automation for updating the risk of a request uses the risk levels that are defined under the [Risk Assessments](/servicemanager-config/administration/assessment-levels#risk).  Within the Options section of the automation settings, Risk is a mandatory field.  This needs to be set to `Manual` and then an appropriate risk selected.
 * **Service**.
 * **Service Level**.
 * **Site**.
