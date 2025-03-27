@@ -120,9 +120,22 @@ Use the Linked Requests node to automatically post updates and resolve linked re
 * Resolve Linked Requests
 * Update Linked Requests
 
-## Log Requests
-Use the Log Requests node to automatically raise another request at a particular point in the workflow.
+## Log Request
+Use the Log Request node to automatically log another request at a particular point in the workflow. This can be used when an additional request is required to fulfill the original request.  For example, an incident might result in the raising of a problem or change request. Another example might be a service request for initiating a new starter.  Additional requests can be raised for different teams or areas within the business to fulfill. 
 
+When a new request is logged, it will be automatically linked to the request from which it was raised.
+
+### How to add a Log New automation
+1. Add a Hornbill Automation node to the workflow.
+1. Open the node’s settings by clicking on the cog icon.
+1. Under the Scope field select Entity.
+1. Under the Entity field select Requests.
+1. Under the Type field select Log Request.
+1. Under the Task field select the type of request to be logged.
+
+![Log New Automation](/_books/servicemanager-config/images/workflow-log-new.png)
+
+### Available tasks
 * Log New Change
 * Log New Incident
 * Log New Known Error
@@ -130,21 +143,23 @@ Use the Log Requests node to automatically raise another request at a particular
 * Log New Release
 * Log New Request
 
-This can be used when an additional request is required to fulfill the original request.  For example, an incident might result in the raising of a problem or change request. 
+### Options
+The **Options** allow you to pre-populate the new request with information. The options that start with "Copy" will take the values directly from the request that it is being logged from. 
 
-Another example might be a service request for initiating a new starter.  Additional requests can be raised for different teams or areas within the business to fulfill. 
+#### Mandatory Options
+* **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
 
-#### Output
-The output of this Hornbill Automation is the ID of the new request.  This can be used within the same workflow to make additional updates to the new request(s) after they have been created.
+### Output
+The output of this Hornbill Automation is the ID of the new request.  This can be used within the same workflow to make additional updates to the new request after it has been logged.
 
 :::note
-When using these options, carefully consider where in the workflow you are placing them, and in turn which workflows are going to be invoked against the new Incident or Service Request raised. Avoid scenarios where one workflow may invoke the logging of a new request, and then the new request's workflow immediately is configured to log a new request that again has a workflow and that again logs another request, creating a loop. What results could be a lot of unwanted requests. If this happens, disable the causing workflow and resolve the issue.
+When using the Log New automation, carefully consider where in the workflow they are being placed, and in turn, which workflows are going to be invoked against the new request. Avoid scenarios where one workflow may invoke the logging of a new request, and then the new request's workflow immediately is configured to log a new request that again has a workflow and that again logs another request, creating a loop. This could result in a lot of unwanted requests. If this happens, disable the causing workflow and resolve the issue.
 :::
 
-### Questions
+## Questions
 * Delete Questions
 
-### Request Service
+## Request Service
 The Request Service Tasks are used to automate the linking of related services that may underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
 
 * **Add Related Services**<br>A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the related services based on a particular type of relationship. 
