@@ -2,7 +2,8 @@
 layout: article-toc
 ---
 # Request Automation
-The Service Manager Workflows are used to automate the processing of the requests that have been raised. This page contains information on the Service Manager automated tasks that can be used in the Workflow Designer to build unique and powerful workflows for your requests.
+The Service Manager Workflows are used to automate the processing of the requests that have been raised. This page contains information on the Request Automation that can be used in the Workflow Designer to build unique and powerful workflows for your requests.
+
 
 ## Access Control
 Use the Access Control to lock or unlock the Details section or the Actions on a request. Only users with the appropriate application right (i.e. updateLocked rights such as [updateLockedServiceRequests](/servicemanager-api-api/rights/content/updatelockedservicerequests) or [updateLockedChangeRequests](/servicemanager-api-api/rights/content/updatelockedchangerequests)) will be able to modify the details or use an Action once locked. This right has been added to the following roles: Incident Management Full Access, Change Management Full Access, Problem Management Full Access, Release Management Full Access, Service Request Full Access, and Service Desk Admin.
@@ -12,9 +13,30 @@ Use the Access Control to lock or unlock the Details section or the Actions on a
 * Unlock Request Details
 
 ## Assessment
-Use the Assessment node to initiate an Impact Assessment on a request.
+Use the Assessment automation to initiate an Assessment Questionnaire on a request.
 
-This Hornbill Automation will present an Impact Assessment option on the Escalate Action of a request. When selected, a user is taken through a number of defined questions; based on the user's responses, an impact level is automatically applied to the request.
+This Hornbill Automation will present an [Assessment Questionnaire](/servicemanager-config/administration/assessment-questionnaires) on the [Assessment Action](//servicemanager-user-guide/service-portfolio/requests/assessment-action) of a request. Based on the user's responses to the questionnaire, an assessment level is automatically calculated and applied to the request.
+
+### How to add a Log Request automation
+1. Add a Hornbill Automation node to the workflow.
+1. Open the node’s settings by clicking on the cog icon.
+1. Under the Scope field select Entity.
+1. Under the Entity field select Requests.
+1. Under the Type field select Assessment.
+1. Under the Task field select the type of assessment.
+
+![Assessment Automation](/_books/servicemanager-config/images/workflow-assessment.png)
+
+### Available tasks
+* Impact
+* Priority
+* Risk
+* Urgency
+
+### Options
+#### Mandatory Options
+* **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
+* **Assessment**. This option will need to be set to **Manual** and then one of the available assessment questionnaires needs to be selected.
 
 ## Assets
 Use these Hornbill Automations for managing assets that are associated to the request:
@@ -125,7 +147,7 @@ Use the Log Request node to automatically log another request at a particular po
 
 When a new request is logged, it will be automatically linked to the request from which it was raised.
 
-### How to add a Log New automation
+### How to add a Log Request automation
 1. Add a Hornbill Automation node to the workflow.
 1. Open the node’s settings by clicking on the cog icon.
 1. Under the Scope field select Entity.
