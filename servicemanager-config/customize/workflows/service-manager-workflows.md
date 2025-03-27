@@ -248,6 +248,7 @@ Some options are common to all of the Update Request types.
 * **External Reference**.
 * **First Time Fix**.
 * **Place On Hold**.
+* **Impact**. This automation for updating the impact of a request uses the impact levels that are defined under the [Impact Assessments](/servicemanager-config/administration/assessment-levels#impact).  Within the Options section of the automation settings, Impact is a mandatory field.  This needs to be set to `Manual` and then an appropriate impact selected.
 * **Priority**. This automation for updating the priority of a request uses the priority levels that are defined under the [Priority Assessments](/servicemanager-config/administration/assessment-levels#priority).  Within the Options section of the automation settings, Priority is a mandatory field.  This needs to be set to `Manual` and then an appropriate priority selected.
 * **Resolution Text**.
 * **Risk**. This automation for updating the risk of a request uses the risk levels that are defined under the [Risk Assessments](/servicemanager-config/administration/assessment-levels#risk).  Within the Options section of the automation settings, Risk is a mandatory field.  This needs to be set to `Manual` and then an appropriate risk selected.
