@@ -4,18 +4,36 @@ layout: article-toc
 # Request Automation
 The Service Manager Workflows are used to automate the processing of the requests that have been raised. This page contains information on the Request Automation that can be used in the Workflow Designer to build unique and powerful workflows for your requests.
 
-
 ## Access Control
-Use the Access Control to lock or unlock the Details section or the Actions on a request. Only users with the appropriate application right (i.e. updateLocked rights such as [updateLockedServiceRequests](/servicemanager-api-api/rights/content/updatelockedservicerequests) or [updateLockedChangeRequests](/servicemanager-api-api/rights/content/updatelockedchangerequests)) will be able to modify the details or use an Action once locked. This right has been added to the following roles: Incident Management Full Access, Change Management Full Access, Problem Management Full Access, Release Management Full Access, Service Request Full Access, and Service Desk Admin.
+Use the Access Control to lock or unlock the details section or the Actions on a request. Only users with an appropriate role or application right will be able to use a locked action or have the ability to unlock the action for others to use.
 
-* Lock / Unlock Request Actions
-* Lock Request Details
-* Unlock Request Details
+![Workflow Lock Automation](/_books/servicemanager-config/images/workflow-lock-automation.png)
+
+### Example uses
+* On an incident, the resolution action could be locked until other actions have been completed.
+* On a change, the details might be locked once a change has been approved.
+* Only allow full access users the ability to apply certain actions. 
+
+![Worflow Lock Action](/_books/servicemanager-config/images/workflow-lock-action.png)
+
+### Available tasks
+* **Lock / Unlock Request Actions**. Lock or unlock individual actions on a request.  The option *Default Lock Type* can apply or remove the locks from all actions.
+* **Lock Request Details**.  Lock the main details section of the request. This includes both the summary and description.
+* **Unlock Request Details**. Unlock the main details section of the request. This includes both the summary and description.
+
+### Overriding a locked action
+Users that have a [Full Access](/servicemanager-config/setup/service-manager-roles#system-roles) role can override a locked action for the request type that they have full access to.  They can themselves use the locked action, or they can click on the padlock icon to unlock the action for other users.
+
+![Locked Resolution Action](/_books/servicemanager-config/images/request-locked-resolution.png)
+
+:::tip
+An **Update Locked** application right is available for each request type.  [Custom roles](/esp-config/organizational-data/roles#user-created-roles) can be created with these rights to provide access to select users without having to give them full access to a request type. 
+:::
 
 ## Assessment
 Use the Assessment automation to initiate an Assessment Questionnaire on a request.
 
-This Hornbill Automation will present an [Assessment Questionnaire](/servicemanager-config/administration/assessment-questionnaires) on the [Assessment Action](//servicemanager-user-guide/service-portfolio/requests/assessment-action) of a request. Based on the user's responses to the questionnaire, an assessment level is automatically calculated and applied to the request.
+This Hornbill Automation will present an [Assessment Questionnaire](/servicemanager-config/administration/assessment-questionnaires) on the [Assessment Action](/servicemanager-user-guide/service-portfolio/requests/assessment-action) of a request. Based on the user's responses to the questionnaire, an assessment level is automatically calculated and applied to the request.
 
 ### How to add a Log Request automation
 1. Add a Hornbill Automation node to the workflow.

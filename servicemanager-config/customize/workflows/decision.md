@@ -23,6 +23,8 @@ Following a decision node, draw out a line and add a new node. On the line you h
 * Provide a display name for the Custom Expression
 * Select Edit Expression and + to add
 
+![Custom Expression](/_books/servicemanager-config/images/workflow-custom-expression.png)
+
 ### Options
 By default the rule question will be presented in the Selected Test Setup section, picked up from the node proceeding the decision node. This can be left the same or using the Variable Picker Icon you can change what you want to evaluate by choosing from the list of available variables (See the variable picker to understand what options can be presented here)
 * **Operators**<br>Choose what condition for the chosen question you are looking to test ( ==, Contains, <,> etc)
