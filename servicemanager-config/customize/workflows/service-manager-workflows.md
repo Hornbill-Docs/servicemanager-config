@@ -165,6 +165,11 @@ Use the Log Request node to automatically log another request at a particular po
 
 When a new request is logged, it will be automatically linked to the request from which it was raised.
 
+### Before you begin
+* Make sure that the request type being logged is enabled in the service that the request is being logged under.
+* Make sure that service subscriptions are in place for new requests that require a customer. 
+* Be familiar with the workflow that will be used in the new request and the data that is required to fulfill the workflow.
+
 ### How to add a Log Request automation
 1. Add a Hornbill Automation node to the workflow.
 1. Open the node’s settings by clicking on the cog icon.
@@ -185,6 +190,10 @@ When a new request is logged, it will be automatically linked to the request fro
 
 ### Options
 The **Options** allow you to pre-populate the new request with information. The options that start with "Copy" will take the values directly from the request that it is being logged from. 
+
+:::important
+Make sure that the new request being logged has all the information required to fulfill the workflow it is using. 
+:::
 
 #### Mandatory Options
 * **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
