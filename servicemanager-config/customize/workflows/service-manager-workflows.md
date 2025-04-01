@@ -169,6 +169,7 @@ When a new request is logged, it will be automatically linked to the request fro
 * Make sure that the request type being logged is enabled in the service that the request is being logged under.
 * Make sure that service subscriptions are in place for new requests that require a customer. 
 * Be familiar with the workflow that will be used in the new request and the data that is required to fulfill the workflow.
+* Be aware of loops.  Avoid situations in the workflow where the logging of one request leads to the logging of another, and potentially ending up in a loop.
 
 ### How to add a Log Request automation
 1. Add a Hornbill Automation node to the workflow.
@@ -191,19 +192,15 @@ When a new request is logged, it will be automatically linked to the request fro
 ### Options
 The **Options** allow you to pre-populate the new request with information. The options that start with "Copy" will take the values directly from the request that it is being logged from. 
 
+#### Mandatory Options
+* **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
+
 :::important
 Make sure that the new request being logged has all the information required to fulfill the workflow it is using. 
 :::
 
-#### Mandatory Options
-* **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
-
 ### Output
 The output of this Hornbill Automation is the ID of the new request.  This can be used within the same workflow to make additional updates to the new request after it has been logged.
-
-:::note
-When using the Log New automation, carefully consider where in the workflow they are being placed, and in turn, which workflows are going to be invoked against the new request. Avoid scenarios where one workflow may invoke the logging of a new request, and then the new request's workflow immediately is configured to log a new request that again has a workflow and that again logs another request, creating a loop. This could result in a lot of unwanted requests. If this happens, disable the causing workflow and resolve the issue.
-:::
 
 ## Questions
 * Delete Questions
