@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.0.93",
+  "version": "1.0.94",
   "audience": [
     "public"
   ],
@@ -316,6 +316,11 @@
             "draft": false
           },
           {
+            "text": "Profiles",
+            "link": "servicemanager-config/administration/profiles",
+            "draft": false
+          },
+          {
             "text": "Integrations",
             "link": "servicemanager-config/administration/integration-webhooks",
             "draft": false,
@@ -402,8 +407,8 @@
       },
       {
         "text": "Employee Portal",
-        "draft":false,
-        "items":[
+        "draft": false,
+        "items": [
           {
             "text": "Widgets",
             "link": "servicemanager-config/employee-portal/widgets"
