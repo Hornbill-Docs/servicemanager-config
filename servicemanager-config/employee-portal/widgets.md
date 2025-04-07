@@ -14,6 +14,20 @@ With Service Manager installed, there are serveral Employee Portal widgets that 
 
 ![Add Service Manager Widgets](/_books/servicemanager-config/images/ep-add-widgets.png)
 
+## Average Rating
+The average [star rating](/servicemanager-user-guide/service-portfolio/customer-feedback) widget collects data from all of the requests from all services and displays an average overall rating. These requests will have been closed and the customers will have provided a star rating.
+
+![Average Rating](/_books/servicemanager-config/images/ep-rating-widget.png)
+
+### Configure
+
+* **Filter by Service Domain**.  If the widget is being placed on a page for a specific [domain](/esp-config/customize/service-domains), you can add the domain name to only show the average feedback for that domain.
+* **Last X days**. By default, the widget will show the average for all historical feedback.  Optionally you can select 30, 60, 90, or 120 days of data to be displayed. The selected number of days will be displayed in the widget.
+
+:::tip
+This widget is best displayed using a single column.
+:::
+
 ## Requests
 The Requests widget provides a list of requests that have been raised either by the user or for the user.  In addition to their requests, there are options to view requests that they are connected with, or requests that their managed staff have raised.
 
