@@ -109,11 +109,22 @@ Use the Assignment node to automatically assign a request to different Service M
 * **Assign on Round Robin Basis**<br>Round robin assignment is a great way to automatically assign requests to the members of a team. The system will look through the members of the selected team and will assign the request to the member who has had the greatest amount of time pass since their last assignment. The system will take into account the user's status, which is found on their profile. If the user's status is set to anything other than *Available*, that user will not be considered for assignment. This does not take into account the volume of requests assigned to each user.
 
 ## Authorization Decision
-Use the Authorization Decision node to mark on a Change or Service Request form if an authorization decision has been made.
+Use the Authorization Decision node to mark a Change or Service Request with the current status of an authorization. This works independently of any particular type of authorization. Setting the authorization decision will typically follow the outcome of an authorization however it can be used in any circumstance where some form of acceptance to proceed is required.
 
+![Authorization Decision Automation](/_books/servicemanager-config/images/workflow-authorization-decision.png)
+
+### Available Tasks
 * Approved
-* Rejected
 * Clear
+* Pending
+* Rejected
+
+### Using the Authorization Decision
+Each time the Authorization Decision is used in the workflow, the request is updated with this decision.  This can be seen within the request's information panel.
+
+![Authorization Decision on a request](/_books/servicemanager-config/images/request-authorization-decision.png)
+
+The Advanced Filter and [Views](/servicemanager-user-guide/request-list/views) on the request list can also be used to display requests based on their different authorization states.
 
 ## Collaboration
 Use the Collaboration node to post an automated update onto a public workspace at any stage in a workflow. This will be visible to members of the specified workspace --- on the timeline of the workspace and in members' News Feeds.
