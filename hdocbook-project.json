@@ -11,6 +11,14 @@
       "https://openai.com/enterprise-privacy",
       "https://platform.openai.com/docs/*",
       "https://openai.com/policies/*"
+    ],
+    "exclude_spellcheck": [
+      {
+        "document_path": "servicemanager-config/advanced-tools-and-settings/application-settings",
+        "words": [
+          "cancellation"
+        ]
+      }
     ]
   },
   "redirects": [
