@@ -7,6 +7,10 @@ Profiles provide hierarchical tree structures that you can use to *categorize* y
 
 Each profile has a code to identify it. There are profiles that can be assigned when a request is opened (a *request profile*) and when it is closed (a *closure profile*). In Service Manager Configuration, the corresponding views are **Request Profile Codes** and **Closure Profile Codes**.
 
+::: note
+There are two profile code sets: *Request* and *Closure*. These file names cannot be changed.
+:::
+
 By categorizing requests using profiles and their lower-level items (sub-categories), you can record information at different levels of granularity. For example, for a request in the IT service, you can report on the IT profile, or go more granular into Hardware and then down to the level of Laptop.
 
 In Service Manager Configuration > Administration, you can create profiles as well as import and export profiles. Each time you create a profile, it is given a profile code.
@@ -45,16 +49,19 @@ To add a new profile within (under) an existing one, click **+ Item**. This crea
 
 ## Deleting profiles
 Select an existing profile and then in the properties box, click **Delete**.
+
 ::: warning
-The existing profiles may be in use and deleting them could have an unintended impact.
+The existing profiles may be in use; deleting them could have an unintended impact. You could break links, for example in workflows or custom lookups used in other places. Even when a new code set contains the same codes as the originals, the IDs will be different.
 :::
 
 ## Importing profiles
 
 You can use a template (a Microsoft Excel file) to bulk import or bulk update a set of profile codes into your instance.
 
-::: note
+::: warning
 When you import profiles, your existing profiles will be overwritten with what's in the code set spreadsheet you're importing from. If you want to add or append new profile codes to your existing code set, you must export your current set, add the new codes to that spreadsheet, then import from that.
+
+It's important to note that the existing profiles may be in use elsewhere, and deleting them could have an unintended impact. You could break links, for example in workflows or custom lookups used in other places. Even when a new code set contains the same codes as the originals, the IDs will be different.
 :::
 
 The import scheme assumes the data to import will be on the sheet named *Data*. Make sure the data is static data. The data import routines do not consider expressions; nor do they run scripts or formulas in cells to get the resultant data.
