@@ -28,6 +28,20 @@ The average [star rating](/servicemanager-user-guide/service-portfolio/customer-
 This widget is best displayed using a single column.
 :::
 
+## Service Availability
+The [service availabilty](/servicemanager-user-guide/service-portfolio/services/service-availability) widget collects data from the selected service and displays the availability over the previous X number of days.
+
+![Service Availability](/_books/servicemanager-config/images/ep-service-availability-widget.png)
+
+### Configure
+
+* **Service ID**.  The adding of a service ID is required for the widget to show any information. Only one service can be displayed per widget.  
+* **Last X days**. By default, the widget will show all the historical availability data.  Optionally you can select 30, 60, 90, or 120 days of data to be displayed. The selected number of days will be displayed in the widget.
+
+:::tip
+This widget is best displayed using a single column.
+:::
+
 ## Requests
 The Requests widget provides a list of requests that have been raised either by the user or for the user.  In addition to their requests, there are options to view requests that they are connected with, or requests that their managed staff have raised.
 
