@@ -6,7 +6,6 @@ You need to define the name and details of the activity, the role or individual 
 ## Topics covered
 * [Reference](/servicemanager-config/customize/workflows/human-task#reference)
 * [Using outcomes](/servicemanager-config/customize/workflows/human-task#using-outcomes)
-* [Capturing task fields](/servicemanager-config/customize/workflows/human-task#capturing-task-fields)
 * [Using checklists](/servicemanager-config/customize/workflows/human-task#using-checklists)
 
 ## Reference
@@ -40,7 +39,7 @@ You can set a start date, due date, and expiry date for the task based on either
     * Type: Get Request Information
     * Task: Request Details
 
-#### About the Expires After setting
+#### About the *Expires After* setting
 Expiry is a valid outcome for a human task, and setting a value here allows for --- via a Decision node following the task --- branching based on the task expiring rather than an outcome being selected.
 
 ::: tip
@@ -66,28 +65,25 @@ Configure the possible outcome options available for the user to choose when com
 * **Default Flags.** Configure whether the field is mandatory, visible on the form, in read-only view, and so on.
 * **Field Type Settings.** Configure the type of capture you wish to use --- single, multi-line, static or dynamic dropdown, checkbox, radio button, label, and so on. Provide the context-based attributes as required.
 
-For more information, see [Capturing task fields](/servicemanager-config/customize/workflows/human-task#capturing-task-fields).
+For more information, see [Fields for Capture tasks](/servicemanager-config/customize/workflows/human-task#fields-for-capture-tasks).
 
 ### Set Stage Checkpoints
 Use the **Add** button to configure any stage checkpoints you want to be set on completion of the task.
 
 ## Using outcomes
-* **Edit Outcomes**<br>To edit any of the above values for an existing outcome click the edit icon next to the outcome you wish to edit.
-* **Delete an Outcome**<br>To remove an outcome option click the trash can icon next to the outcome you wish to delete.
+You can create new options for the outcomes available to be selected. You can edit outcome settings (including adding fields), and you can delete outcomes.
 
-* It is not required to add a specific expiry outcome, this will be automatically enabled if you have configured an Expires After in the lifespan settings.
-* Using Outcomes and or outcome capture fields to branch in the business process - If you require different behavior in your business process depending on the outcome of the human task or based on answers to capture fields tied to a chosen outcome, use a Decision node directly after the human task and use the outcomes defined in the task as the decision branch options.
-<!-- https://wiki.hornbill.com/index.php?title=Outcomes -->
+You can also use outcomes and/or outcome-capture fields to branch in the workflow.
 
 ### Adding outcomes
 **To add a new outcome:**
-1. Click **Add New**.
+1. In the *Outcomes* section, click **Add New**.
 1. Define the outcome value, a display name, and if the user completing the task is required to provide a reason when selecting this specific outcome.
-1. (Optional) Provide a display color.
+1. (Optional) Provide a display color for the button.
 1. (Optional) Make the outcome available in multiple languages.
 1. Click **Apply Settings**.
 
-### Capturing outcome fields
+### Adding capture fields to outcomes
 1. Get to the *Edit Outcome Settings* dialog by either clicking **Edit** (the pencil icon) on an existing outcome, or by adding a new outcome (using the **Add New** button).
 1. In the *Capture Outcome Fields* section, click **Add Field**.
 1. Configure the following fields:
@@ -97,6 +93,19 @@ Use the **Add** button to configure any stage checkpoints you want to be set on 
 1. Click **Apply Settings** to add the capture field to this specific outcome.
 1. (Optional) Use the **Translate For** option to define different language versions of the capture field, which will be displayed to a user based on the language set in their profile.
 1. Repeat the process for any additional capture fields that are required for the task.
+
+### Editing and deleting outcomes
+**To edit or delete outcomes:**
+1. In the *Outcomes* section, use the **Edit** button (the pencil icon) or the **Delete** button (the trash can).
+1. (Optional) Use the up and down arrows to reorder the outcomes.
+
+<!--* **Expiry outcome.** You are not required to add a specific expiry outcome. This will be automatically enabled if you have configured an *Expires After* in the lifespan settings.-->
+### Using outcomes to branch
+**To use outcomes and/or outcome-capture fields to branch in the workflow:**
+1. If you need different behavior in your workflow depending on the outcome of the human task or based on answers to capture fields tied to a chosen outcome, use a Decision node directly after the Human Task node.
+1. Use the outcomes defined in the task as the branch options for the decision.
+<!-- https://wiki.hornbill.com/index.php?title=Outcomes -->
+
 <!-- 
 #### Considerations
 * **Default Reason field**<br>You may decide that the Reason field on the task is no longer relevant if you have added your own capture fields, and this can be hidden from the task by ticking the Hide reason option under the Task Options settings.
@@ -116,33 +125,37 @@ You may have a need to record additional information against the chosen outcome 
 
 With this setting enabled it is now possible to configure both capture fields per outcome on a task, as well as at the task level.
 -->
-## Capturing Task Fields
+### Adding capture fields to tasks
+1. In the *Capture Task Fields* section, click **Add Field**.
+1. In the *Edit Field Settings* dialog, configure the following fields:
+    * **Field Properties.** Provide a title for the field, add a custom field ID, or leave the default.
+    * **Default Flags.** Configure whether the field is mandatory, visible on the form, in read-only view, and so on.
+    * **Field Type Settings.** Configure the type of capture you wish to use — single, multi-line, static or dynamic dropdown, checkbox, radio button, label, and so on. Provide the context-based attributes as required.
+1. Click **Apply Settings** to add the capture field to the task.
+1. Repeat the process for any additional capture fields you need for the task.
 
-Click Apply Settings to add the capture field to the task
+<!-- ### Considerations
+* **Default Reason field**<br>You may decide that the Reason field on the task is no longer relevant if you have added your own capture fields, and this can be hidden from the task by ticking the Hide reason option under the Task Options settings.-->
 
-* Use the Language option to define different language versions of the capture field, which will be displayed to a user based on the language set in their profile.
-* Repeat the process for any additional capture fields which are required for the task.
-
-### Considerations
-* **Default Reason field**<br>You may decide that the Reason field on the task is no longer relevant if you have added your own capture fields, and this can be hidden from the task by ticking the Hide reason option under the Task Options settings.
-* **Setting Capture Fields Per Outcome**<br>It is possible to configure capture fields which are tied to the selection of an outcome on a task, and will only be presented and visible once a specific outcome has been chosen. This is covered in detail in the Outcomes wiki page.
+### Setting capture fields per outcome
+You can configure capture fields that are tied to the selection of an outcome on a task, and that will only be presented and visible once a specific outcome has been chosen.
 
 :::tip
-Information It is possible to use both task capture fields and outcome capture fields on the same task, but you are advised to check and ensure that none of the capture fields are using the same field id.
+You can use both task-capture fields and outcome-capture fields on the same task, but make sure to check that none of the capture fields are using the same field ID.
 :::
 
-### Using the Answers to Capture Task Fields
-Once a task has been completed and any capture task fields completed, the answers from these fields are available to be used elsewhere in the lifecycle of the business process.
+### Using the answers from task-capture fields
+Once a task has been completed and any task-capture fields completed, the answers from these fields are available to be used elsewhere in the lifecycle of the workflow.
 
-* Branch and make decisions on the answers using the custom expression builder and selecting the relevant task and capture field to evaluate.
-* Inject the answers from capture task fields into request fields, or other tasks using the variable picker following the task but in the same stage of the process.
-* The task and capture field answers will be written to the timeline of the entity the task has been completed against.
+* You can branch and make decisions on the answers using the Custom Expression builder. Select the relevant task and capture field to evaluate.
+* You can inject the answers from task-capture fields into request fields or into other tasks. Use the variable picker in a node following the task, but make sure it is in the same stage of the workflow.
+* The task-capture field answers will be written to the timeline of the entity the task has been completed against.
 
 ## Using checklists
-Add to-do items in checklists for a task.
+You can add to-do items in checklists for a task.
 
 **To add a checklist to a human task:**
-1. In the task configuration, click **Manage Checklists** and then **Add Group**.
+1. In the *Task Options* section, click **Manage Checklist** and then **Add Group**.
 1. Give the checklist group a name.
 1. Click the **+** button to add one or more checklist items.
 1. (Optional) Use the arrows to re-order the checklist items in the checklist group.
@@ -151,16 +164,16 @@ Add to-do items in checklists for a task.
 1. (Optional) Use the arrows to re-order the checklist groups on the task.
 1. When finished, click **Apply** to add the checklist group or groups to the task.
 
-**To edit or delete checklists:**
+**To edit or delete checklists:**<br>
 Click **Manage Checklist** to edit or delete the checklists associated to the task.
 
-### About the task-progression percentage
+### About the task-progress percentage
 When a user marks a checklist item as complete on a task, the **% progression** through the checklist items will be indicated on the task.
 
+![Task Progression](/_books/servicemanager-config/customize/workflows/images/task-progression.png)
+
 **To prevent the completion of the task while one or more outstanding checklist items remain:**
-1. In the Task Options section, select **Do not allow completion unless checklist is 100% complete**.
-
-
+1. In the *Task Options* section, select **Do not allow completion unless checklist is 100% complete**.
 
 <!-- https://wiki.hornbill.com/index.php?title=BPM_Human_Tasks-->
 <!-- https://wiki.hornbill.com/index.php?title=Checklists -->
