@@ -65,7 +65,7 @@ Configure the possible outcome options available for the user to choose when com
 * **Default Flags.** Configure whether the field is mandatory, visible on the form, in read-only view, and so on.
 * **Field Type Settings.** Configure the type of capture you wish to use --- single, multi-line, static or dynamic dropdown, checkbox, radio button, label, and so on. Provide the context-based attributes as required.
 
-For more information, see [Fields for Capture tasks](/servicemanager-config/customize/workflows/human-task#fields-for-capture-tasks).
+For more information, see [Adding capture fields to tasks](/servicemanager-config/customize/workflows/human-task#adding-capture-fields-to-tasks).
 
 ### Set Stage Checkpoints
 Use the **Add** button to configure any stage checkpoints you want to be set on completion of the task.
