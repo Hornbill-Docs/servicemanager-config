@@ -107,7 +107,11 @@ An email can be sent to a user that is assigned an authorization task. To receiv
 
 `guest.com.hornbill.servicemanager.showRespondByDate`
 - The default is `OFF`.
-- When this setting is `ON`, the respond-by date/time is displayed in the right-hand information box of a request on the Customer Portal.
+- When this setting is `ON`, the respond-by date/time is displayed in the right-hand information box of a request when viewed by a user on the Employee Portal or a customer on the Customer Portal.
+
+`guest.com.hornbill.servicemanager.showResolveByDate`
+- The default is `OFF`
+- When this setting is `ON`, the respond by date/time is displayed in the right-hand information box of a request when viewed by a user on the Employee Portal or a customer on the Customer Portal.
 
 ## Intelligent Capture settings
 
