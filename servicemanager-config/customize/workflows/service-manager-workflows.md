@@ -33,17 +33,11 @@ An **Update Locked** application right is available for each request type.  [Cus
 ## Assessment
 Use the Assessment automation to initiate an Assessment Questionnaire on a request.
 
+![Assessment Automation](/_books/servicemanager-config/images/workflow-assessment.png)
+
 This Hornbill Automation will present an [Assessment Questionnaire](/servicemanager-config/administration/assessment-questionnaires) on the [Assessment Action](/servicemanager-user-guide/service-portfolio/requests/assessment-action) of a request. Based on the user's responses to the questionnaire, an assessment level is automatically calculated and applied to the request.
 
-### How to add a Log Request automation
-1. Add a Hornbill Automation node to the workflow.
-1. Open the node’s settings by clicking on the cog icon.
-1. Under the Scope field select Entity.
-1. Under the Entity field select Requests.
-1. Under the Type field select Assessment.
-1. Under the Task field select the type of assessment.
-
-![Assessment Automation](/_books/servicemanager-config/images/workflow-assessment.png)
+![Start Asessment Questionaire](/_books/servicemanager-config/images/impact-assessment-button.png)
 
 ### Available tasks
 * Impact
@@ -55,6 +49,10 @@ This Hornbill Automation will present an [Assessment Questionnaire](/servicemana
 #### Mandatory Options
 * **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
 * **Assessment**. This option will need to be set to **Manual** and then one of the available assessment questionnaires needs to be selected.
+
+### Example Workflow
+
+![Example Workflow](/_books/servicemanager-config/images/example-assessment-workflow.png)
 
 ## Assets
 Use these Hornbill Automations for managing assets that are associated to the request:
