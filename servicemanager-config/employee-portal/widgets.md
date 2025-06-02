@@ -7,7 +7,7 @@ With Service Manager installed, there are several Employee Portal widgets that a
 
 ## Accessing the Service Manager widgets
 1. View the Employee Portal using the **My Company** menu item under the **Home** option in the left-hand vertical menu bar.
-1. Navigate to the page where the Service Manager widget will be added.
+1. Navigate to the [page](/esp-config/customize/employee-portal/employee-portal-design#page-details) where the Service Manager widget will be added.
 1. Enter **Design Mode**.
 1. Expand the **Add Widgets** section in the right-hand Page Details panel.
 1. Select **Service Manager** from the dropdown of available apps.
