@@ -22,6 +22,7 @@
     ]
   },
   "redirects": [
-    { "url": "/servicemanager-config/administration/service-manager-assessments", "location": "/servicemanager-config/administration/assessment-levels", "code": 301 }
+    { "url": "/servicemanager-config/administration/service-manager-assessments", "location": "/servicemanager-config/administration/assessment-levels", "code": 301 },
+    { "url": "/servicemanager-config/customize/workflows/workflow-designer", "location": "/esp-config/automation/workflow-designer", "code": 301, "skip_location_validation": true  }
   ]
  }
