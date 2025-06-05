@@ -1,12 +1,14 @@
 ---
 layout: article-toc
-keywords:Portal HUD
+keywords: Portal HUD
 ---
+
 # Using workflows with Service Manager
 Workflows are used to drive both manual interactions and automation on a request record.  
 
 ## Before you begin
-* Be familiar with how to use the Workflow Designer.
+* Be familiar with how to use the [Workflow Designer](/esp-config/automation/workflow-designer).
+
 * Know how to use Configuration to change application settings.
 
 ## Where workflows are used
@@ -34,7 +36,7 @@ The workflow tracker is a graphical representation of the workflow that is displ
 
 ## How workflows work
 ### Workflow definitions
-The workflow definitions are those that you create and define within the [Workflow Designer](/servicemanager-config/customize/workflows/workflow-designer). Each workflow definition includes:
+The workflow definitions are those that you create and define within the [Workflow Designer](/esp-config/automation/workflow-designer). Each workflow definition includes:
 * Workflow nodes and logic
 * Language definitions
 * All previous versions for that workflow
