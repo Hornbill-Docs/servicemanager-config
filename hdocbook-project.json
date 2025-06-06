@@ -23,6 +23,11 @@
   },
   "redirects": [
     { "url": "/servicemanager-config/administration/service-manager-assessments", "location": "/servicemanager-config/administration/assessment-levels", "code": 301 },
-    { "url": "/servicemanager-config/customize/workflows/workflow-designer", "location": "/esp-config/automation/workflow-designer", "code": 301, "skip_location_validation": true  }
+    { "url": "/servicemanager-config/customize/workflows/workflow-designer", "location": "/esp-config/automation/workflow-designer", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/customize/workflows/variable-picker", "location": "/esp-config/automation/variable-picker", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/customize/workflows/authorization", "location": "/esp-config/automation/authorization", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/customize/workflows/external-authorization", "location": "/esp-config/automation/external-authorization", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/customize/workflows/human-task", "location": "/esp-config/automation/human-task", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/customize/workflows/decision-node", "location": "/esp-config/automation/decision-node", "code": 301, "skip_location_validation": true  }
   ]
  }
