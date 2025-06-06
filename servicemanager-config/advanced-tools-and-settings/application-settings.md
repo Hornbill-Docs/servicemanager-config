@@ -42,11 +42,7 @@ Because advanced settings are less frequently used and potentially more complex 
 
 ## Email settings
 ### Archiving emails
-Shared mailboxes can be configured to automatically move the email into a folder of your choice.
-
-`servicemanager.email.archive`
-* The default setting for this is `ON`. 
-* When this setting is set to `OFF`, the email will remain in its current folder and the `archiveFolderName` setting will be ignored.
+The following setting can be used to automatically move an email into a folder of your choice after a request has been manually raised from the [email](/esp-user-guide/email-overview). Moving an email to a designated folder will help prevent other users from raising duplicate requests from the same email.
 
 `servicemanager.email.archiveFolderName`
 * The default folder name for this is `Deleted Items`. 

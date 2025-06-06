@@ -10,8 +10,7 @@
       "https://openai.com/policies/business-terms",
       "https://openai.com/enterprise-privacy",
       "https://platform.openai.com/docs/*",
-      "https://openai.com/policies/*",
-      "https://www.hornbill.com/hubfs/Policies/Corporate%20Social%20Responsibility.pdf"
+      "https://openai.com/policies/*"  
     ],
     "exclude_spellcheck": [
       {
