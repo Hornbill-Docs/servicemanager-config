@@ -8,8 +8,11 @@ Workflows are used to drive both manual interactions and automation on a request
 
 ## Before you begin
 * Be familiar with how to use the [Workflow Designer](/esp-config/automation/workflow-designer).
-
-* Know how to use Configuration to change application settings.
+* Be familiar with how to use [Human Tasks](/esp-config/automation/human-task) in a workflow.
+* Be familiar with how to use [Decision Nodes](/esp-config/automation/decision) in a workflow.
+* Be familiar with how to add variables to a workflow node using the [Variable Picker](/esp-config/automation/variable-picker).
+* Be familiar with how [authorizations](/esp-config/automation/authorization) work.
+* Know how to use [Configuration](/esp-config/getting-started/using-configuration) to change application settings.
 
 ## Where workflows are used
 Workflows can be used on incidents, requests, problems, known errors, changes, and releases. 
