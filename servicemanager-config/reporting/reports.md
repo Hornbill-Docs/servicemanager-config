@@ -9,18 +9,19 @@ Each Hornbill application will have its own Report List. These can be accessed b
 
 ### Tool Bar
 * **Filter**<br>A filter allows you to located reports that you have already created.
-* **Create New Report**<br>This option start the process of creating a new report
+* **Create New Report**<br>This option start the process of creating a new report.
 * **Delete Selected**<br>This option will only be available when one or more reports have been selected within the Report List
 
 ### Creating and Editing a Report
 By either selecting the Create New Report or by clicking on the name of an existing report from within your Report List, you are presented with the options to define your report.
 
+## Report view
 ### Tool Bar
 
 ![Toolbar Ooption](/_books/servicemanager-config/images/report-toolbar-options.png)
 
 * **Save**<br>Once the name of the report has been entered within the Report Details, the save option will become available. For both new and existing reports, they must be saved before you can run the report.
-    * **Copy Report As**<br>This allows you to create a copy of this report and add it to your list of reports under a different name. This option is only available after the new report has been saved for the first time.
+    * **Copy Report As**<br>This allows you to create a copy of this report and add it to your list of reports under a different name. This option is only available after the new report has been saved for the first time. Access this option by selecting the down-arrow next to the save icon.
 * **Run**<br>This starts a manual running of the report. The results of the Run are added to the Report History. This option will not be available when there are unsaved changes on a report. It will also not be available while a report generation is already running.
 * **Upload**<br>Upload a definition file for the report. This allows you to take a report that has been shared with you and upload it to your Hornbill instance. Uploading a definition file will overwrite any settings that you have previously set for that report, including the name.
 * **Download**<br>Download a definition file for the report. This allows you to share a report definition with another Hornbill instance. This option is only available after the new report has been saved.
