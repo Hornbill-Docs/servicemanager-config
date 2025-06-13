@@ -4,19 +4,20 @@ layout: article-toc
 # Reports
 Reports are used to collect specific data for your reporting needs. The reports in Hornbill are a point in time, meaning that the data is accurate at the point when the report is run. These types of reports are best used for reporting on lists of data. There are various options with reports which will be explored in more detail below. Reports can be created in differnt formats and can be scheduled for distribution to documents in Document Manager or by email.
 
-## Report List
+## Report list
 Each Hornbill application will have its own Report List. These can be accessed by browsing the Admin tool starting at Home -> Applications and then selecting the application that you with to report on. A Reports card will displayed if reporting is available for the app.
 
-### Tool Bar
-* **Filter**<br>A filter allows you to located reports that you have already created.
-* **Create New Report**<br>This option start the process of creating a new report.
-* **Delete Selected**<br>This option will only be available when one or more reports have been selected within the Report List
+### Tool bar
+* **Filter**. A filter allows you to located reports that you have already created.
+* **Import Reports**. A collection of reports can be both imported and exported.  An import package is a zip file that contains a number of report definition files.  An import package is created by performing an export.  This is generally used to move a collection of reports from one instance to another.  
+* **Create New Report**. This option start the process of creating a new report.
+* **Delete Selected**. This option will only be available when one or more reports have been selected within the Report List
 
-### Creating and Editing a Report
+### Creating and editing a report
 By either selecting the Create New Report or by clicking on the name of an existing report from within your Report List, you are presented with the options to define your report.
 
 ## Report view
-### Tool Bar
+### Tool bar
 
 ![Toolbar Ooption](/_books/servicemanager-config/images/report-toolbar-options.png)
 
@@ -26,7 +27,7 @@ By either selecting the Create New Report or by clicking on the name of an exist
 * **Upload**<br>Upload a definition file for the report. This allows you to take a report that has been shared with you and upload it to your Hornbill instance. Uploading a definition file will overwrite any settings that you have previously set for that report, including the name.
 * **Download**<br>Download a definition file for the report. This allows you to share a report definition with another Hornbill instance. This option is only available after the new report has been saved.
 
-### Output Options
+### Output options
 Reports are output by default in PDF format. In the Output Formats section you can also choose to output the report in the following additional formats
 * CSV
 * XLS
