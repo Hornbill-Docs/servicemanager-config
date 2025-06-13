@@ -44,7 +44,7 @@ System roles are provided when Service Manager is installed or updated. You can 
 |-|-|
 |CAB Approver|This role should be granted to CAB Approvers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Change Calendar Viewer|This roles grant read-only access to the Change Calendar and scheduled Change Requests.
-|Change Management Full Access|This role is for a senior user of Change Management. It supersedes the Change Management User role and includes rights to cancel and reopen Change Requests.|
+|Change Management Full Access|This role is for a senior user of Change Management. It supersedes the Change Management User role and includes rights to cancel and reopen change requests, over-ride locked actions, and complete change activities that are assigned to other users.|
 |Change Management User|This role is for a user of Change Management. It includes rights to view, edit, and complete Change Requests.|
 |Change Manager|This role should be granted to Change Managers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Change Request Assignee|This role should be granted to Users who have the Change Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
@@ -53,7 +53,7 @@ System roles are provided when Service Manager is installed or updated. You can 
 |Role|Description|
 |-|-|
 Incident Assignee|This role should be assigned to Users who have the Incident Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
-|Incident Management Full Access|This role is for a senior user of Incident Management. It supersedes the Incident Management User role and includes rights to cancel and reopen Incidents.|
+|Incident Management Full Access|This role is for a senior user of Incident Management. It supersedes the Incident Management User role and includes rights to cancel and reopen incident records, over-ride locked actions, and complete incident activities that are assigned to other users.|
 |Incident Management User|This role is for users that perform day-to-day work within Incident Management where they are required to raise, manage, and close Incident records.|
 
 ### Knowledge roles
@@ -70,14 +70,14 @@ Incident Assignee|This role should be assigned to Users who have the Incident Ma
 |-|-|
 |Known Error Assignee|This role should be assigned to Users who have the Problem Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 |Problem Investigation Assignee|This role should be granted to Users who have the Problem Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
-|Problem Management Full Access|This role is for a senior user of Problem Management. It supersedes the Problem Management User role and includes rights to cancel and reopen Problems.|
+|Problem Management Full Access|This role is for a senior user of Problem Management. It supersedes the Problem Management User role and includes rights to cancel and reopen problem records, over-ride locked actions, and complete problem activities that are assigned to other users.|
 |Problem Management User|This role is for a user of Problem Management. It includes rights to view, edit, and resolve Problems.|
 
 ### Release management roles
 |Role|Description|
 |-|-|
 |Release Assignee|This role should be granted to Users who have the Release Management User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
-|Release Management Full Access|This role is for a senior user of Release Management. It supersedes the Release Management User role and includes rights to cancel and reopen Releases.
+|Release Management Full Access|This role is for a senior user of Release Management. It supersedes the Release Management User role and includes rights to cancel and reopen release records, over-ride locked actions, and complete incident activities that are assigned to other users.|
 |Release Management User|This role is for a user of Release Management. It includes rights to view, edit, and complete Releases.|
 |Release Manager|This role should be granted to Release Managers. It is used for task/activity assignment in the Hornbill Business Process Manager.|
 
@@ -85,7 +85,7 @@ Incident Assignee|This role should be assigned to Users who have the Incident Ma
 |Role|Description|
 |-|-|
 |Service Request Assignee|This role should be granted to Users who have the Service Request User role. It is used for task/activity assignment in the Hornbill Business Process Manager.|
-|Service Request Full Access|This role is for a senior user of Service Request Management. It supersedes the Service Request User role and includes rights to cancel and reopen Service Requests.|
+|Service Request Full Access|This role is for a senior user of Service Request Management. It supersedes the Service Request User role and includes rights to cancel and reopen service requests, over-ride locked actions, and complete incident activities that are assigned to other users.|
 |Service Request User|This role is for a user of Service Request Management. It includes rights to view, edit, and fulfill Service Requests.|
 
 ### Services
