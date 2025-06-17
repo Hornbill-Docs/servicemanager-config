@@ -225,9 +225,14 @@ The output of this Hornbill Automation is the ID of the new request.  This can b
 * Delete Questions
 
 ## Request Service
-The Request Service Tasks are used to automate the linking of related services that may underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
+The Request Service automation is used to manage the linking of additional services to a request where those services underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
 
-* **Add Related Services**<br>A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the related services based on a particular type of relationship. 
+### Available tasks
+* **Add Related Services**<br>A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the related services based on a particular type of relationship between the services.
+    * Service A and Service B have not dependancy.
+    * Service A depends on Service B.
+    * Service B depends on Service A.
+    * Service A and Service B have a two way dependancy.    
 * **Add Linked Service**<br>This task allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
 * **Update Service Status**<br>This task allows for the [Service Status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on all of the linked services to help determine the availability of those services.  
 
