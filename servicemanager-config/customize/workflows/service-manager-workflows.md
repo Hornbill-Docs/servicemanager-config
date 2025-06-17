@@ -48,7 +48,7 @@ This Hornbill Automation will present an [Assessment Questionnaire](/servicemana
 ### Options
 #### Mandatory Options
 * **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
-* **Assessment**. This option will need to be set to **Manual** and then one of the available assessment questionnaires needs to be selected.
+* **Assessment**. This option will need to be set to **Manual** and then one of the available assessment questionnaires needs to be selected. If the drop-down list is empty, this suggests that the assessment selected in the task field (Impact, Priority, Risk, or Urgency) doesn't have any [questionnaires](/servicemanager-config/administration/assessment-questionnaires) defined.
 
 ### Example Workflow
 
