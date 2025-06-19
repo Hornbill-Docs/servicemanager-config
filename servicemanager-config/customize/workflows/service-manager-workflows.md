@@ -211,8 +211,12 @@ When a new request is logged, it will be automatically linked to the request fro
 ### Options
 The **Options** allow you to pre-populate the new request with information. The options that start with "Copy" will take the values directly from the request that it is being logged from. 
 
-#### Mandatory Options
-* **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
+#### Request ID
+This automation is one of the few where the Request ID is not mandatory. This provides some flexibility with how the new request might be linked with another request.
+* **Auto**. When set to auto, the new request will be automatically linked with the request it is being raised from.
+* **Manual**. A request ID can be manually entered for which the new request will be linked with.
+* **Variable**. A request ID that is stored in a variable can be used for which the new request will be linked with.
+* **Ignore**. When set to ignore, the new request will not be automatically linked with any request. 
 
 :::important
 Make sure that the new request being logged has all the information required to fulfill the workflow it is using. 
