@@ -4,6 +4,11 @@ layout: article-toc
 # Email Templates
 Email templates can be used to pre-populate emails with information to create a standard format for outbound emails. Emails may be sent automatically from Business Process Workflows or manually from within an app.
 
+## Before you begin
+To access the Email Templates a user requires the following roles or rights.
+* Admin Role.
+* A custom role that includes the [System Configuration right](/esp-config/organizational-data/roles#system-and-application-rights) `manageEntityEmailTemplates`.
+
 ## Template List
 The list of templates is controlled by the selection of the application that will be using the template along with the entity or business object within that application for which the template will use fields to include information from the entity when an email is sent using that template.
 
