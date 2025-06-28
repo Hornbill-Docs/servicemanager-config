@@ -9,7 +9,7 @@ Each Hornbill application will have its own Report List. These can be accessed b
 
 ### Tool bar
 * **Filter**. A filter allows you to located reports that you have already created.
-* **Import Reports**. A collection of reports can be both imported and exported.  An import package is a zip file that contains a number of report definition files.  An import package is created by performing an export.  This is generally used to move a collection of reports from one instance to another.  
+* **Import Reports**. A collection of reports can be both imported and exported.  An import package is a zip file that contains a number of report definition files.  An import package is created by performing an export from the reports list.  This is generally used to move a collection of reports from one instance to another.  
 * **Create New Report**. This option start the process of creating a new report.
 * **Delete Selected**. This option will only be available when one or more reports have been selected within the Report List
 
