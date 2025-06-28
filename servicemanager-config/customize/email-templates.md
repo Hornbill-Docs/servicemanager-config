@@ -7,7 +7,7 @@ Email templates can be used to pre-populate emails with information to create a 
 ## Before you begin
 To access the Email Templates a user requires the following roles or rights.
 * [Admin Role](/esp-config/organizational-data/roles#system-roles).
-* A custom role that includes the [System Configuration right](/esp-config/organizational-data/roles#system-and-application-rights) `manageEntityEmailTemplates`.
+* A custom role that includes the [System Configuration right](/esp-config/organizational-data/roles#system-rights) `manageEntityEmailTemplates`.
 
 ## Template List
 The list of templates is controlled by the selection of the application that will be using the template along with the entity or business object within that application for which the template will use fields to include information from the entity when an email is sent using that template.
