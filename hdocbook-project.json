@@ -6,14 +6,9 @@
   },
   "validation": {
     "exclude_links": [
-      "https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS",
-      "https://openai.com/policies/business-terms",
       "https://openai.com/enterprise-privacy",
       "https://platform.openai.com/docs/*",
-      "https://openai.com/policies/*",
-      "https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf",
-      "https://www.hornbill.com/hubfs/Policies/Corporate%20Social%20Responsibility.pdf",
-      "https://www.hornbill.com/hubfs/LMS/Course-Resources/Live%20-%20Workflow%20automation/Hornbill%20Workflow%20Utilities.pdf"  
+      "https://openai.com/policies/*"
     ],
     "exclude_spellcheck": [
       {
