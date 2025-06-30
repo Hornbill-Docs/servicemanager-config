@@ -40,10 +40,10 @@ This Hornbill Automation will present an [Assessment Questionnaire](/servicemana
 ![Start Asessment Questionaire](/_books/servicemanager-config/images/impact-assessment-button.png)
 
 ### Available tasks
-* Impact
-* Priority
-* Risk
-* Urgency
+* **Impact**. The magnitude of the effect that an incident, problem, or change has on business processes.
+* **Priority**. An indicator of the order that issues should be addressed.
+* **Risk**. The possibility that an event will occur and negatively affect the achievement of service objectives.
+* **Urgency**. How quickly a service issue needs to be addressed to prevent significant business impact or disruption.
 
 ### Options
 #### Mandatory Options
