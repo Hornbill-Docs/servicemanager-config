@@ -121,6 +121,10 @@
                     "draft": false
                   },
                   {
+                    "text": "Custom Lookup Automation",
+                    "link": "servicemanager-config/customize/workflows/custom-lookup-automation"
+                  },
+                  {
                     "text": "Change Request Automation",
                     "link": "servicemanager-config/customize/workflows/change-request-automation",
                     "draft": false
