@@ -1,5 +1,5 @@
 # Custom Lookups
-Use the Custom Lookup node in a workflow to assess mapped data that has been set up in a [Custom Lookup](/servicemanager-config/administration/custom-lookups). A Custom Lookup can be used in place of a decision node when there are larger data sets that need to be compared.
+Use the Custom Lookup automation in a workflow to assess mapped data that has been set up in a [Custom Lookup](/servicemanager-config/administration/custom-lookups). A Custom Lookup can be used in place of a decision node when there are larger data sets that need to be compared.
 
 ![Custom Lookup Automation](/_books/servicemanager-config/images/workflow-custom-lookup.png)
 
