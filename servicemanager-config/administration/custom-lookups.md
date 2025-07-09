@@ -84,8 +84,6 @@ When configured like this, what the Hornbill Automation node does is it loads th
 When assigning a team using a custom lookup, in the Hornbill Automation node that follows the custom lookup, make sure the input parameter Team contains the Team ID, not the team name.
 :::
 
-
-
 ## Further learning 
 Watch this video for an overview on how to use Custom Lookups to improve your Workflows.
 
