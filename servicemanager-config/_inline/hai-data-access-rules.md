@@ -47,3 +47,6 @@ Example 3 - Allow only 1st Line Support Team (ID 1stLineSupport), but also block
   - **Types** Is
   - **EntityId** 129
   
+## Testing Rule Sets
+
+The list of rules has a test button, you pass in either a request ID or a Knowledge Article ID and toast message will tell you if HAi can access them, if HAi is blocked the rule that blocked access will be highlighted.
