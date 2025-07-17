@@ -15,6 +15,7 @@ The rules are split into Rule Sets, each allowing for a customizable list of rul
 |--------------|---------------|----------------|
 | Request      | Service       | Is / Is Not    |
 | Request      | Company       | Is / Is Not    |
+| Request      | Team          | Is / Is Not    |
 | Knowledge    | KnowledgeBase | Is / Is Not    |
 
 ## Examples
