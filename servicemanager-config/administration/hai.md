@@ -13,7 +13,7 @@ HAi is currently in a closed beta, speak to customer success should you want to 
 
 ## Enabling HAi features
 
-Your instance needs a [HAi Service](/esp-fundamentals/core-capabilities/integration/hai-services) set before enabling any of the HAi Features in Service Manager.
+Your instance needs a [HAi Service Provider](/esp-fundamentals/core-capabilities/integration/hai-services) set before enabling any of the HAi Features in Service Manager.
 
 All HAi features within Service Manager are *disabled* by default and must be individually enabled before they can be used by end users. To enable any of the HAi capabilities in Service Manager, your User Account must be associated with the following roles:
 
@@ -27,8 +27,8 @@ All HAi features within Service Manager are *disabled* by default and must be in
 
 * Log into Hornbill with the relevant access role.
 * Click on the settings gear icon in the lower left of the screen.
-* Change the dropdown from '''My Personal Settings''' to '''Service Manager'''.
-* Click on HAi under Administration in the left-hand menu.
+* Change the dropdown from ```My Personal Settings``` to ```Service Manager```.
+* Click on ```HAi``` under Administration in the left-hand menu.
 * Enable the required feature(s).
 
 ![Hornbill AI Configuration](/_books/servicemanager-config/administration/images/hai-config.png)
