@@ -2,25 +2,30 @@
 layout: article-toc
 ---
 # Custom lookups
-Custom lookups allow you to define sets of records that associate values together.  
+Custom lookups are a type of lookup table that can be used in a workflow to look up a reference record, which in turn, provides one or more values back to the workflow.  The Custom Lookups work in conjunction with the [Custom Lookup Workflow Automation](/servicemanager-config/customize/workflows/custom-lookup-automation). 
 
-For example, you can associate a specific catalog item with a supporting team. These records of association do not need to be created within workflows; they can simply be called into a process at the point of need.
-
-In this way, custom lookups remove the need to have complex and multiple Decision nodes inside each workflow wherein  choices must be made (e.g. whom to assign to or who should approve), or when values need to be set (e.g. impact, urgency, or risk). Custom lookups simplify this by storing those values inside each record of the custom lookup, and allowing you to invoke and use the relevant record values based on things such as the specific service or catalog item the workflow is running against.
+```mermaid
+flowchart LR
+    A[Custom Lookup Automation]
+    A --> B[Find Custom Lookup]
+    B --> C[Find Reference Record]
+    C --> D[Return Reference Values]
+```
+Custom lookups can remove the need for complex [decision nodes](/esp-config/automation/decision) in a workflow, where a series of nested decision nodes can be replaced with a single Custom Lookup Automation. 
 
 ## Topics covered
 * [Before you begin](/servicemanager-config/administration/custom-lookups#before-you-begin)
 * [Creating custom lookups](/servicemanager-config/administration/custom-lookups#creating-custom-lookups)
 * [Using custom fields in custom lookups](/servicemanager-config/administration/custom-lookups#using-custom-fields-in-custom-lookups)
 * [Using custom lookups in workflows](/servicemanager-config/administration/custom-lookups#using-custom-lookups-in-workflows)
-* [Further learning](/servicemanager-config/administration/custom-lookups#further-learning)
 
 ## Before you begin
-- You must have the Service Desk Admin role to create and manage custom lookups.
+- The [Service Desk Admin](/servicemanager-config/setup/service-manager-roles#administration-roles) role is needed to create and manage custom lookups.
+- The [Business Process Manager](/esp-config/organizational-data/roles#system-roles) role is needed to access workflows to add the Custom Lookup Automation.
 - Be familiar with general [workflow automation](/servicemanager-config/customize/workflows/using-workflows-with-service-manager). 
 
 ## Creating custom lookups 
-A custom lookup can contain one or more records of associations.
+A custom lookup can contain one or more reference records. 
 
 When creating a custom lookup, you can associate records from a list of existing entities, or you can use [custom fields](/servicemanager-config/administration/custom-lookups#using-custom-fields-in-custom-lookups) to give yourself further configuration options.
 
@@ -34,7 +39,7 @@ When creating a custom lookup, you can associate records from a list of existing
     :::
 1. Click **Create**.
 
-**To associate a record to a custom lookup:**
+**To associate a record with a custom lookup:**
 1. In the list of custom lookups, click the **View** button (the eye icon) in the row of the custom lookup you want to configure.
 1. In the Details & Records view, go to the Records tab.
 1. Click the **Add** button (the plus sign) to create a new record.
@@ -58,11 +63,11 @@ Within each custom lookup, you define a set of one or more associated records. T
 When you create a record, the following settings and fields are available:
 - **Reference.** The name of the associated record.
 - **Status.** This specifies whether the record will be applied when the custom lookup is used in a workflow. Choose either Active (for use in a workflow) or Offline.
-- **Entity.** The entity that is associated with the reference. There are a number of entities available to select from the dropdown, such as Approver, Request Category, and Risk. If you need more options, you can use Custom Fields 1 to 5 to add more as described above.
+- **Entity.** The entity that is associated with the reference. There are serveral entities available to select from the dropdown, such as Approver, Request Category, and Risk. If you need more options, you can use Custom Fields 1 to 5 to add more as described above.
 - **Value.** The entity value that is associated with the reference.
 
 ## Using custom lookups in workflows
-You can use custom lookups in workflows as a way of invoking pre-defined associations when performing automations. For example, when performing team assignment in a workflow, you can use a custom lookup record to automatically assign a specific team to all requests that were raised against a specific catalog item. This is because the record contains an association between the catalog item and the team. 
+You can use custom lookups in workflows as a way of invoking pre-defined associations when performing automations. For example, when performing a team assignment in a workflow, you can use a custom lookup record to automatically assign a specific team to all requests that were raised against a specific catalog item. This is because the record contains an association between the catalog item and the team. 
 
  **To use a custom lookup in a workflow:**
  1. Add a Hornbill Automation node with these settings:
@@ -83,8 +88,3 @@ When configured like this, what the Hornbill Automation node does is it loads th
 :::important
 When assigning a team using a custom lookup, in the Hornbill Automation node that follows the custom lookup, make sure the input parameter Team contains the Team ID, not the team name.
 :::
-
-## Further learning 
-Watch this video for an overview on how to use Custom Lookups to improve your Workflows.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0H3r9eYI3Mg?si=GRCUjXgd8circRSp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
