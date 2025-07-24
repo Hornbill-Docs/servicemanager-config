@@ -25,29 +25,29 @@ Custom lookups can remove the need for complex [decision nodes](/esp-config/auto
 - Be familiar with general [workflow automation](/servicemanager-config/customize/workflows/using-workflows-with-service-manager). 
 
 ## Creating custom lookups 
-A custom lookup can contain one or more reference records. 
+### Step 1: Add a custom lookup
+A custom lookup is a container that holds multiple reference records.  The name of the custom lookup will be used by the [Custom Lookup Workflow Automation](/servicemanager-config/customize/workflows/custom-lookup-automation) to identify the list of reference records that it will use. The status should be set to **Offline** until the configuration has been completed.
 
-When creating a custom lookup, you can associate records from a list of existing entities, or you can use [custom fields](/servicemanager-config/administration/custom-lookups#using-custom-fields-in-custom-lookups) to give yourself further configuration options.
-
-**To create a custom lookup:**
 1. In [Configuration](/esp-config/getting-started/using-configuration), navigate to **Service Manager > Administration > Custom Lookups**.
-1. In the Custom Lookups list view, click the **Add** button (the plus sign).
+1. In the Custom Lookups list view, click the `+` button located in the top right.
 1. Give the new custom lookup a name and a description.
-1. (Optional) Change the status from the default Active to Offline.
-    ::: note
-    If you are going to use the custom lookup in a workflow, make sure the status is set to Active.
-    :::
 1. Click **Create**.
 
-**To associate a record with a custom lookup:**
+### Step 2: Add a reference record
+The reference name is key to providing a match for the [Custom Lookup Automation](/servicemanager-config/customize/workflows/custom-lookup-automation).  The Custom Lookup Automatomation will look throught all the references on a Custom Lookup for a matching reference and then pass the values for that reference back to the workflow.
+
 1. In the list of custom lookups, click the **View** button (the eye icon) in the row of the custom lookup you want to configure.
-1. In the Details & Records view, go to the Records tab.
+1. Select the `Records` tab.
 1. Click the **Add** button (the plus sign) to create a new record.
 1. In the Reference field, give the new record a name.
 1. In the Configurations section to the right, click the down arrow to access the *Please select an entity* dropdown.
 1. Select an entity.
-    1. (Optional) If the entity you want is not in the list, you can use a custom field to make it available. See [Using custom fields in custom lookups](/servicemanager-config/administration/custom-lookups#using-custom-fields-in-custom-lookups).
 1. Click **Create**.
+
+
+:::tip
+If the entity you want is not in the list, you can use a custom field to make it available. See [Using custom fields in custom lookups](/servicemanager-config/administration/custom-lookups#using-custom-fields-in-custom-lookups).
+:::
 
 ## Using custom fields in custom lookups
 Within each custom lookup, you define a set of one or more associated records. To do this, select the eye icon on the custom lookup entry to access the Custom Lookup Details and Records tabs. For creating records of association in custom lookups, Custom Fields 1 through 5 are reserved and available to use.
