@@ -26,6 +26,7 @@
     { "url": "/servicemanager-config/customize/workflows/authorization", "location": "/esp-config/automation/authorization", "code": 301, "skip_location_validation": true  },
     { "url": "/servicemanager-config/customize/workflows/external-authorization", "location": "/esp-config/automation/external-authorization", "code": 301, "skip_location_validation": true  },
     { "url": "/servicemanager-config/customize/workflows/human-task", "location": "/esp-config/automation/human-task", "code": 301, "skip_location_validation": true  },
-    { "url": "/servicemanager-config/customize/workflows/decision", "location": "/esp-config/automation/decision", "code": 301, "skip_location_validation": true  }
+    { "url": "/servicemanager-config/customize/workflows/decision", "location": "/esp-config/automation/decision", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/customize/intelligent-capture-designer", "location": "/esp-config/automation/intelligent-capture-designer", "code": 301, "skip_location_validation": true  }
   ]
  }
