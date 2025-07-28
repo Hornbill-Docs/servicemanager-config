@@ -5,7 +5,7 @@ layout: article-toc
 Service Manager provides several default forms that are available to use when building an Intelligent Capture script. These forms can be made available to an Intelligent Capture script by adding a form node to your Intelligent Capture and selecting the form name from within the properties of the node.
 
 ## Before You Begin
-* Become familiar with the [Intelligent Capture designer](/servicemanager-config/customize/intelligent-capture-designer).
+* Become familiar with the [Intelligent Capture designer](/esp-config/automation/intelligent-capture-designer).
 
 ## Add Attachments
 The Add Attachments form allows you to include files when raising a request. Multiple attachments can be added and individual descriptions can be applied to each. 
@@ -69,6 +69,13 @@ The Asset form allows an analyst or customer to associate assets with a request.
 :::note
 The "Select Asset ..." parameters only affect tabs that search for assets. The customer's Assets and Shared Assets tabs will show all Assets that are Owned By or Shared With the customer respectively.
 :::
+
+### Asset Data Query on a Custom Form
+As an alternative to the full asset form, you can add a field to a Custom Form that uses a data query to present assets in drown-down select box, a radio set,  or a check-box group.
+
+* **Get All Assets**. All assets are available to select from.
+* **Get All Assets by Type**. Only display assets that are of a particular type.
+* **Get All Assets by Class**. Only display assets that are of a particular class.
 
 ## Categories
 The Category form will display the request category profile structure to the user.  The category used will be based on the category root specified on the request type configuration on the Service details form.  When a category is selected, the [description of the category](/esp-config/data/profiles#editor) will be displayed to the user.
@@ -200,4 +207,6 @@ The following settings can be use to change the behavior of the Services form.  
 |-|-|
 |servicemanager.progressiveCapture.servicedetails.enableSupportVisibility|Restricts the view so that the list of services also only includes the services supported by the analyst.|
 |servicemanager.progressiveCapture.servicedetails.catalogRequired|Enforces the selection of a request catalog item if one exists under a service.|
+
+
 
