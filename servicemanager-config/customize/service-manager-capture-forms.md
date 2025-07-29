@@ -71,11 +71,16 @@ The "Select Asset ..." parameters only affect tabs that search for assets. The c
 :::
 
 ### Asset Data Query on a Custom Form
-As an alternative to the full asset form, you can add a field to a Custom Form that uses a data query to present assets in drown-down select box, a radio set,  or a check-box group.
+As an alternative to the full asset form, you can add a field to a [Custom Form](/esp-config/automation/customized-forms) that uses a data query to present assets in a dynamic drop-down select box, radio set, or check-box group.
 
 * **Get All Assets**. All assets are available to select from.
 * **Get All Assets by Type**. Only display assets that are of a particular type.
 * **Get All Assets by Class**. Only display assets that are of a particular class.
+
+![Asset Data Query](/_books/servicemanager-config/images/capture-asset-data-query.png)
+
+* **Filter Assets**. Assets will only be visible if the asset ID contains the filter text.
+* **Include Archived Assets**.  Including archived assets is set to **Yes** by default.  Set this to **No** to hide archived assets.
 
 ## Categories
 The Category form will display the request category profile structure to the user.  The category used will be based on the category root specified on the request type configuration on the Service details form.  When a category is selected, the [description of the category](/esp-config/data/profiles#editor) will be displayed to the user.
