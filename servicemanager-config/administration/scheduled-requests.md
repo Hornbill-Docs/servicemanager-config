@@ -47,6 +47,9 @@ Select one of the following scheduling options
 * Run Once
 * Run Daily
 * Run Monthly
+    ::: note
+    When scheduling monthly, make sure that the selected day is valid for every month that the job will run.
+    ::: 
 * Run Every Period
 
 #### Next event date
