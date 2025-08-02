@@ -27,7 +27,7 @@ The Scheduled Requests feature enables Service Manager requests to be generated 
 1. In the Scheduled Requests list, click **Create New** (the plus icon).
 1. Complete the fields described in [Details](/servicemanager-config/administration/scheduled-requests#details).
 1. (Optional) Click **Assets** (the monitor icon) to go to the Assets tab; search to associate one or more assets.
-1. Click the clock icon to go to the Scheduling tab; set up a schedule as described in [Scheduling tab](/servicemanager-config/administration/scheduled-requests#scheduling).
+1. Click the clock icon to go to the Scheduling tab; set up a schedule as described in [Scheduling tab](/servicemanager-config/administration/scheduled-requests#scheduling-tab).
 1. Click **Create**.
 
 ### Details
