@@ -250,6 +250,9 @@ Use a Suspend node if you wish to suspend the progress of the workflow until a d
 * Wait for Request Closure Category
 * Wait for Request Connection
 * Wait for Custom Field
+    :::note
+    Not all custom fields are accessible for selection. Specifically, fields categorized as 'longtext' are not included in the selectable list of custom fields. For instance, custom fields numbered 31 through 40 fall into this category and are thus unavailable for use.
+    :::
 * Wait for Customer
 * Wait for Feedback
 * Wait for Request Description

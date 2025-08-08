@@ -29,6 +29,7 @@
     { "url": "/servicemanager-config/customize/workflows/decision", "location": "/esp-config/automation/decision", "code": 301, "skip_location_validation": true  },
     { "url": "/servicemanager-config/customize/intelligent-capture-designer", "location": "/esp-config/automation/intelligent-capture-designer", "code": 301, "skip_location_validation": true  },
     { "url": "/servicemanager-config/customize/intelligent-capture-validation", "location": "/esp-config/automation/intelligent-capture-validation", "code": 301, "skip_location_validation": true  },
-    { "url": "/servicemanager-config/customize/customized-forms", "location": "/esp-config/automation/customized-forms", "code": 301, "skip_location_validation": true  }
+    { "url": "/servicemanager-config/customize/customized-forms", "location": "/esp-config/automation/customized-forms", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/customize/workflows/variable-picker", "location": "/esp-config/automation/variable-picker", "code": 301, "skip_location_validation": true  }
   ]
  }
