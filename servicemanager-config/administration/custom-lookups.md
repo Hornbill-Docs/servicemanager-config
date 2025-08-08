@@ -81,7 +81,7 @@ You can use custom lookups in workflows as a way of invoking pre-defined associa
     (The Type and Task fields will auto-populate with the default settings.)
 
 2. In the Options section, for Custom Lookup, use the dropdown to select your custom lookup.
-3. In Reference (which refers to the record reference for the chosen custom lookup), manually set your reference to the name of the associated record. If the associated-records information is accessible using a variable, then use the [variable picker](/servicemanager-config/customize/workflows/variable-picker) to select it.
+3. In Reference (which refers to the record reference for the chosen custom lookup), manually set your reference to the name of the associated record. If the associated-records information is accessible using a variable, then use the [variable picker](/esp-config/automation/variable-picker) to select it.
 
 When configured like this, what the Hornbill Automation node does is it loads the custom lookup reference entity values --- in the form of output parameters --- into the workflow, which can then be called from a subsequent node or nodes using the variable picker.
 
