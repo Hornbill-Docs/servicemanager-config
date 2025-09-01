@@ -33,7 +33,7 @@ Response Time refers to the amount of time it takes from the moment a new reques
 Resolution time refers to the amount of time it takes to resolve a request. The point at which a resolution timer starts can vary from workflow to workflow.  In some cases, the resolution timer may start at the same time as the response timer.  The response timer could also start after the response time has been marked, at which point the request has been assessed, assigned, and can now be worked on.
 
 ### Settings
-Some [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) that control the default behavior of the resolution timers after they have started. The following settings are available to automatically pause, resume, or stop the resolution timer when the status of a request changes.
+Some [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) control the default behavior of the resolution timers after they have started. The following settings are available to automatically pause, resume, or stop the resolution timer when the status of a request changes.
 
 * app.request.pauseResolutionTimerOnResolve (Default OFF)
 * app.request.resumeResolutionTimerOnReopen (Default OFF)
