@@ -21,7 +21,9 @@ Manage the Resolve settings to control the behavior when resolving requests.
 * All manual Resolve/Close without an owner.
 * Automatically mark SLM Resolution Timer as part of the resolve action. If using BPM to mark the resolution timer at times other than when resolving, this should be turned off.
 * Enable the option to action on linked requests against a request through the Resolve tab.
-* This will prevent a request from resolving if it has open activities.
+* Prevent a request from being resolved if it has open activities.
+* Enable read-only view of the timeline in the Employee Portal on resolved requests.  This prevent the adding of comments by the customer.
+* Enable read-only view of the timeline in the Customer Portal on resolved requests.   This prevent the adding of comments by the customer.
 
 ## Customer Section
 
