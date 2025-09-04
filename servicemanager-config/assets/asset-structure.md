@@ -352,4 +352,4 @@ See the attributes and other information about this asset class [here](/servicem
 <!-- https://wiki.hornbill.com/index.php?title=Understanding_the_Asset_Structure -->
 
 ## Asset categories
-Asset categories are for organizing and grouping asset types. Unlike asset classes, asset categories are customizable. When you use the Hornbill default categories and your own custom categories to group your asset types, you have greater control of how and where your assets are displayed.
+Asset categories are for organizing and grouping asset types. Unlike asset classes, asset categories are customizable. Because you are the one to create the categories to group your asset types, it's you who controls how and where your assets are displayed.

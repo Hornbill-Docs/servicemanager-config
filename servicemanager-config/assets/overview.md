@@ -25,19 +25,6 @@ To access the Asset Management capabilities of Hornbill Service Manager, your us
 |Asset Management User|This role includes rights to define  and edit assets as well as to add detailed asset information.|
 |Asset Management Admin|This role provides all the capabilities of the Asset Management User role, with additional rights to define and edit asset types and asset categories.|
 
-## Customizing your implementation of Asset Management
-As an Asset Management admin, you'll take the following steps to set up your implementation. First, make sure you [understand the structure of assets](/servicemanager-config/assets/asset-structure) so you can plan how to best meet your organization's needs.
-
-**In setting up your Asset Management implementation, you'll take the following steps:**
-1. Determine which asset categories you need to group your asset types.
-1. Create the categories.
-1. Determine your asset types. Which of the default types will you use? Which new types of your own will you add?
-1. Drag and drop asset types into your categories. You can drag an uncategorized asset type into a category, or you can drag an asset type from one category to another (to recategorize it).
-1. Create new asset types in your categories.
-1. Set up details for each category; customize how you want the asset information to appear in the asset views.
-1. Edit asset types to customize how the information appears in the asset views.
-
-*where does import fall?*
 <!--
 ____
 Views and advanced filters are the same as before.
