@@ -20,12 +20,12 @@ To access the Asset Management capabilities of Hornbill Service Manager as an ad
 
 ## About categorizing asset types
 In setting up your Asset Management implementation, you'll take the following steps:
-1. [Determine which asset categories you need to group your asset types.](/servicemanager-config/asset-management/categorize-assets#determine-your-asset-categories)
-1. [Create asset categories.](/servicemanager-config/asset-management/categorize-assets#create-asset-categories)
-1. [Determine your asset types.](/servicemanager-config/asset-management/categorize-assets#determine-your-asset-types)
-1. [Put asset types into categories.](/servicemanager-config/asset-management/categorize-assets#put-asset-types-into-categories)
-1. [Set up details for each category]((/servicemanager-config/asset-management/categorize-assets#set-up-details-for-each-category)); customize your presentation of asset information in the list of assets when viewing by category.
-1. [Edit asset types to customize the form layout of the asset information.](/servicemanager-config/asset-management/categorize-assets#edit-the-asset-types)
+1. [Determine which asset categories you need to group your asset types.](/servicemanager-config/assets/categorize-assets#determine-your-asset-categories)
+1. [Create asset categories.](/servicemanager-config/assets/categorize-assets#create-asset-categories)
+1. [Determine your asset types.](/servicemanager-config/assets/categorize-assets#determine-your-asset-types)
+1. [Put asset types into categories.](/servicemanager-config/assets/categorize-assets#put-asset-types-into-categories)
+1. [Set up details for each category](/servicemanager-config/assets/categorize-assets#set-up-details-for-each-category); customize your presentation of asset information in the list of assets when viewing by category.
+1. [Edit asset types to customize the form layout of the asset information.](/servicemanager-config/assets/categorize-assets#edit-the-asset-types)
 
 ## Determine your asset categories
 Do you have an existing Asset Management implementation in Hornbill? If so, when switching to the new Asset Management, you'll be presented with suggested categories for your assets. To the left, you'll see a list of uncategorized asset types.
@@ -35,9 +35,9 @@ Do you have an existing Asset Management implementation in Hornbill? If so, when
 1. In the main panel to the right, your asset types are shown under suggested categories.
 1. Within each suggested category, use the **Select All** and **Select** buttons to choose which of your asset types should go into it.
 1. Click **Create and Assign** for each suggested category to accept the suggestions and any changes you made.
-1. When you have finished assigning categories in this way, if there remain any uncategorized asset types, [create your own categories](/servicemanager-config/asset-management/categorize-assets#create-categories).
+1. When you have finished assigning categories in this way, if there remain any uncategorized asset types, [create your own categories](/servicemanager-config/assets/categorize-assets#create-asset-categories)
 
-If you are new to Asset Management in Hornbill and don't have an existing implementation, take some time to consider how you would like to group your asset types and which categories you'll need before moving on to [create them](/servicemanager-config/asset-management/categorize-assets#create-categories).
+If you are new to Asset Management in Hornbill and don't have an existing implementation, take some time to consider how you would like to group your asset types and which categories you'll need before moving on to [create them](/servicemanager-config/assets/categorize-assets#create-asset-categories).
 
 ## Create asset categories
 
@@ -51,14 +51,14 @@ You can create as many asset categories as you need.
 1. Click **Create**.
 
 ## Determine your asset types
-If you already have an existing Asset Management implementation in Hornbill, you will already have asset types. You can [create new ones](/servicemanager-config/asset-management/manage-asset-types#managing-asset-types) in **Configuration > Service Manager > Assets > Manage Types**.
+If you already have an existing Asset Management implementation in Hornbill, you will already have asset types. You can [create new ones](/servicemanager-config/assets/manage-asset-types#managing-asset-types) in **Configuration > Service Manager > Assets > Manage Types**.
 
 If you are new to Asset Management in Hornbill, you will want to give some thought to the asset types you will need for your implementation. Hornbill provides default asset types for each asset class. You can create as many of your own asset types as you need.
 
 ## Put asset types into categories
 You can put asset types into categories in the ways that follow. This is done in **Configuration > Service Manager > Assets > Manage Types**.
 
-* **Create new asset types in your categories.** In the Asset Categories list, in the category header, click **Create new type in this category** (the plus sign). For more information, see [Managing asset types](/servicemanager-config/asset-management/manage-asset-types#managing-asset-types).
+* **Create new asset types in your categories.** In the Asset Categories list, in the category header, click **Create new type in this category** (the plus sign). For more information, see [Managing asset types](/servicemanager-config/assets/manage-asset-types#managing-asset-types).
 * **Drag and drop.** In the Asset Categories list, drag asset types into your categories as appropriate. You can drag an uncategorized asset type into a category, or you can recategorize an asset type by dragging it from one category to another.
 
 ### About what's displayed in the assets dashboard
@@ -75,7 +75,7 @@ To customize how you want the asset information to appear in your asset views, u
 
 The view below, in **Service Management > Assets**, shows a configuration of asset table columns for an asset category called *Computing devices*. The order of columns has been adjusted, and certain columns (e.g. Description) have been hidden.
 
-![Presentation of asset information in an asset category](/_books/servicemanager-config/asset-management/images/assets-category-presentation.png)
+![Presentation of asset information in an asset category](/_books/servicemanager-config/assets/images/assets-category-presentation.png)
 
 **To configure the presentation of assets information for an asset category:**
 1. In the Asset Categories list, click the header for a category.
@@ -91,11 +91,11 @@ The view below, in **Service Management > Assets**, shows a configuration of ass
 1. Click **Save Changes**.
 
 ## Edit the asset types
-This section provides a broad overview of editing asset types. Before configuring your assets types, make sure you understand the more detailed information presented in [Manage assets](/servicemanager-config/asset-management/manage-asset-types).
+This section provides a broad overview of editing asset types. Before configuring your assets types, make sure you understand the more detailed information presented in [Manage assets](/servicemanager-config/assets/manage-asset-types).
 
 1. Set up your form layout for each asset type (you can change it from the default layout).
 1. In *Fields to Show in First Column*, drag and drop to change the order of how the information appears in the asset view.
-1. Take other actions as necessary, as described in [Managing asset types](/servicemanager-config/asset-management/manage-asset-types#managing-asset-types). For example, would you like to change from a one-column layout to a two-column layout?
-1. (Optional) When you're finished making your modifications, you can [export the whole UI configuration into a JSON file](/servicemanager-config/asset-management/manage-asset-types#exporting-and-importing-asset-types).
+1. Take other actions as necessary, as described in [Managing asset types](/servicemanager-config/assets/manage-asset-types#managing-asset-types). For example, would you like to change from a one-column layout to a two-column layout?
+1. (Optional) When you're finished making your modifications, you can [export the whole UI configuration into a JSON file](/servicemanager-config/assets/manage-asset-types#exporting-and-importing-asset-types).
 
 <!----JAMES: Is there anything else we should say here?---->

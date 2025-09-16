@@ -11,30 +11,30 @@ This article is new, to support the preview release of the new Asset Management 
 Asset Management in Hornbill Service Manager gives you the control to organize and present specific information front and center in the main view of an asset. On a type-by-type basis, you can customize users' view of asset information precisely as you need to.
 
 ## Topics covered
-* [About configuring asset types](/servicemanager-config/asset-management/manage-asset-types#about-configuring-asset-types)
-* [Managing asset types](/servicemanager-config/asset-management/manage-asset-types#managing-asset-types)
-* [Managing asset states and substates](/servicemanager-config/asset-management/manage-asset-types#managing-asset-states-and-substates)
+* [About configuring asset types](/servicemanager-config/assets/manage-asset-types#about-configuring-asset-types)
+* [Managing asset types](/servicemanager-config/assets/manage-asset-types#managing-asset-types)
+* [Managing asset states and substates](/servicemanager-config/assets/manage-asset-types#managing-asset-states-and-substates)
 
 ## About configuring asset types
 To customize your users' view of assets, navigate to **Configuration > Service Manager > Assets > Manage Types**. Here you'll work in the following tabs:
-* [General](/servicemanager-config/asset-management/manage-asset-types#general). Configure the asset type's summary card, its icon, and so on.
-* [Summary fields](/servicemanager-config/asset-management/manage-asset-types#summary-fields). Choose the fields that a user sees when viewing an asset in the Summary view.
-* [Detail fields](/servicemanager-config/asset-management/manage-asset-types#detail-fields). Choose the fields that a user sees when viewing an asset in the Details view.
-* [Create fields](/servicemanager-config/asset-management/manage-asset-types#create-fields). Choose the fields available to users when new assets are being created.
-* [List fields](/servicemanager-config/asset-management/manage-asset-types#list-fields). Choose the fields that a user sees when viewing the list of assets in an asset type.
+* [General](/servicemanager-config/assets/manage-asset-types#general). Configure the asset type's summary card, its icon, and so on.
+* [Summary fields](/servicemanager-config/assets/manage-asset-types#summary-fields). Choose the fields that a user sees when viewing an asset in the Summary view.
+* [Detail fields](/servicemanager-config/assets/manage-asset-types#detail-fields). Choose the fields that a user sees when viewing an asset in the Details view.
+* [Create fields](/servicemanager-config/assets/manage-asset-types#create-fields). Choose the fields available to users when new assets are being created.
+* [List fields](/servicemanager-config/assets/manage-asset-types#list-fields). Choose the fields that a user sees when viewing the list of assets in an asset type.
 
 ::: tip
 You may find it helpful, when customizing your asset views, to work with two windows open side by side, with one window showing Service Manager > Assets > [a selected asset] and the second window showing your configuration work in **Configuration > Service Manager > Manage Types > [a selected type]**. This way, you can see your modifications in real time.
 :::
 
 ### General
-![General tab](/_books/servicemanager-config/asset-management/images/assets-general-tab.png)
+![General tab](/_books/servicemanager-config/assets/images/assets-general-tab.png)
 
 In the General tab, you can choose an icon for the asset type or upload a custom image.
 
 Go here to configure the summary card that appears for all assets within the asset type. Here is an example of a summary card for an asset of the asset type Printer:
 
-![Summary card for an asset](/_books/servicemanager-config/asset-management/images/assets-summary-card.png)
+![Summary card for an asset](/_books/servicemanager-config/assets/images/assets-summary-card.png)
 
 ::: warning
 When using the Summary Card Editor to customize asset summary cards, use *only* Hornbill-prescribed styles. Do not add your own styles; any other style declarations will be removed by Hornbill.
@@ -42,10 +42,10 @@ When using the Summary Card Editor to customize asset summary cards, use *only* 
 
 In the General tab, you can also use the dropdown to change the category of the asset type (rather than dragging/dropping).
 
-The General tab is also where you can [export and import your Assets UI configuration](/servicemanager-config/asset-management/manage-asset-types#exporting-and-importing-asset-types).
+The General tab is also where you can [export and import your Assets UI configuration](/servicemanager-config/assets/manage-asset-types#exporting-and-importing-asset-types).
 
 ### Summary fields
-![Summary Fields tab](/_books/servicemanager-config/asset-management/images/assets-summary-fields-tab.png)
+![Summary Fields tab](/_books/servicemanager-config/assets/images/assets-summary-fields-tab.png)
 
 Go to the Summary Fields tab to choose the fields that a user sees when viewing an asset in the Summary view. The focus of an asset is put on this summary information when a user clicks on an asset in the asset list. You can customize the list of Summary fields so as to highlight the most important or most used fields for this type of asset.
 
@@ -53,35 +53,35 @@ Choose between a one-column or two-column layout of the fields. Use the **Quick 
 
 Here is an example of a Summary view for an asset of the asset type Printer, using a one-column layout:
 
-![Fields in an asset's Summary view](/_books/servicemanager-config/asset-management/images/summary-view-of-asset.png)
+![Fields in an asset's Summary view](/_books/servicemanager-config/assets/images/summary-view-of-asset.png)
 
 Here is the Summary view of the same asset, with fields configured in a two-column layout:
-![Fields in an asset's Summary view, two-column layout](/_books/servicemanager-config/asset-management/images/summary-view-of-asset-2-column.png)
+![Fields in an asset's Summary view, two-column layout](/_books/servicemanager-config/assets/images/summary-view-of-asset-2-column.png)
 
 ### Detail fields
-![Detail Fields tab](/_books/servicemanager-config/asset-management/images/assets-detail-fields-tab.png)
+![Detail Fields tab](/_books/servicemanager-config/assets/images/assets-detail-fields-tab.png)
 
 In the Details view, users can access extended details beyond what is in the Summary view for an asset. Go to the Detail Fields tab to choose which fields you want users to see when viewing an asset in the Details view.
 
 Choose between a one-column or two-column layout of the fields. Use the **Quick Layout** button to choose to use default fields or legacy fields. Using legacy fields means Hornbill will read in your asset fields from your existing implementation.
 
 ### Create fields
-![Create Fields tab](/_books/servicemanager-config/asset-management/images/assets-create-fields-tab.png)
+![Create Fields tab](/_books/servicemanager-config/assets/images/assets-create-fields-tab.png)
 
 Go here to choose the fields available to a user when creating new assets. Use the **Quick Layout** button to choose to use default fields or legacy fields. Using legacy fields means Hornbill will read in your asset fields from your existing implementation.
 
 Here is an example of a New Asset dialog when creating an asset of the asset type Printer:
 
-![New Asset dialog](/_books/servicemanager-config/asset-management/images/create-new-asset.png)
+![New Asset dialog](/_books/servicemanager-config/assets/images/create-new-asset.png)
 
 ### List fields
-![List Fields tab](/_books/servicemanager-config/asset-management/images/assets-list-fields-tab.png)
+![List Fields tab](/_books/servicemanager-config/assets/images/assets-list-fields-tab.png)
 
 Go to the List Fields tab to choose the fields that a user sees when viewing the list of assets in an asset type. You can drag the columns to change the order in which they appear in the list. Click the eye icon to toggle the columns from visible to hidden. 
 
 Here is an example of a what a users sees when viewing the list of assets by the asset type Printer:
 
-![List view when viewing by asset type](/_books/servicemanager-config/asset-management/images/list-view-for-asset-type.png)<br><br>
+![List view when viewing by asset type](/_books/servicemanager-config/assets/images/list-view-for-asset-type.png)<br><br>
 
 <!-- ----JAMES: in this post https://beta.hornbill.com/hornbill/post/urn:buzz:activity:d235058b-5d34-4d6f-8dd9-1ce5b47f281c/ you mentioned responding to a customer about limited search functionality. "We need to search for assets using specific fields based on certain criteria. However, the available search filters are limited and do not include all the necessary fields, as shown in the attached image." Would it be worth adding a tip here, like the one below? (I added two H4 sections based off your response to the customer's post.) -->
 
@@ -110,7 +110,7 @@ The default asset types include the following:
 * Mobile app
 * Desk phone
 
-For details about choices to make when creating a new asset type, see [Asset type fields](/servicemanager-config/asset-management/manage-asset-types#asset-type-fields).
+For details about choices to make when creating a new asset type, see [Asset type fields](/servicemanager-config/assets/manage-asset-types#asset-type-fields).
 
 **To add a new asset type:**
 1. Navigate to **Configuration > Service Manager > Assets > Manage Types**.

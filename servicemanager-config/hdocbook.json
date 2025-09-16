@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.3.18",
+  "version": "1.3.19",
   "audience": [
     "public"
   ],
@@ -355,6 +355,14 @@
           {
             "text": "Asset Structure",
             "link": "servicemanager-config/assets/asset-structure"
+          },
+          {
+            "text": "Categorize Assets",
+            "link": "servicemanager-config/assets/categorize-assets"
+          },
+          {
+            "text": "Manage Asset Types",
+            "link": "servicemanager-config/assets/manage-asset-types"
           }
         ]
       },
