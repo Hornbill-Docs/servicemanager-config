@@ -233,13 +233,13 @@ The Request Service automation is used to manage the linking of additional servi
 
 ![Request Service Automation](/_books/servicemanager-config/images/workflow-request-service.png)
 
-### Available tasks
-* **Add Related Services**<br>A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the related services based on a particular type of relationship between the services.
-    * Service A and Service B have not dependancy.
-    * Service A depends on Service B.
-    * Service B depends on Service A.
-    * Service A and Service B have a two way dependancy.    
+#### Available tasks
+* **Add Related Services**<br>A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the [related services](/service-portfolio/services/service-details#services) based on a selected type of relationship between the services.
+    * The Related Service and Request Service depend on each other.
+    * The Request Service depends on the Related Service.
+    * The Related Service depends on the Request Service. 
 * **Add Linked Service**<br>This task allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
+    * *Linked Service Option*.  This is a mandatory option that requires the ID of the service that needs to be linked. When set to Manual, a list of services is provided.  When set to Variable, the variable needs to match the [ID of the service](/servicemanager-external-db/tables/h-itsm-services).  
 * **Update Service Status**<br>This task allows for the [Service Status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on all of the linked services to help determine the availability of those services.  
 
 ## Suspend
