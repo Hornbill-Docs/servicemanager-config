@@ -4,12 +4,18 @@ layout: article-toc
 # Request Settings
 Use Request Settings to control the behavior of various features on Requests in Service Manager.
 
+## Accessing Request Settings
+The Request Settings can be found in the Service Manager Configuration.
+* Open configuration (Ctrl+Shift+f).
+* In the search box type **Request Settings**.
+* In the section titled Service Manager, select **Request Settings**.
+
 ## On Hold Settings
 Choose which request actions will be enabled when a request is placed on hold. By default, the following actions are enabled:
 
 * Update
 * Boards
-* Cancel
+* Cancel (Only available to those that have the right to cancel requests)
 
 Tick any actions that you wish to allow while requests are on hold, or remove the checkmark from those that you wish to disable. Click **Save** to apply the changes.
 
@@ -22,8 +28,8 @@ Manage the Resolve settings to control the behavior when resolving requests.
 * Automatically mark SLM Resolution Timer as part of the resolve action. If using BPM to mark the resolution timer at times other than when resolving, this should be turned off.
 * Enable the option to action on linked requests against a request through the Resolve tab.
 * Prevent a request from being resolved if it has open activities.
-* Enable read-only view of the timeline in the Employee Portal on resolved requests.  This prevent the adding of comments by the customer.
-* Enable read-only view of the timeline in the Customer Portal on resolved requests.   This prevent the adding of comments by the customer.
+* Enable read-only view of the timeline in the Employee Portal on resolved requests.  This prevents the customer of the request from adding comments to entries in the timeline.
+* Enable read-only view of the timeline in the Customer Portal on resolved requests.   This prevents the customer of the request from adding comments to entries in the timeline.
 
 ## Customer Section
 
