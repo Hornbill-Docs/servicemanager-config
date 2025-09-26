@@ -2,7 +2,7 @@
 layout: article-toc
 ---
 # Request Settings
-Use Request Settings to control the behavior of various features on Requests in Service Manager.
+Use Request Settings to control the behavior of various features on Requests in Service Manager.  These are global settings and any changes will apply to all request types.
 
 ## Accessing Request Settings
 The Request Settings can be found in the Service Manager Configuration.
