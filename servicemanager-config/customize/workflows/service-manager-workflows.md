@@ -1,27 +1,32 @@
 ---
 layout: article-toc
 ---
-# Request Automation
-The Service Manager Workflows are used to automate the processing of the requests that have been raised. This page contains information on the Request Automation that can be used in the Workflow Designer to build unique and powerful workflows for your requests.
+# Request automation
+The Service Manager workflows are used to automate the processing of the requests that have been raised. This page contains information on the request automation that can be used in the workflow designer to build unique and powerful workflows for your requests.
 
 ## Access Control
 Use the Access Control to lock or unlock the details section or the Actions on a request. Only users with an appropriate role or application right will be able to use a locked action or have the ability to unlock the action for others to use.
 
 ![Workflow Lock Automation](/_books/servicemanager-config/images/workflow-lock-automation.png)
 
-### Example uses
+#### Example uses
 * On an incident, the resolution action could be locked until other actions have been completed.
 * On a change, the details might be locked once a change has been approved.
 * Only allow full access users the ability to apply certain actions. 
 
 ![Worflow Lock Action](/_books/servicemanager-config/images/workflow-lock-action.png)
 
-### Available tasks
-* **Lock / Unlock Request Actions**. Lock or unlock individual actions on a request.  The option *Default Lock Type* can apply or remove the locks from all actions.
-* **Lock Request Details**.  Lock the main details section of the request. This includes both the summary and description.
-* **Unlock Request Details**. Unlock the main details section of the request. This includes both the summary and description.
+#### Available Tasks
+##### Lock / Unlock Request Actions
+Lock or unlock individual actions on a request.  The option *Default Lock Type* can apply or remove the locks from all actions.
 
-### Overriding a locked action
+##### Lock Request Details
+Lock the main details section of the request. This includes both the summary and description.
+
+##### Unlock Request Details
+Unlock the main details section of the request. This includes both the summary and description.
+
+#### Overriding a locked action
 Users that have a [Full Access](/servicemanager-config/setup/service-manager-roles#system-roles) role can override a locked action for the request type that they have full access to.  They can themselves use the locked action, or they can click on the padlock icon to unlock the action for other users.
 
 ![Locked Resolution Action](/_books/servicemanager-config/images/request-locked-resolution.png)
@@ -233,14 +238,19 @@ The Request Service automation is used to manage the linking of additional servi
 
 ![Request Service Automation](/_books/servicemanager-config/images/workflow-request-service.png)
 
-#### Available tasks
-* **Add Related Services**<br>A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the [related services](/service-portfolio/services/service-details#services) based on a selected type of relationship between the services.
-    * The Related Service and Request Service depend on each other.
-    * The Request Service depends on the Related Service.
-    * The Related Service depends on the Request Service. 
-* **Add Linked Service**<br>This task allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
-    * *Linked Service Option*.  This is a mandatory option that requires the ID of the service that needs to be linked. When set to Manual, a list of services is provided.  When set to Variable, the variable needs to match the [ID of the service](/servicemanager-external-db/tables/h-itsm-services).  
-* **Update Service Status**<br>This task allows for the [Service Status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on all of the linked services to help determine the availability of those services.  
+#### Add related services
+A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the [related services](/service-portfolio/services/service-details#services) based on a selected type of relationship between the services listed below.
+* The Related Service and Request Service depend on each other.
+* The Request Service depends on the Related Service.
+* The Related Service depends on the Request Service. 
+
+#### Add linked service
+This task allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
+
+* *Linked Service Option*.  This is a mandatory option that requires the ID of the service that needs to be linked. When set to Manual, a list of services is provided.  When set to Variable, the variable needs to match the [ID of the service](/servicemanager-external-db/tables/h-itsm-services).  
+
+#### Update service status
+This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on all of the services that are linked to the request. The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/service-portfolio/services/service-availability#availability-metrics).
 
 ## Suspend
 Use a Suspend node if you wish to suspend the progress of the workflow until a defined action is performed manually on the request. This could include waiting for a priority to be set, a customer added, ownership set, or the resolution defined. Configuration options include the ability to specify the context (which Action Bar icon) the request will appear in while waiting for the Suspend (manual action) to be performed.
