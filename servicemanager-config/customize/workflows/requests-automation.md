@@ -1,7 +1,7 @@
 ---
 layout: article-toc
 ---
-# Request automation
+# Requests automation
 The Service Manager workflows are used to automate the processing of the requests that have been raised. This page contains information on the request automation that can be used in the workflow designer to build unique and powerful workflows for your requests.
 
 ## Access Control
@@ -234,7 +234,7 @@ The output of this Hornbill Automation is the ID of the new request.  This can b
 * Delete Questions
 
 ## Request Service
-The Request Service automation is used to manage the linking of additional services to a request where those services underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
+The Request Service automation is used to manage the services that are directly linking of additional services to a request where those services underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
 
 ![Request Service Automation](/_books/servicemanager-config/images/workflow-request-service.png)
 
@@ -250,7 +250,7 @@ This task allows for a single service to be added to the list of associated serv
 * *Linked Service Option*.  This is a mandatory option that requires the ID of the service that needs to be linked. When set to Manual, a list of services is provided.  When set to Variable, the variable needs to match the [ID of the service](/servicemanager-external-db/tables/h-itsm-services).  
 
 #### Update service status
-This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on all of the services that are linked to the request. The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/service-portfolio/services/service-availability#availability-metrics).
+This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on the service that the request has been raised against.The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/service-portfolio/services/service-availability#availability-metrics).
 
 ## Suspend
 Use a Suspend node if you wish to suspend the progress of the workflow until a defined action is performed manually on the request. This could include waiting for a priority to be set, a customer added, ownership set, or the resolution defined. Configuration options include the ability to specify the context (which Action Bar icon) the request will appear in while waiting for the Suspend (manual action) to be performed.

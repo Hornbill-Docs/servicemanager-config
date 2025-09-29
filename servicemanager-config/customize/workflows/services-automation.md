@@ -4,6 +4,7 @@ The Service Automation first takes the service that the request was raised under
 
 ## Before you begin
 * Read about [service dependancies](/servicemanager-user-guide/service-portfolio/services/service-dependancies).
+* Read about the [request service automation](/servicemanager-config/customize/workflows/requests-automation#request-service).
 
 ![Services automation](/_books/servicemanager-config/images/workflow-services-status.png)
 
