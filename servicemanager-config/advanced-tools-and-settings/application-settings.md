@@ -280,7 +280,7 @@ Connections are users and contacts that have been associated with a request.  Co
 * **guest.app.requests.notification.notificationType.connectionsRecipient**. Set the default notification type to new connections when they are added to a request. This setting only sets the default value.  Users are able to change their personal notifications settings on their user profile and override this setting.
     * Default: email-only
     
-* **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow conections to view the attachments against a request. This only applies to [attachments that are visible to the customer](https://docs.hornbill.com/servicemanager-user-guide/service-portfolio/requests/attachment-action#visibility). 
+* **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow conections to view the attachments against a request. This only applies to [attachments that are visible to the customer](/servicemanager-user-guide/service-portfolio/requests/attachment-action#visibility). 
 
 * **guest.ui.app.com.hornbill.servicemanager.operation.defaultVisibility.connections**' Default visibility for the request timeline entry that is recorded when adding connections to a request.
     * Default: Customer
