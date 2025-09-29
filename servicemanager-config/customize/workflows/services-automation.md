@@ -2,13 +2,13 @@
 
 The Service Automation first takes the service that the request was raised under, and then updates the status of the services that are related to this service.
 
-## Before you begin
-* Read about [service dependancies](/servicemanager-user-guide/service-portfolio/services/service-dependancies).
-* Read about the [request service automation](/servicemanager-config/customize/workflows/requests-automation#request-service).
-
 ![Services automation](/_books/servicemanager-config/images/workflow-services-status.png)
 
 The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the service [availability metrics](/service-portfolio/services/service-availability#availability-metrics).
+
+## Before you begin
+* Read about [service dependancies](/servicemanager-user-guide/service-portfolio/services/service-dependancies).
+* Read about the [request service automation](/servicemanager-config/customize/workflows/requests-automation#request-service).
 
 ## Status task
 

@@ -238,6 +238,9 @@ The Request Service automation is used to manage the service that the request is
 
 ![Request Service Automation](/_books/servicemanager-config/images/workflow-request-service.png)
 
+#### Befor you begin
+* Read about the [services automation](/servicemanager-config/customize/workflows/services-automation).
+
 #### Add related services
 A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the [related services](/service-portfolio/services/service-details#services) based on a selected type of relationship between the services listed below.
 * The Related Service and Request Service depend on each other.

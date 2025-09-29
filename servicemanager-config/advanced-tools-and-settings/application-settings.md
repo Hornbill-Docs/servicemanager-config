@@ -269,5 +269,18 @@ app.cm.explorer.items.inPolicy<br>
 "Services" : true,<br>
 "default" : true<br>
 
-<!--https://wiki.hornbill.com/index.php?title=Service_Manager_Settings>
-<!-- https://wiki.hornbill.com/index.php?title=Service_Manager_Experimental_Features -->
+## Connections settings
+Connections are users and contacts that have been associated with a request.  Compaired to the main customer of a request, a connection has limited access that only allows them to either view or collaborate on the request. They cannot perform any actions that would progress the workflow.
+* **guest.app.requests.notification.emailTemplate.requestConnectionAdded**. The email template to be used when sending an email notification to the user or contact, letting them know that they have been added.
+    * Default setting: RequestConnectionAddedNotification
+    :::info
+    The RequestConnectionsAddedNotification is an [email template](/servicemanager-config/customize/email-templates) that is installed with Service Manager.
+    :::
+
+* **guest.app.requests.notification.notificationType.connectionsRecipient**. Set the default notification type to new connections when they are added to a request. This setting only sets the default value.  Users are able to change their personal notifications settings on their user profile and override this setting.
+    * Default: email-only
+    
+* **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow conections to view the attachments against a request. This only applies to [attachments that are visible to the customer](https://docs.hornbill.com/servicemanager-user-guide/service-portfolio/requests/attachment-action#visibility). 
+
+* **guest.ui.app.com.hornbill.servicemanager.operation.defaultVisibility.connections**' Default visibility for the request timeline entry that is recorded when adding connections to a request.
+    * Default: Customer
