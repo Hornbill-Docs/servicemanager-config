@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.3.23",
+  "version": "1.3.24",
   "audience": [
     "public"
   ],
@@ -140,7 +140,7 @@
                     "draft": false
                   },
                   {
-                    "text": "Serivces Automation",
+                    "text": "Services Automation",
                     "link": "servicemanager-config/customize/workflows/services-automation"
                   }
                 ]
