@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.3.24",
+  "version": "1.3.25",
   "audience": [
     "public"
   ],
@@ -96,8 +96,8 @@
                     "link": "servicemanager-config/customize/workflows/automation-overview"
                   },
                   {
-                    "text": "Request Automation",
-                    "link": "servicemanager-config/customize/workflows/service-manager-workflows",
+                    "text": "Asset Automation",
+                    "link": "servicemanager-config/customize/workflows/asset-automation",
                     "draft": false
                   },
                   {
@@ -106,13 +106,13 @@
                     "draft": false
                   },
                   {
-                    "text": "Custom Lookup Automation",
-                    "link": "servicemanager-config/customize/workflows/custom-lookup-automation"
-                  },
-                  {
                     "text": "Change Request Automation",
                     "link": "servicemanager-config/customize/workflows/change-request-automation",
                     "draft": false
+                  },
+                  {
+                    "text": "Custom Lookup Automation",
+                    "link": "servicemanager-config/customize/workflows/custom-lookup-automation"
                   },
                   {
                     "text": "Known Error Automation",
@@ -135,8 +135,8 @@
                     "draft": false
                   },
                   {
-                    "text": "Asset Automation",
-                    "link": "servicemanager-config/customize/workflows/asset-automation",
+                    "text": "Requests Automation",
+                    "link": "/servicemanager-config/customize/workflows/requests-automation",
                     "draft": false
                   },
                   {

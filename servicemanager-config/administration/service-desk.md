@@ -28,7 +28,7 @@ When viewing a team, each member has an option to enable assignments. When Enabl
 
 * They can be assigned a request in Intelligent Capture.
 * They can be assigned a request from the Assign Action on a request form.
-* They can be assigned a request from a workflow that uses either the [Round Robin](/servicemanager-config/customize/workflows/service-manager-workflows#assignment) or [Most Available](/servicemanager-config/customize/workflows/service-manager-workflows#assignment) automation.
+* They can be assigned a request from a workflow that uses either the [Round Robin](/servicemanager-config/customize/workflows/requests-automation#assignment) or [Most Available](/servicemanager-config/customize/workflows/requests-automation#assignment) automation.
 * They will receive team assignment notifications.
 
 A Manager who wishes to view the team's requests from the Request List but not be available for assignment can have the Enable Assignment set to `No`.
@@ -37,7 +37,4 @@ A Manager who wishes to view the team's requests from the Request List but not b
 An entire team can have assignment turned off by having the enable assignment set to `No` for all members of that team.  When all members are set to `No`, then:
 * The team will not be available for selection in Intelligent Capture.
 * The team will not be available for selection from the Assign Action on a request form.
-* The team cannot be used with [Round Robin](/servicemanager-config/customize/workflows/service-manager-workflows#assignment) or [Most Available](/servicemanager-config/customize/workflows/service-manager-workflows#assignment) workflow automations.
-
-
-<!-- https://wiki.hornbill.com/index.php?title=Service_Desk_Administration>
+* The team cannot be used with [Round Robin](/servicemanager-config/customize/workflows/requests-automation#assignment) or [Most Available](/servicemanager-config/customize/workflows/requests-automation#assignment) workflow automations.
