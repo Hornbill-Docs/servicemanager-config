@@ -234,7 +234,7 @@ The output of this Hornbill Automation is the ID of the new request.  This can b
 * Delete Questions
 
 ## Request Service
-The Request Service automation is used to manage the services that are directly linking of additional services to a request where those services underpin or depend on the service that the request is raised under.  This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
+The Request Service automation is used to manage the service that the request is raised against. Additional services that underpin or depend on this service can also be added to the request. This is equivalent to the [Linked Services Action](/servicemanager-user-guide/service-portfolio/requests/linked-services-action) on a request where services can be manually linked. 
 
 ![Request Service Automation](/_books/servicemanager-config/images/workflow-request-service.png)
 
