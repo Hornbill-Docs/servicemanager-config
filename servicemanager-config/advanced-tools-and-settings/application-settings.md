@@ -270,17 +270,23 @@ app.cm.explorer.items.inPolicy<br>
 "default" : true<br>
 
 ## Connections settings
-Connections are users and contacts that have been associated with a request.  Compaired to the main customer of a request, a connection has limited access that only allows them to either view or collaborate on the request. They cannot perform any actions that would progress the workflow.
+Connections are users and contacts that have been associated with a request.  Compared to the main customer of a request, a connection has limited access that only allows them to either view or collaborate on the request. They cannot perform any actions that would progress the workflow.
+
 * **guest.app.requests.notification.emailTemplate.requestConnectionAdded**. The email template to be used when sending an email notification to the user or contact, letting them know that they have been added.
     * Default setting: RequestConnectionAddedNotification
     :::info
     The RequestConnectionsAddedNotification is an [email template](/servicemanager-config/customize/email-templates) that is installed with Service Manager.
     :::
 
-* **guest.app.requests.notification.notificationType.connectionsRecipient**. Set the default notification type to new connections when they are added to a request. This setting only sets the default value.  Users are able to change their personal notifications settings on their user profile and override this setting.
+* **guest.app.requests.notification.notificationType.connectionsRecipient**. Set the default notification type to new connections when they are added to a request. This setting only sets the default value.  Users can change their personal notifications settings on their user profile and override this setting.
     * Default: email-only
     
 * **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow conections to view the attachments against a request. This only applies to [attachments that are visible to the customer](/servicemanager-user-guide/service-portfolio/requests/attachment-action#visibility). 
 
 * **guest.ui.app.com.hornbill.servicemanager.operation.defaultVisibility.connections**' Default visibility for the request timeline entry that is recorded when adding connections to a request.
     * Default: Customer
+
+#### Related features
+* [Connections action on a request](/servicemanager-user-guide/service-portfolio/requests/connection-action).
+* [Connections configuration on a service](/service-portfolio/services/service-connections).
+* [Connections automation](/servicemanager-config/customize/workflows/request-connections-automation).
