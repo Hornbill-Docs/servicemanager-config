@@ -9,7 +9,7 @@ Use the Request Connections automation at any stage in a workflow to automatical
 
 ## Before you begin
 * Read about the [Connections action](/servicemanager-user-guide/service-portfolio/requests/connection-action) on a request.
-* Read about how to [configure connections on a service](/service-portfolio/services/service-connections).
+* Read about how to [configure connections on a service](/servicemanager-user-guide/service-portfolio/services/service-connections).
 * Read about the available [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings#connections-settings).
 
 
