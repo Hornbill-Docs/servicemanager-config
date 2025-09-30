@@ -95,9 +95,14 @@ The Change Type form allows an analyst to select the type of change request that
 * **Select Change Type**
 
 ## Connections
-The Connections form allows the support person to select a connected customer at the time of raising the request. This form is only used by and visible to support staff when raising the request in Service Manager when using the full client.
+The Connections form allows the support person to select a connected customer at the time of raising a request. This form is only used by and visible to support staff when raising the request in Service Manager when using the full client.
+
+![Connection Capture form](/_books/servicemanager-config/images/capture-connections.png)
+
 * **Connection Search**<br>Search for one or more customers that you would like to add as a connection to the request.
 * **Connection Type**<br>A pick list of available connection types is available to allow you to select the type of connection being added.
+
+See the [Connections configuration](/servicemanager-user-guide/service-portfolio/services/service-connections) on a service for more information about connections.
 
 ## Customer Search
 The Customer Search form allows an analyst to select a customer for the request. This search returns both Contacts and Co-workers. This form is useful when a support team is supporting both external and internal customers.
