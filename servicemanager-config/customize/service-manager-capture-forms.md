@@ -105,29 +105,53 @@ The Connections form allows the support person to select a connected customer at
 See the [Connections configuration](/servicemanager-user-guide/service-portfolio/services/service-connections) on a service for more information about connections.
 
 ## Customer Search
-The Customer Search form allows an analyst to select a customer for the request. This search returns both Contacts and Co-workers. This form is useful when a support team is supporting both external and internal customers.
+The Customer Search form allows an analyst to select a customer for the request. This search returns both contacts and co-workers. This form is useful when a support team is supporting both external and internal customers.
 
-* Search on both Contacts and Co-workers.
-* Filter on Contacts or Co-workers.
-* The customer's active requests are displayed when a customer is selected.
-    * The list of the customer's requests can be filtered to only show those that the logging agent supports via the linked service: app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests. When disabled, an agent will have visibility to unsupported customer requests; this must be avoided for customers with multiple service desks (e.g. IT and HR).
-    * An option to add a new Contact can be displayed on this form if the following system setting is enabled: app.itsm.progressiveCapture.customerSearch.allowAddContact
-* Advanced filtering.
-    * By appending one or more of the following keys, you can narrow the search to specific areas:
-        * org: - this filters by Organization
-        * site: - this filters by Site
-        * type: - this filters by Co-Worker Type
-        * tel: - this filters by the primary telephone number
-        * phone: - this is a synonym for tel:<br>
+![Customer Search Form](/_books/servicemanager-config/images/capture-customer-search-form.png)
 
-    **Example:**
-`Joe org: ACME` would return all customers named Joe from the ACME Organization<br>
-* Additional Display Fields<br>These can be used to display selected fields within the right-hand side of the Intelligent Capture during the capture process. When one or more fields are added, the default fields will no longer be displayed.  If this option is left blank, the following default fields will be displayed:
-    * Job Title
-    * Phone
-    * E-mail
-    * Mobile
-    * Feedback
+* Search on both contacts and co-workers.
+* Filter on contacts or co-workers.
+* The customer's details and active requests are displayed after a customer is selected.
+
+:::important
+This form will not be displayed on the Employee or Customer portals. 
+:::
+<br>
+
+#### Advanced filtering
+By appending one or more of the following keys, you can narrow the search to specific areas:
+* **org:** This filters by organization.
+* **site:** This filters by site.
+* **type:** This filters by co-worker type (basic, user, or contact).
+* **tel:** This filters by the primary telephone number.
+* **phone:** This is equivalent to **tel:** and will also filter on the primary telephone number.<br>
+
+**Example:** `Joe org:ACME` would return all customers named Joe from the ACME Organization<br>
+
+#### Additional Display Fields
+These can be used to display selected fields within the right-hand side of the Intelligent Capture during the capture process. When one or more fields are added, the default fields will no longer be displayed.  If this option is left blank, the following default fields will be displayed:
+* Job Title
+* Phone
+* E-mail
+* Mobile
+* Feedback
+
+### Customer Search Output
+After this form has been completed, there are several variables that contain information about the selected customer.  These variables can be used as part of a custom expression in a decision node and for conditions on a custom form's override flag. These variables are prefixed with Customer Search.
+
+![Customer Search Output](/_books/servicemanager-config/images/capture-customer-search-output.png)
+
+:::tip
+h_custom fields are stored on the contact record and h_attrib fields are from the user account.
+:::
+<br>
+
+#### Advanced Settings
+
+|Setting|Description|
+|-|-|
+|app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests|The list of the customer's requests can be filtered to only show those that the logging agent supports via the linked service: . When disabled, an agent will have visibility to unsupported customer requests.|
+|app.itsm.progressiveCapture.customerSearch.allowAddContact|An option to add a new Contact can be displayed on this form when this setting is enabled.| 
 
 ## Contact Search
 The Contact Search form provides a search option for adding a contact as the customer for the request. The search results only display contact records. Contact Search is recommended to use when only providing external support.
