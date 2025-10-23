@@ -15,7 +15,11 @@ Changing the HAi Provider can be done by selecting a [HAi Service](/esp-fundamen
 
 ## OpenAI
 
-Data from prompts and underlying request data is passed to OpenAI under their [business terms](https://openai.com/policies/business-terms) of use and their [enterprise privacy policy](https://openai.com/enterprise-privacy). This prevents usage data from being used for training new models, the input and output of prompts is currently stored by OpenAI as outlined in their [documentation](https://platform.openai.com/docs/models/how-we-use-your-data), all data is sent using encrypted connection.
+Data from prompts and underlying request data is passed to OpenAI under their [business terms](https://openai.com/policies/business-terms) of use and their [enterprise privacy policy](https://openai.com/enterprise-privacy). This prevents usage data from being used by OpenAI to train new models, the input and output of prompts is currently stored by OpenAI as outlined in their [documentation](https://platform.openai.com/docs/models/how-we-use-your-data), all data is sent using encrypted connection.
+
+### Usage Identification
+
+Hornbill does not currently make use of any feature provided by OpenAI to identity individual customers or end users usage when interacting with OpenAI, this limits the ability any third party from being able to identify the source of each request. If the content of a request contains identifiable content then it would still be possible but the content of each request and its storage by third parties is still covered by the [enterprise privacy policy](https://openai.com/enterprise-privacy).
 
 ### Data Processing (OpenAI)
 
@@ -29,9 +33,13 @@ Usage of the OpenAI API's goes through an API Key provided by hornbill. Currentl
 
 **Azure OpenAI Service** is an Azure service provided by Microsoft that hosts OpenAI Models in Azure regions for use by Microsoft customers, unlike dealing with OpenAI directly this allows an API integration with an OpenAI model to have guarantees on where data is being processed. The underlying models are the same so the functionality provided by the API integration back to the end user is the same.
 
+### Usage Identification (Azure)
+
+Hornbill does not currently make use of any feature provided by Microsoft or OpenAI to identity individual customers or end users usage when interacting with Azure OpenAI, this limits the ability any third party from being able to identify the source of each request. If the content of a request contains identifiable content then it would still be possible but the content of each request and its storage by third parties is still covered by the [Azure OpenAI data, privacy, and security guide](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy).
+
 ### Data Processing (Azure)
 
-Data from prompts and underlying request data is passed to Azure for processing in a specific region, this region will be listed against the [provider name when selected](/esp-fundamentals/core-capabilities/integration/hai-services), details on how Azure processing this data can be found [here](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy).
+Data from prompts and underlying request data is passed to Azure for processing in a specific region, this region will be listed against the [provider name when selected](/esp-fundamentals/core-capabilities/integration/hai-services), usage data is not used by Microsoft or OpenAI to train new models, details on how Azure processing this data can be found in the [Azure OpenAI data, privacy, and security guide](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy).
 
 As with OpenAI, **Azure OpenAI Services** has a built in abuse monitoring that logs input and output prompts, these are stored in the same region and kept for 30 days, details can be found in their [data privacy details](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy).
 

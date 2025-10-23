@@ -8,7 +8,8 @@
     "exclude_links": [
       "https://openai.com/enterprise-privacy",
       "https://platform.openai.com/docs/*",
-      "https://openai.com/policies/*"
+      "https://openai.com/policies/*",
+      "https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS"
     ],
     "exclude_spellcheck": [
       {
@@ -32,4 +33,4 @@
     { "url": "/servicemanager-config/customize/customized-forms", "location": "/esp-config/automation/customized-forms", "code": 301, "skip_location_validation": true  },
     { "url": "/servicemanager-config/customize/workflows/service-manager-workflows", "location": "/servicemanager-config/customize/workflows/requests-automation", "code": 301, "skip_location_validation": true  }
     ]
- }
+}
