@@ -70,7 +70,7 @@ By drilling into a Service, a customer will be presented with a list of their ac
 * If any custom questions have been asked during the logging process of the request, these are visible to the customer.
 * Request and ownership details are visible.
 
-#### Viewing all requests raised by the company
+#### Viewing all company requests
 It is possible to elevate an individual contact's access, to not only view their own requests on the Customer Portal, but also to see all the requests raised by other contacts from the same company.
 
 * From a company record, expand the **Requests**  section.
