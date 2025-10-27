@@ -70,13 +70,12 @@ By drilling into a Service, a customer will be presented with a list of their ac
 * If any custom questions have been asked during the logging process of the request, these are visible to the customer.
 * Request and ownership details are visible.
 
-#### Viewing Requests Raised by your Staff
-* If you are a manager in Service Manager, you will be able to view requests raised by your staff from the request list views.
-* In this context, manager refers to the user who is populated in the manager field on another user's profile.
-* This feature is not enabled by default, and the following system setting would need to be enabled to allow this functionality: servicemanager.portal.requests.showStaffRequests This setting can be found in the Administration console - Home > Service Manager > Settings
-With the setting enabled, manager's will have a new drop down option available in the selection box called: My Staff's Requests.
-Manager's will have access to requests raised by their staff even if the manager is not subscribed to the services their staff's requests were raised against (from the All My Requests Navigation Option).
-Manager's do not have access to requests raised by their staff against services which are not marked as visible to the Portal.
+#### Viewing all requests raised by the company
+It is possible to elevate an individual contact's access, to not only view their own requests on the Customer Portal, but also to see all the requests raised by other contacts from the same company.
+
+* From a company record, expand the **Requests**  section.
+* Click on `Portal Access` to configure which contacts can access all company requests.
+* From the pop-up window toggle on or off the `Company View`.
 
 #### Updating a Request
 * Customers can post an update on the request.
