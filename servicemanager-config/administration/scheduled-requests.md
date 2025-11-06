@@ -43,6 +43,7 @@ The Scheduled Requests feature enables Service Manager requests to be generated 
     As this is an automated scheduled request, the Intelligent Capture associated to this request catalog item will not be used to capture information.
     :::
 * **Team.** Select the team that this request will be assigned to.  Make sure this team supports the selected service.
+* **Category.** Select the category that will be allocated to this request.
 
 ### Scheduling tab
 In the Scheduling tab, you can set a schedule for the request by specifying things such as its recurrence, when it first runs, which days or months it runs, and when it expires.
