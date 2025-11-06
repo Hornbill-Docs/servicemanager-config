@@ -30,11 +30,22 @@ You may find it helpful, when customizing your asset views, to work with two win
 ### General
 ![General tab](/_books/servicemanager-config/assets/images/assets-general-tab.png)
 
-In the General tab, you can choose an icon for the asset type or upload a custom image.
+#### Asset Details
+In the General tab, you can set some of the basic information about the asset type and choose an icon or upload a custom image the will be used for all assets of this type.
+* **Name**. The name of the asset that will be displayed everywhere assets are used.
+* **Category**. The category for this asset type.
+* **Description**. A descirption of this asset type.
 
-Go here to configure the summary card that appears for all assets within the asset type. Here is an example of a summary card for an asset of the asset type Printer:
+#### Asset Card customization
+The Asset Card is a like a businuss card that you can design for your asset. Key information of your choise can be added to the card. The defined asset card will appear on all assets defined under this asset type.
+
+Here is an example of a summary card for an asset of the asset type Printer:
 
 ![Summary card for an asset](/_books/servicemanager-config/assets/images/assets-summary-card.png)
+
+Where is the asset card displayed?
+* When viewing an [asset detail record](/servicemanager-user-guide/asset-management/asset-details).
+* When an asset is selected in the [Configuration Item Explorer](/servicemanager-user-guide/configuration-management/configuration-item-explorer).
 
 ::: warning
 When using the Summary Card Editor to customize asset summary cards, use *only* Hornbill-prescribed styles. Do not add your own styles; any other style declarations will be removed by Hornbill.
