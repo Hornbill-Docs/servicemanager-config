@@ -28,9 +28,3 @@ Auto Tasks can be configured, and invoked via custom buttons on the following ap
 * Assets
 * Document Manager
 * Documents
-
-:::note
-On creation, the default entity for an Auto Task workflow is set to "Global". This value needs to be changed to a relevant entity for the workflows to be available for selection when designing custom buttons.
-:::
-
-<!-- https://wiki.hornbill.com/index.php?title=Auto_Tasks -->
