@@ -5,7 +5,7 @@ layout: article-toc
 # Manage asset types
 
 ::: note
-This article is new, to support the preview release of the new Asset Management and its new UI. You can find documentation for the legacy UI [here](/servicemanager-user-guide/asset-management/manage-asset-types).
+This document covers the [preview release](/servicemanager-config/assets/overview#preview-visibility) of the new asset management features and user interface. You can find documentation for the legacy UI [here](/servicemanager-user-guide/asset-management/manage-asset-types).
 :::
 
 Asset Management in Hornbill Service Manager gives you the control to organize and present specific information front and center in the main view of an asset. On a type-by-type basis, you can customize users' view of asset information precisely as you need to.
