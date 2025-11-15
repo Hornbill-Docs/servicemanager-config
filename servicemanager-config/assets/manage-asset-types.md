@@ -5,17 +5,21 @@ layout: article-toc
 # Manage asset types
 
 ::: note
-This document covers the [preview release](/servicemanager-config/assets/overview#preview-visibility) of the new asset management features and user interface. You can find documentation for the legacy UI [here](/servicemanager-user-guide/asset-management/manage-asset-types).
+This document covers the [preview release](/servicemanager-config/assets/overview#preview-visibility) of the new asset management features and user interface. You can find documentation for the current UI [here](/servicemanager-user-guide/asset-management/manage-asset-types).
 :::
 
-Asset Management in Hornbill Service Manager gives you the control to organize and present specific information front and center in the main view of an asset. On a type-by-type basis, you can customize users' view of asset information precisely as you need to.
+Asset management within Hornbill Service Manager allows you to organize and present detailed information about each asset. By organizing assets into specific types, you can establish a comprehensive framework of fields and data tailored to each asset. This approach ensures that all relevant information is readily accessible for any asset.
 
-## Topics covered
-* [About configuring asset types](/servicemanager-config/assets/manage-asset-types#about-configuring-asset-types)
-* [Managing asset types](/servicemanager-config/assets/manage-asset-types#managing-asset-types)
+## Before you begin
+* The [Asset Management Admin role](/servicemanager-config/setup/service-manager-roles#asset-management-roles) is required to manage asset types and categories.
+* Know how to access the [Service Manager Configuration](/servicemanager-config/index#accessing-service-manager-configuration).
+* To access the Manage Types section in Service Manager configuration, the [new asset preview](/servicemanager-config/assets/overview#new-asset-preview) must be enabled.
+* Understand how the [asset classes, types, and categories are structured](/servicemanager-config/assets/asset-structure).
 
-## About configuring asset types
+
+## Configuring asset types
 To customize your users' view of assets, navigate to **Configuration > Service Manager > Assets > Manage Types**. Here you'll work in the following tabs:
+
 * [General](/servicemanager-config/assets/manage-asset-types#general). Configure the asset type's summary card, its icon, and so on.
 * [Summary fields](/servicemanager-config/assets/manage-asset-types#summary-fields). Choose the fields that a user sees when viewing an asset in the Summary view.
 * [Detail fields](/servicemanager-config/assets/manage-asset-types#detail-fields). Choose the fields that a user sees when viewing an asset in the Details view.
@@ -28,8 +32,6 @@ You may find it helpful, when customizing your asset views, to work with two win
 
 ### General
 ![General tab](/_books/servicemanager-config/assets/images/assets-general-tab.png)
-
-#### Asset Details
 In the General tab, you can set some of the basic information about the asset type and choose an icon or upload a custom image the will be used for all assets of this type.
 * **Name**. The name of the asset that will be displayed everywhere assets are used.
 * **Category**. The category for this asset type.

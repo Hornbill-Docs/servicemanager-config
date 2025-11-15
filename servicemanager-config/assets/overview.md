@@ -28,7 +28,7 @@ The assets in Asset management form the foundation of a Configuration Management
 
 Asset categories allow you to group your asset types in a customizable way. Users navigate assets by category.
 
-#### Where to make use of assets
+#### Where assets are used
 * **Intelligent Capture**. When a Service Manager request is being raised, the [Assets Form](/servicemanager-config/customize/service-manager-capture-forms#assets) can be used to select and associate an asset with the newly created request.
 * **Workflows**. Use the [Requests Automation for Assets](/servicemanager-config/customize/workflows/requests-automation#assets) to have any asset associated with the customer, linked to the request and automate the updating of these assets.
 * **Auto Tasks**.  The [Asset Automation](/servicemanager-config/customize/workflows/asset-automation) can be used to help drive [auto task](/servicemanager-config/customize/service-manager-auto-tasks) workflows on an asset record.

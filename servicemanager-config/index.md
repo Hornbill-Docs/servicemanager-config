@@ -14,3 +14,11 @@ Use this guide to help with your initial setup and ongoing management of the Ser
 
 ## Audience
 This guide is for administrative users of Hornbill.  The areas of configuration described in this guide can be accessed by users that have been assigned the [Service Desk Admin role](/service-manager-config/setup/service-manager-roles#administration-roles).
+
+## Accessing Service Manager configuration
+
+1. Open Configuration by clicking on the cog button ![Service Manager Configuration](/_books/servicemanager-config/images/configuration-button.png) located at the bottom of the left-hand verticle menu bar of the Hornbill application. 
+
+1. In the navigation panel, select Service Manager from the drop-down.
+
+    ![Service Manager Configuration](/_books/servicemanager-config/images/servicemanager-config.png)
