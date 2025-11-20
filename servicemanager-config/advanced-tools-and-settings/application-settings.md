@@ -182,6 +182,17 @@ The following settings influence how information from [customized forms](/servic
 - When this setting is `ON`, it is possible for ANY Service Manager subscriber to see any requests that are not assigned to any team.
 - When this setting is `OFF`, it is only possible for Service Manager subscribers with the Service Desk Admin role to see any requests that are not assigned to any team.
 
+### Raise New Button
+The `Raise New` button can be configured to only show the Raise New option or just the list of request types. This also applies to the Raise New option on the [request form](/service-portfolio/requests/overview).
+
+`app.request.raiseNew.hide`
+- The default setting is `OFF`.
+- When set to `On` the generic `Raise New` option will be hidden and the user will only have to option to select a specific request type.
+
+`app.request.raiseNew.limit`
+ - Teh default setting is `OFF`
+ - When set to `ON` only the `Raise New` option will be available. This removes the ability for a user to select a specific request type. 
+
 ## Request settings
 
 `app.request.questions.excludeConditionalQuestions`
