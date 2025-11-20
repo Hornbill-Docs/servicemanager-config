@@ -17,6 +17,23 @@ Asset management within Hornbill Service Manager allows you to organize and pres
 * Understand how the [asset classes, types, and categories are structured](/servicemanager-config/assets/asset-structure).
 
 
+## Asset Categories
+The Asset Categories panel lists the available asset types along with the option to create and manage the asset type categories.  
+
+![Asset Categories Panel](/_books/servicemanager-config/images/asset-categories-panel.png)
+
+From the asset categories list you can:
+* Create a new category by clicking on the `+` button in the title bar.
+* Select an existing category to view the properties of that category.
+* To the right of the category name, click on the `+` to add a new asset type under that category.
+* Select an existing asset type to view the properties of that asset type.
+* Drag-and-drop asset types between categories.
+
+#### Uncategorized
+Any asset type without a category will be listed under **Uncategorized**. From this list, you can drag-and-drop an asset type onto an appropriate category.
+
+Alternatively, by clicking on the Uncategorized title, suggested categories are provided for each uncategorized asset type. Clicking on the `Create and Assign` button will create the new suggested category and add the selected asset types to that category.
+
 ## Configuring asset types
 To customize your users' view of assets, navigate to **Configuration > Service Manager > Assets > Manage Types**. Here you'll work in the following tabs:
 
