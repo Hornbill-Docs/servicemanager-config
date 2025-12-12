@@ -308,3 +308,196 @@ Connections are users and contacts that have been associated with a request.  Co
 * [Connections action on a request](/servicemanager-user-guide/service-portfolio/requests/connection-action).
 * [Connections configuration on a service](/service-portfolio/services/service-connections).
 * [Connections automation](/servicemanager-config/customize/workflows/request-connections-automation).
+
+## Notification Settings
+Service Manager provides the ability to compliment the Hornbill Platform notifications with application specific notifications for analysts. Notification options can be globally controlled and configured in Hornbill administration under _**Home > Service Manager > Settings**_, or Service Manager analysts can be given the rights to configure their own notification preferences. 
+
+#### User Defined Notification Settings
+
+By Default global notification settings are applied, and this is detailed below.
+
+If preferred a Hornbill administrator can enable the **guest.app.requests.notification.allowUserDefinedNotificationType** setting, which will disable the global notification settings and each Service Manager analyst will be able to set their preferences from their Profile > Settings > Notification view. 
+
+* When enabling the user defined notifications, the current global notification settings will be applied to all Service Manager subscribers, and users will need to manage their own.
+* If email notification options are chosen by users, all existing email templates defined for global notification settings will continue to be used.
+
+#### Email Notification Prerequisites
+
+If you plan on including emails as part of your notifications the following settings need to be configured first.
+
+* **guest.app.requests.notification.emailMailbox**
+
+It is necessary to specify the ID of the Hornbill Shared Mailbox (e.g. helpdesk) from which the notifications will originate.
+
+* **guest.app.requests.notification.emailDomain**
+
+This application setting must contain the domain from which the notifications will be sent. The domain specified must match an existing outbound mail route that you have configured in Hornbill
+
+* **guest.app.requests.notification.emailPrefix**
+
+It is necessary to specify the email prefix to be used when sending application generated email notifications from the instance. Default value is **noreply**. This works in conjunction with **guest.app.requests.notification.emailDomain** and will represent the email address from which notifications will be sent.
+
+* **guest.app.requests.notification.emailPrefixDisplayName**
+
+The sender's display name is "noreply" by default. To configure this, update this setting with the desired display name.
+
+  
+Note: Email notifications for users on customer/service portal updates and approval emails are sent using a direct method, they do not use any mailbox. The originating email address for these emails is **guest.app.requests.notification.emailPrefix**@**guest.app.requests.notification.emailDomain** meaning the resulting email address must be correct and valid. All other notifications are sent via the mailbox using the one configured on **guest.app.requests.notification.emailMailbox**.
+
+#### Notification Types
+
+It is possible to choose different types of notification for each of the functional areas listed below.
+
+* **Email Only**
+
+Analysts will receive an email notification
+
+* **Hornbill Only**
+
+Analysts will receive a Hornbill notification accessible through the web and native mobile interfaces
+
+* **Both**
+
+Analysts will receive both an email and Hornbill notification
+
+* **None**
+
+No notifications will be used (This is the default setting)
+
+  
+#### Notification Settings
+
+##### Assignment / Reassignment
+
+Use these settings to notify request owners and team members of request assignments
+
+* **Notification Type**
+
+* _**guest.app.requests.notification.notificationType.assignment**_
+
+Notifications will be sent to the individual analyst when a request is assigned to them.
+
+* _**guest.app.requests.notification.notificationType.assignmentTeam**_
+
+Notifications will be sent to all members of a team if a request is assigned to their team without an owner
+
+* **Email Template Settings**
+
+* _**guest.app.requests.notification.emailTemplate.analystAssignment**_
+
+Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.assignment_ is set to use email notifications
+
+* _**gues t.app.requests.notification.emailTemplate.groupAs signme nt**_
+
+Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.assignmentTeam_ is set to use email notifications
+
+##### Canceled Request
+
+Used these settings to notify request owners and team members of a canceled request
+
+* _**guest.app.requests.notification.notificationType.cancel**_
+
+Notification type for the owner that a canceled request is assigned to
+
+* _**guest.app.requests.notification.notificationType.cancelTeam**_
+
+Notification type for the team that a canceled request is assigned to, when there is no owner assigned
+
+##### Customer Feedback
+
+Use these settings to notify support staff that the feedback for a request has been submitted by the customer
+
+* _**guest.app.requests.notification.notificationType.feedbackSubmitted**_
+
+Set the notification type that is sent to the owner of the request
+
+* _**guest.app.requests.notification.notificationType.feedbackSubmittedTeam**_
+
+Set the notification type that is sent to the team, if there is no owner.
+
+* _**guest.app.requests.notification.emailTemplate.analystFeedbackSubmitted**_
+
+Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.feedbackSubmitted_ is set to use email notifications
+
+* _**guest.app.requests.notification.emailTemplate.teamFeedbackSubmitted**_
+
+Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.feedbackSubmittedTeam_ is set to use email notifications
+
+#### Email Update
+
+Used these settings to notify the request owner or team members when a request has been updated by an incoming email, either automatically using the Routing Rules, or manually.
+
+* _**guest.app.requests.notification.notificationType.emailUpdate**_
+
+Notifications will be sent to the individual analyst if a request which is assigned to them is updated via email
+
+* _**guest.app.requests.notification.notificationType.emailUpdateTeam**_
+
+Notifications will be sent to all members of a team if a request which is assigned to them is updated via email
+
+#### Linked Request Resolved / Closed
+
+Notification settings for request owners and team members when their request has been resolved or closed by a linked request
+
+* **Notification Types**
+
+* _**guest.app.requests.notification.notificationType.analystLinkedRequestResolveAction**_
+
+Notification type for the owner of a resolved or closed linked request
+
+* _**guest.app.requests.notification.notificationType.teamLinkedRequestResolveAction**_
+
+Notification type for the team that a resolved or closed linked request belongs to
+
+#### Members
+
+Settings for notifications when using the Members feature on a Request
+
+* _**guest.app.requests.notification.notificationType.members**_
+
+Notifications will be sent to the individual analyst if a new member is added to a request which is assigned to them.
+
+* _**guest.app.requests.notification.notificationType.membersTeam**_
+
+Notifications will be sent to all members of a team if a new member is added to a request which is assigned to them.
+
+* _**guest.app.requests.notification.notificationType.membersRecipient**_
+
+Notifications will be sent to the individual members who are added to a request.
+
+#### Portal Update
+
+These settings will notify the request owner or team members when a customer updates a request using one of the portals
+
+* _**guest.app.requests.notification.notificationType.portalUpdate**_
+
+Notifications will be sent to the individual analyst if a customer updates a request via the Customer or Service portals.
+
+* _**guest.app.requests.notification.notificationType.portalUpdateTeam**_
+
+Notifications will be sent to all members of a team if a customer updates a request via the Customer or Service portals.
+
+  
+#### Email Notification Templates
+
+If using the Email Only or Both notification options for any of the functional areas, it is possible to configure the email templates which are sent. Default email templates are provided for each of the following functions:
+
+* **Resolve Linked Request Owner** (ResolutionNotification)
+* **Close Linked Request Owner** (ResolutionNotification)
+* **Resolve Linked Request Team'** (ResolutionTeamNotification)
+* **Close Linked Request Team** (ResolutionTeamNotification)
+* **Analyst Email Update** (AnalystEmailUpdateNotification)
+* **Team Email Update** (TeamEmailUpdateNotification)
+* **Analyst Request Member Added** (AnalystRequestMemberAddedNotification)
+* **Team Request Member Added** (TeamRequestMemberAddedNotification)
+* **Member Added to Request** (RequestMemberAddedNotification)
+
+* It is possible to change the email template which is used for each different notification type by configuring a different email template for each setting.
+
+* If there is no email template option for a notification setting visible, then the email template is hard coded for example Cancel notifications.
+
+* It is possible to edit the content of the above email templates if required from the administration console under **Home > System > Email > Templates > Service Manager > Requests**.
+
+#### Email Escalation Notifications
+
+In addition to the notification options described above, it is also possible to configure email notifications for escalation actions against Service Level Targets. The configuration for these is covered in the following section: **Service Level Escalation Notifications** 
