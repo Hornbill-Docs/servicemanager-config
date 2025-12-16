@@ -60,11 +60,12 @@ An email can be sent to a user that is assigned an authorization task. To receiv
 * Turning this setting to `OFF` removes the accept/reject option. The user will only have the option to click a link to view the authorization in Hornbill.
 
 ### Email Request On-Hold Update to Customer
-An email can be sent to a customer of a request when their request is either place on-hold or taken off-hold.
+An email can be sent to a customer of a request when their request is either [placed on-hold or taken off-hold](/servicemanager-user-guide/service-portfolio/requests/overview#substatus-and-on-hold). 
 
 `guest.app.requests.notificaiton.emailTemplate.customerRequestOnHoldUpdate`
 * Specifies the name of the email template that will be used.
 * The default template for this feature is called **CustomerRequestOnHoldUpdate**.
+* The notification is sent from the mailbbox specified in the `guest.app.requests.notification.emailMailbox` setting.
 
 ## Category settings
 `servicemanager.request.closureCategory.default.enabled`
