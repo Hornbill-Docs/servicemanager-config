@@ -64,7 +64,7 @@ An email can be sent to a customer of a request when their request is either [pl
 
 `guest.app.requests.notificaiton.emailTemplate.customerRequestOnHoldUpdate`
 * Specifies the name of the email template that will be used.
-* The default template for this feature is called **CustomerRequestOnHoldUpdate**.
+* The default [email template](/esp-config/email/templates) for this feature is called **CustomerRequestOnHoldUpdate**.
 * The notification is sent from the mailbox specified in the `guest.app.requests.notification.emailMailbox` setting.
 
 ## Category settings
