@@ -179,8 +179,11 @@ Use the Integration node at any stage of a workflow, where you wish to invoke sp
 * Log New Service Request
 
 ## Linked Requests
-Use the Linked Requests node to automatically post updates and resolve linked requests. Linked requests are those that have been linked using the Link Action Item on a request form.
+Use the Linked Requests node to automatically add, update, and resolve linked requests. Linked requests are those that have been linked using the [Link Request Action](/servicemanager-user-guide/service-portfolio/requests/link-action) on a request form.
 
+![Linked Requests Automation](/_books/servicemanager-config/images/workflow-linked-requests.png)
+
+* Add Linked Request
 * Resolve Linked Requests
 * Update Linked Requests
 
