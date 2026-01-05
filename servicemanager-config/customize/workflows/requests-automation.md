@@ -183,9 +183,9 @@ Use the Linked Requests node to automatically add, update, and resolve linked re
 
 ![Linked Requests Automation](/_books/servicemanager-config/images/workflow-linked-requests.png)
 
-* **Add Linked Request**. This task is designed to link a single request to the request that is running the workflow.  The Request ID of the request to be linked must be available to the workflow. This automates the manual [Link Request Action](/servicemanager-user-guide/service-portfolio/requests/link-action). 
-* Resolve Linked Requests
-* Update Linked Requests
+* **Add Linked Request**. This task is designed to link a single request to the request that is running the workflow.  The Request ID of the request to be linked must be available to the workflow. This automates the manual feature provided on the [Link Request Action](/servicemanager-user-guide/service-portfolio/requests/link-action). 
+* **Resolve Linked Requests**. This will update the status of the linked requests to *resolved*. This may excluded any request that has outstanding activities.
+* **Update Linked Requests**. This task will add a Timeline update to the linked requests. The update is a string of text that is provided in the `Content` option. 
 
 ## Log Request
 Use the Log Request node to automatically log another request at a particular point in the workflow. This can be used when an additional request is required to fulfill the original request.  For example, an incident might result in the raising of a problem or change request. Another example might be a service request for initiating a new starter.  Additional requests can be raised for different teams or areas within the business to fulfill. 
