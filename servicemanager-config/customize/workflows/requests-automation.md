@@ -183,7 +183,7 @@ Use the Linked Requests node to automatically add, update, and resolve linked re
 
 ![Linked Requests Automation](/_books/servicemanager-config/images/workflow-linked-requests.png)
 
-* Add Linked Request
+* **Add Linked Request**. This task is designed to link a single request to the request that is running the workflow.  The Request ID of the request to be linked must be available to the workflow. This automates the manual [Link Request Action](/servicemanager-user-guide/service-portfolio/requests/link-action). 
 * Resolve Linked Requests
 * Update Linked Requests
 
