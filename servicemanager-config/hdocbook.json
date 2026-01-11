@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.6.14",
+  "version": "1.6.15",
   "audience": [
     "public"
   ],
@@ -366,7 +366,7 @@
           },
           {
             "text": "Using custom fields",
-            "link": "servicemanager-config/assets/manage-asset-types"
+            "link": "servicemanager-config/assets/custom-fields"
           },
           {
             "text": "Manage Substates",
