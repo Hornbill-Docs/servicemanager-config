@@ -22,6 +22,7 @@ Hornbill's asset classes are the following:
 * [Computer System](/servicemanager-external-db/tables/h-cmdb-assets-computer)
 * [Computer Peripheral](/servicemanager-external-db/tables/h-cmdb-assets-computer-peripheral)
 * [Data Processing Record](/servicemanager-external-db/tables/h-cmdb-assets-data-processing-record)
+* [General](/servicemanager-external-db/tables/h-cmdb-assets-basic)
 * [Mobile Device](/servicemanager-external-db/tables/h-cmdb-assets-mobile-device)
 * [Network Circuit](/servicemanager-external-db/tables/h-cmdb-assets-network-circuit)
 * [Network Device](/servicemanager-external-db/tables/h-cmdb-assets-network-device)
