@@ -18,6 +18,7 @@ The service status can help both the support staff and users on the portals to i
     * Related and Request Service depend on each other
     * Request Service depends on Related
     * Related depends on Request Service
+* **Related Services Type**. Select if the status update will apply to Business, Technical, or both business and technical services.
 * **Status**. This is a mandatory option.  This needs to be set to `Manual` and then one of the available statuses needs to be selected.
 
 :::tip
