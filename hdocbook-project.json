@@ -9,7 +9,9 @@
       "https://openai.com/enterprise-privacy",
       "https://platform.openai.com/docs/*",
       "https://openai.com/policies/*",
-      "https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS"
+      "https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS",
+      "https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf",
+      "https://www.hornbill.com/blog/how-the-hai-lab-team-test-new-genai-models-like-gpt-4o"
     ],
     "exclude_spellcheck": [
       {
