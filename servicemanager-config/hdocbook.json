@@ -359,6 +359,10 @@
           {
             "text": "Asset structure",
             "link": "servicemanager-config/assets/asset-structure"
+          },          {
+            "text": "Manage Partitions",
+            "link": "servicemanager-config/assets/manage-partitions",
+            "draft": false
           },
           {
             "text": "Manage Types",
