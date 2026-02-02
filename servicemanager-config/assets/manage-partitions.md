@@ -9,6 +9,23 @@ keywords:
 This article is new, to support the preview release of the new Asset Management and its new UI.
 :::
 
+___
+from NWJ demo video;
+A workflow for new implementations might be to create one or more partitions (and configure their access) and then select the partition from the partition dropdown and create categories in that partition. The next step is to create types within each category.
+
+___
+Migrate an existing category to a partition
+[needs how to] Select category > Migrate category
+___
+Partitions facilitate asset management by providing asset managers and asset viewers the required segregation and subsequent visibility controls. As an assets admin, you can see all the partitions and asset records, or, you may be restricted from seeing certain partitions and their records. 
+
+Outside of the asset management and asset viewer type roles ,there are other points of integration for assets. For example, when users log a request,  they might need to select an asset as part of that process in the Intelligent Capture. In this case, the Intelligent Capture is designed for a specific cohort of users. In the case of an MSP, each service is defined for each customer; the service defines an Intelligent Capture and the Intelligent Capture defines, in the case of prompting the user for an asset, then the form in this case defines from which asset partition they can search and select. The form filters further based on ownership, shared visibility, and so on.  
+
+<!--The point here is, users/groups/roles control over assets visibility is applied to users/asset managers, but not to individual integration points like the search form in an Intelligent Capture.-->
+___
+You can restrict access to partitioned records by [user, group, or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+___
+
 Asset management in Hornbill provides the ability to facilitate MSP or multi-org asset management: centrally managed assets in one system but with the capability to create multiple, independent asset databases, each with access and visibility controls. By default, there are no partitions, so asset management acts like it does currently. Once you add one or more partitions, it takes on a new more flexible approach.
 
 [Explain the complexity that needs to be understood]
@@ -24,6 +41,13 @@ At the moment, the Asset Database is one single database, if you have access to 
 A raised request is related to a partition through a setting in the service that the request is raised against. Asset filtering is based on that.
 <!--funny story we went through and add filtering to most parts but are now reworking so in non asset ui view there is no option to filter by partition but rather it picks up the partition to filter by automatically using a new setting in catalog service (so a raised request in essence is related to a partition so any asset filtering on a request is based on that)... basically servicedesk analysts won't even be aware of partitions-->
 BD: @NWJ Would it be a single partition per service, or could multiple partitions be selected?
+
+### How are partitioned assets visible to end users?
+Service Manager users can see all assets (in lists) when logging or viewing requests; the request itself is linked to a partition. <!--That way you don't have to setup every analyst to have specific permissions on partitions.-->
+
+If someone tries to access asset record then partition access is required i.e. a helpdesk analyst wont be able to access record/view.
+
+As an asset admin, you set up a service to use a partition and/or you set up an Intelligent Capture to use a partition. When logging a request,  the end user can select only assets from that partition.
 
 ## Before you begin
 When accessing the Asset Management capabilities of Hornbill Service Manager as an admin, first make sure your user account has the correct role associated, and make sure your instance is enabled for partitions.
@@ -51,7 +75,9 @@ You create and manage partitions in **Configuration > Service Manager**. Asset M
 ## Managing access to partitions
 When working with a partition in **Manage Partitions**, you can configure permissions to control who has access and what they can do with that access.
 
-::: note
+::: important
+If you don't define any access permissions, anyone who has access to view assets will see that partition.
+
 The permissions you grant are overridden by the users’ asset role permissions. For example, if the users’ role does not allow them to delete assets, then they cannot delete assets even if you allow deleting.
 :::
 
