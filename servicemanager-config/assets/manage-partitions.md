@@ -29,6 +29,8 @@ When accessing the Asset Management capabilities of Hornbill Service Manager as 
 ## Creating partitions
 You create and manage partitions in **Configuration > Service Manager**. Asset Management users can then work with assets within those partitions in **Service Management > Assets**.
 
+On a per-user basis, the partition selected by any user is saved. When that user goes back into Asset Management, they view that same partition again. This remembering of the users' selections can be deactivated using the application setting `asset.partition.current`.
+
 **To create a partition:**
 1. Navigate to **Configuration > Service Manager > Assets > Manage Partitions**.
     ::: tip
