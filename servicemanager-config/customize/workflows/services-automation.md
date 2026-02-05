@@ -50,7 +50,7 @@ If the provided bulletin ID belongs to a translated version, only that specific 
 
 ##### Outputs
 
-* **Outcome**. The operation outcome (success | failure).
+* **Outcome** - The operation outcome (success | failure).
 
 ### Update
 
