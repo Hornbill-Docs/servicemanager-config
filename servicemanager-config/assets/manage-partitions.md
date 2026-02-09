@@ -26,6 +26,23 @@ When accessing the Asset Management capabilities of Hornbill Service Manager as 
 |:----|:----|:----|
 |Add partitions to an instance|Asset Management Admin|`asset.partitioning.enable`|
 
+::: important
+Make sure you [understand the implications of partitioning assets](/servicemanager-config/assets/manage-partitions#deciding-on-whether-to-create-partitions) before you create partitions in your Hornbill instance.
+:::
+
+## Deciding whether to create partitions
+Only partition your assets if you have a strong reason to do so.
+
+There are various places in Hornbill where assets can be viewed and acted upon by users who do not have the Asset Management Admin role or the Asset Management User role. For example, when agents log a request, they may need to select an asset as part of that process in the Intelligent Capture.
+
+In the case of a managed service provider (MSP), that Intelligent Capture is designed for a specific set of users. Each service is defined separately for each customer. The service defines an Intelligent Capture, and the Intelligent Capture --- by prompting the user for an asset --- defines which asset partition they can search and select from. The form filters further based on ownership, shared visibility, and so on.
+
+As an assets admin, you control Asset Management users' access to partitioned asset records by role, group, or user --- but not to individual integration points such as the search form in an Intelligent Capture.
+
+If you choose to enable partitioning, you must revisit all your Intelligent Captures that use the Asset form and change this to the Partitioned Assets form.
+
+In terms of access to partitions for agents, you only need to [set up access to partitions](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions) to those agents who need to view and manage the full asset record. If agents do not have permission to view an asset, they can still see the asset in related asset lists (e.g. in a request). But if they try to view the record, they will get an access error.
+
 ## Creating partitions
 You create and manage partitions in **Configuration > Service Manager**. Asset Management users can then work with assets within those partitions in **Service Management > Assets**.
 
@@ -64,15 +81,7 @@ The permissions you grant are overridden by the users’ asset role permissions.
 
     Your changes take effect for your chosen users when they refresh their browser or log out and back in.
 
-### How are partitioned assets visible to end users who are not Asset Management users?
-
-There are other places in Hornbill where assets can be viewed and acted upon by users who do not have the Asset Management Admin role or the Asset Management User role. For example, when users log a request, they may need to select an asset as part of that process in the Intelligent Capture.
-
-In the case of a managed service provider (MSP), that Intelligent Capture is designed for a specific set of users. Each service is defined separately for each customer. The service defines an Intelligent Capture, and the Intelligent Capture --- by prompting the user for an asset --- defines which asset partition they can search and select from. The form filters further based on ownership, shared visibility, and so on.
-
-As an assets admin, you control Asset Management users' access to partitioned asset records by role, group, or user --- but not to individual integration points such as the search form in an Intelligent Capture.
-
-<!-- DO WE NEED TO ADD INSTRUCTIONS FOR HOW TO DO THE DEFINING BY SERVICE/IC MENTIONED IN THE 1ST PARAGRAPH, OR WOULD THAT BE WORKBENCH DOC? NWJ said "in non-asset ui view, there is no option to filter by partition but rather it picks up the partition to filter by automatically using **a new setting in catalog service** (so a raised request in essence is related to a partition so any asset filtering on a request is based on that)."
+<!-- DO WE NEED TO ADD INSTRUCTIONS FOR HOW TO DO THE DEFINING BY SERVICE/IC, OR WOULD THAT BE WORKBENCH DOC? NWJ said "in non-asset ui view, there is no option to filter by partition but rather it picks up the partition to filter by automatically using **a new setting in catalog service** (so a raised request in essence is related to a partition so any asset filtering on a request is based on that)."
 
 ANOTHER QUESTION: Can multiple partitions be selected on a service?
 
