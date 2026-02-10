@@ -61,6 +61,10 @@ On a per-user basis, the partition selected by any user is saved. When that user
 1. In the Partitions dropdown above **Dashboard** and **All Assets**, click the down arrow to view your new partition in the list.
 1. Click your new partition's name to go to its dashboard.
 
+Now you can add asset categories to your new partition, or [move un-partitioned assets](/servicemanager-config/assets/manage-partitions#moving-asset-categories-and-asset-types-into-partitions) into it.
+
+You can create asset categories and asset types with the same name in different partitions. You cannot, however, move categories or types to a different partition if there is already a category or type of the same name there.
+
 ## Managing access to partitions
 When working with a partition in **Manage Partitions**, you can configure permissions to control who has access and what they can do with that access.
 
@@ -81,9 +85,27 @@ The permissions you grant are overridden by the users’ asset role permissions.
 
     Your changes take effect for your chosen users when they refresh their browser or log out and back in.
 
-<!-- DO WE NEED TO ADD INSTRUCTIONS FOR HOW TO DO THE DEFINING BY SERVICE/IC, OR WOULD THAT BE WORKBENCH DOC? NWJ said "in non-asset ui view, there is no option to filter by partition but rather it picks up the partition to filter by automatically using **a new setting in catalog service** (so a raised request in essence is related to a partition so any asset filtering on a request is based on that)."
+## Moving asset categories and asset types into partitions
+Once you have enabled partitions on your instance and created partitions, it's time to organize un-partitioned assets into the partitions, or move assets from one partition to another partition.
 
-ANOTHER QUESTION: Can multiple partitions be selected on a service?
+**To move an asset category into a partition:**
+1. In **Configuration > Service Manager > Assets > Manage Types**, click the category name.
+1. Under the list of available asset list columns, click **Move to Partition**.
+1. In the Migrate Category dialog, from the dropdown, select the partition you want to move the category to.
+1. Click **Migrate**.
+
+**To move an asset type into a partition:**
+1. In **Configuration > Service Manager > Assets > Manage Types**, click the type name.
+1. In the General tab, at the bottom of the view, click **Move to Partition**.
+1. In the Migrate Type dialog, from the first dropdown, select the partition you want to move the category to.
+1. From the second dropdown, select the category you want to move the type to.
+1. Click **Migrate**.
+
+<!-- ## Changing the Asset form for Intelligent Captures
+
+NWJ said "in non-asset ui view, there is no option to filter by partition but rather it picks up the partition to filter by automatically using **a new setting in catalog service** (so a raised request in essence is related to a partition so any asset filtering on a request is based on that)."-->
+
+<!--ANOTHER QUESTION: Can multiple partitions be selected on a service?
 
 [IS THIS PARAGRAPH WRONG NOW? IS IT THE HORNBILL ADMIN, NOT THE ASSET ADMIN, WHO DETERMINES WHICH END USERS CAN SEE ASSET RECORDS?] As an asset admin in charge of partitioned assets, you determine which end users see asset records. You do this when you set up a service to use a partition or when you set up an Intelligent Capture to use a partition. Then, when logging a request, the end user can select only assets from that partition.
 
