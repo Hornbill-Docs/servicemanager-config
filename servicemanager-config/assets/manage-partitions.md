@@ -27,7 +27,7 @@ When accessing the Asset Management capabilities of Hornbill Service Manager as 
 |Add partitions to an instance|Asset Management Admin|`asset.partitioning.enable`|
 
 ::: important
-Make sure you [understand the implications of partitioning assets](/servicemanager-config/assets/manage-partitions#deciding-on-whether-to-create-partitions) before you create partitions in your Hornbill instance.
+Make sure you [understand the implications of partitioning assets](/servicemanager-config/assets/manage-partitions#deciding-whether-to-create-partitions) before you create partitions in your Hornbill instance.
 :::
 
 ## Deciding whether to create partitions
@@ -61,9 +61,7 @@ On a per-user basis, the partition selected by any user is saved. When that user
 1. In the Partitions dropdown above **Dashboard** and **All Assets**, click the down arrow to view your new partition in the list.
 1. Click your new partition's name to go to its dashboard.
 
-Now you can add asset categories to your new partition, or [move un-partitioned assets](/servicemanager-config/assets/manage-partitions#moving-asset-categories-and-asset-types-into-partitions) into it.
-
-You can create asset categories and asset types with the same name in different partitions. You cannot, however, move categories or types to a different partition if there is already a category or type of the same name there.
+Now you can [add asset categories to your new partition, or move un-partitioned assets](/servicemanager-config/assets/manage-partitions#organizing-assets-in-partitions) into it.
 
 ## Managing access to partitions
 When working with a partition in **Manage Partitions**, you can configure permissions to control who has access and what they can do with that access.
@@ -85,8 +83,19 @@ The permissions you grant are overridden by the users’ asset role permissions.
 
     Your changes take effect for your chosen users when they refresh their browser or log out and back in.
 
-## Moving asset categories and asset types into partitions
-Once you have enabled partitions on your instance and created partitions, it's time to organize un-partitioned assets into the partitions, or move assets from one partition to another partition.
+## Organizing assets in partitions
+Once you have enabled partitions on your instance and created partitions, it's time to organize the assets they'll contain. You can create new categories and types in the partition, move un-partitioned assets into the partitions, or move assets from one partition to another partition.
+
+**To add a new asset category into a partition:**
+1. In **Configuration > Service Manager > Assets > Manage Types**, from the Partitions dropdown, select the partition you want to work with.
+1. In the Asset Categories row, click **Add new category** (the plus sign).
+1. Give the category a name.
+1. (Optional) Enter a description.
+1. Click **Create**.
+
+You can now add new asset types in the category you have created.
+
+You can create asset categories and asset types with the same name in different partitions. You cannot, however, move categories or types to a different partition if there is already a category or type of the same name there.
 
 **To move an asset category into a partition:**
 1. In **Configuration > Service Manager > Assets > Manage Types**, click the category name.
