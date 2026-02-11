@@ -3,23 +3,20 @@ title: Create and manage partitions
 layout: article
 keywords: visibility of assets
 ---
-# Overview
+# Create and manage partitions
 
 ::: note
 This article is new, to support the preview release of the new Asset Management and its new UI.
 :::
 
-<!--Partitions facilitate asset management by providing asset managers and asset viewers the required segregation and subsequent visibility controls. As an assets admin, you can see all the partitions and asset records, or, you may be restricted from seeing certain partitions and their records.-->
-
-Asset management in Hornbill provides the ability to facilitate multi-org asset management: centrally managed assets in one system but with the capability to create multiple, independent asset databases, each with access and visibility controls. By default, there are no partitions in your asset management implementation; once you add one or more partitions, your implementation takes on a more flexible approach.
+Asset management in Hornbill provides the ability to facilitate multi-org asset management: centrally managed assets in one system but with the capability to create multiple, independent asset databases, each with access and visibility controls. By default, there are no partitions in your asset management implementation; once you add one or more partitions, your implementation becomes more flexible.
 
 If your instance does not have partitions, then anyone with the Asset Management Admin role or the Asset Management User role has access to all the asset records.
 
-In Configuration, admins can create one or more partitions (**Service Manager > Assets > Manage Partitions**), and each asset record can be allocated to one, and only one, partition. The alternative, if you don't want that one-and-only-one restriction, is to allocate asset records to *Un-partitioned Assets*. That allocation treats asset records as if there were no partitions enabled. (The *Un-partitioned Assets* allocation is only visible once you have enabled partitions on your instance.)
-
-The partition allocation is the same for asset types and asset categories; types and categories are allocated to one, and only one, partition. Each partition has visibility controls to establish who has access to the assets as either viewers or asset managers. <!--As the name *partition* implies, no one (outside of a superuser looking at the database) can have a view on assets from more than one partition at a time.--> You restrict access to partitioned records by [user, group, or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+Admins can create one or more partitions in **Configuration > Service Manager > Assets > Manage Partitions**.
 
 ## Before you begin
+
 When accessing the Asset Management capabilities of Hornbill Service Manager as an admin, first make sure your user account has the correct role associated, and make sure your instance is enabled for partitions.
 
 |**To do this**|**You need this role assigned**|**You need to enable this setting:**
@@ -30,7 +27,24 @@ When accessing the Asset Management capabilities of Hornbill Service Manager as 
 Make sure you [understand the implications of partitioning assets](/servicemanager-config/assets/manage-partitions#deciding-whether-to-create-partitions) before you create partitions in your Hornbill instance.
 :::
 
+## Understanding partitions in Hornbill Asset Management
+
+With increased flexibility comes increased complexity. Here are a few important facts about partitioning assets in Hornbill:
+
+* Each asset record can be allocated to one, and only one, partition.
+
+* Just as with asset records, asset types and asset categories can be allocated to one, and only one, partition. (But asset types and asset categories can exist with the *same names* in multiple partitions.)
+
+* If you don't want the one-and-only-one restriction mentioned above, you can allocate asset records to *Un-partitioned Assets*. When asset records are in *Un-partitioned Assets*, it is as if there were no partitions enabled. (The *Un-partitioned Assets* allocation is only visible once you have enabled partitions on your instance.)
+
+* Each partition has visibility controls to establish who has access to the assets as either viewers or asset managers.
+
+* Asset managers and viewers can see assets from only one partition at a time.
+
+* You restrict access to partitioned records by [user, group, or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+
 ## Deciding whether to create partitions
+
 Only partition your assets if you have a strong reason to do so.
 
 There are various places in Hornbill where assets can be viewed and acted upon by users who do not have the Asset Management Admin role or the Asset Management User role. For example, when agents log a request, they may need to select an asset as part of that process in the Intelligent Capture.
@@ -44,11 +58,13 @@ If you choose to enable partitioning, you must revisit all your Intelligent Capt
 In terms of access to partitions for agents, you only need to [set up access to partitions](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions) to those agents who need to view and manage the full asset record. If agents do not have permission to view an asset, they can still see the asset in related asset lists (e.g. in a request). But if they try to view the record, they will get an access error.
 
 ## Creating partitions
+
 You create and manage partitions in **Configuration > Service Manager**. Asset Management users can then work with assets within those partitions in **Service Management > Assets**.
 
 On a per-user basis, the partition selected by any user is saved. When that user goes back into Asset Management, they view that same partition again. This remembering of the users' selections can be deactivated using the application setting `asset.partition.current`.
 
 **To create a partition:**
+
 1. Navigate to **Configuration > Service Manager > Assets > Manage Partitions**.
     ::: tip
     If you don't see **Manage Partitions** under **Assets**, you need to enable the application setting `asset.partitioning.enable`.
@@ -64,6 +80,7 @@ On a per-user basis, the partition selected by any user is saved. When that user
 Now you can [add asset categories to your new partition, or move un-partitioned assets](/servicemanager-config/assets/manage-partitions#organizing-assets-in-partitions) into it.
 
 ## Managing access to partitions
+
 When working with a partition in **Manage Partitions**, you can configure permissions to control who has access and what they can do with that access.
 
 ::: important
@@ -73,6 +90,7 @@ The permissions you grant are overridden by the users’ asset role permissions.
 :::
 
 **To manage access to a partition:**
+
 1. Navigate to **Configuration > Service Manager > Assets > Manage Partitions**.
 1. In the partitions list, click the name of the partition you want to manage.
 1. In the *Partition Access* section, click **Add New**.
@@ -84,9 +102,11 @@ The permissions you grant are overridden by the users’ asset role permissions.
     Your changes take effect for your chosen users when they refresh their browser or log out and back in.
 
 ## Organizing assets in partitions
+
 Once you have enabled partitions on your instance and created partitions, it's time to organize the assets they'll contain. You can create new categories and types in the partition, move un-partitioned assets into the partitions, or move assets from one partition to another partition.
 
 **To add a new asset category into a partition:**
+
 1. In **Configuration > Service Manager > Assets > Manage Types**, from the Partitions dropdown, select the partition you want to work with.
 1. In the Asset Categories row, click **Add new category** (the plus sign).
 1. Give the category a name.
@@ -98,12 +118,14 @@ You can now add new asset types in the category you have created.
 You can create asset categories and asset types with the same name in different partitions. You cannot, however, move a type to a different partition if there is already a type of the same name there. If you move a category to a different partition that already has a category of the same name, the two categories are merged into one.
 
 **To move an asset category into a partition:**
+
 1. In **Configuration > Service Manager > Assets > Manage Types**, click the category name.
 1. Under the list of available asset list columns, click **Move to Partition**.
 1. In the Migrate Category dialog, from the dropdown, select the partition you want to move the category to.
 1. Click **Migrate**.
 
 **To move an asset type into a partition:**
+
 1. In **Configuration > Service Manager > Assets > Manage Types**, click the type name.
 1. In the General tab, at the bottom of the view, click **Move to Partition**.
 1. In the Migrate Type dialog, from the first dropdown, select the partition you want to move the category to.
