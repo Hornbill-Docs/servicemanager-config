@@ -95,7 +95,7 @@ Once you have enabled partitions on your instance and created partitions, it's t
 
 You can now add new asset types in the category you have created.
 
-You can create asset categories and asset types with the same name in different partitions. You cannot, however, move categories or types to a different partition if there is already a category or type of the same name there.
+You can create asset categories and asset types with the same name in different partitions. You cannot, however, move a type to a different partition if there is already a type of the same name there. If you move a category to a different partition that already has a category of the same name, the two categories are merged into one.
 
 **To move an asset category into a partition:**
 1. In **Configuration > Service Manager > Assets > Manage Types**, click the category name.
