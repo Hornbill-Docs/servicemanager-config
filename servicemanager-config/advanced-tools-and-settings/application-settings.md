@@ -2,15 +2,18 @@
 layout: article-toc
 ---
 # Application Settings
-You can configure the various application settings associated with Hornbill Service Manager in **Configuration > Service Manager > Advanced Tools and Settings > Application Settings**. 
+
+You can configure the various application settings associated with Hornbill Service Manager in **Configuration > Service Manager > Advanced Tools and Settings > Application Settings**.
 
 This document describes some of the more commonly used settings. This is not a complete list.
 
 ## Before you begin
+
 * You must have the [Service Desk Admin role](/servicemanager-config/setup/service-manager-roles#administration-roles) or Hornbill Admin role to access the Service Manager settings.
 * Be familiar with how to use [Configuration](/esp-config/getting-started/using-configuration).
 
 ## Topics covered
+
 * [Accessing Application Settings](/servicemanager-config/advanced-tools-and-settings/application-settings#accessing-application-settings)
 * [Using filters](/servicemanager-config/advanced-tools-and-settings/application-settings#using-filters)
 * [Email settings](/servicemanager-config/advanced-tools-and-settings/application-settings#email-settings)
@@ -28,12 +31,14 @@ This document describes some of the more commonly used settings. This is not a c
 You install Hornbill apps from the Hornbill App Store, which you access through Configuration.
 
 **To access the Hornbill App Store:**
+
 1. Open Configuration using the cog at the bottom of the left-hand menu bar (or with CTRL+SHIFT+S on your keyboard).
 1. Click the down arrow next to *My Personal Settings*, then select **Service Manager**.
 1. In the navigation panel, scroll down to *Advanced Tools & Settings*.
 1. Select **Application Settings**.
 
 ## Using filters
+
 At the top of the settings list, there are some options available to help you find the  settings you are looking for.
 
 ![Advanced Settings](/_books/servicemanager-config/advanced-tools-and-settings/images/include-advanced-settings.png)
@@ -41,200 +46,241 @@ At the top of the settings list, there are some options available to help you fi
 Because advanced settings are less frequently used and potentially more complex to change, by default, they are not displayed in the list. If you are unable to find a particular setting, you may find that it is classed as an advanced setting. Select **Include advanced settings** to make sure even less frequently used settings are visible in the list.
 
 ## Email settings
+
 ### Archiving emails
+
 The following setting can be used to automatically move an email into a folder of your choice after a request has been manually raised from the [email](/esp-user-guide/email-overview). Moving an email to a designated folder will help prevent other users from raising duplicate requests from the same email.
 
 `servicemanager.email.archiveFolderName`
-* The default folder name for this is `Deleted Items`. 
+
+* The default folder name for this is `Deleted Items`.
 * This setting applies to all shared mailboxes that Service Manager users have access to.
 
 ### Email authorization
+
 An email can be sent to a user that is assigned an authorization task. To receive and process the email authorization, the user must be a full user (not a Basic user).
 
 `app.request.sendEmailToAuthorizers`
-* The default setting for this is `OFF`. 
+
+* The default setting for this is `OFF`.
 
 `guest.app.authorizations.email.revealOutcomes`
+
 * The default setting for this is `ON`.
-* When set to `ON`, an option to accept or reject the authorization is included as part of the authorization email. 
+* When set to `ON`, an option to accept or reject the authorization is included as part of the authorization email.
 * Turning this setting to `OFF` removes the accept/reject option. The user will only have the option to click a link to view the authorization in Hornbill.
 
 ### Email Request On-Hold Update to Customer
-An email can be sent to a customer of a request when their request is either [placed on-hold or taken off-hold](/servicemanager-user-guide/service-portfolio/requests/overview#substatus-and-on-hold). 
+
+An email can be sent to a customer of a request when their request is either [placed on-hold or taken off-hold](/servicemanager-user-guide/service-portfolio/requests/overview#substatus-and-on-hold).
 
 `guest.app.requests.notificaiton.emailTemplate.customerRequestOnHoldUpdate`
+
 * Specifies the name of the email template that will be used.
 * The default [email template](/esp-config/email/templates) for this feature is called **CustomerRequestOnHoldUpdate**.
 * The notification is sent from the mailbox specified in the `guest.app.requests.notification.emailMailbox` setting.
 
 ## Category settings
+
 `servicemanager.request.closureCategory.default.enabled`
+
 * The default setting for this is `OFF`.
 * When this setting is `ON`, the resolution category is mandatory for all requests.
 * If there are no defined closure categories, this setting is ignored.
 
 ## Portal settings
+
 `guest.servicemanager.customer.request.showHistoricUpdates`
+
 * The default setting for this is `OFF`.
 * When this setting is `ON`, users of the Customer Portal will be able to see an additional collapsible panel on their Requests view that contains any related historical request-update data that may have been imported from a previous service management tool. This section is only visible on imported requests.
 
 `guest.servicemanager.portal.request.showHistoricUpdates`
+
 * The default setting for this is `OFF`.
 * When this setting is `ON`, users of the Employee Portal will be able to see an additional collapsible panel on their requests view that contains any related historical request-update data that may have been imported from a previous service management tool. This section is only visible on imported requests.
 
 `servicemanager.portal.requests.showStaffRequests`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, managers are able to view requests raised by their direct staff via the Employee Portal. (The manager is the named user who is populated in the Manager field on a user's profile.)
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, managers are able to view requests raised by their direct staff via the Employee Portal. (The manager is the named user who is populated in the Manager field on a user's profile.)
 
 `guest.servicemanager.portal.request.enableServiceRequestCancellation`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, users of the Customer Portal will be able to cancel their service requests if no longer needed.
-- The owner or team of the service request can receive an email, a Hornbill notification --- or both --- informing them of the cancellation.
-- Customers must be assigned the [Self Service Request Cancel User role](/servicemanager-api-api/roles/content/selfservicerequestcanceluser) in order to use this feature.
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, users of the Customer Portal will be able to cancel their service requests if no longer needed.
+* The owner or team of the service request can receive an email, a Hornbill notification --- or both --- informing them of the cancellation.
+* Customers must be assigned the [Self Service Request Cancel User role](/servicemanager-api-api/roles/content/selfservicerequestcanceluser) in order to use this feature.
 
 `guest.servicemanager.customer.request.enableServiceRequestCancellation`
-- The default setting is `OFF`.
-- When the setting is `ON`, guests are able to cancel their service requests from within the Customer Portal.
-- The owner or team of the service request can receive an email, a Hornbill notification --- or both --- informing them of the cancellation.
-- Customers must be enabled to use this feature via the Portal Access option available in Organization > Details > Request tab.
+
+* The default setting is `OFF`.
+* When the setting is `ON`, guests are able to cancel their service requests from within the Customer Portal.
+* The owner or team of the service request can receive an email, a Hornbill notification --- or both --- informing them of the cancellation.
+* Customers must be enabled to use this feature via the Portal Access option available in Organization > Details > Request tab.
 
     **To enable this cancellation feature:**
-    1. When viewing the details of an organization, scroll down and expand the Requests section. 
+    1. When viewing the details of an organization, scroll down and expand the Requests section.
     1. At the top right, click **Portal Access**.
     1. In the Customer Portal Access dialog, toggle settings for portal users as needed.
 
 `guest.servicemanager.portal.additionalRequestTypes.change`
-- The default is `OFF`.
-- When this setting is `OFF`, customers cannot see changes on the portals' requests lists, nor can they see any configured portal-visible change catalog items.
-- When this setting is `ON`, customers can see all new and historic change records in the request lists on the portals where they are the marked as the customer.
-- When this setting is `ON`, customers have the option to see and use portal-visible change catalog items for their subscribed services.
+
+* The default is `OFF`.
+* When this setting is `OFF`, customers cannot see changes on the portals' requests lists, nor can they see any configured portal-visible change catalog items.
+* When this setting is `ON`, customers can see all new and historic change records in the request lists on the portals where they are the marked as the customer.
+* When this setting is `ON`, customers have the option to see and use portal-visible change catalog items for their subscribed services.
 
 `guest.com.hornbill.servicemanager.showRespondByDate`
-- The default is `OFF`.
-- When this setting is `ON`, the respond by date/time is displayed in the right-hand information box of a request when viewed by a user on the Employee Portal or a customer on the Customer Portal.
+
+* The default is `OFF`.
+* When this setting is `ON`, the respond by date/time is displayed in the right-hand information box of a request when viewed by a user on the Employee Portal or a customer on the Customer Portal.
 
 `guest.com.hornbill.servicemanager.showResolveByDate`
-- The default is `OFF`
-- When this setting is `ON`, the resolve by date/time is displayed in the right-hand information box of a request when viewed by a user on the Employee Portal or a customer on the Customer Portal.
+
+* The default is `OFF`
+* When this setting is `ON`, the resolve by date/time is displayed in the right-hand information box of a request when viewed by a user on the Employee Portal or a customer on the Customer Portal.
 
 ## Intelligent Capture settings
 
 ### Service Manager forms
 
 **Only show supported and subscribed services** `servicemanager.progressiveCapture.servicedetails.enableSupportVisibility`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, the services displayed on the [Services form](/servicemanager-config/customize/service-manager-capture-forms#services) are filtered to both those which the customer is subscribed to, and also to those services which the Service Manager user supports.
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, the services displayed on the [Services form](/servicemanager-config/customize/service-manager-capture-forms#services) are filtered to both those which the customer is subscribed to, and also to those services which the Service Manager user supports.
 
 **Only show supported requests** `app.itsm.progressiveCapture.customerDetails.showOnlySupportedRequests`
-- The default setting for this is `OFF`.
-- This setting determines whether a Service Manager user is granted visibility to unsupported customer requests in the *Customer Search*, *Contact Search*, or *Co-worker Search* forms in Intelligent Capture.
-- When set to `OFF`, a Service Manager user has visibility to unsupported customer requests. This should be set to `ON` in environments with multiple service desks (e.g. IT and HR).
+
+* The default setting for this is `OFF`.
+* This setting determines whether a Service Manager user is granted visibility to unsupported customer requests in the *Customer Search*, *Contact Search*, or *Co-worker Search* forms in Intelligent Capture.
+* When set to `OFF`, a Service Manager user has visibility to unsupported customer requests. This should be set to `ON` in environments with multiple service desks (e.g. IT and HR).
 
 **Show all requests for an external organization** `app.itsm.progressiveCapture.organizationDetails.allowOrgRequestsList`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, the analyst viewing the [Organization Details form](/servicemanager-config/customize/service-manager-capture-forms#organization-details), can see the active requests for the organization in the right-hand panel.
-- The requests returned are active ones, and only the requests raised against services that the viewing user supports are displayed.
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, the analyst viewing the [Organization Details form](/servicemanager-config/customize/service-manager-capture-forms#organization-details), can see the active requests for the organization in the right-hand panel.
+* The requests returned are active ones, and only the requests raised against services that the viewing user supports are displayed.
 
 ### Visibility of a request's *Questions* section
+
 The following settings influence how information from [customized forms](/servicemanager-config/customize/customized-forms) in Intelligent Capture are made available within the *Questions* section of a request.
 
 **Hide unanswered questions in the Service Manager app** `app.request.questions.hideUnansweredQuestions`
-- The default setting for this is `OFF`.
-- Fields on a customized form in Intelligent Capture can be set specifying whether they require a value or if a value is optional. If a value is not required, a user can move on without providing a response.
-- When this setting is `ON`, any unanswered fields from custom forms used in Intelligent Capture will not be displayed in the *Questions* section of a request.
+
+* The default setting for this is `OFF`.
+* Fields on a customized form in Intelligent Capture can be set specifying whether they require a value or if a value is optional. If a value is not required, a user can move on without providing a response.
+* When this setting is `ON`, any unanswered fields from custom forms used in Intelligent Capture will not be displayed in the *Questions* section of a request.
 
 **Hide unanswered questions on the Customer Portal** `guest.servicemanager.customer.request.questions.hideUnansweredQuestions`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, unanswered fields in the *Questions* section of a request are hidden from contacts in the Customer Portal.
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, unanswered fields in the *Questions* section of a request are hidden from contacts in the Customer Portal.
 
 **Hide unanswered questions on the Employee Portal** `guest.servicemanager.portal.request.questions.hideUnansweredQuestions`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, unanswered fields in the *Questions* section of a request are hidden from users in the Employee Portal.
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, unanswered fields in the *Questions* section of a request are hidden from users in the Employee Portal.
 
 **Hide unused conditional questions** `app.request.questions.excludeConditionalQuestions`
-- The default setting for this is `OFF`.
-- When designing an Intelligent Capture script, a user may find that some fields on a customized form are displayed only under certain conditions.
-- When this setting is `ON`, conditional questions that are not displayed to the user are prevented from being stored in the *Questions* section of a request.
+
+* The default setting for this is `OFF`.
+* When designing an Intelligent Capture script, a user may find that some fields on a customized form are displayed only under certain conditions.
+* When this setting is `ON`, conditional questions that are not displayed to the user are prevented from being stored in the *Questions* section of a request.
 
 **Hide questions that are not visible on forms** `guest.request.questions.excludeHiddenQuestions`
-- The default setting for this is `OFF`.
-- On a Customized Capture form, each field has an option to make it visible. 
-- When this setting is `ON`, fields on customized forms that are not set to being visible are excluded from the *Questions* section of a request, when viewed from either the Customer or Employee Portal.
-- When this setting is `ON`, all questions are still visible on the *Questions* section when viewed in the Service Manager app.
-- When this setting is `ON`, all fields are still added to the `h_itsm_questions` table. This enables hidden questions with default values to still be utilized in a workflowBPM.
+
+* The default setting for this is `OFF`.
+* On a Customized Capture form, each field has an option to make it visible.
+* When this setting is `ON`, fields on customized forms that are not set to being visible are excluded from the *Questions* section of a request, when viewed from either the Customer or Employee Portal.
+* When this setting is `ON`, all questions are still visible on the *Questions* section when viewed in the Service Manager app.
+* When this setting is `ON`, all fields are still added to the `h_itsm_questions` table. This enables hidden questions with default values to still be utilized in a workflowBPM.
 
 ## Request list settings
+
 `com.hornbill.servicemanager.requestList.restrictions.service`
-- The default setting for this is `ON`.
-- When this setting is `ON`, it is only possible to perform multi-select actions against requests logged against the same service. When selecting requests logged against different services, the multi-select action buttons are hidden.
-- When this setting is `OFF`, it is possible to perform multi-select actions against requests logged against different services.
+
+* The default setting for this is `ON`.
+* When this setting is `ON`, it is only possible to perform multi-select actions against requests logged against the same service. When selecting requests logged against different services, the multi-select action buttons are hidden.
+* When this setting is `OFF`, it is possible to perform multi-select actions against requests logged against different services.
 
 `com.hornbill.servicemanager.requestList.restrictions.type`
-- The default setting for this is `ON`.
-- When this setting is `ON`, it is only possible to perform multi-select actions against requests of the same type. When selecting requests of different types, the multi-select action buttons are hidden.
-- When this setting is `OFF`, it is possible to perform multi-select actions against requests of any types.
+
+* The default setting for this is `ON`.
+* When this setting is `ON`, it is only possible to perform multi-select actions against requests of the same type. When selecting requests of different types, the multi-select action buttons are hidden.
+* When this setting is `OFF`, it is possible to perform multi-select actions against requests of any types.
 
     ::: note
     When the multi-select restrictions are `OFF`, the supporting-teams logic is disabled on the Assign option on the request list, making it possible to assign requests to teams that are not listed as supporting the services requests are logged against.
     :::
 
 `webapp.view.ITSM.serviceDesk.requests.list.enableNoTeamAllUsers`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, it is possible for ANY Service Manager subscriber to see any requests that are not assigned to any team.
-- When this setting is `OFF`, it is only possible for Service Manager subscribers with the Service Desk Admin role to see any requests that are not assigned to any team.
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, it is possible for ANY Service Manager subscriber to see any requests that are not assigned to any team.
+* When this setting is `OFF`, it is only possible for Service Manager subscribers with the Service Desk Admin role to see any requests that are not assigned to any team.
 
 ### Raise New Button
+
 The `Raise New` button can be configured to only show the Raise New option or just the list of request types. This also applies to the Raise New option on the [request form](/service-portfolio/requests/overview).
 
 `app.request.raiseNew.hide`
-- The default setting is `OFF`.
-- When set to `On` the generic `Raise New` option will be hidden and the user will only have to option to select a specific request type.
+
+* The default setting is `OFF`.
+* When set to `On` the generic `Raise New` option will be hidden and the user will only have to option to select a specific request type.
 
 `app.request.raiseNew.limit`
- - Teh default setting is `OFF`
- - When set to `ON` only the `Raise New` option will be available. This removes the ability for a user to select a specific request type. 
+
+* Teh default setting is `OFF`
+* When set to `ON` only the `Raise New` option will be available. This removes the ability for a user to select a specific request type.
 
 ## Request settings
 
 `app.request.questions.excludeConditionalQuestions`
-- The default setting for this is `OFF`.
-- When this setting is `OFF`, conditional Intelligent Capture questions that were not displayed in Intelligent Capture flows will appear in the *Questions* section on the request forms.
-- When this setting is `ON`, conditional Intelligent Capture questions that were not displayed in Intelligent Capture flows will not appear in the *Questions* section on the request forms.
+
+* The default setting for this is `OFF`.
+* When this setting is `OFF`, conditional Intelligent Capture questions that were not displayed in Intelligent Capture flows will appear in the *Questions* section on the request forms.
+* When this setting is `ON`, conditional Intelligent Capture questions that were not displayed in Intelligent Capture flows will not appear in the *Questions* section on the request forms.
 
 ## Knowledge Center settings
+
 This feature allows agents and customers to be presented with relevant knowledge when using Intelligent Capture in the user app and the Customer and Employee Portals,respectively.
 
 `guest.app.experimental.hornbillKnowledgeCentre`
-- The default setting for this is `OFF`.
-- When this setting is `ON`, you must also set which interfaces will see the Knowledge Center in Intelligent Capture. This is controlled by the following system settings:
+
+* The default setting for this is `OFF`.
+* When this setting is `ON`, you must also set which interfaces will see the Knowledge Center in Intelligent Capture. This is controlled by the following system settings:
 
     `guest.app.knowledge.customer`
-    * The default setting for this is `OFF`.
-    * When this setting is `ON`, the relevant knowledge is shown when a user logs a new request in the Customer Portal.
+  * The default setting for this is `OFF`.
+  * When this setting is `ON`, the relevant knowledge is shown when a user logs a new request in the Customer Portal.
 
     `guest.app.knowledge.service`
-    * The default setting for this is `OFF`.
-    * When this setting is `ON`, the relevant knowledge is shown when a user logs a new request in the Employee portal.
+  * The default setting for this is `OFF`.
+  * When this setting is `ON`, the relevant knowledge is shown when a user logs a new request in the Employee portal.
 
     `guest.app.knowledge.user`
-    * The default setting for this is `OFF`.
-    * When this setting is `ON`, the relevant knowledge is shown when a user logs a new request in the user app.
+  * The default setting for this is `OFF`.
+  * When this setting is `ON`, the relevant knowledge is shown when a user logs a new request in the user app.
 
 ## Timeline settings
 
 `guest.servicemanager.request.timeline.showShortPostTitle`
-- The default setting for this is `ON`.
-- When this setting is `ON`, the name of the user who posted on the timeline of the request will be displayed when the timeline of the request is viewed in the Customer and Employee Portals.
-- When this setting is `OFF`, the name of the user who performed the post can still be viewed by hovering over the image of the user on each post.
+
+* The default setting for this is `ON`.
+* When this setting is `ON`, the name of the user who posted on the timeline of the request will be displayed when the timeline of the request is viewed in the Customer and Employee Portals.
+* When this setting is `OFF`, the name of the user who performed the post can still be viewed by hovering over the image of the user on each post.
 
 `servicemanager.request.timeline.showShortPostTitle`
-- The default setting for this is `ON`.
-- When this setting is `ON`, the name of the user who posted on the timeline of the request in the user app will be displayed when the timeline of the request is viewed.
-- When this setting is `OFF`, the name of the user who performed the post can still be viewed by hovering over the image of the user on each post.
+
+* The default setting for this is `ON`.
+* When this setting is `ON`, the name of the user who posted on the timeline of the request in the user app will be displayed when the timeline of the request is viewed.
+* When this setting is `OFF`, the name of the user who performed the post can still be viewed by hovering over the image of the user on each post.
 
 `guest.servicemanager.request.timeline.availablePostTypes.editPost`
-- This setting determines the type of posts that a user is allowed to edit. Selecting additional post types allows a user to edit their own post in a timeline, provided that the post has not been liked or commented on.
-- The default setting for this is `NONE`; that is, the option to edit a post is disabled.
+
+* This setting determines the type of posts that a user is allowed to edit. Selecting additional post types allows a user to edit their own post in a timeline, provided that the post has not been liked or commented on.
+* The default setting for this is `NONE`; that is, the option to edit a post is disabled.
 
 ## Configuration management settings
 
@@ -245,6 +291,7 @@ These are the entities that can be expanded in the Explorer. The entities with `
 The entities currently shown in the diagram are Asset, Colleagues, Contact, Attachment, Requests, Services.
 
 **Default settings:**
+
 * Asset: `true`
 * Colleagues: `false`
 * Contact: `false`
@@ -254,18 +301,21 @@ The entities currently shown in the diagram are Asset, Colleagues, Contact, Atta
 * default: `false`
 
 `app.cm.explorer.diagram.level.max`
+
 * The maximum level shown in the Explorer. The minimum value is 2 (root plus children).
 * The default is `3`.
 
 `app.cm.explorer.items.dependencies`
-* This setting holds the possible dependencies that can be set between two entities. 
+
+* This setting holds the possible dependencies that can be set between two entities.
 * The possible entities are Asset, Colleagues, Contact, Attachment, Requests, and Services. The property definitions hold all possible lists of values.
 
 **To associate a list to two linked entities:**
+
 1. Add a property by following this rule:
 
     From + entity1 + To + entity2, where entity1 and entity2 can be any value chosen from Asset, Colleagues, Contact, Attachment, Requests, or Services. If the two entities are the same (e.g., two assets), then you may define the list of possible values as `AssetFromParentToChild` and `AssetFromChildToParent`.
-    
+
     This works the same way for other entities. Any missing value will default to the list in `defs.default`.
 
     >"defs" : {<br>
@@ -289,35 +339,38 @@ app.cm.explorer.items.inPolicy<br>
 "default" : true<br>
 
 ## Connections settings
+
 Connections are users and contacts that have been associated with a request.  Compared to the main customer of a request, a connection has limited access that only allows them to either view or collaborate on the request. They cannot perform any actions that would progress the workflow.
 
 * **guest.app.requests.notification.emailTemplate.requestConnectionAdded**. The email template to be used when sending an email notification to the user or contact, letting them know that they have been added.
-    * Default setting: RequestConnectionAddedNotification
+  * Default setting: RequestConnectionAddedNotification
     :::info
     The RequestConnectionsAddedNotification is an [email template](/servicemanager-config/customize/email-templates) that is installed with Service Manager.
     :::
 
 * **guest.app.requests.notification.notificationType.connectionsRecipient**. Set the default notification type to new connections when they are added to a request. This setting only sets the default value.  Users can change their personal notifications settings on their user profile and override this setting.
-    * Default: email-only
-    
-* **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow conections to view the attachments against a request. This only applies to [attachments that are visible to the customer](/servicemanager-user-guide/service-portfolio/requests/attachment-action#visibility). 
+  * Default: email-only
+
+* **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow conections to view the attachments against a request. This only applies to [attachments that are visible to the customer](/servicemanager-user-guide/service-portfolio/requests/attachment-action#visibility).
 
 * **guest.ui.app.com.hornbill.servicemanager.operation.defaultVisibility.connections**' Default visibility for the request timeline entry that is recorded when adding connections to a request.
-    * Default: Customer
+  * Default: Customer
 
 #### Related features
+
 * [Connections action on a request](/servicemanager-user-guide/service-portfolio/requests/connection-action).
 * [Connections configuration on a service](/service-portfolio/services/service-connections).
 * [Connections automation](/servicemanager-config/customize/workflows/request-connections-automation).
 
 ## Notification Settings
-Service Manager provides the ability to compliment the Hornbill Platform notifications with application specific notifications for analysts. Notification options can be globally controlled and configured in Hornbill administration under _**Home > Service Manager > Settings**_, or Service Manager analysts can be given the rights to configure their own notification preferences. 
+
+Service Manager provides the ability to compliment the Hornbill Platform notifications with application specific notifications for analysts. Notification options can be globally controlled and configured in Hornbill administration under ***Home > Service Manager > Settings***, or Service Manager analysts can be given the rights to configure their own notification preferences.
 
 #### User Defined Notification Settings
 
 By Default global notification settings are applied, and this is detailed below.
 
-If preferred a Hornbill administrator can enable the **guest.app.requests.notification.allowUserDefinedNotificationType** setting, which will disable the global notification settings and each Service Manager analyst will be able to set their preferences from their Profile > Settings > Notification view. 
+If preferred a Hornbill administrator can enable the **guest.app.requests.notification.allowUserDefinedNotificationType** setting, which will disable the global notification settings and each Service Manager analyst will be able to set their preferences from their Profile > Settings > Notification view.
 
 * When enabling the user defined notifications, the current global notification settings will be applied to all Service Manager subscribers, and users will need to manage their own.
 * If email notification options are chosen by users, all existing email templates defined for global notification settings will continue to be used.
@@ -342,7 +395,6 @@ It is necessary to specify the email prefix to be used when sending application 
 
 The sender's display name is "noreply" by default. To configure this, update this setting with the desired display name.
 
-  
 Note: Email notifications for users on customer/service portal updates and approval emails are sent using a direct method, they do not use any mailbox. The originating email address for these emails is **guest.app.requests.notification.emailPrefix**@**guest.app.requests.notification.emailDomain** meaning the resulting email address must be correct and valid. All other notifications are sent via the mailbox using the one configured on **guest.app.requests.notification.emailMailbox**.
 
 #### Notification Types
@@ -365,7 +417,6 @@ Analysts will receive both an email and Hornbill notification
 
 No notifications will be used (This is the default setting)
 
-  
 #### Notification Settings
 
 ##### Assignment / Reassignment
@@ -374,33 +425,33 @@ Use these settings to notify request owners and team members of request assignme
 
 * **Notification Type**
 
-* _**guest.app.requests.notification.notificationType.assignment**_
+* ***guest.app.requests.notification.notificationType.assignment***
 
 Notifications will be sent to the individual analyst when a request is assigned to them.
 
-* _**guest.app.requests.notification.notificationType.assignmentTeam**_
+* ***guest.app.requests.notification.notificationType.assignmentTeam***
 
 Notifications will be sent to all members of a team if a request is assigned to their team without an owner
 
 * **Email Template Settings**
 
-* _**guest.app.requests.notification.emailTemplate.analystAssignment**_
+* ***guest.app.requests.notification.emailTemplate.analystAssignment***
 
-Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.assignment_ is set to use email notifications
+Use this setting to specify the email template to use when *guest.app.requests.notification.notificationType.assignment* is set to use email notifications
 
-* _**gues t.app.requests.notification.emailTemplate.groupAs signme nt**_
+* ***gues t.app.requests.notification.emailTemplate.groupAs signme nt***
 
-Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.assignmentTeam_ is set to use email notifications
+Use this setting to specify the email template to use when *guest.app.requests.notification.notificationType.assignmentTeam* is set to use email notifications
 
 ##### Canceled Request
 
 Used these settings to notify request owners and team members of a canceled request
 
-* _**guest.app.requests.notification.notificationType.cancel**_
+* ***guest.app.requests.notification.notificationType.cancel***
 
 Notification type for the owner that a canceled request is assigned to
 
-* _**guest.app.requests.notification.notificationType.cancelTeam**_
+* ***guest.app.requests.notification.notificationType.cancelTeam***
 
 Notification type for the team that a canceled request is assigned to, when there is no owner assigned
 
@@ -408,31 +459,31 @@ Notification type for the team that a canceled request is assigned to, when ther
 
 Use these settings to notify support staff that the feedback for a request has been submitted by the customer
 
-* _**guest.app.requests.notification.notificationType.feedbackSubmitted**_
+* ***guest.app.requests.notification.notificationType.feedbackSubmitted***
 
 Set the notification type that is sent to the owner of the request
 
-* _**guest.app.requests.notification.notificationType.feedbackSubmittedTeam**_
+* ***guest.app.requests.notification.notificationType.feedbackSubmittedTeam***
 
 Set the notification type that is sent to the team, if there is no owner.
 
-* _**guest.app.requests.notification.emailTemplate.analystFeedbackSubmitted**_
+* ***guest.app.requests.notification.emailTemplate.analystFeedbackSubmitted***
 
-Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.feedbackSubmitted_ is set to use email notifications
+Use this setting to specify the email template to use when *guest.app.requests.notification.notificationType.feedbackSubmitted* is set to use email notifications
 
-* _**guest.app.requests.notification.emailTemplate.teamFeedbackSubmitted**_
+* ***guest.app.requests.notification.emailTemplate.teamFeedbackSubmitted***
 
-Use this setting to specify the email template to use when _guest.app.requests.notification.notificationType.feedbackSubmittedTeam_ is set to use email notifications
+Use this setting to specify the email template to use when *guest.app.requests.notification.notificationType.feedbackSubmittedTeam* is set to use email notifications
 
 #### Email Update
 
 Used these settings to notify the request owner or team members when a request has been updated by an incoming email, either automatically using the Routing Rules, or manually.
 
-* _**guest.app.requests.notification.notificationType.emailUpdate**_
+* ***guest.app.requests.notification.notificationType.emailUpdate***
 
 Notifications will be sent to the individual analyst if a request which is assigned to them is updated via email
 
-* _**guest.app.requests.notification.notificationType.emailUpdateTeam**_
+* ***guest.app.requests.notification.notificationType.emailUpdateTeam***
 
 Notifications will be sent to all members of a team if a request which is assigned to them is updated via email
 
@@ -442,11 +493,11 @@ Notification settings for request owners and team members when their request has
 
 * **Notification Types**
 
-* _**guest.app.requests.notification.notificationType.analystLinkedRequestResolveAction**_
+* ***guest.app.requests.notification.notificationType.analystLinkedRequestResolveAction***
 
 Notification type for the owner of a resolved or closed linked request
 
-* _**guest.app.requests.notification.notificationType.teamLinkedRequestResolveAction**_
+* ***guest.app.requests.notification.notificationType.teamLinkedRequestResolveAction***
 
 Notification type for the team that a resolved or closed linked request belongs to
 
@@ -454,15 +505,15 @@ Notification type for the team that a resolved or closed linked request belongs 
 
 Settings for notifications when using the Members feature on a Request
 
-* _**guest.app.requests.notification.notificationType.members**_
+* ***guest.app.requests.notification.notificationType.members***
 
 Notifications will be sent to the individual analyst if a new member is added to a request which is assigned to them.
 
-* _**guest.app.requests.notification.notificationType.membersTeam**_
+* ***guest.app.requests.notification.notificationType.membersTeam***
 
 Notifications will be sent to all members of a team if a new member is added to a request which is assigned to them.
 
-* _**guest.app.requests.notification.notificationType.membersRecipient**_
+* ***guest.app.requests.notification.notificationType.membersRecipient***
 
 Notifications will be sent to the individual members who are added to a request.
 
@@ -470,15 +521,14 @@ Notifications will be sent to the individual members who are added to a request.
 
 These settings will notify the request owner or team members when a customer updates a request using one of the portals
 
-* _**guest.app.requests.notification.notificationType.portalUpdate**_
+* ***guest.app.requests.notification.notificationType.portalUpdate***
 
 Notifications will be sent to the individual analyst if a customer updates a request via the Customer or Service portals.
 
-* _**guest.app.requests.notification.notificationType.portalUpdateTeam**_
+* ***guest.app.requests.notification.notificationType.portalUpdateTeam***
 
 Notifications will be sent to all members of a team if a customer updates a request via the Customer or Service portals.
 
-  
 #### Email Notification Templates
 
 If using the Email Only or Both notification options for any of the functional areas, it is possible to configure the email templates which are sent. Default email templates are provided for each of the following functions:
@@ -501,4 +551,4 @@ If using the Email Only or Both notification options for any of the functional a
 
 #### Email Escalation Notifications
 
-In addition to the notification options described above, it is also possible to configure email notifications for escalation actions against Service Level Targets. The configuration for these is covered in the following section: **Service Level Escalation Notifications** 
+In addition to the notification options described above, it is also possible to configure email notifications for escalation actions against Service Level Targets. The configuration for these is covered in the following section: **Service Level Escalation Notifications**
