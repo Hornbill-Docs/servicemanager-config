@@ -13,10 +13,10 @@ When configuring an asset type to customize your users’ view of assets, you ca
 The custom fields are available in **Configuration > Manage Types**, from the dropdowns in the **Summary Fields**, **Detail Fields**, **Create Fields** and **List Fields** tabs. You can also access and add custom fields for an entire category. You can choose from field types of *Varchar*, *Integer*, *Decimal*, *Date*, and *Text*.
 
 ## About shared fields versus class-specific fields
-A large number of fields --- including custom fields --- are available and shared across all asset classes. The shared fields are called *common fields*. These shared fields can be chosen from the **+ Common field** dropdown. It is the dropdown *to the right of* this dropdown from which you choose class-specific fields.
+A large number of fields --- including custom fields --- are available and shared across all asset classes. These shared fields, called *common fields*, have the same purpose for capturing data across all assets. Shared fields can be chosen from the **+ Common field** dropdown. It is the dropdown *to the right of* this dropdown from which you choose class-specific fields.
 
 ### Common custom fields
-Common custom fields can be used in every single class, including the General class. Despite the name *General*, do not confuse fields in the General class with common fields; General fields are specific to the General class and you add them from the **+ General field** dropdown.
+Shared custom fields, called *common custom fields*, can be used in every single class, including the General class. Despite the name *General*, do not confuse fields in the General class with common fields; General fields are specific to the General class and you add them from the **+ General field** dropdown.
 
 In the **+ Common field** dropdown, you can't select a custom field that's already in use --- it will no longer be available in the dropdown list.
 
@@ -31,7 +31,9 @@ Class-specific custom fields are extended attributes to an assets table, with de
 
 ## Adding and renaming custom fields for assets
 
-You can change the name of a class-specific custom field when adding it. You can also change its name in **Configuration > Service Manager > Assets > Common Custom Fields**. The **Common Custom Fields** view is also where you must go to change the name of a common custom field.
+For a class-specific custom field, you can change its name when adding it, or afterward by clicking the **Field Properties** icon in its row.
+
+For a common custom field, you change its name in **Configuration > Service Manager > Assets > Common Custom Fields**.
 
 ::: note
 If others in your organization also have the Asset Management Admin role, they can change the display name you have entered, or revert the custom field's name to the default.
