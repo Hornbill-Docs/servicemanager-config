@@ -12,7 +12,7 @@ Asset management within Hornbill Service Manager allows you to organize and pres
 
 ## Before you begin
 * The [Asset Management Admin role](/servicemanager-config/setup/service-manager-roles#asset-management-roles) is required to manage asset types and categories.
-* Know how to access the [Service Manager Configuration](/servicemanager-config/index#accessing-service-manager-configuration).
+* Know how to access the [Service Manager Configuration](/servicemanager-config/index#access-service-manager-configuration).
 * To access the Manage Types section in Service Manager configuration, the [new asset preview](/servicemanager-config/assets/overview#new-asset-preview) must be enabled.
 * Understand how the [asset classes, types, and categories are structured](/servicemanager-config/assets/asset-structure).
 * Decide whether you want to [enable asset partitions](/servicemanager-config/assets/manage-partitions) on your instance.
