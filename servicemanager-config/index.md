@@ -1,24 +1,30 @@
 ---
 layout: article-toc
 ---
-# Overview
 
-## In this guide
-Use this guide to help with your initial setup and ongoing management of the Service Manager application. The focus of this guide is on the features and settings that are available within Service Manager Configuration. Some of the covered topics include:
+# Service Manager configuration overview
 
-* Installing Service Manager
-* Managing user subscriptions and access
-* Intelligent Capture and business workflow configurations and automations
-* Configuring email routing rule templates
-* Service desk administration
+Welcome to Service Manager. This guide helps you set up and manage your application. You will learn how to configure features and settings to optimize your service desk operations.
+
+This guide covers the following topics:
+
+* Installing Service Manager.
+* Managing user subscriptions and access permissions.
+* Configuring Intelligent Capture and process workflows.
+* Setting up email routing rule templates.
+* Setting up a knowledge base.
+* Configuration of the Employee and Customer portals.
+* Performing general service desk administration.
 
 ## Audience
-This guide is for administrative users of Hornbill.  The areas of configuration described in this guide can be accessed by users that have been assigned the [Service Desk Admin role](/service-manager-config/setup/service-manager-roles#administration-roles).
 
-## Accessing Service Manager configuration
+This guide is for Hornbill administrators. To access the settings described in this guide, your user account must have the [Service Desk Admin role](/servicemanager-config/setup/service-manager-roles#administration-roles) role.
 
-1. Open Configuration by clicking on the cog button ![Service Manager Configuration](/_books/servicemanager-config/images/configuration-button.png) located at the bottom of the left-hand verticle menu bar of the Hornbill application. 
+## Access Service Manager configuration
 
-1. In the navigation panel, select Service Manager from the drop-down.
+Follow these steps to access the configuration menu.
 
-    ![Service Manager Configuration](/_books/servicemanager-config/images/servicemanager-config.png)
+1. Select the **Configuration** cog icon ![Service Manager Configuration](/_books/servicemanager-config/images/configuration-button.png) at the bottom of the left navigation bar.
+2. Select **Service Manager** from the dropdown menu in the navigation panel.
+
+   ![Service Manager Configuration](/_books/servicemanager-config/images/servicemanager-config.png)

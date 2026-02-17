@@ -19,7 +19,7 @@
       },
       {
         "text": "Getting Started",
-        "expand": true,
+        "expand": false,
         "items": [
           {
             "text": "Installing Service Manager",
