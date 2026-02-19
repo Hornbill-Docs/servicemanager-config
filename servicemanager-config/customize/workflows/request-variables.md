@@ -2,7 +2,7 @@
 
 As a process designer it is beneficial to have access to and use variables in your process nodes for varying purposes, it could be to insert answers from Intelligent Capture questions into the summary, description or custom fields of a request, to branch and make decisions in your process based on the site of the request customer, or the outcome to particular tasks. You may even want to add details into a task or authorization details field which is made up of details from the parent request, Intelligent Capture answers or related entities (Customer, Service, Organization etc), or you may simple want to assign tasks and authorizations to variables such as a requestors owner.
 
-In all these examples and many more there is a need in the designer to be able to insert these variables into the relevant fields on the different business process forms
+In all these examples and many more there is a need in the designer to be able to insert these variables into the relevant fields on the different workflow nodes, and this is where the Variable Picker comes in useful, as it provides a way to easily find the relevant variable you want to use and insert it into the relevant field.
 
 ## Using Variables
 
@@ -10,7 +10,7 @@ It is possible to both manually add variables to node fields and also use the Va
 
 When working with variables it is important to understand what you can use, when and how.
 
-In many business process node fields there will be the option to use variables, the nodes include:
+In many workflow node fields there will be the option to use variables, the nodes include:
 
 * Human Tasks
 * Custom Expressions following Decision nodes
