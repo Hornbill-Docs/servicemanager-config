@@ -79,4 +79,4 @@ You can select one or more checkpoints to be set when this node is reached.
 
 ## Output Params / Context Reference
 
-Hornbill Automation nodes provide output parameters which can be accessed through Variable Picker or Decision node in a Business Process. The value in Result Reference of a node is appended to the reference of each output parameter.
+Hornbill Automation nodes provide output parameters which can be accessed through Variable Picker or Decision node in a workflow. The value in Result Reference of a node is appended to the reference of each output parameter.
