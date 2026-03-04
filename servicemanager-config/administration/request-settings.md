@@ -23,7 +23,7 @@ Choose which request actions will be enabled when a request is placed on hold. B
 
 Tick any actions that you wish to allow while requests are on hold, or remove the checkmark from those that you wish to disable. Click **Save** to apply the changes.
 
-Revert any changes to the default settings by clicking **Reset**.
+Revert back to the default selections by clicking on the **Revert** button.
 
 ## Resolve Settings
 

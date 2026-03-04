@@ -11,13 +11,13 @@ Use the Access Control to lock or unlock the details section or the Actions on a
 
 ![Workflow Lock Automation](/_books/servicemanager-config/images/workflow-lock-automation.png)
 
-#### Example uses
+#### Using access control
 
 * On an incident, the resolution action could be locked until other actions have been completed.
 * On a change, the details might be locked once a change has been approved.
 * Only allow full access users the ability to apply certain actions.
 
-![Worflow Lock Action](/_books/servicemanager-config/images/workflow-lock-action.png)
+![Workflow Lock Action](/_books/servicemanager-config/images/workflow-lock-action.png)
 
 #### Available Tasks
 
@@ -180,7 +180,7 @@ Use the Email Notification nodes to send email templates to different Request st
 
 ## Get Request Information
 
-Use the Get Request Information node at any stage in a workflow and preceding another workflow node when you want to make the variables of the Request available. Variables may include Customer, Status, Site, Priority, or any answers to customer-defined questions from different Intelligent Capture forms or attributes of the customer or organization of the request the workflow is running against.
+Use the Get Request Information node to retrieve request data at any stage in your workflow. This node extracts key request variables—such as Customer, Status, Site, and Priority along with responses to custom Intelligent Capture questions and organization attributes, making this information available for downstream workflow decisions or other nodes.
 
 * **Category Details**: This is designed to get information about both the request category and the resolution category. Use this for making decisions based on the selected category.
 * **Customer Details**: Get more information about the customer to help drive the workflow.  Find out who their manager is. Check the custom fields for things like VIP status.
@@ -189,7 +189,7 @@ Use the Get Request Information node at any stage in a workflow and preceding an
 * **Owner Details**: Use this if you need more detail about the request owner than what the Request Details provide. A commonly used output is the owner's manager.
 * **Raised By Details**: Gather information about who raised the request.  This can be particularly useful on request types that don't include customers.  For example, you may want to include some automation on a change workflow that communicates back to the person who raised the change.
 * **Request Details**: This returns all the key information about a request.  This is one of the most-used automations in a request workflow.
-* **Intelligent Capture Answers**: This lets you interrogate the answers that were provided during the capture phase of a request.  Make decisions based on the provided answers to drive your workflow.
+* **Intelligent Capture Answers**: This lets you interrogate the answers that were provided during the capture phase of a request.  Make decisions based on the provided answers to drive your workflow.Use the outputs to share the answered questions in an email notification.
 * **Service Details**: Get the details of the associated service. When a request is first raised, you may want to check the status of the service and send an automated email to the customer about the service not being available.  
 * **Site Details**: Your workflow may have location-specific responses to an issue.  Use the Manager IDs to help communicate issues at a site.  You could add the managers as a connection or send them a notification of high-priority incidents.
 * **Team Details**: Get information about the team that the request is currently assigned to.  Two useful outputs are the IDs of the team's manager and leader, allowing you to send notifications, escalate, or add as a member.
