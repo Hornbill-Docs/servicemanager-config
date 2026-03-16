@@ -2,6 +2,14 @@
 layout: article-toc
 ---
 # Reports
+
+See the *Platform Configuration Guide* for all [general information related to reporting in Hornbill](/esp-config/reporting/reports). This article covers Service Manager-specific information.
+
+In Hornbill Service Manager, reporting allows service desk analysts to gather and review operational data from the system in order to understand service performance and activity. Reports provide a snapshot of data at the moment they are run, making them useful for analyzing lists of records such as requests, incidents, or other service management information.
+
+In **Configuration > Service Manager > Reporting**, you can find existing reports, create new ones, or edit reports that already exist. To create a report, you define the data source by selecting one or more tables and choosing which columns to include. If multiple tables are used, joins can be created to link related data. Filters and ordering can also be applied to focus on specific records or control how the results are displayed.
+
+<!--# Reports
 Reports are used to collect specific data for your reporting needs. The reports in Hornbill are a point in time, meaning that the data is accurate at the point when the report is run. These types of reports are best used for reporting on lists of data. There are various options with reports which will be explored in more detail below. Reports can be created in differnt formats and can be scheduled for distribution to documents in Document Manager or by email.
 
 ## Report list
@@ -45,6 +53,6 @@ If either of these limits are exceeded when trying to generate a PDF output, the
 
 Generation of CSV, XLS, XLSX adhere to the maximum row limit you have set on your instance under the following system setting: api.xmlmc.queryExec.maxResultsAllowed
 
-Please also note that any hidden columns will only be excluded from the visual PDF output, with the data being included in the CSV, XLS and XLSX outputs. If you do not wish the data to be included in these output formats, the column should be removed from the report.
+Please also note that any hidden columns will only be excluded from the visual PDF output, with the data being included in the CSV, XLS and XLSX outputs. If you do not wish the data to be included in these output formats, the column should be removed from the report.-->
 
 <!-- duplicate page: https://docs.hornbill.com/esp-config/reporting/reports -->
