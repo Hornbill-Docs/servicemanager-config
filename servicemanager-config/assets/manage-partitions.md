@@ -9,7 +9,13 @@ keywords: visibility of assets
 This article is new, to support the preview release of the new Asset Management and its new UI.
 :::
 
-Asset management in Hornbill provides the ability to facilitate multi-org asset management: centrally managed assets in one system but with the capability to create multiple, independent asset databases, each with access and visibility controls. By default, there are no partitions in your asset management implementation; once you add one or more partitions, your implementation becomes more flexible.
+With partitioning, Hornbill Asset Management supports multi-org asset management in a single, centralized system. You can partition assets to benefit from an additional organizational layer that enforces specific access and visibility controls. 
+
+## Partition behavior
+
+* **Default configuration**: Asset management implementations contain no partitions by default. 
+* **Access control**: Each partition applies unique restrictions to the assets within it. 
+* **System flexibility**: Adding partitions enables more complex asset management structures.
 
 If your instance does not have partitions, then anyone with the Asset Management Admin role or the Asset Management User role has access to all the asset records.
 
@@ -39,7 +45,7 @@ With increased flexibility comes increased complexity. Here are a few important 
 
 * Each partition has visibility controls to establish who has access to the assets as either viewers or asset managers.
 
-* Asset managers and viewers can see assets from only one partition at a time.
+* Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
 
 * You restrict access to partitioned records by [user, group, or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
 
@@ -61,7 +67,7 @@ In terms of access to partitions for agents, you only need to [set up access to 
 
 You create and manage partitions in **Configuration > Service Manager**. Asset Management users can then work with assets within those partitions in **Service Management > Assets**.
 
-On a per-user basis, the partition selected by any user is saved. When that user goes back into Asset Management, they view that same partition again. This remembering of the users' selections can be deactivated using the application setting `asset.partition.current`.
+On a per-user basis, the partition selected by any user is saved. When that user goes back into Asset Management, they view that same partition again.
 
 **To create a partition:**
 
