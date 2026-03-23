@@ -6,7 +6,7 @@ keywords: visibility of assets
 # Create and manage partitions
 
 ::: note
-This article is new, to support the preview release of the new Asset Management and its new UI.
+This article supports the preview release of the new Asset Management and its new UI.
 :::
 
 With partitioning, Hornbill Asset Management supports multi-org asset management in a single, centralized system. You can partition assets to benefit from an additional organizational layer that enforces specific access and visibility controls. 
@@ -47,17 +47,17 @@ With increased flexibility comes increased complexity. Here are a few important 
 
 * Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
 
-* You restrict access to partitioned records by [user, group, or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+* You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
 
 ## Deciding whether to create partitions
 
 Only partition your assets if you have a strong reason to do so.
 
-There are various places in Hornbill where assets can be viewed and acted upon by users who do not have the Asset Management Admin role or the Asset Management User role. For example, when agents log a request, they may need to select an asset as part of that process in the Intelligent Capture.
+There are various places in Hornbill where assets can be viewed and acted upon by users who do not have the Asset Management Admin role or the Asset Management User role. For example, when agents raise a request, they may need to select an asset as part of that process when completing the Intelligent Capture form.
 
-In the case of a managed service provider (MSP), that Intelligent Capture is designed for a specific set of users. Each service is defined separately for each customer. The service defines an Intelligent Capture, and the Intelligent Capture --- by prompting the user for an asset --- defines which asset partition they can search and select from. The form filters further based on ownership, shared visibility, and so on.
+In the case of a Managed Service Provider (MSP), that Intelligent Capture is designed for a specific set of users. Each service is defined separately for each customer. The service defines an Intelligent Capture, and the form --- by prompting the user for an asset --- defines which asset partition they can search and select from. The form filters further based on ownership, shared visibility, and so on.
 
-As an assets admin, you control Asset Management users' access to partitioned asset records by role, group, or user --- but not to individual integration points such as the search form in an Intelligent Capture.
+As an assets admin, you control Asset Management users' access to partitioned asset records by role or user, but not to individual integration points such as the search form in an Intelligent Capture.
 
 If you choose to enable partitioning, you must revisit all your Intelligent Captures that use the Asset form and change this to the Partitioned Assets form.
 
@@ -100,7 +100,7 @@ The permissions you grant are overridden by the users’ asset role permissions.
 1. Navigate to **Configuration > Service Manager > Assets > Manage Partitions**.
 1. In the partitions list, click the name of the partition you want to manage.
 1. In the *Partition Access* section, click **Add New**.
-1. Use the first dropdown to grant access by role, group, or user.
+1. Use the first dropdown to grant access by role or user.
 1. Use the second dropdown to add further filtering to the access granted.
 1. Use the third dropdown to specify whether the access allows viewing only; viewing, creating, and updating; viewing, creating, and deleting; or all of those actions.
 1. Save your changes (click the icon next to the third dropdown).
