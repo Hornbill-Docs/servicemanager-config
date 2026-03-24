@@ -11,7 +11,8 @@
       "https://openai.com/policies/*",
       "https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/EAEAS",
       "https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf",
-      "https://www.hornbill.com/blog/how-the-hai-lab-team-test-new-genai-models-like-gpt-4o"
+      "https://www.hornbill.com/blog/how-the-hai-lab-team-test-new-genai-models-like-gpt-4o",
+      "https://academy.hornbill.com/app/courses/6ef4aeb5-26ba-45c5-bc89-78181d2ab62b"
     ],
     "exclude_spellcheck": [
       {
