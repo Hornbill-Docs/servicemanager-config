@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.7.17",
+  "version": "1.7.18",
   "audience": [
     "public"
   ],
@@ -170,26 +170,7 @@
       },
       {
         "text": "Advanced Analytics",
-        "expand": false,
-        "draft": true,
-        "items": [
-          {
-            "text": "Measures",
-            "link": "servicemanager-config/advanced-analytics/measures"
-          },
-          {
-            "text": "Widgets",
-            "link": "servicemanager-config/advanced-analytics/widgets"
-          },
-          {
-            "text": "Dashboards",
-            "link": "servicemanager-config/advanced-analytics/dashboards"
-          },
-          {
-            "text": "Slideshows",
-            "link": "servicemanager-config/advanced-analytics/slideshows"
-          }
-        ]
+        "link": "servicemanager-config/advanced-analytics/advanced-analytics"
       },
       {
         "text": "Reporting",
