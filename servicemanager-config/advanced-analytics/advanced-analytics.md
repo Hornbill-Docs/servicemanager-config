@@ -47,7 +47,7 @@ With the measure configured, you can now create a widget to visualize the data. 
 * **Widget type**: Data chart. This can be selected under the widget properties. Data charts can include line, bar, and pie charts.
 * **Data series**: This is where you select the measure you created for daily active incidents. The widget will use the data from this measure to populate the chart.
 * **Chart type**: Line. This will display the data points connected by lines, making it easier to see trends.
-* **Sample period**: Start of last month. This will display data from the beginning of the previous month to the current date, allowing you to analyze recent trends in active incidents.  Compared to the measure, which retains data for the last 12 days, this widget will show a broader range of data, providing a more comprehensive view of incident activity over time.
+* **Sample period**: Start of last month. This will display data from the beginning of the previous month to the current date, allowing you to analyze recent trends in active incidents.  Compared to the measure, which displays data for the last 12 days, this widget can show a broader range of data, providing a more comprehensive view of incident activity over time.
 
 ### Dashboard
 
