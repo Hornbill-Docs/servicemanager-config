@@ -132,7 +132,7 @@ Use the Authorization Decision node to mark a request with the current status of
 
 ![Authorization Decision Automation](/_books/servicemanager-config/images/workflow-authorization-decision.png)
 
-### Available Tasks
+### Available Authorization Decision tasks
 
 * Approved
 * Clear
@@ -236,7 +236,7 @@ When a new request is logged, it will be automatically linked to the request fro
 
 ![Log New Automation](/_books/servicemanager-config/images/workflow-log-new.png)
 
-### Available tasks
+### Available Log Request tasks
 
 * Log New Change
 * Log New Incident
@@ -245,7 +245,7 @@ When a new request is logged, it will be automatically linked to the request fro
 * Log New Release
 * Log New Request
 
-### Options
+### Log Request Options
 
 The **Options** allow you to pre-populate the new request with information. The options that start with "Copy" will take the values directly from the request that it is being logged from.
 
@@ -300,9 +300,43 @@ This task allows for a single service to be added to the list of associated serv
 
 This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on the service that the request has been raised against.The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/service-portfolio/services/service-availability#availability-metrics).
 
+----
+
 ## Suspend
 
-Use a Suspend node if you wish to suspend the progress of the workflow until a defined action is performed manually on the request. This could include waiting for a priority to be set, a customer added, ownership set, or the resolution defined. Configuration options include the ability to specify the context (which Action Bar icon) the request will appear in while waiting for the Suspend (manual action) to be performed.
+The **Suspend** automation pauses the progress of a workflow until a user performs a specific manual action on a request. Use this when a process requires human input before it can continue to the next step.
+
+Common reasons to use **Suspend** include waiting for a user to:
+
+* Set a priority.
+* Add a customer.
+* Assign ownership.
+* Define a resolution.
+
+![Suspend Automation configuration](/_books/servicemanager-config/images/workflow-suspend.png)
+
+### Configure a Suspend automation
+
+The following options are available when configuring a Suspend automation:
+
+#### Action Focus
+
+This option lets you choose which request action has focus when viewing the request while the workflow is suspended.  This helps to guide users to the area of the request that requires their attention to resume the workflow.
+
+#### Expiry Period
+
+This option allows you to set a time period for the workflow to be suspended.  If the workflow is still suspended after this time period, the workflow will automatically resume.  This is particularly useful for situations where a request might be waiting for a customer response.  If the customer doesn't respond within the expected time frame, the workflow can automatically continue.
+
+#### Notices
+
+Notices are displayed at the top of the request form while a workflow is suspended.  This is a great way to provide instructions to users on what they need to do to resume the workflow.  For example, if the workflow is waiting for a priority to be set, the notice could say "Please set the priority of this request to resume processing".  Notices can be added for both internal and external users. Notices are automatically removed once the workflow is resumed.
+
+* **Add Notice**: Select **Yes** to add a notice when the workflow is suspended.
+* **Notice Type**: You can choose between an alert or an information notice. An alert notice is highlighted in red to indicate that attention is required, while an information notice is highlighted in blue to indicate that the user needs to be aware of something.
+* **Notice Text**: This is the message that will be displayed to users while the workflow is suspended.
+* **Notice Visibility**: This allows you to choose whether the notice is displayed to internal users, external users, or both.
+
+### Available suspend tasks
 
 * Await Expiry
 * Wait for List of Request Authorizers
@@ -334,10 +368,13 @@ Use a Suspend node if you wish to suspend the progress of the workflow until a d
 * Wait for Request Resolution
 * Wait for Request Site
 * Wait for Status Change
+* **Wait for Status or Substatus Change**: The workflow will resume when there is a change to either the status or substatus of the request.
 * Wait for Request Summary
 * Wait for Request Team
 * Wait for Request Update
 * Wait for Urgency Assessment
+
+----
 
 ## Update Request
 
@@ -359,7 +396,7 @@ Some options are common to all of the Update Request types.
 
 * **Request ID**. In almost all cases this should be set to `Auto`. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
 
-### Available tasks
+### Available update tasks
 
 * **Logging Category**.
 * **Closure Category**.
