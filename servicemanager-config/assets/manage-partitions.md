@@ -37,17 +37,23 @@ Make sure you [understand the implications of partitioning assets](/servicemanag
 
 With increased flexibility comes increased complexity. Here are a few important facts about partitioning assets in Hornbill:
 
-* Each asset record can be allocated to one, and only one, partition.
+* **Each asset record can only be allocated to one partition**. You cannot allocate an asset to more than one partition.
 
-* Just as with asset records, asset types and asset categories can be allocated to one, and only one, partition. (But asset types and asset categories can exist with the *same names* in multiple partitions.)
+* **Types and categories can also only be allocated to one partition**. But asset types and asset categories can exist with the *same names* in multiple partitions.
 
-* If you don't want the one-and-only-one restriction mentioned above, you can allocate asset records to *Un-partitioned Assets*. When asset records are in *Un-partitioned Assets*, it is as if there were no partitions enabled. (The *Un-partitioned Assets* allocation is only visible once you have enabled partitions on your instance.)
+* **Unpartitioned Assets**. Assets not assigned to a specific partition will reside in the unpartitioned asset container. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
 
-* Each partition has visibility controls to establish who has access to the assets as either viewers or asset managers.
+<!-- JE: This is CM's original bullet for above. Leaving it here for now incase I've got something in the wording wrong in my rewrite.
+** When partitions are used for some assets, other assets can co-exist outside of partitions. These are recorded as *Un-partitioned Assets*. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
+-->
 
-* Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
+* **Visibility controls**. Each partition has visibility controls to establish who has access to the assets as either viewers or asset managers.
 
-* You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+* **Work on one partition per browser tab**. Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
+
+* **Restricting access**. You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+
+* **Partitioning is not backwards compatible**. This means that tt only applies to requests logged after the partitions were created, as the Partition ID is assigned during request creation.
 
 ## Deciding whether to create partitions
 
@@ -138,11 +144,30 @@ You can create asset categories and asset types with the same name in different 
 1. From the second dropdown, select the category you want to move the type to.
 1. Click **Migrate**.
 
-<!-- ## Changing the Asset form for Intelligent Captures
 
-NWJ said "in non-asset ui view, there is no option to filter by partition but rather it picks up the partition to filter by automatically using **a new setting in catalog service** (so a raised request in essence is related to a partition so any asset filtering on a request is based on that)."-->
+## Enable partitions in Intelligent Capture forms
 
-<!--ANOTHER QUESTION: Can multiple partitions be selected on a service?
+By showing only the assets relevant to a user’s specific request, you help them find the right equipment or software quickly.
+
+When a user fills out a form to raise a request, you can limit their view to a single partition of assets. This ensures they only see and select items that apply to their needs.
+
+### Use the Partitioned Assets form
+
+To restrict asset visibility, use the Partitioned Assets form within the Intelligent Capture Designer. 
+
+If you have an existing form that uses the standard Assets form, you must replace it with the Partitioned Assets form to enable partitioning for asset selection in the form.
+
+### Configuration options
+
+The Partitioned Assets form includes all the settings available in the standard Assets form, plus an additional option for partitions:
+
+* Partition selection: Choose the specific partition you want to display to the user, from **Filter by Partition**.
+
+As with the Assets form, you can use the other options to further narrow down the items available within the selected partition.
+
+![Screenshot showing the Partitioned Assets form options in the Intelligent Capture Designer](/_books/servicemanager-config/assets/images/partitioned-assets-form.png)
+
+<!--Cammy QUESTION: Can multiple partitions be selected on a service. Joel: No?
 
 [IS THIS PARAGRAPH WRONG NOW? IS IT THE HORNBILL ADMIN, NOT THE ASSET ADMIN, WHO DETERMINES WHICH END USERS CAN SEE ASSET RECORDS?] As an asset admin in charge of partitioned assets, you determine which end users see asset records. You do this when you set up a service to use a partition or when you set up an Intelligent Capture to use a partition. Then, when logging a request, the end user can select only assets from that partition.
 

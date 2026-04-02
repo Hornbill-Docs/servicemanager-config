@@ -44,3 +44,8 @@ The following roles give rights to asset management in Service Manager:
 |Asset Management User|This role includes rights to define and edit assets as well as to add detailed asset information.|
 |Asset Management Admin|This role provides all the capabilities of the Asset Management User role, with additional rights to define and edit asset types and asset categories.|
 |Asset Manager|This role should be granted to asset managers for task/activity assignment in Hornbill workflows.|
+
+<!-- JE: I've surfaced this "right" info here for now could prob be moved once we have the full overview of all changes published on this page -->
+## New Asset right
+
+The View Asset Management application right grants read-only access to assets within Service Manager, without editing privileges.
