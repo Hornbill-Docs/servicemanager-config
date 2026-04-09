@@ -12,20 +12,6 @@ This document describes some of the more commonly used settings. This is not a c
 * You must have the [Service Desk Admin role](/servicemanager-config/setup/service-manager-roles#administration-roles) or Hornbill Admin role to access the Service Manager settings.
 * Be familiar with how to use [Configuration](/esp-config/getting-started/using-configuration).
 
-## Topics covered
-
-* [Accessing Application Settings](/servicemanager-config/advanced-tools-and-settings/application-settings#accessing-application-settings)
-* [Using filters](/servicemanager-config/advanced-tools-and-settings/application-settings#using-filters)
-* [Email settings](/servicemanager-config/advanced-tools-and-settings/application-settings#email-settings)
-* [Category settings](/servicemanager-config/advanced-tools-and-settings/application-settings#category-settings)
-* [Portal settings](/servicemanager-config/advanced-tools-and-settings/application-settings#portal-settings)
-* [Intelligent Capture settings](/servicemanager-config/advanced-tools-and-settings/application-settings#intelligent-capture-settings)
-* [Request list settings](/servicemanager-config/advanced-tools-and-settings/application-settings#request-list-settings)
-* [Request settings](/servicemanager-config/advanced-tools-and-settings/application-settings#request-settings)
-* [Knowledge Center settings](/servicemanager-config/advanced-tools-and-settings/application-settings#knowledge-center-settings)
-* [Timeline settings](/servicemanager-config/advanced-tools-and-settings/application-settings#timeline-settings)
-* [Configuration management settings](/servicemanager-config/advanced-tools-and-settings/application-settings#configuration-management-settings)
-
 ## Accessing Application Settings
 
 You install Hornbill apps from the Hornbill App Store, which you access through Configuration.
@@ -236,11 +222,26 @@ The `Raise New` button can be configured to only show the Raise New option or ju
 
 ## Request settings
 
+### Questions section on request forms
+
 `app.request.questions.excludeConditionalQuestions`
 
 * The default setting for this is `OFF`.
 * When this setting is `OFF`, conditional Intelligent Capture questions that were not displayed in Intelligent Capture flows will appear in the *Questions* section on the request forms.
 * When this setting is `ON`, conditional Intelligent Capture questions that were not displayed in Intelligent Capture flows will not appear in the *Questions* section on the request forms.
+
+`app.request.questions.hideUnansweredQuestions`
+
+* The default setting for this is `OFF`.
+* When this setting is `OFF`, unanswered questions from Intelligent Capture flows will appear in the *Questions* section on the request forms.
+* When this setting is `ON`, unanswered questions from Intelligent Capture flows will not appear in the *Questions* section on the request forms.
+
+`com.hornbill.servicemanager.pinSections.questions`
+
+* The default setting for this is `OFF`.
+* When this setting is `OFF`, the *Questions* section on request forms will be collapsed by default, and users can expand it to view the questions and answers.
+* When this setting is `ON`, the *Questions* section on request forms will always stay expanded.
+
 
 ## Knowledge Center settings
 
