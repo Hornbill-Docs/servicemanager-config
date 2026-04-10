@@ -28,7 +28,7 @@ This update includes enhanced layouts, additional classification fields, and the
 If you are currently using assets, review and complete these tasks before the switchover date:
 
 - **Recreate filters and lists**. Current filters and lists do not migrate to the new mode. Use this transition to evaluate and improve your existing views.
-- **Review your asset structure**. In the new mode, there are asset categories available to help organise your assets. The new assets layout in Service Manager displays assets grouped by category. This means that you will need to create your categories and move your asset types into categories. You can also perform additional tasks, such as setting asset summary and detail information.
+- **Review your asset structure**. In the new mode, there are asset categories available to help organize your assets. The new assets layout in Service Manager displays assets grouped by category. This means that you will need to create your categories and move your asset types into categories. You can also perform additional tasks, such as setting asset summary and detail information.
 - **Review your asset types and mandatory fields**. In the new asset mode, mandatory fields you have previously associated with an asset type are not automatically associated. You can migrate your existing fields during creation or rebuild the required fields from scratch using the Quick Layout tool. This is accessed from **Configuration > Service Manager > Manage Types**, then selecting an Asset Type and one of the field types.
 
 Hornbill will be publishing a comprehensive guide to support migrating to the new asset mode that explains these three tasks in more detail.
@@ -66,5 +66,5 @@ Join us at our [Connect Events](https://hornbill.com/events) in June for hands-o
 ### Documentation
 
 - Migration Guide: A step-by-step guide to support your migration will be published in May 2026.
-- Service Manager Configuration Guide: This guide contains [technical details regarding new asset features and functionality](https://docs.hornbill.com/servicemanager-config/assets/overview) .
+- [Service Manager Configuration Guide](/servicemanager-config/assets/overview): This guide contains technical details regarding new asset features and functionality.
 - Service Manager User Guide: This guide is currently being updated for Asset Managers and general users.
