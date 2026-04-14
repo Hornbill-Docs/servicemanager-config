@@ -338,6 +338,10 @@
             "text": "Overview",
             "link": "servicemanager-config/assets/overview"
           },
+          {
+            "text": "New assets mode infokit",
+            "link": "servicemanager-config/assets/new-assets-mode-infokit"
+          },
       
           {
             "text": "Asset structure",
