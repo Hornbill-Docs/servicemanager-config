@@ -61,7 +61,7 @@ Hornbill is providing several resources to assist with your transition.
 
 ### In-person events
 
-Join us at our [Connect Events](https://hornbill.com/events) in June for hands-on activities exploring the new asset mode. 
+Join us at our [Connect Events](https://hornbill.com/events) in June for hands-on activities exploring the new asset mode.
 
 ### Documentation
 

@@ -1,5 +1,4 @@
 ---
-title: How assets are structured
 layout: article
 keywords: common fields
 ---
@@ -13,17 +12,14 @@ With Asset Management in Hornbill Service Manager, every asset is part of an ass
 
 ![Asset Structure](/_books/servicemanager-config/assets/images/asset-structure.png)
 
-## Topics covered
-* [Asset classes](/servicemanager-config/assets/asset-structure#asset-classes)
-* [Asset types](/servicemanager-config/assets/asset-structure#asset-types)
-* [Asset categories](/servicemanager-config/assets/asset-structure#asset-categories)
-
 ## Asset classes
+
 Asset classes are predefined and fixed. You cannot modify asset classes. Think of asset classes as templates that provide the data fields for IT assets. Each asset class has a set of available attributes that can be hidden or made available to each of the various asset types you create. By hiding attributes you don't need, you ensure that only the relevant information is visible in your asset records.
 
 When creating a new asset type, you must choose a class. This is because the class chosen dictates which attributes (data fields from the template) are available to populate when adding your individual assets beneath an asset type.
 
 Hornbill's asset classes are the following:
+
 * [Computer System](/servicemanager-external-db/tables/h-cmdb-assets-computer)
 * [Computer Peripheral](/servicemanager-external-db/tables/h-cmdb-assets-computer-peripheral)
 * [Data Processing Record](/servicemanager-external-db/tables/h-cmdb-assets-data-processing-record)
@@ -41,14 +37,32 @@ To view each asset class's attributes and other information (e.g. for use when i
 :::
 
 ### Attributes available to all assets
+
 In addition to the data fields specific to the classes listed above, there are fields shared between all assets, regardless of asset class. These *common fields* [are found here](/servicemanager-external-db/tables/h-cmdb-assets) in the Service Manager Database Schema Reference.
 
 ## Asset types
-Default asset types for each asset class are provided for your use.
 
-You can create any additional asset type to sit within an asset class. You can configure an asset type to use all the asset attributes, or only the ones relevant to your organization's needs.
+Service Manager provides a number of asset types by default so that you can quickly start adding your assets. Users can select an asset type when manually adding an individual asset. Admins can specify asset types as part of an import. Admins can also edit or delete the default asset types as necessary.
 
-When defining the asset type, you can also specify which of the asset attributes are mandatory; this means they must be populated when creating an asset of this asset type.
+The default asset types include the following:
+
+* Desktop
+* Laptop
+* Server
+* Virtual machine
+* Headset
+* Keyboard
+* Monitor
+* Mouse
+* Webcam
+* Smartphone
+* Tablet
+* Printer
+* Scanner
+* Desktop app
+* Mobile app
+* Desk phone
+
 
 <!--
 ## Asset attributes
@@ -272,7 +286,6 @@ See the attributes and other information about this asset class [here](/servicem
 | physicalDiskSize | string         | optional      | Size of the Hard Disk Drive       |
 | serialNumber     | string         | optional      | The serial number for the asset.  |
 
-
 #### Printer class
 
 | **Name**              | **Field Type** | **Required?** | **Description**                                                            |
@@ -361,4 +374,5 @@ See the attributes and other information about this asset class [here](/servicem
 <!-- https://wiki.hornbill.com/index.php?title=Understanding_the_Asset_Structure -->
 
 ## Asset categories
+
 Asset categories are for organizing and grouping asset types. Unlike asset classes, asset categories are customizable. Because you are the one to create the categories to group your asset types, it's you who controls how and where your assets are displayed.
