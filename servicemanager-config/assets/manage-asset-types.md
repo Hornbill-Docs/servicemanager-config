@@ -84,6 +84,11 @@ Where is the asset card displayed?
 * When viewing an [asset detail record](/servicemanager-user-guide/asset-management/asset-details).
 * When an asset is selected in the [Configuration Item Explorer](/servicemanager-user-guide/configuration-management/configuration-item-explorer).
 
+There are options to customize the Summary Card and the Wide Summary card. The **Summary Card Editor** accepts HTML. Here you can include the values held in class custom fields. The syntax for this is:
+
+- For common custom fields use `{{general.h_custom_char1}}`, replacing `char1` with the term in the custom field.
+- For class specific fields use `{{extended.h_custom_ext_char1}}`, replacing `char1` with the term in the custom field.
+
 ::: warning
 When using the Summary Card Editor to customize asset summary cards, use *only* Hornbill-prescribed styles. Do not add your own styles; any other style declarations will be removed by Hornbill.
 :::
