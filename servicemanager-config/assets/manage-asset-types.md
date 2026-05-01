@@ -89,6 +89,12 @@ There are options to customize the Summary Card and the Wide Summary card. The *
 - For common custom fields use `{{general.h_custom_char1}}`, replacing `char1` with the term in the custom field.
 - For class specific fields use `{{extended.h_custom_ext_char1}}`, replacing `char1` with the term in the custom field.
 
+To help you add the correct fields, a dropdown menu appears as you type the variable name in the editor, as this screenshot shows:
+
+![Asset Summary Card editor dropdown](/_books/servicemanager-config/assets/images/asset-field-dropdown.png)
+
+You can test how summary cards will be presented by selecting specific assets to preview in the summary card editor.
+
 ::: warning
 When using the Summary Card Editor to customize asset summary cards, use *only* Hornbill-prescribed styles. Do not add your own styles; any other style declarations will be removed by Hornbill.
 :::
