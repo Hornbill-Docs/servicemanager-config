@@ -9,17 +9,17 @@ keywords: visibility of assets
 This article supports the preview release of the new Asset Management and its new UI.
 :::
 
-With partitioning, Hornbill Asset Management supports multi-org asset management in a single, centralized system. You can partition assets to benefit from an additional organizational layer that enforces specific access and visibility controls. 
+With partitioning, Hornbill Asset Management supports multi-org asset management in a single, centralized system. You can partition assets to benefit from an additional organizational layer that enforces access and visibility controls. 
 
-## Partition behavior
+By default, partitioning is disabled. All assets are unpartitioned assets. This means that if your instance does not have partitions enabled, then anyone with the Asset Management Admin role or the Asset Management User role has access to all the asset records.
 
-* **Default configuration**: Asset management implementations contain no partitions by default. 
-* **Access control**: Each partition applies unique restrictions to the assets within it. 
-* **System flexibility**: Adding partitions enables more complex asset management structures.
+Hornbill Admins can create one or more partitions in **Configuration > Service Manager > Assets > Manage Partitions**.
 
-If your instance does not have partitions, then anyone with the Asset Management Admin role or the Asset Management User role has access to all the asset records.
+This video gives an explanation of partition, how it works in practice, and how to set up and use partitions:
 
-Admins can create one or more partitions in **Configuration > Service Manager > Assets > Manage Partitions**.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V-_Bp19m4Ek?si=KqC5-zV7JwHPEQn5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The following sections contain additional informaiton.
 
 ## Before you begin
 
@@ -35,7 +35,7 @@ Make sure you [understand the implications of partitioning assets](/servicemanag
 
 ## Understanding partitions in Hornbill Asset Management
 
-With increased flexibility comes increased complexity. Here are a few important facts about partitioning assets in Hornbill:
+Here are a few important facts about partitioning assets in Hornbill:
 
 * **Each asset record can only be allocated to one partition**. You cannot allocate an asset to more than one partition.
 
@@ -43,9 +43,15 @@ With increased flexibility comes increased complexity. Here are a few important 
 
 * **Unpartitioned Assets**. Assets not assigned to a specific partition will reside in the unpartitioned asset container. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
 
+* **Work on one partition per browser tab**. Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
+
+* **Restricting access**. You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+
+* **Partitioning is not backwards compatible**. This means that tt only applies to requests logged after the partitions were created, as the Partition ID is assigned during request creation.
+
 <!-- JE: This is CM's original bullet for above. Leaving it here for now incase I've got something in the wording wrong in my rewrite.
 ** When partitions are used for some assets, other assets can co-exist outside of partitions. These are recorded as *Un-partitioned Assets*. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
--->
+
 
 * **Visibility controls**. Each partition has visibility controls to establish who has access to the assets as either viewers or asset managers.
 
@@ -54,6 +60,8 @@ With increased flexibility comes increased complexity. Here are a few important 
 * **Restricting access**. You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
 
 * **Partitioning is not backwards compatible**. This means that tt only applies to requests logged after the partitions were created, as the Partition ID is assigned during request creation.
+
+-->
 
 ## Deciding whether to create partitions
 
@@ -133,16 +141,16 @@ You can create asset categories and asset types with the same name in different 
 
 1. In **Configuration > Service Manager > Assets > Manage Types**, click the category name.
 1. Under the list of available asset list columns, click **Move to Partition**.
-1. In the Migrate Category dialog, from the dropdown, select the partition you want to move the category to.
-1. Click **Migrate**.
+1. In the Move Category dialog, from the dropdown, select the partition you want to move the category to.
+1. Click **Move**.
 
 **To move an asset type into a partition:**
 
 1. In **Configuration > Service Manager > Assets > Manage Types**, click the type name.
-1. In the General tab, at the bottom of the view, click **Move to Partition**.
-1. In the Migrate Type dialog, from the first dropdown, select the partition you want to move the category to.
+1. In the General tab, at the bottom of the view, select **Move to Partition**.
+1. In the Move Type dialog, from the first dropdown, select the partition you want to move the category to.
 1. From the second dropdown, select the category you want to move the type to.
-1. Click **Migrate**.
+1. Select **Move**.
 
 
 ## Enable partitions in Intelligent Capture forms

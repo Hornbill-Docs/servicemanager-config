@@ -174,8 +174,6 @@ When a category or type is archived, this becomes the unarchive button.
 
 **Expected Result:** The asset type appears in italic text in the navigation tree. Users can no longer select this type when creating new assets.
 
-
-
 ### Archive an asset category
 
 1. Navigate to the **Manage Types** page.
