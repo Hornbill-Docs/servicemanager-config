@@ -146,6 +146,36 @@ Here is an example of a what a users sees when viewing the list of assets by the
 
 **Fields available for CSV download.** The CSV download contains only the columns that you have added here in the List Fields tab.
 
+## Archiving asset categories, types, and assets
+
+Archiving allows you to restrict access to assets and prevent new assets being created in archived categories and types. 
+
+With asset archiving, nothing is permanently deleted.
+
+Asset archiving is simply changing the state of assets to archived. When archiving from the Manage Types page, you can select the asset state groups, including sub states, to include in the archive. Unselected groups will not be affected.
+
+You can archive asset categories, types, and their associated assets by selecting the archive button that appears when a category or type is selected in the left-hand menu, as highlighted here:
+
+![asset type archive button](/_books/servicemanager-config/assets/images/asset-type-archive.png)
+
+With archiving:
+
+* Archiving an asset type opens a dialog. Select an archive mode (type only, or type & assets) and, in assets mode, selects which asset state groups to archive and optionally assigns a sub state to each.
+* Archiving a category opens a dialog. Select an archive mode (category only, category & types, or category/types/assets). In assets mode a per-type per-state breakdown is shown with sub state selection per row.
+* Unarchiving an asset type opens a matching popup. The user chooses unarchive mode (type only, or type & assets). In assets mode, archived asset groups are shown grouped by current sub state, and the user picks a new state and optional new sub state for each selected group.
+* Unarchiving a category opens a popup with three modes mirroring the archive flow. In assets mode, only archived types and their archived asset groups are shown; the user assigns a new state and optional new sub state per group.
+* Archived categories and types are displayed in italic text in the nav tree. When not currently selected they are also muted; when selected the muting is suppressed so the active item remains readable.
+* From **Service Manager** > **Assets**, users with asset management rights can toggle visibility of archived items via the eye icon button in the **Assets** title bar. The icon is open when archived items are shown and closed  when hidden, giving an at-a-glance indicator of the current setting. This preference is saved per user via the app setting assets.view.showArchived.
+* From **Service Manager** > **Assets**, users without any asset management rights cannot see archived categories or types in the nav tree at all. This is enforced by the tree component independently of the user preference setting.
+* Editing of archived records is fully permitted — there are no form-level restrictions.
+* Archived asset types are excluded from the type dropdown in the Create Asset popup, preventing new assets from being created against an archived type.
+
+### Auditing archive events
+
+Asset archiving can also be performed in Service Manager. This is done by updating the asset state in the asset editor and be done for one or multiple assets at a time.
+
+When archiving assets in Service Manager you have the option to audit the update. Auditing asset type archiving or asset archiving is not possible when archiving from the Manage Types page.
+
 <!--
 
 **To add a new asset type:**
