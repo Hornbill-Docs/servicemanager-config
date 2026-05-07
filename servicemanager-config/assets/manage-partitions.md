@@ -45,7 +45,7 @@ Here are a few important facts about partitioning assets in Hornbill:
 
 * **Work on one partition per browser tab**. Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
 
-* **Restricting access**. You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
+* **Restricting access**. You restrict access to partitioned records by user or role.
 
 * **Partitioning is not backwards compatible**. This means that it only applies to requests logged after a partitions is created, as the Partition ID is assigned during request creation.
 
@@ -97,7 +97,6 @@ The next sections explain each stage.
 1. In the Partitions dropdown above **Dashboard** and **All Assets**, click the down arrow to view your new partition in the list.
 1. Click your new partition's name to go to its dashboard.
 
-Now you can [add asset categories to your new partition, or move un-partitioned assets](/servicemanager-config/assets/manage-partitions#organizing-assets-in-partitions) into it.
 
 ### Manage partition access 
 
@@ -114,7 +113,6 @@ As an assets admin, you control Asset Management users' access to partitioned as
 Grant access to partitions to agents who need to view and manage full asset records.
 
 If an agent does not have permission to view an asset, they can still see the asset name in related lists, such as within a request. However, the system displays an access error if the agent attempts to open the record to view its full details.
-
 
 **To manage access to a partition:**
 
@@ -185,10 +183,7 @@ This is done within the Service Manager application.
 
 From the the Service Portfolio, navigate to a service's configuration settings and assign a partition from the **Asset Partition Filter** menu.
 
-![Screenshot showing the Asset Partition Filter](/_books/servicemanager-config/assets/images/asset-partition-filter.png)
-
-
-
+![Screenshot showing the Asset Partition Filter](/_books/servicemanager-config/images/asset-partition-filter.png)
 
 <!--Cammy QUESTION: Can multiple partitions be selected on a service. Joel: No?
 
