@@ -11,8 +11,6 @@ This article supports the preview release of the new Asset Management and its ne
 
 With partitioning, Hornbill Asset Management supports multi-org asset management in a single, centralized system. You can partition assets to benefit from an additional organizational layer that enforces access and visibility controls. 
 
-By default, partitioning is disabled. All assets are unpartitioned assets. This means that if your instance does not have partitions enabled, then anyone with the Asset Management Admin role or the Asset Management User role has access to all the asset records.
-
 Hornbill Admins can create one or more partitions in **Configuration > Service Manager > Assets > Manage Partitions**.
 
 This video gives an explanation of partition, how it works in practice, and how to set up and use partitions:
@@ -22,6 +20,8 @@ This video gives an explanation of partition, how it works in practice, and how 
 The following sections contain additional informaiton.
 
 ## Before you begin
+
+You create and manage partitions in **Configuration > Service Manager**. Asset Management users can then work with assets within those partitions in **Service Management > Assets**.
 
 When accessing the Asset Management capabilities of Hornbill Service Manager as an admin, first make sure your user account has the correct role associated, and make sure your instance is enabled for partitions.
 
@@ -47,7 +47,7 @@ Here are a few important facts about partitioning assets in Hornbill:
 
 * **Restricting access**. You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
 
-* **Partitioning is not backwards compatible**. This means that tt only applies to requests logged after the partitions were created, as the Partition ID is assigned during request creation.
+* **Partitioning is not backwards compatible**. This means that it only applies to requests logged after a partitions is created, as the Partition ID is assigned during request creation.
 
 <!-- JE: This is CM's original bullet for above. Leaving it here for now incase I've got something in the wording wrong in my rewrite.
 ** When partitions are used for some assets, other assets can co-exist outside of partitions. These are recorded as *Un-partitioned Assets*. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
@@ -67,28 +67,28 @@ Here are a few important facts about partitioning assets in Hornbill:
 
 Only partition your assets if you have a strong reason to do so.
 
-There are various places in Hornbill where assets can be viewed and acted upon by users who do not have the Asset Management Admin role or the Asset Management User role. For example, when agents raise a request, they may need to select an asset as part of that process when completing the Intelligent Capture form.
+Partitioning is useful when:
 
-In the case of a Managed Service Provider (MSP), that Intelligent Capture is designed for a specific set of users. Each service is defined separately for each customer. The service defines an Intelligent Capture, and the form --- by prompting the user for an asset --- defines which asset partition they can search and select from. The form filters further based on ownership, shared visibility, and so on.
+1. You manage assets across multiple departments in your organization and you want to restrict access to set of assets.
+2. You are a Multi-Service Provider (MSP) and oversee assets spanning different organizations and Hornbill instances.
 
-As an assets admin, you control Asset Management users' access to partitioned asset records by role or user, but not to individual integration points such as the search form in an Intelligent Capture.
+If you choose to enable partitioning, for all forms where you wish to enforce partitioning visibility you must revisit all your Intelligent Captures that use the Asset form and change this to the Partitioned Assets form.
 
-If you choose to enable partitioning, you must revisit all your Intelligent Captures that use the Asset form and change this to the Partitioned Assets form.
+## Create and use partitions
 
-In terms of access to partitions for agents, you only need to [set up access to partitions](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions) to those agents who need to view and manage the full asset record. If agents do not have permission to view an asset, they can still see the asset in related asset lists (e.g. in a request). But if they try to view the record, they will get an access error.
+There are three stages to creating and applying a partition for it to be used:
 
-## Creating partitions
+1. Create a partition and assign access.
+1. Add assets to the partition.
+1. Update forms and apply service association.
 
-You create and manage partitions in **Configuration > Service Manager**. Asset Management users can then work with assets within those partitions in **Service Management > Assets**.
+The next sections explain each stage.
 
-On a per-user basis, the partition selected by any user is saved. When that user goes back into Asset Management, they view that same partition again.
+## Create a partition and assign access
 
 **To create a partition:**
 
 1. Navigate to **Configuration > Service Manager > Assets > Manage Partitions**.
-    ::: tip
-    If you don't see **Manage Partitions** under **Assets**, you need to enable the application setting `asset.partitioning.enable`.
-    :::
 1. In the partitions list, click **+ New Partition**.
 1. Give the partition an ID, or click **Auto ID**.
 1. Give the partition a name.
@@ -99,7 +99,7 @@ On a per-user basis, the partition selected by any user is saved. When that user
 
 Now you can [add asset categories to your new partition, or move un-partitioned assets](/servicemanager-config/assets/manage-partitions#organizing-assets-in-partitions) into it.
 
-## Managing access to partitions
+### Manage partition access 
 
 When working with a partition in **Manage Partitions**, you can configure permissions to control who has access and what they can do with that access.
 
@@ -108,6 +108,13 @@ If you don't define any access permissions, anyone who has access to view assets
 
 The permissions you grant are overridden by the users’ asset role permissions. For example, if the users’ role does not allow them to delete assets, then they cannot delete assets even if you allow deleting.
 :::
+
+As an assets admin, you control Asset Management users' access to partitioned asset records by security or user role.
+
+Grant access to partitions to agents who need to view and manage full asset records.
+
+If an agent does not have permission to view an asset, they can still see the asset name in related lists, such as within a request. However, the system displays an access error if the agent attempts to open the record to view its full details.
+
 
 **To manage access to a partition:**
 
@@ -121,7 +128,7 @@ The permissions you grant are overridden by the users’ asset role permissions.
 
     Your changes take effect for your chosen users when they refresh their browser or log out and back in.
 
-## Organizing assets in partitions
+## Add assets to the partition
 
 Once you have enabled partitions on your instance and created partitions, it's time to organize the assets they'll contain. You can create new categories and types in the partition, move un-partitioned assets into the partitions, or move assets from one partition to another partition.
 
@@ -152,20 +159,17 @@ You can create asset categories and asset types with the same name in different 
 1. From the second dropdown, select the category you want to move the type to.
 1. Select **Move**.
 
+## Update forms and apply service association
 
-## Enable partitions in Intelligent Capture forms
-
-By showing only the assets relevant to a user’s specific request, you help them find the right equipment or software quickly.
+### Enable partitions in Intelligent Capture forms
 
 When a user fills out a form to raise a request, you can limit their view to a single partition of assets. This ensures they only see and select items that apply to their needs.
-
-### Use the Partitioned Assets form
 
 To restrict asset visibility, use the Partitioned Assets form within the Intelligent Capture Designer. 
 
 If you have an existing form that uses the standard Assets form, you must replace it with the Partitioned Assets form to enable partitioning for asset selection in the form.
 
-### Configuration options
+#### Configuration options
 
 The Partitioned Assets form includes all the settings available in the standard Assets form, plus an additional option for partitions:
 
@@ -174,6 +178,17 @@ The Partitioned Assets form includes all the settings available in the standard 
 As with the Assets form, you can use the other options to further narrow down the items available within the selected partition.
 
 ![Screenshot showing the Partitioned Assets form options in the Intelligent Capture Designer](/_books/servicemanager-config/assets/images/partitioned-assets-form.png)
+
+### Associate a partition to a service
+
+This is done within the Service Manager application.
+
+From the the Service Portfolio, navigate to a service's configuration settings and assign a partition from the **Asset Partition Filter** menu.
+
+![Screenshot showing the Asset Partition Filter](/_books/servicemanager-config/assets/images/asset-partition-filter.png)
+
+
+
 
 <!--Cammy QUESTION: Can multiple partitions be selected on a service. Joel: No?
 
