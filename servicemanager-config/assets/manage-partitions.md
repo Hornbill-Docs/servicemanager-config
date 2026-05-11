@@ -29,9 +29,9 @@ Asset partitioning allow you to divide your company's assets into separate, indi
 
 Here are a few important facts about partitioning assets in Hornbill:
 
-* **Each asset record can only be allocated to one partition**. You cannot allocate an asset to more than one partition.
-* **Types and categories can also only be allocated to one partition**. But asset types and asset categories can exist with the *same names* in multiple partitions.
-* **Unpartitioned Assets**. Assets not assigned to a specific partition will reside in the unpartitioned asset container. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
+* **Asset records**. An asset record can only be allocated to one partition.
+* **Types and categories**. Types and categories can only be allocated to one partition. However, different **types** and **categories** with the same names can exist in multiple partitions.
+* **Unpartitioned assets**. Assets not assigned to a specific partition will reside in the unpartitioned asset container. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
 * **Work on one partition per browser tab**. Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
 * **Restricting access**. You restrict access to partitioned records by user or role.
 * **Partitioning is not backwards compatible**. This means that it only applies to requests logged after a partitions is created, as the Partition ID is assigned during request creation.
@@ -52,14 +52,12 @@ Here are a few important facts about partitioning assets in Hornbill:
 
 ## Deciding whether to create partitions
 
-Only partition your assets if you have a strong reason to do so.
-
 Partitioning is useful when:
 
 1. You manage assets across multiple departments in your organization and you want to restrict access to set of assets.
 2. You are a Multi-Service Provider (MSP) and oversee assets spanning different organizations and Hornbill instances.
 
-If you choose to enable partitioning, for all forms where you wish to enforce partitioning visibility you must revisit all your Intelligent Captures that use the Asset form and change this to the Partitioned Assets form.
+If you choose to use partitioning, you must revisit all your Intelligent Captures that use the Asset form and change this to the Partitioned Assets form.
 
 ## Create and use partitions
 
