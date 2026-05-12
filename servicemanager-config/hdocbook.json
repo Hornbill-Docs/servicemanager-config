@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.8.8",
+  "version": "1.8.9",
   "audience": [
     "public"
   ],
@@ -352,13 +352,13 @@
             "link": "servicemanager-config/assets/manage-partitions",
             "draft": false
           },
+            {
+            "text": "Common Custom Fields",
+            "link": "servicemanager-config/assets/custom-fields"
+          },
           {
             "text": "Manage Types",
             "link": "servicemanager-config/assets/manage-asset-types"
-          },
-          {
-            "text": "Using custom fields",
-            "link": "servicemanager-config/assets/custom-fields"
           },
           {
             "text": "Manage Substates",
