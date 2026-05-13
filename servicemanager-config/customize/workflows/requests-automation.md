@@ -405,7 +405,10 @@ Some options are common to all of the Update Request types.
 * **Details**.
 * **External Reference**.
 * **First Time Fix**.
-* **Place On Hold**.
+* **Place On Hold**. This automation task will change the status of the request to On Hold. 
+  * When a request is placed on hold, any active [service level timers](/servicemanager-config/customize/workflows/timer-automation) will be paused until the request is taken off hold.
+  * The **On Hold Period** option lets you set a specific number of years, months, days, hours, or minutes that the request will be on hold, unlike the **On Hold Until** option where you set a specific date and time. Only one of these should be used.
+  * The **On Hold Period Apply WTC** option works along side the **On Hold Period** option. Setting this option to *Yes* will [calculate](/hornbill-how-to-guides/calculate-sla-timer#how-to-calculate-timer-targets) the total on hold period using only working hours from the default [working time calendar](/esp-config/customize/working-time-calendars). The default working time calendar is taken from the request's [SLA](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview#details). If the request has no SLA, the working time calendar specified in the *[guest.app.timer.defaultCalendar](/advanced-tools-and-settings/application-settings)* setting is used.
 * **Impact**. This automation for updating the impact of a request uses the impact levels that are defined under the [Impact Assessments](/servicemanager-config/administration/assessment-levels#impact).  Within the Options section of the automation settings, Impact is a mandatory field.  This needs to be set to `Manual` and then an appropriate impact selected.
 * **Priority**. This automation for updating the priority of a request uses the priority levels that are defined under the [Priority Assessments](/servicemanager-config/administration/assessment-levels#priority).  Within the Options section of the automation settings, Priority is a mandatory field.  This needs to be set to `Manual` and then an appropriate priority selected.
 * **Resolution Text**.
