@@ -36,20 +36,6 @@ Here are a few important facts about partitioning assets in Hornbill:
 * **Restricting access**. You restrict access to partitioned records by user or role.
 * **Partitioning is not backwards compatible**. This means that it only applies to requests logged after a partitions is created, as the Partition ID is assigned during request creation.
 
-<!-- JE: This is CM's original bullet for above. Leaving it here for now in case I've got something in the wording wrong in my rewrite.
-** When partitions are used for some assets, other assets can co-exist outside of partitions. These are recorded as *Un-partitioned Assets*. The *Un-partitioned Assets* allocation is only visible once you have enabled partitions.
-
-
-* **Visibility controls**. Each partition has visibility controls to establish who has access to the assets as either viewers or asset managers.
-
-* **Work on one partition per browser tab**. Asset managers and viewers can see assets from only one partition at a time. To work on multiple partitions side by side, open multiple browser tabs.
-
-* **Restricting access**. You restrict access to partitioned records by [user or role](/servicemanager-config/assets/manage-partitions#managing-access-to-partitions).
-
-* **Partitioning is not backwards compatible**. This means that tt only applies to requests logged after the partitions were created, as the Partition ID is assigned during request creation.
-
--->
-
 ## Deciding whether to create partitions
 
 Partitioning is useful when:
@@ -82,8 +68,7 @@ The next sections explain each stage.
 1. In the Partitions dropdown above **Dashboard** and **All Assets**, click the down arrow to view your new partition in the list.
 1. Click your new partition's name to go to its dashboard.
 
-
-### Manage partition access 
+### Manage partition access
 
 When working with a partition in **Manage Partitions**, you can configure permissions to control who has access and what they can do with that access.
 
@@ -169,9 +154,3 @@ This is done within the Service Manager application.
 From the the Service Portfolio, navigate to a service's configuration settings and assign a partition from the **Asset Partition Filter** menu.
 
 ![Screenshot showing the Asset Partition Filter](/_books/servicemanager-config/images/asset-partition-filter.png)
-
-<!--Cammy QUESTION: Can multiple partitions be selected on a service. Joel: No?
-
-[IS THIS PARAGRAPH WRONG NOW? IS IT THE HORNBILL ADMIN, NOT THE ASSET ADMIN, WHO DETERMINES WHICH END USERS CAN SEE ASSET RECORDS?] As an asset admin in charge of partitioned assets, you determine which end users see asset records. You do this when you set up a service to use a partition or when you set up an Intelligent Capture to use a partition. Then, when logging a request, the end user can select only assets from that partition.
-
-Service Manager users can see assets when logging or viewing requests. This is because the request itself is linked to a partition. <!--That way you don't have to set up every analyst to have specific permissions on partitions.If a user clicks the hyperlink to access the asset record, then partition access is required i.e. a helpdesk analyst wont be able to access record/view.-->
