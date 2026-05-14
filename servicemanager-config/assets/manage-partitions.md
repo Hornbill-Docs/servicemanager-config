@@ -18,7 +18,7 @@ Asset partitioning allow you to divide your company's assets into separate, indi
 * Watch the following video for an explanation of partitioning, how it works in practice, and how to set up and use partitions.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/FgCTWdIA08U?si=ni34E7Vs1WPlNRUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
+
 * The following role is required.
 
     |Role|Description|
@@ -133,7 +133,7 @@ You can create asset categories and asset types with the same name in different 
 
 When a user fills out a form to raise a request, you can limit their view to a single partition of assets. This ensures they only see and select items that apply to their needs.
 
-To restrict asset visibility, use the Partitioned Assets form within the Intelligent Capture Designer. 
+To restrict asset visibility, use the Partitioned Assets form within the Intelligent Capture Designer.
 
 If you have an existing form that uses the standard Assets form, you must replace it with the Partitioned Assets form to enable partitioning for asset selection in the form.
 
