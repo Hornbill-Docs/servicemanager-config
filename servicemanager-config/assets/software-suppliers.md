@@ -37,7 +37,7 @@ To add a software version to a product, follow these steps:
 
 ## Adding a supplier and product to a software asset
 
-When you are managing software assets, you can associate them with the relevant supplier and product. This helps in tracking and managing the software assets effectively. To do this:
+When you are managing software assets, you can associate them with the relevant vendor and product. This helps in tracking and managing the software assets effectively. To do this:
 
 1. Navigate to the software [asset record](/servicemanager-user-guide/asset-management/asset-details) you want to associate with a supplier and product.
 2. In the supplier field, select the appropriate supplier from the dropdown list.
