@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.8.11",
+  "version": "1.9.0",
   "audience": [
     "public"
   ],
@@ -363,6 +363,10 @@
           {
             "text": "Manage Substates",
             "link": "servicemanager-config/assets/manage-substates"
+          },
+          {
+            "text": "Software Suppliers",
+            "link": "servicemanager-config/assets/software-suppliers"
           },
           {
             "text": "Upload Assets",
