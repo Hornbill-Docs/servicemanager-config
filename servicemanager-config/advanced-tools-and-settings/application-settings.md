@@ -60,7 +60,7 @@ An email can be sent to a user that is assigned an authorization task. To receiv
 
 An email can be sent to a customer of a request when their request is either [placed on-hold or taken off-hold](/servicemanager-user-guide/service-portfolio/requests/overview#substatus-and-on-hold).
 
-`guest.app.requests.notificaiton.emailTemplate.customerRequestOnHoldUpdate`
+`guest.app.requests.notification.emailTemplate.customerRequestOnHoldUpdate`
 
 * Specifies the name of the email template that will be used.
 * The default [email template](/esp-config/email/templates) for this feature is called **CustomerRequestOnHoldUpdate**.

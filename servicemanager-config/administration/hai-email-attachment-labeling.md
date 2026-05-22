@@ -1,6 +1,6 @@
 ---
 title: Hornbill AI Email Attachment Labeling
-description: This guide covers the configuration of Email Attachment Labeling for HAi (Hornbill AI) within your environment. .
+description: This guide covers the configuration of Email Attachment Labeling for HAi (Hornbill AI) within your environment.
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---

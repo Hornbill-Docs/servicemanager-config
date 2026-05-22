@@ -15,7 +15,7 @@ The Cloud View is the default view when entering the tags. This is where you add
 ### Adding a new tag
 In the text field beside the **Add Tag** button, type the name of the tag that you wish to add and click **Add Tag**. The new tag is then visible in the tag cloud.  
 
-The size of the text in the cloud tag represents how often the tag.  The larger the text, the more the tag has been used.
+The size of the text in the cloud tag represents how often the tag has been used.  The larger the text, the more the tag has been used.
 
 ## List view
 From the Cloud view, click the **List View** button to access the List view. Here you can manage all existing tags.

@@ -41,7 +41,7 @@ A custom lookup is a container that holds multiple reference records.  The name 
 
 ### Step 2: Add a reference record
 
-The reference name is key to providing a match for the [Custom Lookup Automation](/servicemanager-config/customize/workflows/custom-lookup-automation).  The Custom Lookup Automatomation will look throught all the references on a Custom Lookup for a matching reference and then pass the values for that reference back to the workflow.
+The reference name is key to providing a match for the [Custom Lookup Automation](/servicemanager-config/customize/workflows/custom-lookup-automation).  The Custom Lookup Automation will look through all the references on a Custom Lookup for a matching reference and then pass the values for that reference back to the workflow.
 
 1. In the list of custom lookups, click the **View** button (the eye icon) in the row of the custom lookup you want to configure.
 1. Select the `Records` tab.

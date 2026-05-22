@@ -36,13 +36,13 @@ To map a custom form answer to one of the supported database columns, the form f
 | **h_custom_26 - h_custom_30** | INTEGER/any whole number | INTEGER custom fields 26 - 30 each suitable for holding whole numbers. When mapping to these columns, ensure the following RegEx is specified in your Custom field settings: [0-9]<br>Note: Phone numbers are not Integers, do not use these fields to store phone numbers. |
 | **h_custom_31 - h_custom_40** | TEXT/unlimited* | TEXT custom fields 31 - 40 each suitable for holding large amounts of text characters of any type.  |
 | **h_backout_plan** | Text/Unlimited* | The Back Out Plan of a Change or Release Request  |
-| **h_support_plan** | Text/Unlimited* | The Support Plan of a Change or Relase Request  |
+| **h_support_plan** | Text/Unlimited* | The Support Plan of a Change or Release Request  |
 | **h_communication_plan** | Text/Unlimited* | The Communication Plan of a Change or Release Request  |
 | **h_test_plan** | Text/Unlimited* | The Test Plan of a Change or Release Request  |
 | **h_implementation_plan** | Text/Unlimited* | The Implementation Plan of a Change or Release Request  |
 | **h_security_implication** | Text/Unlimited* | The Security Implications of a Change or Release Request  |
 | **h_change_justification** | Text/Unlimited* | The Change Justification a Change Request  |
-| **h_release_justification** | Text/Unlimited* | The Change Justification a Release Request  |
+| **h_release_justification** | Text/Unlimited* | The Release Justification of a Release Request  |
 | **h_disruption_level** | VarChar/255 Characters | The Disruption Level of a Change or Release Request  |
 | **h_change_category** | VarChar/100 Characters | The Category of a Change Request  |
 | **h_release_category** | VarChar/100 Characters | The Category of a Release Request  |

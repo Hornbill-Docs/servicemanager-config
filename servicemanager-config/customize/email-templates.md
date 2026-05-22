@@ -21,7 +21,7 @@ The Group selector at the top of the email template list allows the user to filt
 
 Next to the Group selector is an option that is enabled when one or more email templates are selected in the list. From here the selected email templates can be set to a group.  If the group does not exist, the toggle next to each Group Level can be used to add a new group.
 
-![Email Templelate Group Selector](/_books/servicemanager-config/customize/images/email-template-group-selector.png)
+![Email Template Group Selector](/_books/servicemanager-config/customize/images/email-template-group-selector.png)
 
 Groups can also be selected and created from within the Template Editor when creating or editing an individual email template.
 
@@ -52,7 +52,7 @@ As well as the application-specific fields, there are several general-purpose fi
 |`{{session.firstName}}`|First|Session|The users first name|
 |`{{session.lastName}}`|Last Name|Session|The users last name|
 |`{{session.name}}`|Full Name|Session|The users full name|
-|`{{session.jobTitle}}`|Jon Title|Session|The users Job Title|
+|`{{session.jobTitle}}`|Job Title|Session|The users Job Title|
 |`{{session.profileIcon}}`|Profile Icon|Session|The users profile Icon|
 |`{{session.email}}`|E-Mail Address|Session|The users primary email address|
 |`{{session.phone}}`|Phone Number|Session|The users primary contact phone number|

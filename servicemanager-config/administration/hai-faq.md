@@ -23,7 +23,7 @@ layout: article-toc
 
 **A:** Only by Hornbill and not by any Third Party AI Providers, as documented in the [Hornbill Artificial Intelligence Agreement](https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf) inputs and outputs will be used by the Hornbill AI team to develop internal models for future customer functionality, these will have a fully transparent process for how the training data is uses and the processes involved to remove personal or identifiable data, anonymising and addressing bias before the models are made available to customers. As stated in the agreement customers can opt out of this at any time and any data already used for training will be removed.
 
-**Q: Are their any restrictions on the use of Hornbill AI?**
+**Q: Are there any restrictions on the use of Hornbill AI?**
 
 **A:** Any restriction on the use of Hornbill AI is defined in section 5 of the [Hornbill Artificial Intelligence Agreement](https://www.hornbill.com/hubfs/Website/PDF/HAI%20Agreement.pdf) and any relevant [AI Supplier Terms](/servicemanager-config/administration/hai-usage-policy#third-party-terms)
 

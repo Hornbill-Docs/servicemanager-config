@@ -34,7 +34,7 @@ Service owners can publish one or multiple announcements to the subscribed users
 * **My Services View**. If multiple bulletins have been published from either the same or different Services a User is subscribed to, they will view the bulletins in a carousel at the top of the My Services view.
   * Click on the bulletin details, or the service name to be taken to the Service View that the bulletin relates to.
   * Clicking on any hyperlink in the Bulletin text will open the link in a new browser tab.
-* **Service Specific Details View**. If one or multiple bulletins have been published from the same Service, they will appear in thhe service specific view. Again, if there are multiple bulletins, these will appear in a carousel.
+* **Service Specific Details View**. If one or multiple bulletins have been published from the same Service, they will appear in the service specific view. Again, if there are multiple bulletins, these will appear in a carousel.
   * Clicking on any hyperlink in the bulletin text will open the link in a new browser tab.
 
 :::tip
@@ -123,7 +123,7 @@ Subscribed users of a service can view and select what type of request they woul
 * Users can select the relevant Catalog option and be guided through linked questions to submit the request.
 * The Service Owner will have configured in the request catalog whether the request will be raised as an incident or a service request against each Catalog item.
 
-If The Raise Request tab is not visible this will be because no catalog items have been defined and the Service Owner may not want to allow subscribed users to be able to raise requests against the Service from the Portal, however they may still want them to review their requests raised via other channels for the Service, and or view or have access to
+If the Raise Request tab is not visible this will be because no catalog items have been defined and the Service Owner may not want to allow subscribed users to be able to raise requests against the Service from the Portal, however they may still want them to review their requests raised via other channels for the Service, and or view or have access to
 FAQs' about the Service.
 
 ## FAQ's

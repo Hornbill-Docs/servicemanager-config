@@ -7,7 +7,7 @@ layout: article-toc
 
 # HAi Providers
 
-Hornbill AI utilizes the latest advancements in generative AI from world class providers, by default this provider is **OpenAI**; making use of the latest models available to use Hornbill AI out of the box prompts are tailed to provide the best experience possible. OpenAI data processing is not locked to a specific region nor do they currently provide API integrations like ours any control of which region the prompts are processed in, for this reason a second generative AI provider was added **Azure OpenAI Service**. When enabling Generative AI on your Hornbill Instance you will be able to select one of two providers you governance teams are happy to engage with
+Hornbill AI utilizes the latest advancements in generative AI from world class providers, by default this provider is **OpenAI**; making use of the latest models available to use Hornbill AI out of the box prompts are tailed to provide the best experience possible. OpenAI data processing is not locked to a specific region nor do they currently provide API integrations like ours any control of which region the prompts are processed in, for this reason a second generative AI provider was added **Azure OpenAI Service**. When enabling Generative AI on your Hornbill Instance you will be able to select one of two providers your governance teams are happy to engage with
 
 ## HAi Provider Details
 

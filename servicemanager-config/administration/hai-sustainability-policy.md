@@ -13,7 +13,7 @@ We recognize the importance of addressing these concerns and are dedicated to mi
 
 ## Third Party Models
 
-Both Azure and OpenAI are hosted on Azure hardware and are there for covered by the [Azure sustainability policy](https://azure.microsoft.com/en-gb/explore/global-infrastructure/sustainability)
+Both Azure and OpenAI are hosted on Azure hardware and are therefore covered by the [Azure sustainability policy](https://azure.microsoft.com/en-gb/explore/global-infrastructure/sustainability)
 
 ## Private Models and the HAi Lab
 
