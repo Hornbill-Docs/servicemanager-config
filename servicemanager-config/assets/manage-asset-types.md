@@ -86,8 +86,8 @@ Where is the asset card displayed?
 
 There are options to customize the Summary Card and the Wide Summary card. The **Summary Card Editor** accepts HTML. Here you can include the values held in class custom fields. The syntax for this is:
 
-- For common custom fields use `{{general.h_custom_char1}}`, replacing `char1` with the term in the custom field.
-- For class specific fields use `{{extended.h_custom_ext_char1}}`, replacing `char1` with the term in the custom field.
+* For common custom fields use `{{general.h_custom_char1}}`, replacing `char1` with the term in the custom field.
+* For class specific fields use `{{extended.h_custom_ext_char1}}`, replacing `char1` with the term in the custom field.
 
 To help you add the correct fields, a dropdown menu appears as you type the variable name in the editor, as this screenshot shows:
 
@@ -148,9 +148,9 @@ Here is an example of a what a users sees when viewing the list of assets by the
 
 ## Archiving asset categories, types, and assets
 
-Archiving helps you manage your asset library by restricting access to older items and preventing the creation of new assets in archived categories or types. 
+Archiving helps you manage your asset library by restricting access to older items and preventing the creation of new assets in archived categories or types.
 
-When you archive an item, the system does not delete any data. Instead, it changes the state of the assets to archived. 
+When you archive an item, the system does not delete any data. Instead, it changes the state of the assets to archived.
 
  When you archive assets, you can select specific asset state groups and sub states to include. The system does not affect any groups you do not select.
 
@@ -168,7 +168,7 @@ When a category or type is archived, this becomes the unarchive button.
 4. Choose an archive mode in the dialog box:
    * **Type only**: Archives only the asset type definition.
    * **Type & assets**: Archives the asset type and its associated assets.
-5. If you choose **Type & assets**, select the asset state groups you want to archive. 
+5. If you choose **Type & assets**, select the asset state groups you want to archive.
 6. (Optional) Assign a sub state to each selected group.
 7. Confirm the action to complete the process.
 
@@ -183,29 +183,27 @@ When a category or type is archived, this becomes the unarchive button.
    * **Category only**: Archives only the category name.
    * **Category & types**: Archives the category and all asset types within it.
    * **Category, types, and assets**: Archives the category, its types, and all associated assets.
-5. If you choose to archive assets, review the per-type and per-state breakdown. 
+5. If you choose to archive assets, review the per-type and per-state breakdown.
 6. Select a sub state for each row as needed.
 7. Confirm the action to complete the process.
-
-
 
 ### Unarchive an asset type or category
 
 1. Select the archived item in the navigation tree.
 2. Select the **Unarchive** button.
 3. Choose the unarchive mode that matches your needs (such as **Type only** or **Type & assets**).
-4. If you are unarchiving assets, review the groups organized by their current sub state.
+4. If you unarchive assets, review the groups organized by their current sub state.
 5. Pick a new state and an optional new sub state for each group you want to restore.
 6. Confirm the changes.
-
 
 ### Manage visibility of archived items
 
 The system uses specific visual cues to help you identify archived records:
+
 * **Navigation tree**: Archived categories and types appear in italic text. When you select a different item, the archived labels appear muted (faded).
-* **Visibility toggle**: If you have asset management rights, go to **Service Manager** > **Assets**. Select the **eye icon** in the **Assets** title bar to show or hide archived items. 
-   * An **open eye** icon means archived items are visible. 
-   * A **closed eye** icon means archived items are hidden.
+* **Visibility toggle**: If you have asset management rights, go to **Service Manager** > **Assets**. Select the **eye icon** in the **Assets** title bar to show or hide archived items.
+  * An **open eye** icon means archived items are visible.
+  * A **closed eye** icon means archived items are hidden.
 * **Permissions**: Users without asset management rights cannot see archived categories or types in the navigation tree.
 
 ### Audit archive events
@@ -214,36 +212,27 @@ You can also archive assets by updating the asset state directly in the asset ed
 
 When you archive assets through the asset editor, you can choose to audit the update. Please note that the system does not support auditing when you archive items from the **Manage Types** page.
 
+## Asset depreciation
 
-<!--
+An asset depreciation calculator is available that helps determine the loss of value over time for your assets.  This calculator uses a set of fields to calculate the current value of an asset based on its original value, start date, and expected lifespan. You can use this information to make informed decisions about asset replacement and budgeting.
 
-**To add a new asset type:**
+![Asset depreciation calculator](/_books/servicemanager-config/images/asset-depreciation-calculator.png)
 
-1. Navigate to **Configuration > Service Manager > Assets > Manage Types**.
-1. In the Asset Categories panel, find the category in which you want to create an asset type.
-1. Next to the category name, click **+** (the plus sign).
-1. Give the new type a name.
-1. From the dropdown, select an asset class for the new asset type.
-1. (Optional) Give the asset type a description.
-1. (Optional) Specify a three-character prefix to prepend to each asset given this type.
-1. (Optional) Toggle the **Auto-generate asset names** switch to on if you want assets  for this type to have names auto-generated based on the asset ID.
-1. (Optional) Add an image for the asset type by uploading or dropping a file into the Custom Image box.
+### Required fields
 
-### Asset type fields
+To view the asset depreciation calculator, you need to have the following common fields filled in for each asset:
 
-* **Name.** This is displayed in lists and used for searches and reports. This name is applied to assets created under this asset type.
-* **Class.** The asset class you choose determines the asset attributes that are available to the asset type.
-* **Description.** Add a few words to help users understand more about the type and how it should be used.
-* **Prefix.** This is a three-character prefix that is automatically prepended to the asset ID when you add an asset to the asset type.
-* **Auto Generate Name.** When enabled, for any asset that is created under this asset type, the name is automatically created and based on the asset ID. This includes any prefix set.
-* **Image.** Add an image as a visual identifier of the asset type. Any asset created using this type will also use this image.
+* **Cost**: The original cost of the asset when it was purchased. This is a crucial input for calculating depreciation, as it serves as the starting point for determining the asset's value over time.
+* **Depreciation Method**: The method used to calculate the asset's depreciation over time. Methods include straight-line and reducing balance. The choice of method will determine if the depreciation value is calculated as a fixed amount or as a percentage of the asset's remaining value.
+* **Depreciation Value (percentage or amount)**: The amount by which the asset's value decreases over time. If the depreciation method is straight-line, this will be a fixed amount. If the method is reducing balance, this will be a percentage of the asset's remaining value.
+* **Depreciation Frequency (months)**: The interval at which depreciation is calculated.
+* **Depreciation Start Date**: The date when the asset's depreciation calculations begin.
+* **Depreciation Term (months)**: The total duration over which the asset will be depreciated.
 
-### Deleting an asset type
+### Optional fields
 
-You can delete an asset type only when there are no assets associated to it.
+These fields are not required to use the asset depreciation calculator, but they can provide additional context and information about the asset's value over time:
 
-**To delete an asset type:**
-
-1. In the Asset Categories list, click the row of the asset type you want to remove.
-1. Click the **Delete** button (trash can icon). If there are assets associated to the type, you will be prevented from deleting it.
--->
+* **Currency**: The currency in which the asset's value is expressed.
+* **Residual Value**: The estimated value of the asset at the end of its useful life. This field is not directly linked to the calculator, but it can be used to manually enter the final value in the depreciation schedule.  
+* **Depreciation Date**: The date when the asset's depreciation is calculated. This field is not directly linked to the calculator, but it can be used to manually enter the date of the most recent depreciation calculation.
