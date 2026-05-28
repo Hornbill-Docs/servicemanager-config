@@ -35,6 +35,7 @@
     { "url": "/servicemanager-config/customize/intelligent-capture-validation", "location": "/esp-config/automation/intelligent-capture-validation", "code": 301, "skip_location_validation": true  },
     { "url": "/servicemanager-config/customize/customized-forms", "location": "/esp-config/automation/customized-forms", "code": 301, "skip_location_validation": true  },
     { "url": "/servicemanager-config/customize/workflows/service-manager-workflows", "location": "/servicemanager-config/customize/workflows/requests-automation", "code": 301, "skip_location_validation": true  },
-    { "url": "/servicemanager-config/assets/categorize-assets", "location": "/servicemanager-config/assets/manage-asset-types", "code": 301, "skip_location_validation": true  }
+    { "url": "/servicemanager-config/assets/categorize-assets", "location": "/servicemanager-config/assets/manage-asset-types", "code": 301, "skip_location_validation": true  },
+    { "url": "/servicemanager-config/assets/asset-structure", "location": "/servicemanager-config/assets/overview#asset-structure", "code": 301, "skip_location_validation": true  }
     ]
 }
