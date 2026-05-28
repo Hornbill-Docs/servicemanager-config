@@ -11,9 +11,10 @@ layout: article-toc
 
 The HAi Dashboard is available to any user associated with one of the following roles: 
 
-|Role|Description|
-|-|-|
-|Service Desk Admin|This role is for a Service Desk Administrator. This includes, an elevated visibility to Requests and associated actions, the ability to configure Service Manager features via the Administration Tool and the option to restart a failed BPM within a Request.|
+|Role|Application|Description|
+|-|-|-|
+|Service Desk Admin|Service Manager|This role is for a Service Desk Administrator. This includes, an elevated visibility to Requests and associated actions, the ability to configure Service Manager features via the Administration Tool and the option to restart a failed BPM within a Request.|
+|HAi Manager|Platform|This role should only be used for managing HAi configurations.|
 
 Additionally, any user with the application right **rightA.administerServiceDesk** can enable HAi features.
 

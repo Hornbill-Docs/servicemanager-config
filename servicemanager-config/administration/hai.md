@@ -20,7 +20,8 @@ All HAi features within Service Manager are *disabled* by default and must be in
 |Role|Application|Description|
 |-|-|-|
 |Service Desk Admin|Service Manager|This role is for a Service Desk Administrator. This includes, an elevated visibility to Requests and associated actions, the ability to configure Service Manager features via the Administration Tool and the option to restart a failed BPM within a Request.|
-|HAi User|Service Manager|This role allows users to access HAi functionality inside of Service Manager|
+|HAi User|Platform|This role allows users to access HAi functionality in Hornbill|
+|HAi Request User|Service Manager|This role allows users to access HAi functionality inside of Service Manager|
 |HAi Manager|Platform|This role should only be used for managing HAi configurations.|
 
 ## How to enable HAi features
@@ -28,7 +29,7 @@ All HAi features within Service Manager are *disabled* by default and must be in
 * Log into Hornbill with the relevant access role.
 * Click on the settings gear icon in the lower left of the screen.
 * Change the dropdown from ```My Personal Settings``` to ```Service Manager```.
-* Click on ```HAi``` under Administration in the left-hand menu.
+* Click on ```HAi Control``` under Administration in the left-hand menu.
 * Enable the required feature(s).
 
 ![Hornbill AI Configuration](/_books/servicemanager-config/administration/images/hai-config.png)
@@ -37,9 +38,10 @@ All HAi features within Service Manager are *disabled* by default and must be in
 
 To access the HAi capabilities of Hornbill Service Manager, your User Account must have one of the following Service Manager roles associated.
 
-|Role|Description|
-|-|-|
-|HAi User|This role allows users to access HAi functionality inside of Service Manager|
+|Role|Application|Description|
+|-|-|-|
+|HAi User|Platform|This role allows users to access HAi functionality in Hornbill|
+|HAi Request User|Service Manager|This role allows users to access HAi functionality inside of Service Manager|
 
 ## Data
 
