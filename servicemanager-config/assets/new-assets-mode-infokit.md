@@ -23,6 +23,10 @@ This update includes enhanced layouts, additional classification fields, and the
 - **Financial tools** Use the new Assets Under Warranty view and the Asset depreciation calculator.
 - **Asset summary card**. View key asset details quickly in a condensed format.
 
+The following video shows how the new Asset Preview can be enabled and highlights some of the new features.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TJWcud1QQXY?si=ad6tDszS7OdBvuUj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Impact on your current configuration
 
 If you are currently using assets, review and complete these tasks before the switchover date:
