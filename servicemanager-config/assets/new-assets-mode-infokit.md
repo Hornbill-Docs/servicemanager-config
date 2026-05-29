@@ -2,7 +2,7 @@
 layout: article-toc
 ---
 
-# New assets mode infokit
+# New assets mode information kit
 
 On July 27, 2026, the new asset management functionality will move out of preview and will replace the current asset management which will no longer be available. 
 
@@ -35,13 +35,13 @@ If you are currently using assets, review and complete these tasks before the sw
 - **Review your asset structure**. In the new mode, there are asset categories available to help organize your assets. The new assets layout in Service Manager displays assets grouped by category. This means that you will need to create your categories and move your asset types into categories. You can also perform additional tasks, such as setting asset summary and detail information.
 - **Review your asset types and mandatory fields**. In the new asset mode, mandatory fields you have previously associated with an asset type are not automatically associated. You can migrate your existing fields during creation or rebuild the required fields from scratch using the Quick Layout tool. This is accessed from **Configuration > Service Manager > Manage Types**, then selecting an Asset Type and one of the field types.
 
-Hornbill will be publishing a comprehensive guide to support migrating to the new asset mode that explains these three tasks in more detail.
+See the [New asset mode migration guide](/hornbill-how-to-guides/new-asset-mode-migration-guide) to support your move to the new asset mode.
 
 ## Enable the new assets preview
 
 Right now, any user with the Asset Management Admin role can access the new mode from the Service Manager application by selecting **Assets > Switch to new UI**.
 
-Before the mandatory switchover on July 27, 2026, Hornbill Administrators can enable the new interface for specific user groups. This means that they don’t need to switch to the new mode manually and have access to the functionality. This allows your team to transition to the new mode gradually. 
+Before the mandatory switchover on July 27, 2026, Hornbill Administrators can enable the new interface for specific user groups. This means that they don’t need to switch to the new mode manually and have access to the functionality. This allows your team to transition to the new mode gradually.
 
 ### Before you begin
 
@@ -51,7 +51,7 @@ Ensure you have the Asset Management Admin role.
 
 1. Navigate to **Configuration > Service Manager > Application Settings**.
 1. Enable the **Include Advanced Settings** checkbox.
-1. Locate **guest.app.experimental.enableAssetManagementPreview** in the list. Set this value to true to enable the preview for Asset Managers only. With only this setting enabled, they will be able to revert to the current mode manually.
+1. Locate **guest.app.experimental.enableAssetManagementPreview** in the list. Set this value to true to enable the preview for Asset Management Admins only. With only this setting enabled, they will be able to revert to the current mode manually.
 1. Locate **guest.app.experimental.enableNewAssetManagementUIForAssetUsers** in the list. You can set this value to true to enable the new mode for all asset users. If you choose to enable this setting, asset admins will not be able to manually revert back to the current assets mode from the Service Manager application. To allow that, you must disable this setting.
 
 ## Support and guidance
@@ -60,7 +60,7 @@ Hornbill is providing several resources to assist with your transition.
 
 ### Webinars
 
-- Next-Gen Hornbill Assets: Evolution and capabilities. 6th May: Register to learn about core functionality.
+- Next-Gen Hornbill Assets: Evolution and capabilities. 6th May: Register to learn about core functionality. (Completed)
 - 8 weeks to go: Your Hornbill Assets readiness walkthrough. 3rd June: Register for a guided preparation session.
 
 ### In-person events
@@ -69,6 +69,6 @@ Join us at our [Connect Events](https://hornbill.com/events) in June for hands-o
 
 ### Documentation
 
-- Migration Guide: A step-by-step guide to support your migration will be published in May 2026.
-- [Service Manager Configuration Guide](/servicemanager-config/assets/overview): This guide contains technical details regarding new asset features and functionality.
-- Service Manager User Guide: This guide is currently being updated for Asset Managers and general users.
+- [Migration Guide](/hornbill-how-to-guides/new-asset-mode-migration-guide): A step-by-step guide to support your migration.
+- [Service Manager Configuration Guide](/servicemanager-config/assets/overview): This guide contains technical details regarding the new asset features and functionality.
+- [Service Manager User Guide](/servicemanager-user-guide/asset-management/overview): This guide contains documentation for general users of asset management.
