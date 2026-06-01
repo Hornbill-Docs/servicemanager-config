@@ -2,7 +2,7 @@
 layout: article
 keywords: visibility of assets
 ---
-# Asset partitions
+# Manage partitions
 
 :::note
 [[INCLUDE https://raw.githubusercontent.com/Hornbill-Docs/hdoc-library/main/hdoc-library/service-manager/new-assets-note.md]]

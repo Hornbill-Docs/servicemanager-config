@@ -12,9 +12,11 @@ Common fields are fields that are shared across all [classes](/servicemanager-co
 
 When defining [asset types](/servicemanager-config/assets/manage-asset-types#asset-types), you will be able to select from these common custom fields to include in either the summary or detail view or when creating an asset of that type.
 
+![Common custom field pick list](/_books/servicemanager-config/images/common-custom-field-picklist.png)
+
 ## Control types
 
-There are 5 different control types for common custom fields:
+There are 5 different control types for common custom fields. These control types determine how the field is displayed and what type of data can be entered into the field. The control types are:
 
 * **text**: A single line of text.
 * **integer**: A whole number.
@@ -22,11 +24,13 @@ There are 5 different control types for common custom fields:
 * **datetime**: A date and time value.
 * **textarea**: Multiple lines of text.
 
-Each control types has 15 custom fields available, other than the **textarea** control type, which has 5 custom fields available.
+Each control types has 15 custom fields available, other than the **textarea** control type, which has 5. The control type for each common custom field can be seen under the Control Type column.
 
-## Renaming custom fields
+## Custom field translations
 
 For a common custom field, you will want to provide a name that is displayed to users when they see the field in the UI. This is done under the translation column of the common custom fields list. This allows you to give the field a name that is relevant to any asset that uses this field, and to change the name of the field for different languages.
+
+![Common custom field translations](/_books/servicemanager-config/images/asset-custom-common-field-translation.png)
 
 **To change the name of a shared custom field:**
 
