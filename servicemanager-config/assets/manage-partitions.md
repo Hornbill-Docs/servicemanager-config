@@ -17,7 +17,7 @@ Asset partitioning allow you to divide your company's assets into separate, indi
 
 * Watch the following video for an explanation of partitioning, how it works in practice, and how to set up and use partitions.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FgCTWdIA08U?si=ni34E7Vs1WPlNRUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/35cJiWZzIHM?si=61DzBmLPR_w7T060" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 * The following role is required.
 
