@@ -10,7 +10,7 @@ layout: article-toc
 
 Common fields are fields that are shared across all [classes](/servicemanager-config/assets/asset-structure#asset-classes) of asset. They include both standard fields and custom fields. These custom fields are know as *common custom fields*.
 
-When defining [asset types](/servicemanager-config/assets/manage-asset-types#asset-types), you will be able to select from these common custom fields to include in either the summary or detail view or when creating an asset of that type.
+When defining [asset types](/servicemanager-config/assets/manage-asset-types), you will be able to select from these common custom fields to include in either the summary or detail view or when creating an asset of that type.
 
 ![Common custom field pick list](/_books/servicemanager-config/images/common-custom-field-picklist.png)
 

@@ -2,66 +2,9 @@
 layout: article-toc
 ---
 
-# Manage asset types
+# Asset Types
 
-:::note
-[[INCLUDE https://raw.githubusercontent.com/Hornbill-Docs/hdoc-library/main/hdoc-library/service-manager/new-assets-note.md]]
-:::
-
-Asset management within Hornbill Service Manager allows you to organize and present detailed information about each asset. By organizing assets into specific types, you can establish a comprehensive framework of fields and data tailored to each asset. This approach ensures that all relevant information is readily accessible for any asset.
-
-## Before you begin
-
-* The [Asset Management Admin role](/servicemanager-config/setup/service-manager-roles#asset-management-roles) is required to manage asset types and categories.
-* Know how to access the [Service Manager Configuration](/servicemanager-config/index#access-service-manager-configuration).
-* Understand how the [asset classes, types, and categories are structured](/servicemanager-config/assets/asset-structure).
-* Decide whether you want to [enable asset partitions](/servicemanager-config/assets/manage-partitions) on your instance.
-
-## Asset Categories
-
-Asset Categories allow you to group asset types into logical categories. The Asset Categories panel shows each category and their associated asset types.
-
-![Asset Categories Panel](/_books/servicemanager-config/images/asset-categories-panel.png)
-
-From the asset categories list you can:
-
-* Create a new category by clicking on the `+` button in the title bar.
-* Select an existing category to view the properties of that category.
-* To the right of the category name, click on the `+` to add a new asset type under that category.
-* Select an existing asset type to view the properties of that asset type.
-* Drag-and-drop asset types between categories.
-
-### Uncategorized
-
-Any asset type without a category will be listed under **Uncategorized**. From this list, you can drag-and-drop an asset type onto an appropriate category.
-
-Alternatively, by clicking on the Uncategorized title, suggested categories are provided for each uncategorized asset type. Clicking on the `Create and Assign` button will create the new suggested category and add the selected asset types to that category.
-
-### Asset Category details
-
-When you select a category, you can view and edit the details of that category in the right panel.
-
-#### Available Asset List Columns
-
-The **Available Asset List Columns** section allows you to choose which fields are available to users when viewing a list of assets by category.
-
-##### Use Class Defaults
-
-![Use Class Defaults button](/_books/servicemanager-config/images/assets-use-class-defaults-button.png)
-
-Selecting this button will reset the list of available fields with the default fields for the asset class associated to the category.
-
-##### Category Common field
-
-![Common field](/_books/servicemanager-config/images/assets-common-field-button.png)
-
-Common fields are fields that are shared by all assets. When you add a common field as an available column, users will be able to view this column as part of their category asset list.
-
-## Asset Types
-
-To customize your users' view of assets, navigate to **Configuration > Service Manager > Assets > Manage Types**. Here you'll work in the following tabs:
-
-### General
+## General
 
 ![General tab](/_books/servicemanager-config/assets/images/assets-general-tab.png)
 
@@ -71,7 +14,7 @@ In the General tab, you can set some of the basic information about the asset ty
 * **Category**. The category for this asset type.
 * **Description**. A description of this asset type.
 
-#### Asset Card customization
+### Asset Card customization
 
 The Asset Card is a like a business card that you can design for your asset. Key information of your choice can be added to the card. The defined asset card will appear on all assets defined under this asset type.
 
@@ -99,7 +42,7 @@ You can test how summary cards will be presented by selecting specific assets to
 When using the Summary Card Editor to customize asset summary cards, use *only* Hornbill-prescribed styles. Do not add your own styles; any other style declarations will be removed by Hornbill.
 :::
 
-### Summary fields
+## Summary fields
 
 ![Summary Fields tab](/_books/servicemanager-config/assets/images/assets-summary-fields-tab.png)
 
@@ -114,7 +57,7 @@ Here is an example of a Summary view for an asset of the asset type Printer, usi
 Here is the Summary view of the same asset, with fields configured in a two-column layout:
 ![Fields in an asset's Summary view, two-column layout](/_books/servicemanager-config/assets/images/summary-view-of-asset-2-column.png)
 
-### Detail fields
+## Detail fields
 
 ![Detail Fields tab](/_books/servicemanager-config/assets/images/assets-detail-fields-tab.png)
 
@@ -122,7 +65,7 @@ In the Details view, users can access extended details beyond what is in the Sum
 
 Choose between a one-column or two-column layout of the fields. Use the **Quick Layout** button to choose to use default fields or legacy fields. Using legacy fields means Hornbill will read in your asset fields from your existing implementation.
 
-### Create fields
+## Create fields
 
 ![Create Fields tab](/_books/servicemanager-config/assets/images/assets-create-fields-tab.png)
 
@@ -132,7 +75,7 @@ Here is an example of a New Asset dialog when creating an asset of the asset typ
 
 ![New Asset dialog](/_books/servicemanager-config/assets/images/create-new-asset.png)
 
-### List fields
+## List fields
 
 ![List Fields tab](/_books/servicemanager-config/assets/images/assets-list-fields-tab.png)
 
@@ -146,19 +89,19 @@ Here is an example of a what a users sees when viewing the list of assets by the
 
 **Fields available for CSV download.** The CSV download contains only the columns that you have added here in the List Fields tab.
 
-## Archiving asset categories, types, and assets
+## Archiving asset types and assets
 
-Archiving helps you manage your asset library by restricting access to older items and preventing the creation of new assets in archived categories or types.
+Archiving helps you manage your asset library by restricting access to older items and preventing the creation of new assets in archived types.
 
 When you archive an item, the system does not delete any data. Instead, it changes the state of the assets to archived.
 
  When you archive assets, you can select specific asset state groups and sub states to include. The system does not affect any groups you do not select.
 
-To archive asset categories, types, and their associated assets, select the archive button that appears when a category or type is selected in the left-hand menu, as highlighted here:
+To archive asset types and their associated assets, select the archive button that appears when an asset type is selected in the left-hand menu, as highlighted here:
 
 ![asset type archive button](/_books/servicemanager-config/assets/images/asset-type-archive.png)
 
-When a category or type is archived, this becomes the unarchive button.
+When an asset type is archived, this becomes the unarchive button.
 
 ### Archive an asset type
 
@@ -174,20 +117,7 @@ When a category or type is archived, this becomes the unarchive button.
 
 **Expected Result:** The asset type appears in italic text in the navigation tree. Users can no longer select this type when creating new assets.
 
-### Archive an asset category
-
-1. Navigate to the **Manage Types** page.
-2. Select the category you want to archive from the left-hand menu.
-3. Select the **Archive** button.
-4. Choose an archive mode:
-   * **Category only**: Archives only the category name.
-   * **Category & types**: Archives the category and all asset types within it.
-   * **Category, types, and assets**: Archives the category, its types, and all associated assets.
-5. If you choose to archive assets, review the per-type and per-state breakdown.
-6. Select a sub state for each row as needed.
-7. Confirm the action to complete the process.
-
-### Unarchive an asset type or category
+### Unarchive an asset type
 
 1. Select the archived item in the navigation tree.
 2. Select the **Unarchive** button.
@@ -211,39 +141,3 @@ The system uses specific visual cues to help you identify archived records:
 You can also archive assets by updating the asset state directly in the asset editor within **Service Manager**. You can perform this action for one asset or multiple assets at the same time.
 
 When you archive assets through the asset editor, you can choose to audit the update. Please note that the system does not support auditing when you archive items from the **Manage Types** page.
-
-## Asset depreciation
-
-An asset depreciation calculator is available that helps determine the loss of value over time for your assets.  This calculator uses a set of fields to calculate the current value of an asset based on its original value, start date, and expected lifespan. You can use this information to make informed decisions about asset replacement and budgeting.
-
-![Asset depreciation calculator](/_books/servicemanager-config/images/asset-depreciation-calculator.png)
-
-### Required fields
-
-To view the asset depreciation calculator, you need to have the following common fields filled in for each asset:
-
-* **Cost**: The original cost of the asset when it was purchased. This is a crucial input for calculating depreciation, as it serves as the starting point for determining the asset's value over time.
-* **Depreciation Method**: The method used to calculate the asset's depreciation over time. Methods include straight-line and reducing balance. The choice of method will determine if the depreciation value is calculated as a fixed amount or as a percentage of the asset's remaining value.
-* **Depreciation Value (percentage or amount)**: The amount by which the asset's value decreases over time. If the depreciation method is straight-line, this will be a fixed amount. If the method is reducing balance, this will be a percentage of the asset's remaining value.
-* **Depreciation Frequency (months)**: The interval at which depreciation is calculated.
-* **Depreciation Start Date**: The date when the asset's depreciation calculations begin.
-* **Depreciation Term (months)**: The total duration over which the asset will be depreciated.
-
-### Optional fields
-
-These fields are not required to use the asset depreciation calculator, but they can provide additional context and information about the asset's value over time:
-
-* **Currency**: The currency in which the asset's value is expressed.
-* **Residual Value**: The estimated value of the asset at the end of its useful life. This field is not directly linked to the calculator, but it can be used to manually enter the final value in the depreciation schedule.  
-* **Depreciation Date**: The date when the asset's depreciation is calculated. This field is not directly linked to the calculator, but it can be used to manually enter the date of the most recent depreciation calculation.
-
-### Adding the required fields to an asset type
-
-In order for asset users to populate the required fields for the asset depreciation calculator, you need to add these fields to the asset type. This is typically done under the **Detail Fields** tab of the asset type configuration. You can choose to add these fields to the **Summary Fields** view as well.
-
-1. Navigate to **Configuration > Service Manager > Assets > Manage Types**.
-2. Select the asset type you want to edit from the left-hand menu.
-3. Go to the **Detail Fields** tab.
-4. Select the **Common field** option and use the filter to find the required fields and select the field to add it.  If they are not in the list, this means they have already been added.
-
-Once added to the detail fields you can move the fields under the appropriate section header such as **Financial Information**. This will help users find the fields when they are editing an asset. Optionally, you can add a new section header called **Depreciation** to group the required fields together.

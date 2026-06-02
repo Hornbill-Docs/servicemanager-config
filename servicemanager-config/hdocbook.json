@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.9.8",
+  "version": "1.10.0",
   "audience": [
     "public"
   ],
@@ -352,7 +352,24 @@
           },
           {
             "text": "Manage Types",
-            "link": "servicemanager-config/assets/manage-asset-types"
+            "items":[
+            {
+              "text": "Overview",
+              "link": "servicemanager-config/assets/asset-types-overview"
+            },
+            {
+              "text": "Categories",
+              "link": "servicemanager-config/assets/asset-categories"
+            },
+            {
+              "text": "Asset Types",
+              "link": "servicemanager-config/assets/manage-asset-types"
+            },
+            {
+              "text": "Asset Depreciation",
+              "link": "servicemanager-config/assets/asset-depreciation"
+            }
+            ]
           },
           {
             "text": "Manage Substates",
