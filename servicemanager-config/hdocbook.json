@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.10.2",
+  "version": "1.11.0",
   "audience": [
     "public"
   ],
@@ -128,6 +128,10 @@
                     "text": "Release Record Automation",
                     "link": "servicemanager-config/customize/workflows/release-record-automation",
                     "draft": false
+                  },
+                  {
+                    "text": "Request Attachments Automation",
+                    "link": "servicemanager-config/customize/workflows/request-attachments-automation"
                   },
                   {
                     "text": "Request Connections Automation",

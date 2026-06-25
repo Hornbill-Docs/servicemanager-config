@@ -14,12 +14,8 @@ This document describes some of the more commonly used settings. This is not a c
 
 ## Accessing Application Settings
 
-You install Hornbill apps from the Hornbill App Store, which you access through Configuration.
-
-**To access the Hornbill App Store:**
-
 1. Open Configuration using the cog at the bottom of the left-hand menu bar (or with CTRL+SHIFT+S on your keyboard).
-1. Click the down arrow next to *My Personal Settings*, then select **Service Manager**.
+1. Select the down arrow next to *My Personal Settings*, then select **Service Manager**.
 1. In the navigation panel, scroll down to *Advanced Tools & Settings*.
 1. Select **Application Settings**.
 
