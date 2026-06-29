@@ -5,26 +5,6 @@ layout: article-toc
 
 Service Manager roles are collections of rights that provide access to the features and functionality within Service Manager. There are system roles and user-defined roles. System roles come with preset rights that are required for users to perform common job roles within the service desk. User-defined roles are for when you need to grant a unique set of rights to a user.
 
-## Topics covered
-
-This article covers the following roles:
-
-* [Asset management](/#asset-management-roles)
-* [Change management](/#change-management-roles)
-* [Incident management](/#incident-management-roles)
-* [Knowledge](/#knowledge-roles)
-* [Problem management](#problem-management-roles)
-* [Release management](#release-management-roles)
-* [Service request](#change-management-roles)
-* [Services](#services)
-* [Administration](#administration-roles)
-* [Self Service](#self-service)
-* [Reporting](#reporting)
-* [Configuration management](#configuration-management-roles)
-
-As well as:
-[How to create custom (user-created) roles](#user-created-roles)
-
 ## Before you begin
 
 * Have an understanding of how [roles are managed](/esp-config/organizational-data/roles)
