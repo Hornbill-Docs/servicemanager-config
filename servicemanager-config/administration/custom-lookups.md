@@ -24,7 +24,7 @@ Custom lookups can remove the need for complex [decision nodes](/esp-config/auto
 
 ## Before you begin
 
-* The [Service Desk Admin](/servicemanager-config/setup/service-manager-roles#administration-roles) role is needed to create and manage custom lookups.
+* The [Service Desk Admin](/servicemanager-config/setup/service-manager-roles#administration-roles) role is needed to create and manage custom lookups. Alternatively, a [custom role](/esp-config/organizational-data/roles#user-created-roles) that contains the Service Manager application right **Administer Service Desk** can be used.
 * The [Business Process Manager](/esp-config/organizational-data/roles#system-roles) role is needed to access workflows to add the Custom Lookup Automation.
 * Be familiar with general [workflow automation](/servicemanager-config/customize/workflows/using-workflows-with-service-manager).
 
