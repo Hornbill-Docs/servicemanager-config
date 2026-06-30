@@ -146,7 +146,7 @@ An email can be sent to a customer of a request when their request is either [pl
 
 ### Visibility of a request's *Questions* section
 
-The following settings influence how information from [customized forms](/servicemanager-config/customize/customized-forms) in Intelligent Capture are made available within the *Questions* section of a request.
+The following settings influence how information from [customized forms](/esp-config/automation/customized-forms) in Intelligent Capture are made available within the *Questions* section of a request.
 
 **Hide unanswered questions in the Service Manager app** `app.request.questions.hideUnansweredQuestions`
 
