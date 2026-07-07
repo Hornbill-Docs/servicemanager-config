@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "audience": [
     "public"
   ],
@@ -425,6 +425,10 @@
               {
                 "text": "Overview",
                 "link": "servicemanager-config/employee-portal/widgets"
+              },
+              {
+                "text": "Average Rating Widget",
+                "link": "servicemanager-config/employee-portal/average-rating-widget"
               },
               {
                 "text": "My Assets Widget",

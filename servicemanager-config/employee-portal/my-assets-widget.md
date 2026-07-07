@@ -108,14 +108,9 @@ Use the following keys in the Service Manager [Translations](/servicemanager-con
 
 ## Frequently asked questions
 
-**Can administrators choose between Used By, Owned By, or Shared With?**
-No. The widget always includes **Used By** and **Shared With** assets. It does not include assets where the user is only the owner.
-
-**Why are search and sort options missing from my list?**
-If a user has 12 or fewer assets, the toolbar is hidden to keep the interface simple. All assets are visible on the single page.
-
-**Why does an asset name appear as text instead of a link?**
-Only users with **Asset Management** view or administration rights can open asset records. Other users see the name as plain text.
-
-**Why does the card text appear before the asset image?**
-The widget loads asset data first to ensure the interface is functional. Images load as they become available from the server.
+|Question|Answer|
+|---|---|
+|Can administrators choose between Used By, Owned By, or Shared With?|No. The widget always includes **Used By** and **Shared With** assets. It does not include assets where the user is only the owner.|
+|Why are search and sort options missing from my list?|If a user has 12 or fewer assets, the toolbar is hidden to keep the interface simple. All assets are visible on the single page.|
+|Why does an asset name appear as text instead of a link?|Only users with **Asset Management** view or administration rights can open asset records. Other users see the name as plain text.|
+|Why does the card text appear before the asset image?|The widget loads asset data first to ensure the interface is functional. Images load as they become available from the server.|
