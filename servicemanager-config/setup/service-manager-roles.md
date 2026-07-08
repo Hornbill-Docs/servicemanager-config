@@ -118,6 +118,13 @@ Incident Assignee|This role should be assigned to Users who have the Incident Ma
 |Configuration Manager Admin|This role grants the user the ability to add and modify CI configuration settings such as setting which CIs are in policy and then configuring the two-way relationships between the CI. Assign this role to the main users of the full Configuration Manager app.|
 |Configuration Manager User|This role grants a user read-only access to the CI Explorer. This lets the user browse through the linked CIs to help with Incident investigation, problem management, or a view of the impact that something may have. Assign this role to users of Service Manager who need to be able to launch the CI Explorer from a request, asset, or a service, but who do not need full access to the Configuration Manager app.|
 
+### HAi roles
+
+|Role|Description|
+|-|-|
+|HAi Request User|This role allows users to access HAi functionality inside of Service Manager Requests and Knowledge|
+|HAi Detection Events User|This role allows users to access HAi Detection Events inside of Service Manager|
+
 ## User-created roles
 
 When you need to grant a unique set of rights that is not covered by the system roles, you can create a custom role.
