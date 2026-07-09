@@ -204,31 +204,11 @@
             "link": "servicemanager-config/advanced-tools-and-settings/application-settings"
           }
         ]
-      },
-      {
-        "text": "Email",
-        "expand": false,
-        "items": [
-          {
-            "text": "Routing Rule Templates",
-            "link": "servicemanager-config/email/routing-rule-templates"
-          }
-        ]
-      },
+      },     
       {
         "text": "Administration",
         "expand": false,
         "items": [
-          {
-            "text": "Service Desk",
-            "link": "servicemanager-config/administration/service-desk",
-            "draft": false
-          },
-          {
-            "text": "Relationships",
-            "link": "servicemanager-config/administration/service-manager-relationships",
-            "draft": false
-          },
           {
             "text": "Assessments",
             "expand": false,
@@ -245,17 +225,18 @@
             ]
           },
           {
-            "text": "Custom Lookups",
-            "link": "servicemanager-config/administration/custom-lookups"
+            "text": "Profile Codes",
+            "link": "servicemanager-config/administration/profiles",
+            "draft": false
+          },
+           {
+            "text": "Request Settings",
+            "link": "servicemanager-config/administration/request-settings",
+            "draft": false
           },
           {
             "text": "Request Sub-statuses",
             "link": "servicemanager-config/administration/request-sub-statuses",
-            "draft": false
-          },
-          {
-            "text": "Request Settings",
-            "link": "servicemanager-config/administration/request-settings",
             "draft": false
           },
           {
@@ -264,23 +245,11 @@
             "draft": false
           },
           {
-            "text": "Profiles",
-            "link": "servicemanager-config/administration/profiles",
-            "draft": false
+            "text": "Custom Lookups",
+            "link": "servicemanager-config/administration/custom-lookups"
           },
-          {
-            "text": "Integrations",
-            "link": "servicemanager-config/administration/integration-webhooks",
-            "draft": false,
-            "items": [
-              {
-                "text": "Using Webhooks",
-                "link": "servicemanager-config/administration/integration-webhooks"
-              }
-            ]
-          },
-          {
-            "text": "HAi",
+                   {
+            "text": "HAi Control",
             "link": "servicemanager-config/administration/hai",
             "draft": false,
             "items": [
@@ -327,6 +296,31 @@
               {
                 "text": "FAQ",
                 "link": "servicemanager-config/administration/hai-faq"
+              }
+            ]
+          },          
+          {
+            "text": "Relationships",
+            "link": "servicemanager-config/administration/service-manager-relationships",
+            "draft": false
+          },
+                  {
+            "text": "Routing Rule Templates",
+            "link": "servicemanager-config/email/routing-rule-templates"
+          },
+          {
+            "text": "Service Desk",
+            "link": "servicemanager-config/administration/service-desk",
+            "draft": false
+          },
+          {
+            "text": "Integrations",
+            "link": "servicemanager-config/administration/integration-webhooks",
+            "draft": false,
+            "items": [
+              {
+                "text": "Using Webhooks",
+                "link": "servicemanager-config/administration/integration-webhooks"
               }
             ]
           }
