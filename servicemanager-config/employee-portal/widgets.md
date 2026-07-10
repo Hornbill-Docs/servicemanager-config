@@ -17,7 +17,6 @@ With Service Manager installed, there are several Employee Portal widgets that a
 
 ![Add Service Manager Widgets](/_books/servicemanager-config/images/ep-add-widgets.png)
 
-
 ## Available widgets
 
 * **[Average Rating widget](/servicemanager-config/employee-portal/average-rating-widget)**: The average [star rating](/servicemanager-user-guide/service-portfolio/customer-feedback) widget collects data from all of the requests from all services and displays an average overall rating. These requests will have been closed and the customers will have provided a star rating.
@@ -37,12 +36,6 @@ The [service availabilty](/servicemanager-user-guide/service-portfolio/services/
 :::tip
 This widget is best displayed using a single column.
 :::
-
-### Requests widget
-
-The Requests widget provides a list of requests that have been raised either by the user or for the user.  In addition to their requests, users can view requests they are connected with, or requests that their managed staff have raised.
-
-![Request Widget](/_books/servicemanager-config/images/ep-requests-widget.png)
 
 ### Search widget
 
