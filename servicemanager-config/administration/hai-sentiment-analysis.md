@@ -1,30 +1,57 @@
 ---
-title: Hornbill AI Sentiment Analysis
-description: This guide covers the configuration of Sentiment Analysis for HAi (Hornbill AI) within your environment.
-coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
-
-# Configure HAi - Sentiment Analysis
+# Sentiment Analysis Configuration
 
 ::: important
-HAi is currently in a closed beta, speak to customer success should you want to take part.
+HAi features are currently in a closed beta. You can only access these features after you register. Contact your Hornbill Customer Success representative to join the program.
 :::
 
-## Setup
+## Before you begin
 
-Once [enabled](/servicemanager-config/administration/hai#enabling-hai-features) there are some settings explained in the table below that allow for some customization on the amount of date and what timeline update types are used when generating the request summary, these can be updated by access [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) for service manager.
+Ensure you have [enabled HAi features](/servicemanager-config/administration/hai). You can customize how much data the system uses and which timeline update types trigger a request summary. To manage these settings, navigate to the [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) for Service Manager.
 
-|Setting|Description|
-|-|-|
-|generativeAi.sentimentAnalysis.availablePostTypes|This setting determines the type of posts that are used to generate the request sentiment ```Authorization,Customer,Email,Escalate,update```|
-|generativeAi.sentimentAnalysisAutoUpdates|Auto Request Sentiment Analysis on Customer Updates|
+| Setting | Description |
+| :-- | :-- |
+| `generativeAi.sentimentAnalysis.availablePostTypes` | Determines the types of posts used to generate the request sentiment. Valid values include: `Authorization`, `Customer`, `Email`, `Escalate`, and `update`. |
+| `generativeAi.sentimentAnalysisAutoUpdates` | Enables or disables automatic request sentiment analysis when a customer provides an update. |
 
-## Auto Updates
+## Auto updates
 
-```Auto Updates``` when enabled will trigger any request to have their sentiment checked when the following criteria are met:
+When you enable `Auto Updates`, the system checks the sentiment of a request if the person posting or commenting is the customer associated with that request. This applies to the following scenarios:
 
-* Customer Portal Timeline Post or Comment - If the person posting or commenting is the customer of the request
-* Employee Portal Timeline Post or Comment - If the person posting or commenting is the customer of the request
-* Email Auto Responder updates a request - If the person sending the email is the customer of the request
-* Email Applied to a request from a mailbox - If the person sending the email is the customer of the request
+* **Customer Portal:** The customer adds a timeline post or comment.
+* **Employee Portal:** The customer adds a timeline post or comment.
+* **Email Auto Responder:** The system updates a request via an email sent by the customer.
+* **Mailbox:** A user applies an email to a request where the sender is the customer.
+
+## Data processing
+
+When the system performs a sentiment analysis, it processes specific data from the active request.
+
+### Request fields
+
+The following technical fields are processed:
+
+* `h_itsm_requests.h_description`
+* `h_itsm_requests.h_summary`
+* `h_itsm_requests.h_fk_user_name`
+
+### Timeline data
+
+The system filters the request timeline using the following criteria: `["Customer","Email","update"]`. For every post in the filtered timeline, the system sends the following data:
+
+* `actorInfo.name`
+* `content`
+
+For any comments associated with these filtered posts, the system sends:
+
+* `actorInfo.name`
+* `comment`
+
+### Custom questions
+
+The system passes the first 100 custom questions. It excludes `file-upload` and `label` types. The data is paired using the following format:
+
+* `h_question`
+* `h_answer_value`

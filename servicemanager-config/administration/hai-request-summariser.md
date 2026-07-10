@@ -12,12 +12,12 @@ HAi is currently in a closed beta, speak to customer success should you want to 
 
 ## Setup
 
-Once [enabled](/servicemanager-config/administration/hai#enabling-hai-features) there are some settings explained in the table below that allow for some customization on the amount of date and what timeline update types are used when generating the request summary, these can be updated by access [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) for service manager.
+Once [enabled](/servicemanager-config/administration/hai) there are some settings explained in the table below that allow for some customization on the amount of date and what timeline update types are used when generating the request summary, these can be updated by access [application settings](/servicemanager-config/advanced-tools-and-settings/application-settings) for service manager.
 
 |Setting|Description|
 |-|-|
 |generativeAi.requestSummary.availablePostTypes|List of timeline update types sent to the summarizer, this allows you to add in or remove certain update types to be included or excluded from the request summary by default this is set to  ```Authorization,Customer,Email,Escalate,update```|
-|generativeAi.requestSummary.format| Format the request summary is generated in (Structured or Conversational) |
+|generativeAi.requestSummary.format|Format the request summary is generated in (Structured or Conversational)|
 |generativeAi.requestSummaryAutoUpdates|Auto generate Request Summary when a request is opened|
 |generativeAi.limits.activitySteamPosts|Limit on the number of posts returned and passed to the summarizer, by default this is set to ```100``` ordered by most recent activity|
 |generativeAi.limits.activitySteamComments|Limit on the number of comments per post returned and passed to the summarizer, by default this is set to  ```100```|

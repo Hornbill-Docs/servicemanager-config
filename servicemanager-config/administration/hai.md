@@ -1,155 +1,118 @@
 ---
-title: Hornbill AI Configuration
-description: This guide covers the configuration and implementation of HAi (Hornbill AI) features within your environment. The document outlines step-by-step instructions on enabling HAi capabilities for your user account, specifying the necessary roles, and accessing the necessary settings in Hornbill.
-coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
 
-# Configure HAi
+# HAi Service Manager Settings
 
-::: important
-HAi is currently in a closed beta, speak to customer success should you want to take part.
-:::
+A collection of HAi features are available within Service Manager. These features are designed to enhance the user experience and improve efficiency by leveraging artificial intelligence capabilities.
 
-## Enabling HAi features
+Each of these features are disabled by default and must be enabled before they can be used.
 
-Your instance needs a [HAi Service Provider](/esp-fundamentals/core-capabilities/integration/hai-services) set before enabling any of the HAi Features in Service Manager.
+## Before you begin
 
-All HAi features within Service Manager are *disabled* by default and must be individually enabled before they can be used by end users. To enable any of the HAi capabilities in Service Manager, your User Account must be associated with the following roles:
+* Register for the closed beta program. HAi features are currently in a closed beta. You can only access these features after you register. Contact your Hornbill customer success representative to join the program.
+* Your instance needs a [HAi Service Provider](/esp-fundamentals/core-capabilities/integration/hai-services) set before enabling any of the HAi Features in Service Manager.
+* Read the [Usage Policy](/servicemanager-config/administration/hai-usage-policy).
+* The following roles can be added to user accounts to allow for configuration or use of the HAi capabilities in Service Manager:
 
-|Role|Application|Description|
-|-|-|-|
-|Service Desk Admin|Service Manager|This role is for a Service Desk Administrator. This includes, an elevated visibility to Requests and associated actions, the ability to configure Service Manager features via the Administration Tool and the option to restart a failed BPM within a Request.|
-|HAi User|Platform|This role allows users to access HAi functionality in Hornbill|
-|HAi Request User|Service Manager|This role allows users to access HAi functionality inside of Service Manager|
-|HAi Manager|Platform|This role should only be used for managing HAi configurations.|
+    |Role|Application|Description|
+    |-|-|-|
+    |Service Desk Admin|Service Manager|This role provides access to the Service Manager Configuration, including HAi Control.|
+    |HAi Manager|Platform|This role should only be used for managing HAi configurations.|
+    |HAi Request User|Service Manager|This role allows users to access HAi functionality in Service Manager|
 
-## How to enable HAi features
+## How to access
 
 * Log into Hornbill with the relevant access role.
 * Click on the settings gear icon in the lower left of the screen.
 * Change the dropdown from ```My Personal Settings``` to ```Service Manager```.
 * Click on ```HAi Control``` under Administration in the left-hand menu.
-* Enable the required feature(s).
 
-![Hornbill AI Configuration](/_books/servicemanager-config/administration/images/hai-config.png)
+## HAi Features
 
-## Grant Users Access to HAi features
+Each of the following HAi features can be enabled or disabled independently. When enabled, the feature will process data from the request you are in and send it to a HAi Provider for processing.
 
-To access the HAi capabilities of Hornbill Service Manager, your User Account must have one of the following Service Manager roles associated.
+* **Request Summarizer**: Generates a summary of a request based on the request description, timeline posts, comments, and custom questions. The summary is generated when a request is created or updated.
+* **Sentiment Analysis**: Analyzes the sentiment of a request based on the request description, timeline posts, comments, and custom questions. The sentiment is generated when a request is created or updated.
+* **Text Assist**: Provides text assistance for a request based on the request description, timeline posts, comments, and custom questions. The assistance is generated when a request is created or updated.
+* **Knowledge Generator**: Generates a knowledge draft from a resolved or closed request based on the request description, timeline posts, comments, and custom questions. The knowledge draft is generated when a request is resolved or closed.
+* **Suggest Resolution**: Suggests a resolution for a request based on the request description, timeline posts, comments, and custom questions. The suggestion is generated when a request is created or updated.
+* **Email Processing**: Processes incoming emails and extracts relevant information to create or update requests. The processing is done when an email is received.
+* **Email Attachment Labeling**: Labels email attachments based on their content and context. The labeling is done when an email is received.
 
-|Role|Application|Description|
-|-|-|-|
-|HAi User|Platform|This role allows users to access HAi functionality in Hornbill|
-|HAi Request User|Service Manager|This role allows users to access HAi functionality inside of Service Manager|
+## Auto Updates
 
-## Data
+Some features provide Auto Updates, which means that the feature will automatically generate content. See the documentation on each feature for more information on what triggers an auto update.
 
-### HAi Providers
+## HAi Providers
 
 By enabling any of these optional HAi features, you are agreeing to allow a third party to process your data ([HAi Providers](/servicemanager-config/administration/hai-providers)), Data from prompts and underlying request data is passed to a Provider using encrypted connections see [HAi Providers](/servicemanager-config/administration/hai-providers) for further details.
 
 The following areas of functionality send request data during each invocation and are document as follows:
 
-### Request Summariser
+### Request Summarizer
 
 When summarizing a request the following data from the request you are in is processed:
 
-```JSON
-
-    h_itsm_requests.h_description
-    h_itsm_requests.h_summary
-    h_itsm_requests.h_fk_user_name
-
-```
+* `h_itsm_requests.h_description`
+* `h_itsm_requests.h_summary`
+* `h_itsm_requests.h_fk_user_name`
 
 The timeline of the request is filtered down with the following filters '["Authorization","Customer","Email","Escalate","update"]' and can be updated [here](/servicemanager-config/administration/hai-request-summariser)
 
 Each post in the timelines sends the following
 
-```JSON
-
-    actorInfo.name
-    content
-
-```
+* `actorInfo.name`
+* `content`
 
 Each comment associated to any filtered posts in the timelines sends the following
 
-```JSON
-
-    actorInfo.name
-    comment
-
-```
+* `actorInfo.name`
+* `comment`
 
 Custom Questions (first 100) are passed, excluding the type `file-upload` and `label` and are paired with the question text as follows:
 
-```JSON
-
-    h_question
-    h_answer_value
-
-```
+* `h_question`
+* `h_answer_value`
 
 Completed Tasks information as follows:
 
-```JSON
-
-    title
-    category
-    owner
-    outcome
-    completedon
-    details
-    assigned
-    reference
-
-```
+* `title`
+* `category`
+* `owner`
+* `outcome`
+* `completed on`
+* `details`
+* `assigned`
+* `reference`
 
 ### Suggest Resolution
 
 When suggesting a resolution against a request the following data from the request you are in is processed:
 
-```JSON
-
-    h_itsm_requests.h_description
-    h_itsm_requests.h_summary
-    h_itsm_requests.h_fk_user_name
-
-```
+* `h_itsm_requests.h_description`
+* `h_itsm_requests.h_summary`
+* `h_itsm_requests.h_fk_username`
 
 The timeline of the request is filtered down with the following filters '["Update","Email",'Customer']'
 
 Each post in the timelines sends the following
 
-```JSON
-
-    actorInfo.name
-    content
-
-```
+* `actorInfo.name`
+* `content`
 
 Each comment associated to any filtered posts in the timelines sends the following
 
-```JSON
-
-    actorInfo.name
-    comment
-
-```
+* `actorInfo.name`
+* `comment`
 
 ### Knowledge Draft
 
 When generating a knowledge draft from a resolved or closed request the following data is sent:
 
-```JSON
-
-    h_itsm_requests.h_description
-    h_itsm_requests.h_summary
-    h_itsm_requests.h_resolution
-
-```
+* `h_itsm_requests.h_description`
+* `h_itsm_requests.h_summary`
+* `h_itsm_requests.h_resolution`
 
 ### Text Assist
 
@@ -157,41 +120,31 @@ Text assist combined with snippets or used withing a workflow and passing in var
 
 ### Sentiment Analysis
 
-When using sentiment analysis for a request the following data from the request you are in is processed:
+When the system performs a sentiment analysis, it processes specific data from the active request.
 
-```JSON
+#### Request fields
 
-    h_itsm_requests.h_description
-    h_itsm_requests.h_summary
-    h_itsm_requests.h_fk_user_name
+The following technical fields are processed:
 
-```
+* `h_itsm_requests.h_description`
+* `h_itsm_requests.h_summary`
+* `h_itsm_requests.h_fk_user_name`
 
-The timeline of the request is filtered down with the following filters '["Customer","Email","update"]'
+#### Timeline data
 
-Each post in the timelines sends the following
+The system filters the request timeline using the following criteria: `["Customer","Email","update"]`. For every post in the filtered timeline, the system sends the following data:
 
-```JSON
+* `actorInfo.name`
+* `content`
 
-    actorInfo.name
-    content
+For any comments associated with these filtered posts, the system sends:
 
-```
+* `actorInfo.name`
+* `comment`
 
-Each comment associated to any filtered posts in the timelines sends the following
+#### Custom questions
 
-```JSON
+The system passes the first 100 custom questions. It excludes `file-upload` and `label` types. The data is paired using the following format:
 
-    actorInfo.name
-    comment
-
-```
-
-Custom Questions (first 100) are passed, excluding the type `file-upload` and `label` and are paired with the question text as follows:
-
-```JSON
-
-    h_question
-    h_answer_value
-
-```
+* `h_question`
+* `h_answer_value`

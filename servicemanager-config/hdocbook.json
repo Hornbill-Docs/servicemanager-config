@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.14.2",
+  "version": "1.14.3",
   "audience": [
     "public"
   ],
@@ -254,12 +254,16 @@
             "draft": false,
             "items": [
               {
-                "text": "Configuration",
+                "text": "Settings",
                 "link": "servicemanager-config/administration/hai"
               },
-              {
-                "text": "Providers",
-                "link": "servicemanager-config/administration/hai-providers"
+                {
+                "text": "Dashboard",
+                "link": "servicemanager-config/administration/hai-dashboard"
+              },
+               {
+                "text": "Usage Log",
+                "link": "servicemanager-config/administration/hai-logs"
               },
               {
                 "text": "Request Summarizer",
@@ -272,17 +276,9 @@
               {
                 "text": "Email Attachment Labeling",
                 "link": "servicemanager-config/administration/hai-email-attachment-labeling"
-              },
+              },             
               {
-                "text": "Dashboard",
-                "link": "servicemanager-config/administration/hai-dashboard"
-              },
-              {
-                "text": "Log",
-                "link": "servicemanager-config/administration/hai-logs"
-              },
-              {
-                "text": "Automations",
+                "text": "Workflow Automation",
                 "link": "servicemanager-config/administration/hai-automations"
               },
               {
