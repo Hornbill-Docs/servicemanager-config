@@ -9,3 +9,7 @@ Key features and actions include:
 * **Improve Text**: Fixes grammar and spelling mistakes and clarifies ambiguous statements.
 * **Shorter Text**: Compresses long text content without losing the original meaning.
 * **Listify**: Transforms large, dense blocks of text into readable, step-by-step lists.
+
+## Additional reading
+
+[HAi Service Manager Settings](/servicemanager-config/administration/hai) - Learn how to access and configure HAi features in Hornbill Service Manager.

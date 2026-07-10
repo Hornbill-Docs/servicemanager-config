@@ -4,3 +4,7 @@ The HAi (Hornbill Artificial Intelligence) Request Summarizer automatically cond
 
 * **Accelerate Handovers**: Eliminate the need to manually compile information or scroll through lengthy ticket histories when escalating issues to another agent, team, or manager.
 * **Improve Context Comprehension**: Allow receiving agents or managers to rapidly grasp the core problem and understand the steps already taken.
+
+## Additional reading
+
+[HAi Service Manager Settings](/servicemanager-config/administration/hai) - Learn how to access and configure HAi features in Hornbill Service Manager.

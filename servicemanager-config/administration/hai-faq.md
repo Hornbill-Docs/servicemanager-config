@@ -1,7 +1,4 @@
 ---
-title: Hornbill AI FAQ
-description: This guide covers the frequently asked questions of HAi (Hornbill AI).
-coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
 
