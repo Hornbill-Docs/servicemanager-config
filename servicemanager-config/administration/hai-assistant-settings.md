@@ -1,0 +1,1 @@
+# HAi Assistant Settings

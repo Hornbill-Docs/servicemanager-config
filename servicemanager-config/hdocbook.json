@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "audience": [
     "public"
   ],
@@ -257,6 +257,16 @@
                 "text": "Settings",
                 "link": "servicemanager-config/administration/hai"
               },
+              {
+                "text": "Data Access",
+                "link": "/servicemanager-config/administration/hai-data-access",
+                "draft": true
+              },
+              {
+                "text": "HAi Detection",
+                "link": "servicemanager-config/administration/hai-anomaly-detection",
+                "draft": true
+              },
                 {
                 "text": "Dashboard",
                 "link": "servicemanager-config/administration/hai-dashboard"
@@ -264,6 +274,11 @@
                {
                 "text": "Usage Log",
                 "link": "servicemanager-config/administration/hai-logs"
+              },
+              {
+                "text": "Assistant Settings",
+                "link": "servicemanager-config/administration/hai-assistant-settings",
+                "draft": true
               },
               {
                 "text": "Request Summarizer",
