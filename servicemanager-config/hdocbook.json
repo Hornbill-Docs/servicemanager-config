@@ -258,8 +258,8 @@
                 "link": "servicemanager-config/administration/hai"
               },
               {
-                "text": "Data Access",
-                "link": "/servicemanager-config/administration/hai-data-access",
+                "text": "Exclusion Rules",
+                "link": "/servicemanager-config/administration/hai-exclusion-rules",
                 "draft": true
               },
               {
