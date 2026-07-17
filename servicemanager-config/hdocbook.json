@@ -425,9 +425,18 @@
         "draft": true,
         "items":[
           {
-            "text": "Import suppliers, contacts, and contracts",
-            "link": "servicemanager-config/suppliers/supplier-imports"
+            "text": "Import Suppliers",
+            "link": "servicemanager-config/suppliers/supplier-import"
           },
+          {
+            "text": "Import Supplier Contacts",
+            "link": "servicemanager-config/suppliers/supplier-contacts-import"
+          },
+          {
+            "text": "Import Supplier Contracts",
+            "link": "servicemanager-config/suppliers/supplier-contracts-import"
+          },
+
           {
             "text": "Associated Organizations",
             "link": "servicemanager-config/suppliers/associated-organizations"
