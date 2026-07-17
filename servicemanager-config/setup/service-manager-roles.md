@@ -118,6 +118,13 @@ Incident Assignee|This role should be assigned to Users who have the Incident Ma
 |Configuration Manager Admin|This role grants the user the ability to add and modify CI configuration settings such as setting which CIs are in policy and then configuring the two-way relationships between the CI. Assign this role to the main users of the full Configuration Manager app.|
 |Configuration Manager User|This role grants a user read-only access to the CI Explorer. This lets the user browse through the linked CIs to help with Incident investigation, problem management, or a view of the impact that something may have. Assign this role to users of Service Manager who need to be able to launch the CI Explorer from a request, asset, or a service, but who do not need full access to the Configuration Manager app.|
 
+### Supplier roles
+
+|Role|Description|
+|-|-|
+|Supplier Administrator Role|This role grants the user all standard supplier manager user functionality, including the ability to permanently delete suppliers and supplier contacts|
+|Supplier User Role|This role grants the user all standard supplier manager user functionality|
+
 ### HAi roles
 
 |Role|Description|

@@ -421,6 +421,28 @@
         ]
       },
       {
+        "text": "Suppliers",
+        "draft": true,
+        "items":[
+          {
+            "text": "Import suppliers, contacts, and contracts",
+            "link": "servicemanager-config/suppliers/supplier-imports"
+          },
+          {
+            "text": "Associated Organizations",
+            "link": "servicemanager-config/suppliers/associated-organizations"
+          },
+          {
+            "text": "Supplier Permissions",
+            "link": "servicemanager-config/suppliers/supplier-permissions"
+          },
+          {
+            "text": "Supplier Contract Sub-statuses",
+            "link": "servicemanager-config/suppliers/supplier-contract-sub-statuses"
+          }
+        ]
+      },
+      {
         "text": "Employee Portal",
         "draft": false,
         "items": [
