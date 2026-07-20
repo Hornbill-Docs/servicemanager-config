@@ -46,4 +46,3 @@ You can import suppliers into Service Manager using a CSV file. The CSV file mus
 |Custom 7|Additional data mapped to custom fields|
 |Custom 8|Additional data mapped to custom fields|
 |Custom 9|Additional data mapped to custom fields|
-

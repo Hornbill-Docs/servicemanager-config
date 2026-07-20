@@ -29,4 +29,3 @@ You can import supplier contacts into Service Manager using a CSV file. The CSV 
 | Custom 3 | Additional data mapped to custom fields (255 characters) |
 | Custom 4 | Additional data mapped to custom fields (255 characters) |
 | Custom 5 | Additional data mapped to custom fields (255 characters) |
-
