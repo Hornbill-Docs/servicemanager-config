@@ -66,9 +66,14 @@ An email can be sent to a customer of a request when their request is either [pl
 
 `servicemanager.request.closureCategory.default.enabled`
 
-* The default setting for this is `OFF`.
-* When this setting is `ON`, the resolution category is mandatory for all requests.
+* The default setting for this is **OFF**.
+* When this setting is **ON**, the resolution category is mandatory for all requests.
 * If there are no defined closure categories, this setting is ignored.
+
+`guest.servicemanager.request.category.request.enforceLastItem`
+
+* The default setting for this is **OFF**
+* When this setting is **ON**, the last item in a branch must be selected.
 
 ## Portal settings
 
