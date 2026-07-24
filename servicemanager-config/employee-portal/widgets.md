@@ -21,21 +21,7 @@ With Service Manager installed, there are several Employee Portal widgets that a
 
 * **[Average Rating widget](/servicemanager-config/employee-portal/average-rating-widget)**: The average [star rating](/servicemanager-user-guide/service-portfolio/customer-feedback) widget collects data from all of the requests from all services and displays an average overall rating. These requests will have been closed and the customers will have provided a star rating.
 * **[My Assets widget](/servicemanager-config/employee-portal/my-assets-widget)**: The My Assets widget is an Employee Portal widget that gives users a quick view of assets that they use.
-
-### Service Availability widget
-
-The [service availabilty](/servicemanager-user-guide/service-portfolio/services/service-availability) widget collects data from the selected service and displays the availability over the previous X number of days.
-
-![Service Availability](/_books/servicemanager-config/images/ep-service-availability-widget.png)
-
-#### Configure
-
-* **Service ID.**  You must add a service ID for the widget to show any information. Only one service can be displayed per widget.  
-* **Last X days.** By default, the widget will show all the historical availability data.  Optionally you can select 30, 60, 90, or 120 days of data to be displayed. The selected number of days will be displayed in the widget.
-
-:::tip
-This widget is best displayed using a single column.
-:::
+* [Service Availability widget](/servicemanager-config/employee-portal/service-availability-widget): Collects availability data from the selected service and displays the availability over the previous X number of days.
 
 ### Search widget
 
