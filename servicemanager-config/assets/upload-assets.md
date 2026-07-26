@@ -16,13 +16,9 @@ While other attributes are not mandatory to perform the import, it is good pract
 
 For example, with *Used by* or *Site*, should you want the assets to appear as linked to these entities when performing other Service Manager actions (such as logging requests through Intelligent Capture and having the option to choose from a list of assets associated with the user), you should match up the attribute fields.
 
-*Used by* requires the *usedById*, *usedByName*, and *usedByType* attributes to be completed. *usedByType* should be populated with either:
-* 0 - if *Used By* is a coworker
-* 1 - if *Used By* is a contact
+*Used by* requires the *usedById* attribute to be completed. The uplaod process will automatically verify user exists and populate the user name field.
 
-*Owned By* requires both the *ownedById*, *ownedByName* and *ownedByType* attributes to be completed. *ownedByType* should be populated with either:
-* 0 - if *Owned By* is a coworker
-* 1 - if *Owned By* is a contact
+*Owned By* requires the *ownedById* attribute to be completed. The uplaod process will automatically verify user exists and populate the user name field.
 
 Site requires both the *site* and the *siteId* attributes to be completed. *SiteId* refers to the database numerical value, not the display name.
 
@@ -47,9 +43,9 @@ As each customer may be using different unique identifiers, each customer can se
 Note that data validation, and the number of checks required, will extend the upload time for the asset import.
 
 ## Select CSV file to upload
-To initiate the asset upload, select the CSV file you wish to use. Selecting the file initiates the import process.
+To initiate the asset upload, select the CSV file you wish to use. Selecting the file will populate an inline table. It will run some basic client side validation checks and report any issues found. Rows with issues will be shown with alert badges and amber highlighting. The table allows you to filter to show bad rows and you can edit row data inline to fix any bad data.
 
-On completion of the import, a report will be produced that  summarizes the following:
+When you are ready to import you can import filtered, selected rows or all rows. When the import begins it will process 1 row at a time. If a row fails import it will be highlighted and the next row will be processed. At the end of the import run you can see:
 
 * The number of records processed
 * The number of records successfully uploaded
@@ -59,3 +55,5 @@ If during the import process, specific rows of asset data are not able to be imp
 
 * Which rows failed
 * The reason for the failures
+
+You can choose to fix failed row data if you wish and try importing just those rows again.
