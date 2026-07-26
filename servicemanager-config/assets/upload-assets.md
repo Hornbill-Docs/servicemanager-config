@@ -16,9 +16,9 @@ While other attributes are not mandatory to perform the import, it is good pract
 
 For example, with *Used by* or *Site*, should you want the assets to appear as linked to these entities when performing other Service Manager actions (such as logging requests through Intelligent Capture and having the option to choose from a list of assets associated with the user), you should match up the attribute fields.
 
-*Used by* requires the *usedById* attribute to be completed. The uplaod process will automatically verify user exists and populate the user name field.
+*Used by* requires the *usedById* attribute to be completed. The upload process will automatically verify user exists and populate the user name field.
 
-*Owned By* requires the *ownedById* attribute to be completed. The uplaod process will automatically verify user exists and populate the user name field.
+*Owned By* requires the *ownedById* attribute to be completed. The upload process will automatically verify user exists and populate the user name field.
 
 Site requires both the *site* and the *siteId* attributes to be completed. *SiteId* refers to the database numerical value, not the display name.
 
