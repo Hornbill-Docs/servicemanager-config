@@ -1,12 +1,15 @@
 # Upload Assets
+
 You can manually upload multiple assets for specific asset classes from CSV files. This option is provided to allow the insertion of new assets into the Service Manager asset repository. Manual upload is generally used for static data. If you need to schedule the importing of new assets or updates to existing assets from discovery tools, MSSQL, or MySQL databases, you can find more information about the Asset Import utility in the [Data Imports Guide](/data-imports-guide/assets/overview).
 
 As an Asset Management Administrator, select **Asset Upload** from the Asset Management icon in the application navigation bar.
 
 ## Creating the upload template
+
 You can upload assets of different asset types, but only those that are managed under the same asset class, from a single CSV template. If you need to upload assets for types that are managed under different asset classes, you must create different CSV templates for each asset class grouping.
 
 **To create your upload template:**
+
 1. From the dropdown control against which you wish to import the new assets, select the asset class. This enables the option to download the related asset class template.
 1. Select to download the template file.
 1. Populate the template file rows and columns with the attributes for each asset you want to upload. Name and Type are mandatory attributes for each asset you wish to upload, regardless of its type or class.
@@ -16,9 +19,9 @@ While other attributes are not mandatory to perform the import, it is good pract
 
 For example, with *Used by* or *Site*, should you want the assets to appear as linked to these entities when performing other Service Manager actions (such as logging requests through Intelligent Capture and having the option to choose from a list of assets associated with the user), you should match up the attribute fields.
 
-*Used by* requires the *usedById* attribute to be completed. The upload process will automatically verify user exists and populate the user name field.
+*Used by* requires the *usedById* attribute to be completed. The upload process will automatically verify the user exists and populate the user name field.
 
-*Owned By* requires the *ownedById* attribute to be completed. The upload process will automatically verify user exists and populate the user name field.
+*Owned by* requires the *ownedById* attribute to be completed. The upload process will automatically verify the user exists and populate the user name field.
 
 Site requires both the *site* and the *siteId* attributes to be completed. *SiteId* refers to the database numerical value, not the display name.
 
@@ -29,13 +32,16 @@ The `Country` field requires the ISO Alpha 2 codes as per the listing in [this W
 The fields in the CSV file are mapped on the assets database table.
 
 **To find which values and types need to be populated in the fields:**
+
 1. Navigate to **Home > Applications > Service Manager > Entity Viewer**
-1. Select **Database Schema Viewer** and navigate to the  `h_cmdb_assets` table.
+1. Select **Database Schema Viewer** and navigate to the `h_cmdb_assets` table.
 
 ## Validation
+
 Against each asset class, you can configure which fields for that given asset class you wish to perform data validation. This is done before uploading the assets from the CSV file into the Service Manager asset repository.
 
 As each customer may be using different unique identifiers, each customer can select from the available fields for each asset class, against which to perform the validation to ensure an asset does not already exist, and therefore avoid the creation of duplicate entries.
+
 1. Click **Validation**.
 1. Select one, multiple, or all of the available fields to perform the validation checks against.
 1. Click **Save**.
@@ -43,7 +49,8 @@ As each customer may be using different unique identifiers, each customer can se
 Note that data validation, and the number of checks required, will extend the upload time for the asset import.
 
 ## Select CSV file to upload
-To initiate the asset upload, select the CSV file you wish to use. Selecting the file will populate an inline table. It will run some basic client side validation checks and report any issues found. Rows with issues will be shown with alert badges and amber highlighting. The table allows you to filter to show bad rows and you can edit row data inline to fix any bad data.
+
+To initiate the asset upload, select the CSV file you wish to use. Selecting the file will populate an inline table. It will run some basic client-side validation checks and report any issues found. Rows with issues will be shown with alert badges and amber highlighting. The table allows you to filter to show bad rows and you can edit row data inline to fix any bad data.
 
 When you are ready to import you can import filtered, selected rows or all rows. When the import begins it will process 1 row at a time. If a row fails import it will be highlighted and the next row will be processed. At the end of the import run you can see:
 
