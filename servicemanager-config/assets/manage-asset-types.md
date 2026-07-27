@@ -89,6 +89,29 @@ Here is an example of a what a users sees when viewing the list of assets by the
 
 **Fields available for CSV download.** The CSV download contains only the columns that you have added here in the List Fields tab.
 
+## Custom fields
+
+On the Summary, Create, Details and List tabs you can add common fields and class specific fields. Common fields include the [Common Custom Fields](/servicemanager-config/assets/custom-fields), which are managed separately and shared across all assets. Class specific custom fields can be added from the classes fields drop down.
+
+Each Asset Type gives you a set of class specific custom fields that you can configure without any development work. These fields already exist behind the scenes for every asset class (e.g. Computer, Printer, Mobile Device); you are labeling and switching on the ones you want to use, not creating new fields.
+
+Each asset class provides the following custom fields:
+
+* **20 x char (varchar)** - `h_custom_ext_char1` to `h_custom_ext_char20`.
+* **8 x int** - `h_custom_ext_int1` to `h_custom_ext_int8`.
+* **8 x decimal** - `h_custom_ext_dec1` to `h_custom_ext_dec8`.
+* **8 x date** - `h_custom_ext_date1` to `h_custom_ext_date8`.
+* **4 x text (longtext)** - `h_custom_ext_text1` to `h_custom_ext_text4`.
+
+These fields are shared slots available to every Asset Type within that class, but you configure each field separately for each Asset Type. For example, Laptop and Desktop Asset Types within the Computer class can each label and set up `h_custom_ext_char1` differently.
+
+For each field, on a per Asset Type basis, you can configure:
+
+* **Label**. The display name shown to users, with translations if needed.
+* **Control type**. How the field is presented (e.g. plain text box, dropdown, checkbox), where supported.
+* **Mandatory / Read-only / Visible**. Whether the field is required, locked, or shown at all for a given Asset Type.
+* **Layout position**. Where the field appears on the asset form.
+ 
 ## Archiving asset types and assets
 
 Archiving helps you manage your asset library by restricting access to older items and preventing the creation of new assets in archived types.
