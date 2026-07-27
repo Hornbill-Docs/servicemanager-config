@@ -254,8 +254,12 @@
             "draft": false,
             "items": [
               {
-                "text": "Settings",
+                "text": "Overview",
                 "link": "servicemanager-config/administration/hai"
+              },
+              {
+                "text": "Settings",
+                "link": "servicemanager-config/administration/hai-settings"
               },
               {
                 "text": "Exclusion Rules",
