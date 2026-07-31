@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "audience": [
     "public"
   ],
@@ -204,7 +204,7 @@
             "link": "servicemanager-config/advanced-tools-and-settings/application-settings"
           }
         ]
-      },     
+      },
       {
         "text": "Administration",
         "expand": false,
@@ -229,7 +229,7 @@
             "link": "servicemanager-config/administration/profiles",
             "draft": false
           },
-           {
+          {
             "text": "Request Settings",
             "link": "servicemanager-config/administration/request-settings",
             "draft": false
@@ -248,7 +248,7 @@
             "text": "Custom Lookups",
             "link": "servicemanager-config/administration/custom-lookups"
           },
-                   {
+          {
             "text": "HAi Control",
             "link": "servicemanager-config/administration/hai",
             "draft": false,
@@ -271,11 +271,11 @@
                 "link": "servicemanager-config/administration/hai-anomaly-detection",
                 "draft": true
               },
-                {
+              {
                 "text": "Dashboard",
                 "link": "servicemanager-config/administration/hai-dashboard"
               },
-               {
+              {
                 "text": "Usage Log",
                 "link": "servicemanager-config/administration/hai-logs"
               },
@@ -295,7 +295,7 @@
               {
                 "text": "Email Attachment Labeling",
                 "link": "servicemanager-config/administration/hai-email-attachment-labeling"
-              },             
+              },
               {
                 "text": "Workflow Automation",
                 "link": "servicemanager-config/administration/hai-automations"
@@ -313,13 +313,13 @@
                 "link": "servicemanager-config/administration/hai-faq"
               }
             ]
-          },          
+          },
           {
             "text": "Relationships",
             "link": "servicemanager-config/administration/service-manager-relationships",
             "draft": false
           },
-                  {
+          {
             "text": "Routing Rule Templates",
             "link": "servicemanager-config/email/routing-rule-templates"
           },
@@ -365,23 +365,23 @@
           },
           {
             "text": "Manage Types",
-            "items":[
-            {
-              "text": "Overview",
-              "link": "servicemanager-config/assets/asset-types-overview"
-            },
-            {
-              "text": "Categories",
-              "link": "servicemanager-config/assets/asset-categories"
-            },
-            {
-              "text": "Asset Types",
-              "link": "servicemanager-config/assets/manage-asset-types"
-            },
-            {
-              "text": "Asset Depreciation",
-              "link": "servicemanager-config/assets/asset-depreciation"
-            }
+            "items": [
+              {
+                "text": "Overview",
+                "link": "servicemanager-config/assets/asset-types-overview"
+              },
+              {
+                "text": "Categories",
+                "link": "servicemanager-config/assets/asset-categories"
+              },
+              {
+                "text": "Asset Types",
+                "link": "servicemanager-config/assets/manage-asset-types"
+              },
+              {
+                "text": "Asset Depreciation",
+                "link": "servicemanager-config/assets/asset-depreciation"
+              }
             ]
           },
           {
@@ -427,7 +427,7 @@
       {
         "text": "Suppliers",
         "draft": true,
-        "items":[
+        "items": [
           {
             "text": "Import Suppliers",
             "link": "servicemanager-config/suppliers/supplier-import"
@@ -440,7 +440,6 @@
             "text": "Import Supplier Contracts",
             "link": "servicemanager-config/suppliers/supplier-contracts-import"
           },
-
           {
             "text": "Associated Organizations",
             "link": "servicemanager-config/suppliers/associated-organizations"
