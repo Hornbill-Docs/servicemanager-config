@@ -32,7 +32,7 @@ When summarizing a request the following data from the request you are in is pro
 * `h_itsm_requests.h_summary`
 * `h_itsm_requests.h_fk_user_name`
 
-The timeline of the request is filtered down with the following filters '["Authorization","Customer","Email","Escalate","update"]' and can be updated [here](/servicemanager-config/administration/hai-request-summariser).
+The timeline of the request is filtered down with the following filters '["Authorization","Customer","Email","Escalate","update"]' and can be updated by the [HAi Request Summarizer](/servicemanager-config/administration/hai-request-summariser).
 
 Each post in the timelines sends the following
 

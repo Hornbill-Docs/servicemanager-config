@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.18.2",
+  "version": "1.19.0",
   "audience": [
     "public"
   ],
@@ -480,6 +480,10 @@
               {
                 "text": "Service Availability Widget",
                 "link": "servicemanager-config/employee-portal/service-availability-widget"
+              },
+              {
+                "text": "Search Widget",
+                "link": "servicemanager-config/employee-portal/search-widget"
               }
             ]
           }

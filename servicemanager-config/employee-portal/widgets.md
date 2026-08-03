@@ -21,24 +21,8 @@ With Service Manager installed, there are several Employee Portal widgets that a
 
 * **[Average Rating widget](/servicemanager-config/employee-portal/average-rating-widget)**: The average [star rating](/servicemanager-user-guide/service-portfolio/customer-feedback) widget collects data from all of the requests from all services and displays an average overall rating. These requests will have been closed and the customers will have provided a star rating.
 * **[My Assets widget](/servicemanager-config/employee-portal/my-assets-widget)**: The My Assets widget is an Employee Portal widget that gives users a quick view of assets that they use.
-* [Service Availability widget](/servicemanager-config/employee-portal/service-availability-widget): Collects availability data from the selected service and displays the availability over the previous X number of days.
-
-### Search widget
-
-The Search widget provides a unified search for users to find information on services, FAQs, service requests, known issues, the user's active requests, and knowledge articles.
-
-![Search Widget](/_books/servicemanager-config/images/ep-search-widget.png)
-
-#### Configure
-
-* **Filter by Service Domain.** Select a single service domain that the search will apply to.  
-* **Filter by Types.** You can limit the search to only selected types of records.
-  * Service
-  * FAQ
-  * Service Request
-  * Known Issues
-  * My Service Requests
-  * Articles
+* **[Service Availability widget](/servicemanager-config/employee-portal/service-availability-widget)**: Collects availability data from the selected service and displays the availability over the previous X number of days.
+* [Search widget](/servicemanager-config/employee-portal/search-widget): The Search widget provides a unified search for users to find information on services, FAQs, service requests, known issues, the user's active requests, and knowledge articles.
 
 ### Knowledge base articles
 
