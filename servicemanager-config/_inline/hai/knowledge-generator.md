@@ -4,4 +4,4 @@ The HAi Knowledge Generator in Hornbill is an AI-driven tool that instantly crea
 
 ## Additional reading
 
-[HAi Service Manager Settings](/servicemanager-config/administration/hai) - Learn how to access and configure HAi features in Hornbill Service Manager.
+[HAi Service Manager Settings](https://docs.hornbill.com/servicemanager-config/administration/hai) - Learn how to access and configure HAi features in Hornbill Service Manager.

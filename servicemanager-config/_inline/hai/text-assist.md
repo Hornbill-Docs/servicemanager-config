@@ -12,4 +12,4 @@ Key features and actions include:
 
 ## Additional reading
 
-[HAi Service Manager Settings](/servicemanager-config/administration/hai) - Learn how to access and configure HAi features in Hornbill Service Manager.
+[HAi Service Manager Settings](https://docs.hornbill.com/servicemanager-config/administration/hai) - Learn how to access and configure HAi features in Hornbill Service Manager.
