@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.19.0",
+  "version": "1.19.1",
   "audience": [
     "public"
   ],
@@ -349,10 +349,6 @@
           {
             "text": "Overview",
             "link": "servicemanager-config/assets/overview"
-          },
-          {
-            "text": "New assets mode information kit",
-            "link": "servicemanager-config/assets/new-assets-mode-infokit"
           },
           {
             "text": "Manage Partitions",

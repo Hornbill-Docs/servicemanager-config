@@ -4,10 +4,6 @@ keywords: visibility of assets
 ---
 # Manage partitions
 
-:::note
-[[INCLUDE https://raw.githubusercontent.com/Hornbill-Docs/hdoc-library/main/hdoc-library/service-manager/new-assets-note.md]]
-:::
-
 Asset partitioning allow you to divide your company's assets into separate, individual units. You can partition assets to provide an additional layer that enforces access and visibility controls.
 
 * **Improved security controls**: Partitioning allows sensitive assets to be segregated, enabling stricter security controls and improved protection against unauthorized access.

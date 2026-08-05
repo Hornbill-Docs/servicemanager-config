@@ -3,10 +3,6 @@ layout: article-toc
 ---
 # Asset management
 
-:::note
-[[INCLUDE https://raw.githubusercontent.com/Hornbill-Docs/hdoc-library/main/hdoc-library/service-manager/new-assets-note.md]]
-:::
-
 ## Introduction to asset management
 
 Asset management allows you to capture and detail information for the assets in your organization. You can track ownership, costs, relationships, and the life cycle of assets to support strategic decisions for your IT environment.

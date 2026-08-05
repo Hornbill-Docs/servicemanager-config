@@ -3,10 +3,6 @@ layout: article-toc
 ---
 # Asset Types Overview
 
-:::note
-[[INCLUDE https://raw.githubusercontent.com/Hornbill-Docs/hdoc-library/main/hdoc-library/service-manager/new-assets-note.md]]
-:::
-
 Asset management within Hornbill Service Manager allows you to organize and present detailed information about each asset. By organizing assets into specific types, you can establish a comprehensive framework of fields and data tailored to each asset. This approach ensures that all relevant information is readily accessible for any asset.
 
 ## Before you begin
