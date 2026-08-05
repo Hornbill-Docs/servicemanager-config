@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.19.1",
+  "version": "1.19.2",
   "audience": [
     "public"
   ],
@@ -264,7 +264,6 @@
               {
                 "text": "Exclusion Rules",
                 "link": "/servicemanager-config/administration/hai-exclusion-rules",
-                "draft": true
               },
               {
                 "text": "HAi Detection",

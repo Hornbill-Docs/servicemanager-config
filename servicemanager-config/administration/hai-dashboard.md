@@ -1,5 +1,4 @@
 ---
-title: Hornbill AI Dashboard
 description: Discover how to maximize the potential of the HAi Dashboard in your organization with roles tailored to your needs. Get insights on usage statistics, estimated hours saved through generative AI, and track your organization's performance over time. Learn about the key features and application settings that drive the value dashboard, providing valuable metrics for decision-making and efficiency improvements.
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
@@ -9,7 +8,7 @@ layout: article-toc
 
 ## Dashboard Access
 
-The HAi Dashboard is available to any user associated with one of the following roles: 
+The HAi Dashboard is available to any user associated with one of the following roles:
 
 |Role|Application|Description|
 |-|-|-|
@@ -20,12 +19,19 @@ Additionally, any user with the application right **rightA.administerServiceDesk
 
 ## Overview
 
-The HAi Value Dashboard is designed to show you your organization's usage of HAi and estimate hours saved through generative AI (summarizing as generating text output). These calculations are estimates and are configurable. The top-line widgets show rolling 30-day usage and savings.
+The HAi Value Dashboard is designed to show you your organization's usage of HAi and estimate hours saved through using AI. These calculations are estimates and are configurable. The top-line widgets show rolling 30-day usage and savings.
+
+A dashboard option allows you to select between agent efficiency and deflection.
+
+* **Agent Efficiency**: The time saved by your agents using generative HAi features that shift routine tasks from humans, reducing manual workloads and routine touchpoints.
+* **Agent Deflection**: The reduction of inbound service desk requests by diverting routine user requests to conversational virtual assistants and intelligent self-service.
+
+### Efficiency charts
 
 The first two line charts show the savings per month over the last 12 months. This will take a few weeks of usage before output is properly populated.
 
 The second two charts show (1) Usage per day for the last 30 days by product area and (2) The top 4 most active users based on prompt usage over the last 30 days.
-Currently, no additional filters can be applied to the dashboard.
+
 ![Hornbill AI Dashboard](/_books/servicemanager-config/administration/images/hai-dashboard.png)
 
 ## Configuration
