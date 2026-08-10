@@ -2,26 +2,17 @@
 layout: article-toc
 keywords: data profiles, data profile codes, request profile codes, closure profile codes, resolution categories, request category level, resolution category level
 ---
-# Profiles
-Profiles provide hierarchical tree structures that you can use to *categorize* your requests. In fact, *categories* is another commonly used name for profiles. This kind of categorization can help with your analytics and reporting. With profiles, you can group the service areas in which requests are being made; this can be useful, for example, when you want to identify possible reasons for recurrent issues.
+# Profile Codes
 
-Each profile has a code to identify it. There are profiles that can be assigned when a request is opened (a *request profile*) and when it is closed (a *closure profile*). In Service Manager Configuration, the corresponding views are **Request Profile Codes** and **Closure Profile Codes**.
+Profile codes are organized into hierarchical tree structures that you can use to *categorize* your requests. This kind of categorization can help with your analytics and reporting. 
 
-::: note
-There are two profile code sets: *Request* and *Closure*. These file names cannot be changed.
-:::
+## Request profile codes
 
-By categorizing requests using profiles and their lower-level items (sub-categories), you can record information at different levels of granularity. For example, for a request in the IT service, you can report on the IT profile, or go more granular into Hardware and then down to the level of Laptop.
+The **request profile codes** are used to categorize requests when they are open. These will typically be used to identify a symptom or area of concern. For example, if a user is having trouble with their laptop, the request profile code could be *IT:Hardware:Laptop*.
 
-In Service Manager Configuration > Administration, you can create profiles as well as import and export profiles. Each time you create a profile, it is given a profile code.
+## Closure profile codes
 
-## Topics covered
-* [Editor](/esp-config/data/profiles#editor)
-* [Profile settings](/esp-config/data/profiles#profile-settings)
-* [Adding profiles](/esp-config/data/profiles#adding-profiles)
-* [Deleting profiles](/esp-config/data/profiles#deleting-profiles)
-* [Importing profiles](/esp-config/data/profiles#importing-profiles)
-* [Exporting profiles](/esp-config/data/profiles#exporting-profiles)
+The **closure profile codes** are used to categorize requests when they are closed. These will typically be used to identify the resolution or action taken. For example, if a user is having trouble with their laptop and the issue was resolved by replacing the hard drive, the closure profile code could be *IT:Hardware:Laptop:Replace Component*.
 
 ## Editor
 
@@ -32,9 +23,11 @@ This main view shows all of the existing profiles (categories). Some profiles ma
 You can use the editor to create the hierarchical structure contained within each profile.
 
 ## Profile settings
+
 Click the **Profile Settings** button to specify how your organization's profiles are created. In the *Import Profiles* dialog, you can configure the following settings:
-* **Name.** This is preset based on whether the profiles you're configuring are for opening requests or closing them.<br>
-**Case-insensitive ordering.** If you want ordering of profile names to happen regardless of lowercase or uppercase, select the checkbox under the Name field.
+
+* **Name.** This is preset based on whether the profiles you're configuring are for opening requests or closing them.
+* **Case-insensitive ordering.** If you want ordering of profile names to happen regardless of lowercase or uppercase, select the checkbox under the Name field.
 * **Code Separator.** This separates the hierarchy levels. For example, `IT:Software:Install` uses the colon character as a separator to distinguish the *IT* profile as top-level, with *Software* under it, and with *Install* under *Software*.
 * **Name Separator.** This is shown in the UI to users when viewing a request. For example, using the characters `->` as a separator, **IT`->`Software`->`Install`->`Action Taken** could be a closure category assigned to a request when it has been updated.
 * **Maximum Code Length.** This specifies the maximum number of characters a code can be created with.
@@ -43,11 +36,13 @@ Click the **Profile Settings** button to specify how your organization's profile
 * **Code Allowed Chars.** This specifies which characters can be used to create profile codes.
 
 ## Adding profiles
+
 Click **+ Top Level Item** to start the process of creating a new profile.
 
 To add a new profile within (under) an existing one, click **+ Item**. This creates what is essentially a subcategory.
 
 ## Deleting profiles
+
 Select an existing profile and then in the properties box, click **Delete**.
 
 ::: warning
@@ -67,16 +62,20 @@ It's important to note that the existing profiles may be in use elsewhere, and d
 The import scheme assumes the data to import will be on the sheet named *Data*. Make sure the data is static data. The data import routines do not consider expressions; nor do they run scripts or formulas in cells to get the resultant data.
 
 **To get the profile code set template:**
+
 1. Click the down arrow attached to the **Import Profiles** button.
 1. Select **Download xlsx template**.
 1. Follow the guidance provided in the *Information* sheet of the workbook.
 
 **To import profiles:**
+
 1. Once you have made changes to the import template to suit your needs, click **Import Profiles**.
 1. In the Import Profiles dialog, click **Upload and import**.
-1. Browse for the template you have saved changes to, and click **Open**. 
+1. Browse for the template you have saved changes to, and click **Open**.
 
 ## Exporting profiles
+
 **To export profiles:**
+
 1. Click the down arrow attached to the **Import Profiles** button.
 1. Select your preferred export option for output.
