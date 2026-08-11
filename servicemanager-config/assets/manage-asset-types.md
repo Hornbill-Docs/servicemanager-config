@@ -13,6 +13,7 @@ In the General tab, you can set some of the basic information about the asset ty
 * **Name**. The name of the asset that will be displayed everywhere assets are used.
 * **Category**. The category for this asset type.
 * **Description**. A description of this asset type.
+* **Preferred SLA**: The preferred Service Level Agreement (SLA) for this asset type. This is the SLA that will be used when raising a request for an asset of this type.
 
 ### Asset Card customization
 
@@ -111,7 +112,7 @@ For each field, on a per Asset Type basis, you can configure:
 * **Control type**. How the field is presented (e.g. plain text box, dropdown, checkbox), where supported.
 * **Mandatory / Read-only / Visible**. Whether the field is required, locked, or shown at all for a given Asset Type.
 * **Layout position**. Where the field appears on the asset form.
- 
+
 ## Archiving asset types and assets
 
 Archiving helps you manage your asset library by restricting access to older items and preventing the creation of new assets in archived types.
