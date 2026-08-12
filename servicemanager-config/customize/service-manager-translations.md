@@ -9,7 +9,7 @@ All the translation strings available here are related to the Service Manager ap
 
 * [Platform User Interface Translations](/esp-config/internationalization/user-interface-translations).
 * [Customer Portal](/esp-config/customize/customer-portal/configure-customer-portal#translations)
-* [Employee Portal](/esp-config/customize/employee-portal/employee-portal-configuration#translations)
+* [Employee Portal](/esp-config/customize/employee-portal/employee-portal-configuration)
 
 ## Accessing Service Manager Translations
 

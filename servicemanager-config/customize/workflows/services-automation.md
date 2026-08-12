@@ -6,7 +6,7 @@ The Services Automation lets you define tasks that are related to the Service en
 
 ## Before you begin
 
-* Read about [service dependancies](/servicemanager-user-guide/service-portfolio/services/service-dependancies).
+* Read about [service dependencies](/servicemanager-user-guide/service-portfolio/services/service-dependancies).
 * Read about the [request service automation](/servicemanager-config/customize/workflows/requests-automation#request-service).
 * Read about [service bulletins](/servicemanager-user-guide/service-portfolio/services/service-bulletins).
 
@@ -81,7 +81,7 @@ Passing a valid but unsupported language code will make the bulletin inaccessibl
 
 ### Status
 
-The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the service [availability metrics](/service-portfolio/services/service-availability#availability-metrics).
+The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the service [availability metrics](/servicemanager-user-guide/service-portfolio/services/service-availability#availability-metrics).
 
 #### Options
 
