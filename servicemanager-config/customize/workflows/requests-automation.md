@@ -284,7 +284,7 @@ The Request Service automation is used to manage the service that the request is
 
 #### Add related services
 
-A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the [related services](/servicemanagner-user-guide/service-portfolio/services/service-details#services) based on a selected type of relationship between the services listed below.
+A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the [related services](/servicemanager-user-guide/service-portfolio/services/overview#services) based on a selected type of relationship between the services listed below.
 
 * The Related Service and Request Service depend on each other.
 * The Request Service depends on the Related Service.
@@ -298,7 +298,7 @@ This task allows for a single service to be added to the list of associated serv
 
 #### Update service status
 
-This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on the service that the request has been raised against.The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/service-portfolio/services/service-availability#availability-metrics).
+This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on the service that the request has been raised against.The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/servicemanager-user-guide/service-portfolio/services/service-availability#availability-metrics).
 
 ----
 
@@ -408,7 +408,7 @@ Some options are common to all of the Update Request types.
 * **Place On Hold**. This automation task will change the status of the request to On Hold.
   * When a request is placed on hold, any active [service level timers](/servicemanager-config/customize/workflows/timer-automation) will be paused until the request is taken off hold.
   * The **On Hold Period** option lets you set a specific number of years, months, days, hours, or minutes that the request will be on hold, unlike the **On Hold Until** option where you set a specific date and time. Only one of these should be used.
-  * The **On Hold Period Apply WTC** option works along side the **On Hold Period** option. Setting this option to *Yes* will [calculate](/hornbill-how-to-guides/calculate-sla-timer#how-to-calculate-timer-targets) the total on hold period using only working hours from the default [working time calendar](/esp-config/customize/working-time-calendars). The default working time calendar is taken from the request's [SLA](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview#details). If the request has no SLA, the working time calendar specified in the *[guest.app.timer.defaultCalendar](/advanced-tools-and-settings/application-settings)* setting is used.
+  * The **On Hold Period Apply WTC** option works along side the **On Hold Period** option. Setting this option to *Yes* will [calculate](/hornbill-how-to-guides/calculate-sla-timer#how-to-calculate-timer-targets) the total on hold period using only working hours from the default [working time calendar](/esp-config/customize/working-time-calendars). The default working time calendar is taken from the request's [SLA](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview#details). If the request has no SLA, the working time calendar specified in the *[guest.app.timer.defaultCalendar](/servicemanager-config/advanced-tools-and-settings/application-settings)* setting is used.
 * **Impact**. This automation for updating the impact of a request uses the impact levels that are defined under the [Impact Assessments](/servicemanager-config/administration/assessment-levels#impact).  Within the Options section of the automation settings, Impact is a mandatory field.  This needs to be set to `Manual` and then an appropriate impact selected.
 * **Priority**. This automation for updating the priority of a request uses the priority levels that are defined under the [Priority Assessments](/servicemanager-config/administration/assessment-levels#priority).  Within the Options section of the automation settings, Priority is a mandatory field.  This needs to be set to `Manual` and then an appropriate priority selected.
 * **Resolution Text**.

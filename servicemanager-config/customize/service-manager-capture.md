@@ -40,7 +40,7 @@ The `Raise New` option, located at the top right of the Request List, is split i
 The `Raise New` button can also be configured to only show one of the above options. This can be helpful in reducing the overhead of managing multiple Intelligent Capture scripts.
 
 * **Hide**<br>Turn the setting *app.request.raiseNew.hide* to `ON` to hide the generic `Raise New` option and always have the user select a specific request type. Individual Intelligent Captures can be managed for each request type and remove the need to manage a generic Intelligent Capture script for the `Raise New` option.
-* **Limit**<br>Turn the setting *app.request.raiseNew.limit* to `ON` to only allow the `Raise New` option and remove the ability for a user to select a specific request type. This removes the need to manage multiple Intelligent Capture scripts per request type. The request type can be determined by using the [Request Type form](/service-manager-config/customize/service-manager-capture-forms#release-type) or by selecting a Request Catalog Item on the [Services form](/service-manager-config/customize/service-manager-capture-forms#services).  
+* **Limit**<br>Turn the setting *app.request.raiseNew.limit* to `ON` to only allow the `Raise New` option and remove the ability for a user to select a specific request type. This removes the need to manage multiple Intelligent Capture scripts per request type. The request type can be determined by using the [Request Type form](/servicemanager-config/customize/service-manager-capture-forms#release-type) or by selecting a Request Catalog Item on the [Services form](/servicemanager-config/customize/service-manager-capture-forms#services).  
 
 ## Email
 

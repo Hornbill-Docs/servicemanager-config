@@ -22,7 +22,7 @@ You can use assets across several areas of Service Manager:
 * **Auto tasks**: Use [Asset Automation](/servicemanager-config/customize/workflows/asset-automation) to trigger [auto task](/servicemanager-config/customize/service-manager-auto-tasks) workflows on an asset record.
 * **Request asset action**: Use the [Asset Action](/servicemanager-user-guide/service-portfolio/requests/asset-action) menu to find and link assets to a request manually.
 * **Service assets**: Add assets that support or underpin a specific [service](/servicemanager-user-guide/service-portfolio/services/service-details).
-* **CI Explorer**: Use the [CI Explorer](/configuration-management/configuration-item-explorer) to view a diagram of how assets relate to each other and other configuration items.
+* **CI Explorer**: Use the [CI Explorer](/servicemanager-user-guide/configuration-management/configuration-item-explorer) to view a diagram of how assets relate to each other and other configuration items.
 
 ## Asset management roles
 

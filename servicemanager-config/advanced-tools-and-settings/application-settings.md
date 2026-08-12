@@ -209,7 +209,7 @@ The following settings influence how information from [customized forms](/esp-co
 
 ### Raise New Button
 
-The `Raise New` button can be configured to only show the Raise New option or just the list of request types. This also applies to the Raise New option on the [request form](/service-portfolio/requests/overview).
+The `Raise New` button can be configured to only show the Raise New option or just the list of request types. This also applies to the Raise New option on the [request form](/servicemanager-user-guide/service-portfolio/requests/overview).
 
 `app.request.raiseNew.hide`
 
@@ -353,7 +353,7 @@ Connections are users and contacts that have been associated with a request.  Co
 * **guest.app.requests.notification.notificationType.connectionsRecipient**. Set the default notification type to new connections when they are added to a request. This setting only sets the default value.  Users can change their personal notifications settings on their user profile and override this setting.
   * Default: email-only
 
-* **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow conections to view the attachments against a request. This only applies to [attachments that are visible to the customer](/servicemanager-user-guide/service-portfolio/requests/attachment-action#visibility).
+* **guest.servicemanager.portal.request.canConnectionsViewAttachments**. Allow connections to view the attachments against a request. This only applies to [attachments that are visible to the customer](/servicemanager-user-guide/service-portfolio/requests/attachment-action#select-visibility).
 
 * **guest.ui.app.com.hornbill.servicemanager.operation.defaultVisibility.connections**' Default visibility for the request timeline entry that is recorded when adding connections to a request.
   * Default: Customer
@@ -361,7 +361,7 @@ Connections are users and contacts that have been associated with a request.  Co
 #### Related features
 
 * [Connections action on a request](/servicemanager-user-guide/service-portfolio/requests/connection-action).
-* [Connections configuration on a service](/service-portfolio/services/service-connections).
+* [Connections configuration on a service](/servicemanager-user-guide/service-portfolio/services/service-connections).
 * [Connections automation](/servicemanager-config/customize/workflows/request-connections-automation).
 
 ## Notification Settings
