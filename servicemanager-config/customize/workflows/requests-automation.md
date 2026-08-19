@@ -1,17 +1,19 @@
 ---
 layout: article-toc
 ---
-# Requests automation
+# Requests Automation
 
 The Service Manager workflows are used to automate the processing of the requests that have been raised. This page contains information on the request automation that can be used in the workflow designer to build unique and powerful workflows for your requests.
 
+---
+
 ## Access Control
 
-Use the Access Control to lock or unlock the details section or the Actions on a request. Only users with an appropriate role or application right will be able to use a locked action or have the ability to unlock the action for others to use.
+Use the Access Control automation to lock or unlock the details section or the Actions on a request. Only users with an appropriate role or application right will be able to use a locked action or have the ability to unlock the action for others to use.
 
 ![Workflow Lock Automation](/_books/servicemanager-config/images/workflow-lock-automation.png)
 
-#### Using access control
+### Using access control
 
 * On an incident, the resolution action could be locked until other actions have been completed.
 * On a change, the details might be locked once a change has been approved.
@@ -19,29 +21,31 @@ Use the Access Control to lock or unlock the details section or the Actions on a
 
 ![Workflow Lock Action](/_books/servicemanager-config/images/workflow-lock-action.png)
 
-#### Available Tasks
+### Available Tasks
 
-##### Lock / Unlock Request Actions
+#### Lock / Unlock Request Actions
 
-Lock or unlock individual actions on a request.  The option *Default Lock Type* can apply or remove the locks from all actions.
+Lock or unlock individual actions on a request. The option *Default Lock Type* can apply or remove the locks from all actions.
 
-##### Lock Request Details
+#### Lock Request Details
 
 Lock the main details section of the request. This includes both the summary and description.
 
-##### Unlock Request Details
+#### Unlock Request Details
 
 Unlock the main details section of the request. This includes both the summary and description.
 
-#### Overriding a locked action
+### Overriding a locked action
 
-Users that have a [Full Access](/servicemanager-config/setup/service-manager-roles#system-roles) role can override a locked action for the request type that they have full access to.  They can themselves use the locked action, or they can click on the padlock icon to unlock the action for other users.
+Users that have a [Full Access](/servicemanager-config/setup/service-manager-roles#system-roles) role can override a locked action for the request type that they have full access to. They can themselves use the locked action, or they can click on the padlock icon to unlock the action for other users.
 
 ![Locked Resolution Action](/_books/servicemanager-config/images/request-locked-resolution.png)
 
 :::tip
-An **Update Locked** application right is available for each request type.  [Custom roles](/esp-config/organizational-data/roles#user-created-roles) can be created with these rights to provide access to select users without having to give them full access to a request type.
+An **Update Locked** application right is available for each request type. [Custom roles](/esp-config/organizational-data/roles#user-created-roles) can be created with these rights to provide access to select users without having to give them full access to a request type.
 :::
+
+---
 
 ## Assessment
 
@@ -51,7 +55,7 @@ Use the Assessment automation to initiate an Assessment Questionnaire on a reque
 
 This Hornbill Automation will present an [Assessment Questionnaire](/servicemanager-config/administration/assessment-questionnaires) on the [Assessment Action](/servicemanager-user-guide/service-portfolio/requests/assessment-action) of a request. Based on the user's responses to the questionnaire, an assessment level is automatically calculated and applied to the request.
 
-![Start Asessment Questionaire](/_books/servicemanager-config/images/impact-assessment-button.png)
+![Start Assessment Questionnaire](/_books/servicemanager-config/images/impact-assessment-button.png)
 
 ### Available tasks
 
@@ -65,11 +69,13 @@ This Hornbill Automation will present an [Assessment Questionnaire](/servicemana
 #### Mandatory Options
 
 * **Request ID**. In almost all cases this should be set to Auto. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
-* **Questionnaire**. This option will need to be set to **Manual** and then one of the available assessment questionnaires needs to be selected. If the drop-down list is empty, this suggests that the assessment selected in the task field (Impact, Priority, Risk, or Urgency) doesn't have any [questionnaires](/servicemanager-config/administration/assessment-questionnaires) defined or there or with an active status.
+* **Questionnaire**. This option will need to be set to **Manual** and then one of the available assessment questionnaires needs to be selected. If the drop-down list is empty, this suggests that the assessment selected in the task field (Impact, Priority, Risk, or Urgency) doesn't have any [questionnaires](/servicemanager-config/administration/assessment-questionnaires) defined, or none with an active status.
 
 ### Example Workflow
 
 ![Example Workflow](/_books/servicemanager-config/images/example-assessment-workflow.png)
+
+---
 
 ## Assets
 
@@ -113,6 +119,8 @@ Use these Hornbill Automations for managing assets that are associated to the re
 * Update Software Assets - General Information
 * Update Telecoms Assets - General Information
 
+---
+
 ## Assignment
 
 Use the Assignment node to automatically assign a request to different Service Manager users or teams.
@@ -121,10 +129,12 @@ Use the Assignment node to automatically assign a request to different Service M
 * **Assign to Team**: Use this option to assign the request to a specified team.
 * **Assign to Owner**: Use this option to assign the request to a specific Service Manager agent.
 * **Assign to Owner (Variable)**: Use this option to assign the request to a specific Service Manager analyst using a dynamic value provided by a runtime variable that has been populated using Intelligent Capture or through the Get Information nodes.
-* **Unassign Owner**: Use this option to remove the current owner from the request without affecting the team to which the request is assigned.  
+* **Unassign Owner**: Use this option to remove the current owner from the request without affecting the team to which the request is assigned.
 * **Assign to Request Creator**: Use this option to automatically assign the request to the Service Manager agent who raised the request.
 * **Assign to Most Available Analyst**: This automation works on the basis of capacity. The system will look through the members of the selected team and will assign the request to the member who has the least amount of open requests. If multiple team members have an equal number of open requests and have the least amount of assigned requests, the system will allocate the request to the team member who has had the greatest amount of time pass since their last assignment.
 * **Assign on Round Robin Basis**: Round robin assignment is a great way to automatically assign requests to the members of a team. The system will look through the members of the selected team and will assign the request to the member who has had the greatest amount of time pass since their last assignment. The system will take into account the user's status, which is found on their profile. If the user's status is set to anything other than *Available*, that user will not be considered for assignment. This does not take into account the volume of requests assigned to each user.
+
+---
 
 ## Authorization Decision
 
@@ -159,13 +169,17 @@ This is an example of how the Authorization Decision could be used when designin
 
 ![Authorization Decision Example](/_books/servicemanager-config/images/workflow-authorization-decision-example.png)
 
+---
+
 ## Collaboration
 
-Use the Collaboration node to post an automated update onto a public workspace at any stage in a workflow. This will be visible to members of the specified workspace --- on the timeline of the workspace and in members' News Feeds.
+Use the Collaboration node to post an automated update onto a public workspace at any stage in a workflow. This will be visible to members of the specified workspace — on the timeline of the workspace and in members' News Feeds.
 
 * Comment on Existing Public Workspace Post
 * Comment on Request Source Post
 * Post to Public Workspace
+
+---
 
 ## Email Notifications
 
@@ -178,21 +192,25 @@ Use the Email Notification nodes to send email templates to different Request st
 * Email External Address
 * Email Request Owner
 
+---
+
 ## Get Request Information
 
 Use the Get Request Information node to retrieve request data at any stage in your workflow. This node extracts key request variables—such as Customer, Status, Site, and Priority along with responses to custom Intelligent Capture questions and organization attributes, making this information available for downstream workflow decisions or other nodes.
 
 * **Category Details**: This is designed to get information about both the request category and the resolution category. Use this for making decisions based on the selected category.
-* **Customer Details**: Get more information about the customer to help drive the workflow.  Find out who their manager is. Check the custom fields for things like VIP status.
-* **Source Email Details**: If the request was raised from an email, you can use this to get details such as the email of the sender.  This is particularly useful when the contact or user does not exist in your system.
-* **Organization Details**: Use when supporting external organizations.  This can be particularly useful to check for information stored in the custom fields of the organization.  Find out the location of the organization to determine which service desk or team to assign the request to.
+* **Customer Details**: Get more information about the customer to help drive the workflow. Find out who their manager is. Check the custom fields for things like VIP status.
+* **Source Email Details**: If the request was raised from an email, you can use this to get details such as the email of the sender. This is particularly useful when the contact or user does not exist in your system.
+* **Organization Details**: Use when supporting external organizations. This can be particularly useful to check for information stored in the custom fields of the organization. Find out the location of the organization to determine which service desk or team to assign the request to.
 * **Owner Details**: Use this if you need more detail about the request owner than what the Request Details provide. A commonly used output is the owner's manager.
-* **Raised By Details**: Gather information about who raised the request.  This can be particularly useful on request types that don't include customers.  For example, you may want to include some automation on a change workflow that communicates back to the person who raised the change.
-* **Request Details**: This returns all the key information about a request.  This is one of the most-used automations in a request workflow.
-* **Intelligent Capture Answers**: This lets you interrogate the answers that were provided during the capture phase of a request.  Make decisions based on the provided answers to drive your workflow.Use the outputs to share the answered questions in an email notification.
-* **Service Details**: Get the details of the associated service. When a request is first raised, you may want to check the status of the service and send an automated email to the customer about the service not being available.  
-* **Site Details**: Your workflow may have location-specific responses to an issue.  Use the Manager IDs to help communicate issues at a site.  You could add the managers as a connection or send them a notification of high-priority incidents.
-* **Team Details**: Get information about the team that the request is currently assigned to.  Two useful outputs are the IDs of the team's manager and leader, allowing you to send notifications, escalate, or add as a member.
+* **Raised By Details**: Gather information about who raised the request. This can be particularly useful on request types that don't include customers. For example, you may want to include some automation on a change workflow that communicates back to the person who raised the change.
+* **Request Details**: This returns all the key information about a request. This is one of the most-used automations in a request workflow.
+* **Intelligent Capture Answers**: This lets you interrogate the answers that were provided during the capture phase of a request. Make decisions based on the provided answers to drive your workflow. Use the outputs to share the answered questions in an email notification.
+* **Service Details**: Get the details of the associated service. When a request is first raised, you may want to check the status of the service and send an automated email to the customer about the service not being available.
+* **Site Details**: Your workflow may have location-specific responses to an issue. Use the Manager IDs to help communicate issues at a site. You could add the managers as a connection or send them a notification of high-priority incidents.
+* **Team Details**: Get information about the team that the request is currently assigned to. Two useful outputs are the IDs of the team's manager and leader, allowing you to send notifications, escalate, or add as a member.
+
+---
 
 ## Integration
 
@@ -202,6 +220,8 @@ Use the Integration node at any stage of a workflow, where you wish to invoke sp
 * Add Jira Request Comment
 * Log New Service Request
 
+---
+
 ## Linked Requests
 
 Use the Linked Requests node to automatically add, update, and resolve linked requests. Linked requests are those that have been linked using the [Link Request Action](/servicemanager-user-guide/service-portfolio/requests/link-action) on a request form.
@@ -209,16 +229,18 @@ Use the Linked Requests node to automatically add, update, and resolve linked re
 ![Linked Requests Automation](/_books/servicemanager-config/images/workflow-linked-requests.png)
 
 * **Add Linked Request**. This task is designed to link a single request to the request that is running the workflow.  The Request ID of the request to be linked must be available to the workflow. This automates the manual feature provided on the [Link Request Action](/servicemanager-user-guide/service-portfolio/requests/link-action).
-* **Resolve Linked Requests**. This will update the status of the linked requests to *resolved*. This may excluded any request that has outstanding activities. This automates the manual *Resolve Linked Requests* option that is available on the [Resolve and Close](/servicemanager-user-guide/service-portfolio/requests/resolve-and-close-action) request action.
+* **Resolve Linked Requests**. This will update the status of the linked requests to *resolved*. This may exclude any request that has outstanding activities. This automates the manual *Resolve Linked Requests* option that is available on the [Resolve and Close](/servicemanager-user-guide/service-portfolio/requests/resolve-and-close-action) request action.
 * **Update Linked Requests**. This task will add a Timeline update to the linked requests. The update is a string of text that is provided in the `Content` option.
+
+---
 
 ## Log Request
 
-Use the Log Request node to automatically log another request at a particular point in the workflow. This can be used when an additional request is required to fulfill the original request.  For example, an incident might result in the raising of a problem or change request. Another example might be a service request for initiating a new starter.  Additional requests can be raised for different teams or areas within the business to fulfill.
+Use the **Log Request** node type to automatically log another request at a particular point in the workflow. This can be used when an additional request is required to fulfill the original request.  For example, an incident might result in the raising of a problem or change request. Another example might be a service request for initiating a new starter.  Additional requests can be raised for different teams or areas within the business to fulfill.
 
-When a new request is logged, it will be automatically linked to the request from which it was raised.
+![Log Request Automation](/_books/servicemanager-config/customize/workflows/images/log-request-automation.png)
 
-### Before you begin
+### Before adding a Log Request automation
 
 * Make sure that the request type being logged is enabled in the service that the request is being logged under.
 * Make sure that service subscriptions are in place for new requests that require a customer.
@@ -233,8 +255,6 @@ When a new request is logged, it will be automatically linked to the request fro
 1. Under the Entity field select Requests.
 1. Under the Type field select Log Request.
 1. Under the Task field select the type of request to be logged.
-
-![Log New Automation](/_books/servicemanager-config/images/workflow-log-new.png)
 
 ### Available Log Request tasks
 
@@ -266,9 +286,13 @@ Make sure that the new request being logged has all the information required to 
 
 The output of this Hornbill Automation is the ID of the new request.  This can be used within the same workflow to make additional updates to the new request after it has been logged.
 
+---
+
 ## Questions
 
 * Delete Questions
+
+---
 
 ## Request Service
 
@@ -276,13 +300,13 @@ The Request Service automation is used to manage the service that the request is
 
 ![Request Service Automation](/_books/servicemanager-config/images/workflow-request-service.png)
 
-#### Before you begin
+### Before you begin
 
 * Read about the [services automation](/servicemanager-config/customize/workflows/services-automation).
 * This automation can only be used when a request is associated to a Technical Service.
 * Only Business Services will be added when used.
 
-#### Add related services
+### Add related services
 
 A business service can be underpinned by technical services, or an issue with a technical service may impact the services that depend on it.  This task looks at the service under which the request was raised and then links all of the [related services](/servicemanager-user-guide/service-portfolio/services/overview#services) based on a selected type of relationship between the services listed below.
 
@@ -290,17 +314,17 @@ A business service can be underpinned by technical services, or an issue with a 
 * The Request Service depends on the Related Service.
 * The Related Service depends on the Request Service.
 
-#### Add linked service
+### Add linked service
 
 This task allows for a single service to be added to the list of associated services to the request.  Rather than associating all services based on relationship type, this allows for a single service to be linked.
 
-* *Linked Service Option*.  This is a mandatory option that requires the ID of the service that needs to be linked. When set to Manual, a list of services is provided.  When set to Variable, the variable needs to match the [ID of the service](/servicemanager-external-db/tables/h-itsm-services).  
+* *Linked Service Option*. This is a mandatory option that requires the ID of the service that needs to be linked. When set to Manual, a list of services is provided. When set to Variable, the variable needs to match the [ID of the service](/servicemanager-external-db/tables/h-itsm-services).
 
-#### Update service status
+### Update service status
 
-This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on the service that the request has been raised against.The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/servicemanager-user-guide/service-portfolio/services/service-availability#availability-metrics).
+This task allows for the [status](/servicemanager-user-guide/service-portfolio/services/service-availability) to be updated on the service that the request has been raised against. The service status can help both the support staff and users on the portals to identify when a service is impacted or unavailable. The changes in service status can also contribute to the [service availability metrics](/servicemanager-user-guide/service-portfolio/services/service-availability#availability-metrics).
 
-----
+---
 
 ## Suspend
 
@@ -321,15 +345,15 @@ The following options are available when configuring a Suspend automation:
 
 #### Action Focus
 
-This option lets you choose which request action has focus when viewing the request while the workflow is suspended.  This helps to guide users to the area of the request that requires their attention to resume the workflow.
+This option lets you choose which request action has focus when viewing the request while the workflow is suspended. This helps to guide users to the area of the request that requires their attention to resume the workflow.
 
 #### Expiry Period
 
-This option allows you to set a time period for the workflow to be suspended.  If the workflow is still suspended after this time period, the workflow will automatically resume.  This is particularly useful for situations where a request might be waiting for a customer response.  If the customer doesn't respond within the expected time frame, the workflow can automatically continue.
+This option allows you to set a time period for the workflow to be suspended. If the workflow is still suspended after this time period, the workflow will automatically resume. This is particularly useful for situations where a request might be waiting for a customer response.  If the customer doesn't respond within the expected time frame, the workflow can automatically continue.
 
 #### Notices
 
-Notices are displayed at the top of the request form while a workflow is suspended.  This is a great way to provide instructions to users on what they need to do to resume the workflow.  For example, if the workflow is waiting for a priority to be set, the notice could say "Please set the priority of this request to resume processing".  Notices can be added for both internal and external users. Notices are automatically removed once the workflow is resumed.
+Notices are displayed at the top of the request form while a workflow is suspended. This is a great way to provide instructions to users on what they need to do to resume the workflow.  For example, if the workflow is waiting for a priority to be set, the notice could say "Please set the priority of this request to resume processing".  Notices can be added for both internal and external users. Notices are automatically removed once the workflow is resumed.
 
 * **Add Notice**: Select **Yes** to add a notice when the workflow is suspended.
 * **Notice Type**: You can choose between an alert or an information notice. An alert notice is highlighted in red to indicate that attention is required, while an information notice is highlighted in blue to indicate that the user needs to be aware of something.
@@ -374,7 +398,7 @@ Notices are displayed at the top of the request form while a workflow is suspend
 * Wait for Request Update
 * Wait for Urgency Assessment
 
-----
+---
 
 ## Update Request
 
@@ -392,7 +416,7 @@ Use the Update Request node to automatically update the values of specific reque
 
 ### Common options for tasks
 
-Some options are common to all of the Update Request types.  
+Some options are common to all of the Update Request types.
 
 * **Request ID**. In almost all cases this should be set to `Auto`. The Request ID is a predefined input parameter that contains the Request ID of the request that the workflow is associated with.
 
@@ -408,7 +432,7 @@ Some options are common to all of the Update Request types.
 * **Place On Hold**. This automation task will change the status of the request to On Hold.
   * When a request is placed on hold, any active [service level timers](/servicemanager-config/customize/workflows/timer-automation) will be paused until the request is taken off hold.
   * The **On Hold Period** option lets you set a specific number of years, months, days, hours, or minutes that the request will be on hold, unlike the **On Hold Until** option where you set a specific date and time. Only one of these should be used.
-  * The **On Hold Period Apply WTC** option works along side the **On Hold Period** option. Setting this option to *Yes* will [calculate](/hornbill-how-to-guides/calculate-sla-timer#how-to-calculate-timer-targets) the total on hold period using only working hours from the default [working time calendar](/esp-config/customize/working-time-calendars). The default working time calendar is taken from the request's [SLA](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview#details). If the request has no SLA, the working time calendar specified in the *[guest.app.timer.defaultCalendar](/servicemanager-config/advanced-tools-and-settings/application-settings)* setting is used.
+  * The **On Hold Period Apply WTC** option works alongside the **On Hold Period** option. Setting this option to *Yes* will [calculate](/hornbill-how-to-guides/calculate-sla-timer#how-to-calculate-timer-targets) the total on hold period using only working hours from the default [working time calendar](/esp-config/customize/working-time-calendars). The default working time calendar is taken from the request's [SLA](/servicemanager-user-guide/service-portfolio/service-level-agreements/overview#details). If the request has no SLA, the working time calendar specified in the *[guest.app.timer.defaultCalendar](/servicemanager-config/advanced-tools-and-settings/application-settings)* setting is used.
 * **Impact**. This automation for updating the impact of a request uses the impact levels that are defined under the [Impact Assessments](/servicemanager-config/administration/assessment-levels#impact).  Within the Options section of the automation settings, Impact is a mandatory field.  This needs to be set to `Manual` and then an appropriate impact selected.
 * **Priority**. This automation for updating the priority of a request uses the priority levels that are defined under the [Priority Assessments](/servicemanager-config/administration/assessment-levels#priority).  Within the Options section of the automation settings, Priority is a mandatory field.  This needs to be set to `Manual` and then an appropriate priority selected.
 * **Resolution Text**.
