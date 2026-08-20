@@ -212,6 +212,35 @@ Use the Get Request Information node to retrieve request data at any stage in yo
 
 ---
 
+## HAi
+
+The HAi automation brings the power of AI to a request's workflow lifecycle.
+
+![HAi Automation Node Type](/_books/servicemanager-config/customize/workflows/images/hai-automation.png)
+
+### HAi tasks
+
+* **askHAi**: This automation task uses askHAi to generate a output from a message.
+* **askHAi Request Request Details**: This automation task uses askHAi with additional context from the request to generate a output from a message. The following information within a request is analyzed:
+  * Summary and description.
+  * Customer facing request timeline updates.
+  * Intelligent Capture questions and answers.
+  * Customer Feedback questions and answers.
+  * Live Chat transcripts.
+* **Get Sentiment**: This automation task uses HAi to analyze a request's sentiment. When an AI finishes a sentiment analysis, it classifies the emotional tone of the text and sets the sentiment as positive, negative, or neutral.
+* **Summarize Request**: This automation task uses HAi to generate a [request summary](/servicemanager-user-guide/hai/request-summarizer).
+
+### HAi mandatory options
+
+* **Request Id**: The request ID of the problem record to suspend. This is a mandatory field. It is recommended that this be set to **Auto** which will automatically use the request ID of the problem record that is being processed in the workflow. If you select **Manual**, you will need to provide a valid request ID.
+* **Message**: Required for the askHAi automation tasks.
+
+### HAi output
+
+* **Response**: The response provided by HAi which can be used for further automation.  The response is stored in the `&[global["flowcoderefs"]["askHAiRequestDetails"]["response"]]` variable.
+
+---
+
 ## Integration
 
 Use the Integration node at any stage of a workflow, where you wish to invoke specific actions against a third-party application from the available list of applications.
