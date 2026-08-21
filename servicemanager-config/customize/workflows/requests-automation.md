@@ -221,7 +221,7 @@ The HAi automation brings the power of AI to a request's workflow lifecycle.
 ### HAi tasks
 
 * **askHAi**: This automation task uses askHAi to generate a output from a message.
-* **askHAi Request Request Details**: This automation task uses askHAi with additional context from the request to generate a output from a message. The following information within a request is analyzed:
+* **askHAi Request Details**: This automation task uses askHAi with additional context from the request to generate a output from a message. The following information within a request is analyzed:
   * Summary and description.
   * Customer facing request timeline updates.
   * Intelligent Capture questions and answers.
@@ -233,7 +233,7 @@ The HAi automation brings the power of AI to a request's workflow lifecycle.
 ### HAi mandatory options
 
 * **Request Id**: The request ID of the problem record to suspend. This is a mandatory field. It is recommended that this be set to **Auto** which will automatically use the request ID of the problem record that is being processed in the workflow. If you select **Manual**, you will need to provide a valid request ID.
-* **Message**: Required for the askHAi automation tasks.
+* **Prompt**: Required for the askHAi automation tasks.
 
 ### HAi output
 
