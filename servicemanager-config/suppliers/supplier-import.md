@@ -1,7 +1,3 @@
----
-draft: true
----
-
 # Import Suppliers
 
 There are three types of supplier imports that can be performed in Service Manager:

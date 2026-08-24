@@ -1,1 +1,5 @@
+---
+draft: true
+---
+
 # Supplier Permissions

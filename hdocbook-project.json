@@ -20,6 +20,12 @@
         "words": [
           "cancellation"
         ]
+      },
+      {
+        "document_path":"servicemanager-config/suppliers/supplier-contracts-import",
+        "words": [
+          "cancellation"
+        ]
       }
     ]
   },

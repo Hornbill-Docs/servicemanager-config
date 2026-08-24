@@ -21,7 +21,7 @@ You can import supplier contacts into Service Manager using a CSV file. The CSV 
 | Phone Number 3 | Any additional phone number for the supplier contact (32 characters) |
 | Language | The language of the supplier contact, e.g en-GB |
 | Country | The country of the supplier contact, eg. GB |
-| Notes | A freetext field for additional notes about the supplier contact |
+| Notes | A free text field for additional notes about the supplier contact |
 | Status | The status of the supplier contact. Accepted values are (status.active, status.archived). If no value is provided, status.active will be used |
 | Custom 0 | Additional data mapped to custom fields (255 characters) |
 | Custom 1 | Additional data mapped to custom fields (255 characters) |

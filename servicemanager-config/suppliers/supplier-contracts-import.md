@@ -19,7 +19,7 @@ You can import supplier contracts into Service Manager using a CSV file. The CSV
 | Currency | The currency of the supplier contract, e.g. £ or $ |
 | Value | The numerical value of the supplier contract |
 | Acquisition Method | The acquisition method of the supplier contract. Accepted values can be found in the simple list 'Supplier Contract Acquisition Methods' which can be viewed under 'Hornbill Supplier Manager > Simple Lists' |
-| Cancelation Notice Period | The cancelation notice period of the supplier contract |
+| Cancellation Notice Period | The cancellation notice period of the supplier contract |
 | Cost Center | The cost center of the supplier contract |
 | Invoice Number | The invoice number of the supplier contract |
 | Order Number | The order number of the supplier contract |
