@@ -1,4 +1,8 @@
-# HAi Anomaly Detection
+# HAi Detection
+
+## Before you begin
+
+* HAi features are currently in a closed beta. You can only access these features if you are part of the beta program. Contact your Hornbill customer success representative for more information.
 
 ## Details
 
