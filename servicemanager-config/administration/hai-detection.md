@@ -28,7 +28,7 @@ The details section allows you to define the criteria that will be used to ident
 Clustering is the process of grouping similar requests together based on their attributes. This allows HAi to identify patterns and trends in the data, which can be used to detect events.
 
 * **Number of Requests**: The number of requests within a cluster before an event is created.
-* **Automatically Raise Request**: If an event is detected, HAi can automatically raise a request to notify the appropriate team or individual. The request will contain details about the event, including the affected service and any relevant information from the clustered requests.
+* **Automatically Raise Request**: If an event is detected, HAi can automatically raise a request to notify the appropriate team or individual. The request will contain details about the event, including the affected service and any relevant information from the clustered requests. The new request acts as a parent request to the events in the event cluster.
 * **Notify**: If an event is detected, HAi can send a notification to the appropriate team. The notification will contain details about the event, including the affected service and any relevant information from the clustered requests.
 
 ## Raising Request
