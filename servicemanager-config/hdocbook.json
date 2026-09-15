@@ -389,6 +389,16 @@
           {
             "text": "Upload Assets",
             "link": "servicemanager-config/assets/upload-assets"
+          },
+          {
+            "text": "Asset Actions",
+            "link": "servicemanager-config/assets/asset-actions",
+            "draft": true
+          },
+          {
+            "text": "Asset Global Search",
+            "link": "servicemanager-config/assets/asset-global-search",
+            "draft": true
           }
         ]
       },
