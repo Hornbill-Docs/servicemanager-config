@@ -4,7 +4,7 @@ draft: true
 
 # Asset Actions
 
-Asset Actions are configurable buttons that appear on asset records. When a user selects one, it can open a URL in a new tab, trigger an Autotask process, or open a URL inside a popup window — all within the context of the asset being viewed, with the asset's own field values available as variables inside URLs and messages.
+Asset Actions are configurable buttons that appear on asset records. When a user selects one, it can open a URL in a new tab, trigger an Auto Task process, or open a URL inside a popup window — all within the context of the asset being viewed, with the asset's own field values available as variables inside URLs and messages.
 
 ## Before you begin
 
@@ -108,7 +108,7 @@ The action form — both the inline partition panel editor and the full-page edi
 | Scope | Shown when creating a new action. Select **Partition** or **Class**; for Class, also select the asset class from the dropdown that appears. Read-only when editing an existing action. |
 | Label *(required unless an icon is set)* | The text shown on the button. |
 | Description | Text shown when a user hovers over the button. Optional but recommended for less obvious actions. |
-| Button Style | The colour style for the button: Default (grey), Primary (blue), Success (green), Danger (red), Warning (yellow), Info (light blue). |
+| Button Style | The color style for the button: Default (gray), Primary (blue), Success (green), Danger (red), Warning (yellow), Info (light blue). |
 | Icon | A FontAwesome icon displayed alongside the button label, chosen using the icon picker. Optional. |
 
 ### Action
@@ -140,16 +140,16 @@ If the URL does not include a protocol (`://`), `http://` is automatically prepe
 
 The optional **Activity Message** field (under Options) allows a note to be written to the asset's activity stream each time this action is triggered. The message supports variable tokens and is written after the URL is opened.
 
-### Autotask
+### Auto Task
 
-Triggers a BPM Autotask process when the user selects the button. The asset's URN is automatically passed as the `objectRefUrn` input parameter so the autotask knows which asset it is operating on.
+Triggers an Auto Task when the user selects the button. The asset's URN is automatically passed as the `objectRefUrn` input parameter so the Auto Task knows which asset it is operating on.
 
 | Setting | Description |
 | :--- | :--- |
-| Autotask Name *(required)* | The exact name of the Autotask process to trigger. Select from the dropdown list of available processes. |
-| Open popup with autotask progress | Shows a modal window that tracks the Autotask as it runs, matching the progress view shown by the existing Custom Buttons feature. |
-| Display autotask progress in timeline | Posts a link to the started Autotask in the asset's activity stream, giving a record of when the action was triggered. |
-| Prompt for confirmation before running | Shows a confirmation prompt before the Autotask starts. You can customize the prompt text (for example, *"Are you sure you want to retire this asset?"*). |
+| Auto Task Name *(required)* | The exact name of the Auto Task process to trigger. Select from the dropdown list of available processes. |
+| Open popup with Auto Task progress | Shows a modal window that tracks the Auto Task as it runs, matching the progress view shown by the existing Custom Buttons feature. |
+| Display Auto Task progress in timeline | Posts a link to the started Auto Task in the asset's activity stream, giving a record of when the action was triggered. |
+| Prompt for confirmation before running | Shows a confirmation prompt before the Auto Task starts. You can customize the prompt text (for example, *"Are you sure you want to retire this asset?"*). |
 | Additional input parameters | A table of extra key/value pairs passed as BPM input parameters alongside the standard asset fields. Values support `{{fieldName}}` variable tokens. Parameters named `objectRefUrn`, `entityApp`, `entityId`, or `entityName` are reserved and are always provided automatically — do not add them here. |
 
 ### Popup
