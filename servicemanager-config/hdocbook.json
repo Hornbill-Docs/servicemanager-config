@@ -396,16 +396,7 @@
             "link": "servicemanager-config/assets/upload-assets"
           },
           {
-<<<<<<< Updated upstream
-            "text": "Asset Actions",
-            "link": "servicemanager-config/assets/asset-actions",
-            "draft": true
-          },
-          {
             "text": "Global Search Settings",
-=======
-            "text": "Asset Global Search",
->>>>>>> Stashed changes
             "link": "servicemanager-config/assets/asset-global-search",
             "draft": true
           }
