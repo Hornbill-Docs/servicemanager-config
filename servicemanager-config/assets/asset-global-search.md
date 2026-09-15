@@ -2,9 +2,9 @@
 draft: true
 ---
 
-# Asset Global Search
+# Asset global search settings
 
-The Assets search in the top navigation bar can be configured to search a set of fields you choose, rather than a fixed list, and can optionally match against asset tags and archived assets. Search behavior is set globally by an administrator, and can be overridden by users for a single search using the advanced search options.
+Administrators can configure the Assets search in the top navigation bar to target specific fields and include asset tags or archived assets. These global settings establish the default behavior for all users, though users can override these defaults for individual searches using advanced search options.
 
 ![Global Search](/_books/servicemanager-config/assets/images/asset-global-search.png)
 
@@ -12,40 +12,55 @@ The Assets search in the top navigation bar can be configured to search a set of
 
 * The **Asset Management Admin** role is required to configure global search settings.
 * Know how to access the [Service Manager Configuration](/servicemanager-config/index#access-service-manager-configuration).
-* Understand how [asset classes, types, and categories are structured](/servicemanager-config/assets/overview#asset-structure) — only fields on the base asset record can be added to the search.
+* Understand how [asset classes, types, and categories are structured](/servicemanager-config/assets/overview#asset-structure).
 
-## Accessing global search settings
+## Access global search settings
 
-To configure which fields and asset states the Assets search uses, navigate to **Configuration > Service Manager > Assets > Global Search Settings**.
+1. Open **Configuration**.
+2. Navigate to **Service Manager** > **Assets** > **Global Search Settings**.
 
-## Global search settings view
+## Configure search options
 
-The Global Search Settings view is broken down into two sections. The **Search options** section controls whether tags and archived assets are matched by default. The **Fields to search** section controls which asset fields are matched.
+The **Search options** section determines the default scope of the search. Both options are disabled by default.
 
-Changes in both sections save automatically — there is no separate save action.
+![Global Search Options](/_books/servicemanager-config/assets/images/asset-global-search-options.png)
 
-![Global Search Settings](/_books/servicemanager-config/assets/images/asset-global-search-settings.png)
+1. Select **Also search asset tags** to match search terms against the names of tags attached to assets.
+2. Select **Also search archived assets** to include archived assets and assets belonging to archived types in search results.
 
-### Search options
+## Manage fields to search
 
-* **Also search asset tags:** When enabled, a search also matches against the names of tags attached to an asset, not just its own fields.
-* **Also search archived assets:** When enabled, archived assets — and assets of an archived type — are included in search results. When disabled, they're excluded by default.
+The **Fields to search** section defines which specific asset record fields the system matches against a search term. The system saves changes to this list automatically.
 
-Both options are off by default.
+![Global Search Fields](/_books/servicemanager-config/assets/images/asset-global-search-fields.png)
 
-### Fields to search
+### Add a field
 
-The field list shows every field currently included in the search, in a table with a remove control alongside each one.
+1. Select **Add field**.
+2. From the list of available text-based fields, select the checkboxes for the fields you want to include.
+3. Select **Add**.
 
-* **Add field:** Opens a list of the fields available to add, drawn from the base asset record. Only fields suited to free-text search are offered — identifiers, names, descriptions, and similar text fields — not coded or numeric fields such as operational state. Tick any number of fields and select **Add** to confirm.
-![Global Search Add Field](/_books/servicemanager-config/assets/images/asset-global-search-add-field.png)
-* **Remove a field:** Select the bin icon next to a field in the list.
-* **Field limit:** The list accepts a maximum of **10 fields**, shown as a count next to the section heading (for example, `7/10`). Remove a field before adding another once the limit is reached.
-* **Revert to Default:** Restores the built-in default field list and switches both search options off.
+> **Note:** The system only supports text-based fields (such as identifiers, names, and descriptions) for global search. It excludes numeric or coded fields like operational state.
 
-::: note
-The built-in default searches **Asset ID**, **Name**, **Description**, **Class**, **Owned by**, **Used by**, and **Asset Tag**, with both search options off.
-:::
+### Remove a field
+
+1. Locate the field in the list.
+2. Select the **Bin** icon next to the field name.
+
+### Field constraints and defaults
+
+* **Field limit:** You can add a maximum of 10 fields. The current count appears next to the section heading (for example, `7/10`). You must remove a field before adding another if you reach the limit.
+* **Revert to Default:** Select this option to restore the default field list and disable both search options.
+
+The default configuration includes the following fields:
+
+* **Asset ID**
+* **Name**
+* **Description**
+* **Class**
+* **Owned by**
+* **Used by**
+* **Asset Tag**
 
 ## How users search for assets
 
