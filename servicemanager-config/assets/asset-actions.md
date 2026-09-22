@@ -4,15 +4,15 @@ draft: true
 
 # Asset Actions
 
-Asset Actions are configurable buttons that appear on asset records. When a user selects one, it can open a URL in a new tab, trigger an Auto Task process, or open a URL inside a popup window — all within the context of the asset being viewed, with the asset's own field values available as variables inside URLs and messages.
+Asset Actions are configurable buttons that appear on asset records. When selected, an action can open a URL in a popup or a new tab or they can trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
+
+> **Note:** Asset actions replace the existing [asset custom buttons](/servicemanager-user-guide/asset-management/asset-details#custom-buttons) providing a more centralized configuration and to make use of asset partitions.
 
 ## Before you begin
 
-* The **Asset Management Admin** role is required to configure Asset Actions.
+* The [Asset Management Admin](/servicemanager-config/setup/service-manager-roles#asset-management-roles) role is required to configure Asset Actions.
 * Know how to access the [Service Manager Configuration](/servicemanager-config/index#access-service-manager-configuration).
-* Understand how [asset partitions](/servicemanager-config/assets/manage-partitions) and [asset types](/servicemanager-config/assets/manage-asset-types) are structured — actions are scoped to a partition, a class within a partition, or a single asset type.
-
-Asset Actions are enabled and managed **per partition**. When enabled for a partition, Asset Actions replace the legacy Custom Buttons feature for asset records within that partition. Each partition's actions are configured independently.
+* Understand how [asset partitions](/servicemanager-config/assets/manage-partitions) and [asset types](/servicemanager-config/assets/manage-asset-types) are structured.
 
 ## Action scope
 
