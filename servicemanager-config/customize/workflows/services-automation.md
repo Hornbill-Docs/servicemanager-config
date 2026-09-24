@@ -10,6 +10,7 @@ The Services Automation lets you define tasks that are related to the Service en
 * Read about the [request service automation](/servicemanager-config/customize/workflows/requests-automation#request-service).
 * Read about [service bulletins](/servicemanager-user-guide/service-portfolio/services/service-bulletins).
 
+---
 ## Bulletin
 
 Service bulletins can be displayed on the Employee and Customer portals under the service pages that they relate to. The Employee Portal can also use the [Bulletins widget](/esp-config/customize/employee-portal/employee-portal-widgets#bulletins-widget) to display these.
@@ -52,6 +53,8 @@ If the provided bulletin ID belongs to a translated version, only that specific 
 
 * **Outcome** - The operation outcome (success | failure).
 
+---
+
 ### Update
 
 This workflow operation is responsible for updating an existing bulletin.
@@ -77,6 +80,8 @@ Passing a valid but unsupported language code will make the bulletin inaccessibl
 
 * **Outcome**. The operation outcome (success|failure).
 
+---
+
 ## Update related services
 
 ### Status
@@ -96,3 +101,59 @@ The service status can help both the support staff and users on the portals to i
 :::tip
 The related services do not need to be added as a related service on the request for the status to be updated.
 :::
+
+---
+
+## Update the status of services by service ID
+
+This workflow operation updates the status and status message of one or more services, identified by their service ID.
+
+The service does not need to be the service of a request, or be linked to a request in any way. This makes the operation suitable for major incident and service status workflows, where the services affected are chosen during the process, for example by an analyst during Intelligent Capture or through a task.
+
+The status set by this operation is the same service status that can be changed manually from the service in the Service Portfolio. It is shown to analysts and to service subscribers on the portals, and changes in status contribute to the service [availability metrics](/servicemanager-user-guide/service-portfolio/services/service-availability#availability-metrics).
+
+#### Options
+
+* **Service(s)** - This is a mandatory input. It determines which services are updated.
+  * When set to **Manual**, a list of the services you can access in the Service Portfolio is provided. For administrators this includes services that are in the pipeline or retired. Each service is shown with its name followed by its ID, for example `HR Service (ID:1001)`, so services with the same name can be told apart. One service can be selected.
+  * To update more than one service, or to use a value captured earlier in the workflow, set this input to **Variable**. The value can be a single service ID, a list of service IDs separated by commas, for example `1001,1002,1003`, or the answer of a checkbox field that holds service IDs.
+  * Always use the service ID shown in the Service Portfolio. Service names are not accepted.
+* **Status** - This is a mandatory input. The status to apply to every service supplied. The available statuses are taken from the service status list, including any custom statuses that have been added to it.
+* **Status Message** - An optional message describing the status, which is shown alongside the status. If no message is provided, the default message for the selected status is used, for example "This Service is currently Unavailable". Custom statuses do not have a default message, so a message is recommended when using one.
+
+#### Outputs
+
+* **Outcome** - The outcome of the operation (success | failure). The outcome is `failure` when no service could be updated, or when the status provided is missing or not recognized.
+* **Services Updated Count** - The number of services that now have the requested status and message. This includes services that already had them.
+* **Error Message** - A list of the service IDs that could not be updated, with the reason, for example when a service ID does not exist.
+
+#### How the operation behaves
+
+* **Services already in the requested state** are left as they are. They are still counted in the Services Updated Count, and no change is recorded against them.
+* **Changing only the message** of a service that already has the requested status updates the message. As the status itself has not changed, no new entry is added to the service availability data.
+* **Leaving the Status Message empty** always applies the default message for the status. If a service currently shows a custom message and the same status is applied again without a message, the custom message is replaced by the default message.
+* **Service IDs that cannot be found** are skipped and listed in the Error Message output. The remaining services are still updated.
+* **Duplicate service IDs** in the same list are only updated once.
+* **When nothing is supplied** in the Service(s) input, no service is updated and the outcome is `success`.
+* **Services in other languages.** The status belongs to the service rather than to a translation, so the same status and message are shown to users in every language.
+
+:::tip
+The same status is applied to every service supplied to one operation. To set different statuses on different services, for example one service Impacted and another Unavailable, add one operation for each status.
+:::
+
+:::tip
+Use the Outcome and Error Message outputs in a decision node to notify someone, or to take another path in the workflow, when a service could not be updated.
+:::
+
+:::note
+A page that is already open, such as a service in the Service Portfolio, shows the new status after it is refreshed.
+:::
+
+#### Example: major incident workflow
+
+1. When a major incident is raised, the analyst selects the impacted service in Intelligent Capture.
+2. A **Status > Update** operation uses the captured service to set its status to **Unavailable**, with a message such as "Engineers are investigating. Next update in 30 minutes."
+3. A recurring human task lets the analyst add further affected services as the incident develops, each one updated by another **Status > Update** operation.
+4. When the incident is resolved, a final **Status > Update** operation sets the same services back to **Available**, which restores the default message.
+
+Throughout the incident, the status and message are shown on the portals to users of the affected services, and the time spent in each status is recorded in the service availability metrics.
