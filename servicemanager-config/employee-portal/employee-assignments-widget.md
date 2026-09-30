@@ -1,8 +1,8 @@
-# Employee Assignments Widget
+# Assignments for Managed Employees Widget
 
-The Employee Assignments widget is part of the [People Hub for NHS Trusts](https://www.hornbill.com/solutions/nhs-hrsm/) solution and is available to registered users
+The Assignments for Managed Employees widget is part of the [People Hub for NHS Trusts](https://www.hornbill.com/solutions/nhs-hrsm/) solution and is available to registered users
 
-The Employee Assignments widget gives managers a view of employee assignment records for people they supervise. It is intended for Employee Portal pages where a manager needs quick access to assignment details such as position, department, FTE, assignment category, status, and assignment end date.
+This widget gives managers a view of employee assignment records for people they supervise. It is intended for Employee Portal pages where a manager needs quick access to assignment details such as position, department, FTE, assignment category, status, and assignment end date.
 
 ![Employee Assignments widget screenshot](/_books/servicemanager-config/employee-portal/images/employee-assignments-widget.png)
 

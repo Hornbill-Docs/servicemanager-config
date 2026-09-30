@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.24.0",
+  "version": "1.25.0",
   "audience": [
     "public"
   ],
@@ -499,7 +499,11 @@
                 "link": "servicemanager-config/employee-portal/employees-widget"
               },
               {
-                "text": "Employee Assignments Widget",
+                "text": "Department Widget",
+                "link":"servicemanager-config/employee-portal/department-widget"
+              },
+              {
+                "text": "Assignments for Managed Employees Widget",
                 "link": "servicemanager-config/employee-portal/employee-assignments-widget"
               }
             ]
