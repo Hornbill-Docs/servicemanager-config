@@ -2,9 +2,11 @@
 draft: true
 ---
 
-# Asset Actions
+# Common Asset Actions
 
-Asset Actions are configurable buttons that appear on asset records. When selected, an action can open a URL in a popup or a new tab or they can trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
+Asset Actions are configurable buttons that appear on asset records. When selected, an action can open a URL in a popup or in a new browser tab, or they can trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
+
+The Common Asset Actions is a collection of asset actions that are available for the selected partition. Rather than creating an asset action for each asset type, you can create a single asset action and link it to multiple asset types.
 
 > **Note:** Asset actions replace the existing [asset custom buttons](/servicemanager-user-guide/asset-management/asset-details#custom-buttons) providing a more centralized configuration and to make use of asset partitions.
 
@@ -16,7 +18,7 @@ Asset Actions are configurable buttons that appear on asset records. When select
 
 ## Action scope
 
-There are three kinds of action, each with a different scope. All three use the same configuration form — the difference is where you create them and what scope they are assigned. Scope is set when an action is created and cannot be changed afterwards.
+There are three kinds of scope. All three use the same configuration form — the difference is where you create them and what scope they are assigned. Scope is set when an action is created and cannot be changed afterwards.
 
 * **Partition-scoped actions:** Belong to the partition and can be linked to any asset type within it, regardless of class. Created and managed from the Asset Actions panel inside Manage Asset Types. These are sometimes called *common actions* because they are shared across multiple types. Use this scope for actions that should be available across many or all types in the partition.
 * **Class-scoped actions:** Belong to the partition and a specific asset class (for example, Computer or Software). They can only be linked to types of that class within the partition. Use this scope when an action only makes sense for a particular kind of asset.

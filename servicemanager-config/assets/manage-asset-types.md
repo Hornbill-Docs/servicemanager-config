@@ -113,6 +113,14 @@ For each field, on a per Asset Type basis, you can configure:
 * **Mandatory / Read-only / Visible**. Whether the field is required, locked, or shown at all for a given Asset Type.
 * **Layout position**. Where the field appears on the asset form.
 
+## Actions
+
+Asset Actions tab contains configurable buttons that appear on asset records. When selected, an action on an asset can open a URL in a popup or in a new browser tab, or they can trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
+
+### Adding an action
+
+You can create a new action using the `+ Add` button or you can select an existing action from the [Common Asset Actions](/servicemanager-config/assets/common-asset-actions).
+
 ## Archiving asset types and assets
 
 Archiving helps you manage your asset library by restricting access to older items and preventing the creation of new assets in archived types.

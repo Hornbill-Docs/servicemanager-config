@@ -365,8 +365,8 @@
                 "link": "servicemanager-config/assets/asset-types-overview"
               },
               {
-                "text": "Asset Actions",
-                "link": "servicemanager-config/assets/asset-actions",
+                "text": "Common Asset Actions",
+                "link": "servicemanager-config/assets/common-asset-actions",
                 "draft": true
               },
               {
