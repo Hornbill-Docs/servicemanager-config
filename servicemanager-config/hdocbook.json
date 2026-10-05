@@ -507,6 +507,11 @@
                 "link": "servicemanager-config/employee-portal/employee-assignments-widget"
               }
             ]
+          },
+          {
+            "text": "Request Catalog",
+            "link": "servicemanager-config/employee-portal/request-catalog",
+            "draft": true
           }
         ]
       },
