@@ -128,6 +128,36 @@ An email can be sent to a customer of a request when their request is either [pl
 * The default is `OFF`
 * When this setting is `ON`, the resolve by date/time is displayed in the right-hand information box of a request when viewed by a user on the Employee Portal or a customer on the Customer Portal.
 
+`guest.app.selfService.requestCatalog.enabled`
+
+* The default is `OFF`.
+* When this setting is `ON` the Request Catalog view is available in the Employee Portal.
+
+`guest.app.selfService.requestCatalog.grouping`
+
+* The default is `Service`
+* Determines how catalog items are grouped in the left hand menu of the Employee Portal Request Catalog view. All Requests is always shown as the first option regardless of this setting.  Options include Service, ServiceCategory, and ServiceDomain.
+
+`guest.app.selfService.requestCatalog.requestType.changeRequest`
+
+* The default setting for this is `OFF`.
+* When set to `ON`, Change Request catalog items are included in the Employee Portal Request Catalog view. Has no effect unless **guest.app.selfService.requestCatalog.enabled** is on, and unless **guest.servicemanager.portal.additionalRequestTypes.change** is also on, which governs whether Change Requests are available through the portals at all.
+
+`guest.app.selfService.requestCatalog.requestType.incident`
+
+* The default setting for this is `ON`.
+* When set to `ON`, Incident catalog items are included in the Employee Portal Request Catalog view. Has no effect unless guest.app.selfService.requestCatalog.enabled is on.
+
+`guest.app.selfService.requestCatalog.requestType.serviceRequest`
+
+* The default setting for this is `ON`.
+* When set to `ON`, Service Request catalog items are included in the Employee Portal Request Catalog view. Has no effect unless **guest.app.selfService.requestCatalog.enabled** is on.
+
+`guest.app.selfService.requestCatalog.viewMode`
+
+* The default setting for this is `Services`.
+* Additional options include `ServiceCategories` and `ServiceDomains`. This setting determines how catalog items are displayed in the Employee Portal Request Catalog view. Has no effect unless **guest.app.selfService.requestCatalog.enabled** is on.
+
 ## Intelligent Capture settings
 
 ### Service Manager forms
@@ -243,7 +273,6 @@ The `Raise New` button can be configured to only show the Raise New option or ju
 * When this setting is `OFF`, the *Questions* section on request forms will be collapsed by default, and users can expand it to view the questions and answers.
 * When this setting is `ON`, the *Questions* section on request forms will always stay expanded.
 
-
 ## Knowledge Center settings
 
 This feature allows agents and customers to be presented with relevant knowledge when using Intelligent Capture in the user app and the Customer and Employee Portals,respectively.
@@ -320,25 +349,27 @@ The entities currently shown in the diagram are Asset, Colleagues, Contact, Atta
 
     This works the same way for other entities. Any missing value will default to the list in `defs.default`.
 
-    >"defs" : {<br>
-"set1" : ["Connected To", "Depends On", "Installed On"],<br>
-"set2" : ["Connected To", "Depends On", "Installed On"],<br>
-"default" : ["Connected To", "Depends On", "Installed On"]<br>
-         }<br>
-"FromAssetToRequests" : "set1",<br>
-"FromRequestsToAsset" : "set2",<br>
-"FromAssetToServices" : "set2",<br>
-"AssetFromParentToChild" : "set2",<br>
-"AssetFromChildToParent" : "set2"<br>
-app.cm.explorer.items.inPolicy<br>
-{{{2}}}<br>
-"Asset" : true,<br>
-"Colleagues" : true,<br>
-"Contact" : true,<br>
-"Attachment" : true,<br>
-"Requests" : true,<br>
-"Services" : true,<br>
-"default" : true<br>
+```text
+    >"defs" : {
+"set1" : ["Connected To", "Depends On", "Installed On"],
+"set2" : ["Connected To", "Depends On", "Installed On"],
+"default" : ["Connected To", "Depends On", "Installed On"]
+         }
+"FromAssetToRequests" : "set1",
+"FromRequestsToAsset" : "set2",
+"FromAssetToServices" : "set2",
+"AssetFromParentToChild" : "set2",
+"AssetFromChildToParent" : "set2"
+app.cm.explorer.items.inPolicy
+{{{2}}}
+"Asset" : true,
+"Colleagues" : true,
+"Contact" : true,
+"Attachment" : true,
+"Requests" : true,
+"Services" : true,
+"default" : true
+```
 
 ## Connections settings
 
