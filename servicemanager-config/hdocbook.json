@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.25.0",
+  "version": "1.26.0",
   "audience": [
     "public"
   ],
@@ -366,8 +366,7 @@
               },
               {
                 "text": "Common Asset Actions",
-                "link": "servicemanager-config/assets/common-asset-actions",
-                "draft": true
+                "link": "servicemanager-config/assets/common-asset-actions"
               },
               {
                 "text": "Categories",

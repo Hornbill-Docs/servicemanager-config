@@ -1,5 +1,5 @@
 ---
-draft: true
+layout: article-toc
 ---
 
 # Common Asset Actions
