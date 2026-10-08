@@ -8,16 +8,16 @@ layout: article-toc
 
 ![General tab](/_books/servicemanager-config/assets/images/assets-general-tab.png)
 
-In the General tab, you can set some of the basic information about the asset type and choose an icon or upload a custom image the will be used for all assets of this type.
+In the General tab, you can set some of the basic information about the asset type and choose an icon or upload a custom image that will be used for all assets of this type.
 
-* **Name**. The name of the asset that will be displayed everywhere assets are used.
+* **Name**. The name of the asset type that will be displayed everywhere assets are used.
 * **Category**. The category for this asset type.
 * **Description**. A description of this asset type.
-* **Preferred SLA**: The preferred Service Level Agreement (SLA) for this asset type. This is the SLA that will be used when raising a request for an asset of this type.
+* **Preferred SLA**. The preferred Service Level Agreement (SLA) for this asset type. This is the SLA that will be used when raising a request for an asset of this type.
 
 ### Asset Card customization
 
-The Asset Card is a like a business card that you can design for your asset. Key information of your choice can be added to the card. The defined asset card will appear on all assets defined under this asset type.
+The Asset Card is like a business card that you can design for your asset. Key information of your choice can be added to the card. The defined asset card will appear on all assets defined under this asset type.
 
 Here is an example of a summary card for an asset of the asset type Printer:
 
@@ -28,10 +28,10 @@ Where is the asset card displayed?
 * When viewing an [asset detail record](/servicemanager-user-guide/asset-management/asset-details).
 * When an asset is selected in the [Configuration Item Explorer](/servicemanager-user-guide/configuration-management/configuration-item-explorer).
 
-There are options to customize the Summary Card and the Wide Summary card. The **Summary Card Editor** accepts HTML. Here you can include the values held in class custom fields. The syntax for this is:
+There are options to customize the Summary Card and the Wide Summary Card. The **Summary Card Editor** accepts HTML. Here you can include the values held in class custom fields. The syntax for this is:
 
 * For common custom fields use `{{general.h_custom_char1}}`, replacing `char1` with the term in the custom field.
-* For class specific fields use `{{extended.h_custom_ext_char1}}`, replacing `char1` with the term in the custom field.
+* For class-specific fields use `{{extended.h_custom_ext_char1}}`, replacing `char1` with the term in the custom field.
 
 To help you add the correct fields, a dropdown menu appears as you type the variable name in the editor, as this screenshot shows:
 
@@ -47,7 +47,7 @@ When using the Summary Card Editor to customize asset summary cards, use *only* 
 
 ![Summary Fields tab](/_books/servicemanager-config/assets/images/assets-summary-fields-tab.png)
 
-Go to the Summary Fields tab to choose the fields that a user sees when viewing an asset in the Summary view. The focus of an asset is put on this summary information when a user clicks on an asset in the asset list. You can customize the list of Summary fields so as to highlight the most important or most used fields for this type of asset.
+Go to the Summary Fields tab to choose the fields that a user sees when viewing an asset in the Summary view. The focus of an asset is put on this summary information when a user clicks on an asset in the asset list. You can customize the list of Summary fields so as to highlight the most important or most-used fields for this type of asset.
 
 Choose between a one-column or two-column layout of the fields. Use the **Quick Layout** button to choose to use default fields or legacy fields. Using legacy fields means Hornbill will read in your asset fields from your existing implementation.
 
@@ -56,6 +56,7 @@ Here is an example of a Summary view for an asset of the asset type Printer, usi
 ![Fields in an asset's Summary view](/_books/servicemanager-config/assets/images/summary-view-of-asset.png)
 
 Here is the Summary view of the same asset, with fields configured in a two-column layout:
+
 ![Fields in an asset's Summary view, two-column layout](/_books/servicemanager-config/assets/images/summary-view-of-asset-2-column.png)
 
 ## Detail fields
@@ -82,7 +83,7 @@ Here is an example of a New Asset dialog when creating an asset of the asset typ
 
 Go to the List Fields tab to choose the fields that a user sees when viewing the list of assets in an asset type. You can drag the columns to change the order in which they appear in the list. Click the eye icon to toggle the columns from visible to hidden.
 
-Here is an example of a what a users sees when viewing the list of assets by the asset type Printer:
+Here is an example of what a user sees when viewing the list of assets by the asset type Printer:
 
 ![List view when viewing by asset type](/_books/servicemanager-config/assets/images/list-view-for-asset-type.png)
 
@@ -92,9 +93,9 @@ Here is an example of a what a users sees when viewing the list of assets by the
 
 ## Custom fields
 
-On the Summary, Create, Details and List tabs you can add common fields and class specific fields. Common fields include the [Common Custom Fields](/servicemanager-config/assets/custom-fields), which are managed separately and shared across all assets. Class specific custom fields can be added from the classes fields drop down.
+On the Summary Fields, Create Fields, Details Fields, and List Fields tabs, you can add common fields and class-specific fields. Common fields include the [Common Custom Fields](/servicemanager-config/assets/custom-fields), which are managed separately and shared across all assets. Class-specific custom fields can be added from the class fields dropdown.
 
-Each Asset Type gives you a set of class specific custom fields that you can configure without any development work. These fields already exist behind the scenes for every asset class (e.g. Computer, Printer, Mobile Device); you are labeling and switching on the ones you want to use, not creating new fields.
+Each Asset Type gives you a set of class-specific custom fields that you can configure without any development work. These fields already exist behind the scenes for every asset class (e.g. Computer, Printer, Mobile Device); you are labeling and switching on the ones you want to use, not creating new fields.
 
 Each asset class provides the following custom fields:
 
@@ -115,7 +116,7 @@ For each field, on a per Asset Type basis, you can configure:
 
 ## Actions
 
-Asset Actions tab contains configurable buttons that appear on asset records. When selected, an action on an asset can open a URL in a popup or in a new browser tab, or they can trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
+The Actions tab contains configurable buttons that appear on asset records. When selected, an action on an asset can open a URL in a popup or in a new browser tab, or trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
 
 Navigate to **Manage Types**, select a type, and select the **Actions** tab.
 
@@ -129,7 +130,7 @@ Navigate to **Manage Types**, select a type, and select the **Actions** tab.
 Select **Add**. A dropdown appears with three options:
 
 * **Create Action** — opens the action configuration popup. Fill in the form and save to create a new action that belongs exclusively to this asset type.
-* **Link Common Actions** — opens a picker showing common actions that can be linked to this type. The list is filtered automatically to only show partition-scoped actions belonging to this type's partition, and class-scoped actions whose class matches this type's class. Actions from other partitions or that belong to a different class are never shown. Select one or more and select **Link Selected**. A progress bar tracks the operation when linking multiple actions.
+* **Link Common Actions** — opens a picker showing [common actions](/servicemanager-config/assets/common-asset-actions) that can be linked to this type. The list is filtered automatically to only show partition-scoped actions belonging to this type's partition, and class-scoped actions whose class matches this type's class. Actions from other partitions or that belong to a different class are never shown. Select one or more and select **Link Selected**. A progress bar tracks the operation when linking multiple actions.
 * **Add Group** — prompts for a group name and creates a new action group.
 
 ### Editing an action on a type
@@ -178,13 +179,13 @@ Archiving helps you manage your asset library by restricting access to older ite
 
 When you archive an item, the system does not delete any data. Instead, it changes the state of the assets to archived.
 
- When you archive assets, you can select specific asset state groups and sub states to include. The system does not affect any groups you do not select.
+When you archive assets, you can select specific asset state groups and sub states to include. The system does not affect any groups you do not select.
 
 To archive asset types and their associated assets, select the archive button that appears when an asset type is selected in the left-hand menu, as highlighted here:
 
 ![asset type archive button](/_books/servicemanager-config/assets/images/asset-type-archive.png)
 
-When an asset type is archived, this becomes the unarchive button.
+When an asset type is archived, this button becomes the **Unarchive** button.
 
 ### Archive an asset type
 

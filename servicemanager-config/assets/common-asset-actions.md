@@ -4,25 +4,24 @@ draft: true
 
 # Common Asset Actions
 
-Asset Actions are configurable buttons that appear on asset records. When selected, an action can open a URL in a popup or in a new browser tab, or they can trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
+Asset Actions are configurable buttons that appear on asset records. When selected, an action can open a URL in a popup or in a new browser tab, or trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
 
-The Common Asset Actions is a collection of asset actions that are available for the selected partition. Rather than creating an asset action for each asset type, you can create a single asset action and link it to multiple asset types.
+Common Asset Actions is a collection of asset actions that are available to the selected partition. Rather than creating an asset action for each asset type, you can create a single asset action and link it to multiple asset types.
 
-> **Note:** Asset actions replace the existing [asset custom buttons](/servicemanager-user-guide/asset-management/asset-details#custom-buttons) providing a more centralized configuration and to make use of asset partitions.
+> **Note:** Asset actions replace the existing [asset custom buttons](/servicemanager-user-guide/asset-management/asset-details#custom-buttons), providing a more centralized configuration that makes use of asset partitions.
 
 ## Before you begin
 
 * The [Asset Management Admin](/servicemanager-config/setup/service-manager-roles#asset-management-roles) role is required to configure Asset Actions.
 * Know how to access the [Service Manager Configuration](/servicemanager-config/index#access-service-manager-configuration).
 * Understand how [asset partitions](/servicemanager-config/assets/manage-partitions) and [asset types](/servicemanager-config/assets/manage-asset-types) are structured.
+* Read about adding Asset Actions to [individual asset types](/servicemanager-config/assets/manage-asset-types#actions).
 
 ## Enabling Asset Actions
 
 Asset Actions must be enabled separately for each partition. Until enabled, the feature is inactive and [Custom Buttons](/servicemanager-user-guide/asset-management/asset-details#custom-buttons) continue to appear for assets in that partition.
 
 ![Enable Asset Actions](/_books/servicemanager-config/assets/images/asset-actions-enable.png)
-
-**To enable Asset Actions for a partition:**
 
 1. Navigate to **Configuration > Service Manager > Assets > Manage Types**.
 1. Select the partition you want to enable Asset Actions for.
@@ -36,14 +35,13 @@ Once enabled for a partition, Asset Actions are rendered in place of Custom Butt
 
 ## Creating a common action
 
-Start by selecting the partition where you want to create the action. Below the partition name, select the Common Asset Actions panel
+Start by selecting the partition where you want to create the action. Below the partition name, select **Common Asset Actions**.
 
 1. In the Common Asset Actions panel, select **+ Add Action**.
-1. The details form opens. Set the scope (see [Action scope](#scope)), then fill in the display fields, action type settings, and options.
+1. The details form opens. Set the [scope](#scope), then fill in the [display](#display) fields, [action](#action) type settings, and [options](#options).
 1. Select **Save**. The action is created and appears in the list.
-1. The action now exists but is not linked to any asset types. Go to the relevant asset type's **Actions** tab and use **Add > Link Common Action** to link it, or select **Edit** on the action and use the **Linked Types** tab to link it to one or more types.
 
-> **Note**: After saving, an action does not appear on any asset records until it is linked to one or more asset types.
+> **Note**: After saving, an action does not appear on any asset records until it is [linked](#linking-actions-to-asset-types) to one or more asset types.
 
 ### Scope
 
@@ -51,15 +49,15 @@ The scope determines where the action can be used. The scope can only be set whe
 
 * **Partition**: These actions belong to the entire partition and can be linked to any asset type within it, regardless of class. Use this scope for actions that should be available across many or all asset types in the partition.
 
-* **Class**: These actions belong to a specific class within the partition. They can only be linked to types of that class within the partition. Use this scope when an action only makes sense for a particular class of asset.
+* **Class**: These actions belong to a specific class within the partition. They can only be linked to asset types of that class within the partition. Use this scope when an action only makes sense for a particular class of asset.
 
-> **Note**: Asset actions can also be created on an individual asset type.  These are not shared and can't be linked with any other asset type.
+> **Note**: Asset actions can also be created on an individual [asset type](/servicemanager-config/assets/manage-asset-types#actions). These are not shared and can't be linked to any other asset type.
 
 ### Display
 
 | Field | Description |
 | :--- | :--- |
-| Label | The text shown on the button or in the drop-down list. Required unless an icon is set. |
+| Label | The text shown on the button or in the dropdown list. Required unless an icon is set. |
 | Description | Text shown when a user hovers over the button. Optional but recommended for less obvious actions. |
 | Button Style | The color style for the button: Default (gray), Primary (blue), Success (green), Danger (red), Warning (yellow), Info (light blue). |
 | Icon | An icon displayed alongside the button label, chosen using the icon picker. Optional. |
@@ -106,6 +104,13 @@ Opens a URL inside a modal popup window within the application, rather than in a
 | Add message to activity stream | When a URL action runs, writes an entry to the asset's activity stream. The message text is set in the **Activity Message** field below it and supports asset field variable tokens. |
 | Automatically link to new Asset Types | Partition-scoped and class-scoped actions only. When checked, this action is automatically linked whenever a new asset type is created within the partition. For class-scoped actions, it only links to types whose class matches. This setting also applies when types are moved into the partition from another partition. See [Moving types between partitions](#moving-types-between-partitions). |
 
+## Linking actions to asset types
+
+After an action is created, it must be linked to one or more asset types before it appears on any asset records. Linking is done from the **Linked Asset Types** tab of the action's details form.
+
+* **Linking to specific types**: Select **+ Link to Type**, then select one or more asset types from the list and select **Link Selected**. The action is immediately available on all assets of the selected types.
+* **Linking to all types**: Select **Link with All Types** to link the action to all available asset types. If the action is class-scoped, only types of the matching class are linked. If the action is partition-scoped, all types are linked.
+
 ## Resetting or disabling
 
 From the Asset Actions panel toolbar, select **Clear All** to delete all actions for this partition and disable the feature. You are asked to type **DELETE** to confirm. Type-specific actions on individual asset types are not affected. After clearing, Custom Buttons resume appearing for assets in this partition.
@@ -122,7 +127,7 @@ Once Asset Actions is enabled for a partition, the Asset Actions panel shows a l
 
 ### Action options
 
-* **Editing an action**: Select the **Edit** icon or the name of the action on any row in the list. This opens the **Details** and **Linked Asset Types** options. Scope (Partition or Class) is shown as read-only as it can only be set on creation and can't be changed.
+* **Editing an action**: Select the **Edit** icon or the name of the action on any row in the list. This opens the **Details** and **Linked Asset Types** options. Scope (Partition or Class) is shown as read-only because it can only be set when the action is created.
 * **Deleting an action**: Select the **Remove** icon on any action row and confirm in the dialog. Deleting an action removes it from all linked asset types immediately. This cannot be undone.
 
 ### Importing from Custom Buttons
@@ -155,7 +160,7 @@ Asset types and categories can be moved to a different partition using the **Mov
 When a type (or all types within a category) is moved to a different partition:
 
 1. **Source partition actions are unlinked.** All associations between the type and partition-scoped or class-scoped actions belonging to the *source* partition are removed. Type-specific actions are not affected — they move with the type.
-1. **Destination partition actions are auto-associated.** Any partition-scoped or class-scoped actions in the *destination* partition that have **Automatically associate to new Asset Types** checked are automatically linked to the moved type. For class-scoped actions, the type's class must match the action's class for the link to be created.
+1. **Destination partition actions are auto-linked.** Any partition-scoped or class-scoped actions in the *destination* partition that have **Automatically link to new Asset Types** checked are automatically linked to the moved type. For class-scoped actions, the type's class must match the action's class for the link to be created.
 
 ::: warning
 **Manual links from the source partition are not preserved.** If a partition-scoped or class-scoped action from the source partition was manually linked to the type (that is, the action does not have auto-associate checked), that link is removed during the move and is not recreated in the destination. After moving, review the type's Actions tab and link any destination partition actions that are needed.
