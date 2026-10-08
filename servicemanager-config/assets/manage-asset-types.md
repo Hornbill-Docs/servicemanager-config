@@ -117,9 +117,60 @@ For each field, on a per Asset Type basis, you can configure:
 
 Asset Actions tab contains configurable buttons that appear on asset records. When selected, an action on an asset can open a URL in a popup or in a new browser tab, or they can trigger an [Auto Task](/servicemanager-config/customize/service-manager-auto-tasks), all within the context of the asset being viewed.
 
+Navigate to **Manage Types**, select a type, and select the **Actions** tab.
+
+![Action Tab](/_books/servicemanager-config/assets/images/asset-actions-action-tab.png)
+
+* **Preview panel** (top) — search for an asset of this type using the autocomplete picker and see a live preview of how the action buttons render on that asset's record. Toggle between **Full** and **Compact** width to preview both the expanded button layout and the collapsed "Actions" dropdown.
+* **Action list** (below) — the full list of actions and groups for this type, in their current display order. Drag rows to reorder.
+
 ### Adding an action
 
-You can create a new action using the `+ Add` button or you can select an existing action from the [Common Asset Actions](/servicemanager-config/assets/common-asset-actions).
+Select **Add**. A dropdown appears with three options:
+
+* **Create Action** — opens the action configuration popup. Fill in the form and save to create a new action that belongs exclusively to this asset type.
+* **Link Common Actions** — opens a picker showing common actions that can be linked to this type. The list is filtered automatically to only show partition-scoped actions belonging to this type's partition, and class-scoped actions whose class matches this type's class. Actions from other partitions or that belong to a different class are never shown. Select one or more and select **Link Selected**. A progress bar tracks the operation when linking multiple actions.
+* **Add Group** — prompts for a group name and creates a new action group.
+
+### Editing an action on a type
+
+Select **Edit** on any action row:
+
+* **Type-specific actions** — the configuration popup opens inline. Changes affect only this type.
+* **Partition-scoped and class-scoped actions** — selecting **Edit** opens the full-page edit form in a new browser tab. You are editing the shared configuration that every linked type uses. Ordering, grouping, and position on this specific type are controlled separately, from the action list on the type's Actions tab.
+
+### Removing an action from a type
+
+Select the **Unlink** / **Delete** button on an action row and confirm in the dialog. The behavior differs by action scope:
+
+* **Type-specific actions** — permanently deleted.
+* **Common actions** — unlinked from this type only. The action continues to exist and remains visible on other types it is linked to.
+
+### Action groups
+
+Groups let you organize multiple actions into a single dropdown button on the asset record. Instead of showing several individual buttons, the asset displays one button with the group's name; selecting it opens a menu listing all actions in that group.
+
+![Action Groups](/_books/servicemanager-config/assets/images/asset-actions-action-group.png)
+
+Groups are per-type: the same action can be in different groups (or no group) on different asset types. Grouping is configured from each type's **Actions** tab and does not affect other types.
+
+**To create a group:**
+
+1. On the type's **Actions** tab, select **Add** and choose **Add Group**.
+1. Enter the group name. This becomes the label on the dropdown button on the asset record.
+1. Drag existing action rows into the group, or use **Add** within the group to create or link actions directly inside it.
+
+**To rename a group:** Select **Rename** on the group header, enter a new name in the inline input, and press Enter or select away. The change saves immediately.
+
+**To delete a group:** Select **Delete** on the group header and confirm. Actions inside the group are not deleted — they move out of the group and appear ungrouped in the list.
+
+### Action order
+
+The order of actions on the asset record is set per type from the **Actions** tab. Each action row and each group header has a drag handle on the left. Drag a row to a new position; the updated order saves automatically when you release it.
+
+You can drag actions between groups (including out of a group entirely), and drag groups relative to one another and to ungrouped actions. Each type has its own completely independent action order — the same action can be first on one type and last on another, so configure ordering separately on each type's Actions tab.
+
+When you create or link an action, it is placed at the end of the list for that type. Drag it to the correct position once it appears.
 
 ## Archiving asset types and assets
 
