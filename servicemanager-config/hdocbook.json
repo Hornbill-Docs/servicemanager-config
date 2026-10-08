@@ -4,7 +4,7 @@
   "description": "Guidance around configuring and administering the Service Manager application",
   "publicSource": "https://github.com/Hornbill-Docs/servicemanager-config.git",
   "productFamily": "com.hornbill.servicemanager",
-  "version": "1.27.0",
+  "version": "1.27.1",
   "audience": [
     "public"
   ],
@@ -509,8 +509,7 @@
           },
           {
             "text": "Request Catalog",
-            "link": "servicemanager-config/employee-portal/request-catalog",
-            "draft": true
+            "link": "servicemanager-config/employee-portal/request-catalog"
           }
         ]
       },
