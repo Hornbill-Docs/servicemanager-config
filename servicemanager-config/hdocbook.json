@@ -221,6 +221,10 @@
                 "text": "Questionnaires",
                 "link": "servicemanager-config/administration/assessment-questionnaires",
                 "draft": false
+              },
+              {
+                "text": "Priority Matrices",
+                "link": "servicemanager-config/administration/assessment-priority-matrices"
               }
             ]
           },
