@@ -23,7 +23,7 @@ The Request Catalog is an Employee Portal page that brings together all the type
 
 ## How to provide access to the Request Catalog
 
-Once enabled, your Request Catalog is available at the URL: `https://live.hornbill.com/<your-instance-id>/servicemanager/selfservice/requestcatalog`.
+Once enabled, your Request Catalog is available at the URL: `https://live.hornbill.com/<your-instance-id>/catalog/com.hornbill.servicemanager/requestcatalog/`.
 
 ### Links widget
 
