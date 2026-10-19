@@ -12,6 +12,7 @@ The Request Catalog is an Employee Portal page that brings together all the type
 
 * **Enabling the Request Catalog**: The Request Catalog is disabled by default. You must [enable it](#how-to-enable-the-request-catalog) before it can be used.
 * **Employee Portal design**: The **Employee Portal Manager** role is required to add a Links widget.
+* [Watch the Request Catalog video](https://youtu.be/Uq0l8BogMNY)
 
 ## How to enable the Request Catalog
 
