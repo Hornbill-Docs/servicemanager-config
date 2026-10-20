@@ -62,8 +62,7 @@ Only one of these filters can be enabled at a time. Select the filter that best 
 
 |Setting|Description|Default|
 |---|---|---|
-|guest.app.selfService.requestCatalog.viewMode|This sets the default layout of the Request Catalog view which can be set to either `card` or `list`. Each user's choice is saved whenever they switch the layout on the page, so this value only sets the starting layout for users who have not yet chosen a layout.|card|
-|guest.app.selfService.requestCatalog.grouping|Controls which filter is available to users in the left-hand panel. Options are: `services`, `serviceCategories`, or `serviceDomains`.|services|
+|guest.app.selfService.requestCatalog.grouping|Controls which filter is available to users in the left-hand panel of the Request Catalog view. Options are: `services`, `serviceCategories`, or `serviceDomains`.|services|
 
 ## Request view options
 
@@ -71,5 +70,9 @@ Only one of these filters can be enabled at a time. Select the filter that best 
 * **Sort by**: Users can sort the request items alphabetically or by popularity.
 * **List view**: Shows a list of request items, with the columns Title, Service, and Description. Clicking anywhere in a row will start the process of raising the request.
 * **Card view**: Shows a card for each request item, with the Title, Service, and Description. Clicking anywhere in a card will start the process of raising the request.
+
+|Setting|Description|Default|
+|---|---|---|
+|guest.app.selfService.requestCatalog.viewMode|This sets the default layout of the Request Catalog view which can be set to either `card` or `list`. Each user's choice is saved whenever they switch the layout on the page, so this value only sets the starting layout for users who have not yet chosen a layout.|card|
 
 > **Tip:** The Request Catalog uses the names and descriptions you've set on your catalog items. Clear, task-based names (such as *Request remote access* rather than *Remote Access*) and descriptions that add detail beyond the name make it much easier for users to choose the right item. Consider how clear the catalog item names and descriptions are when they are viewed alongside items from other services.
