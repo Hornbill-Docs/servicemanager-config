@@ -62,7 +62,8 @@ Only one of these filters can be enabled at a time. Select the filter that best 
 
 |Setting|Description|Default|
 |---|---|---|
-|guest.app.selfService.requestCatalog.viewMode|Controls which filter is available to users. Options are: `services`, `serviceCategories`, or `serviceDomains`.|`services`|
+|guest.app.selfService.requestCatalog.viewMode|This sets the default layout of the Request Catalog view which can be set to either `card` or `list`. Each user's choice is saved whenever they switch the layout on the page, so this value only sets the starting layout for users who have not yet chosen a layout.|card|
+|guest.app.selfService.requestCatalog.grouping|Controls which filter is available to users in the left-hand panel. Options are: `services`, `serviceCategories`, or `serviceDomains`.|services|
 
 ## Request view options
 
