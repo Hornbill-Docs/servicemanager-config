@@ -1,5 +1,4 @@
 ---
-title: Hornbill AI Sustainability Policy
 description: This guide covers the Sustainability policy of HAi (Hornbill AI) features within your environment. 
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc

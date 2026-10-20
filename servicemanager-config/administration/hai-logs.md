@@ -1,5 +1,4 @@
 ---
-title: Hornbill AI Logs
 description: This guide covers the functionality of the HAi Logs, Discover how to filter logs by User, Product Area, and Prompt to track the last 30 days' usage.
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
@@ -9,7 +8,7 @@ layout: article-toc
 
 ## Logs Access
 
-The HAi Logs are available to any user associated with one of the following roles: 
+The HAi Logs are available to any user associated with one of the following roles:
 
 |Role|Application|Description|
 |-|-|-|

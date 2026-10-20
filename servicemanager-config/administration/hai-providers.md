@@ -1,5 +1,4 @@
 ---
-title: Hornbill AI Providers
 description: This guide covers the third party Providers for HAi (Hornbill AI) within your environment.
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
@@ -49,4 +48,4 @@ Usage of the **Azure OpenAI Services** API's is provided through deployments man
 
 ## Provider terms of use
 
-Details on each providers usage policy as well as Hornbill's can be found [here](/servicemanager-config/administration/hai-usage-policy)
+Details on each providers usage policy as well as Hornbill's can be found under the [HAi Usage Policy](/servicemanager-config/administration/hai-usage-policy)

@@ -1,5 +1,4 @@
 ---
-title: Hornbill AI Automations
 description: Automate your workflow with HAi Automations in Hornbill! Utilize the Summarize Request task to easily summarize requests triggered from workflows. Update the request timeline and access the summary as a variable for future processes. With the askHAi task, generate clarifying questions based on initial request details. Ensure validation before direct user communication and integrate responses into timelines. Enhance your automation capabilities with Hornbill AI.
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc

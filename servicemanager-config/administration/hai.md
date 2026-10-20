@@ -8,7 +8,7 @@ A collection of HAi features is available within Service Manager. These features
 
 ## Before you begin
 
-* Register for the closed beta program. HAi features are currently in a closed beta. You can only access these features after you register. Contact your Hornbill customer success representative to join the program.
+* Access to HAi is currently by request only. This request can be made through the [Hornbill Success Portal](https://success.hornbill.com/hornbill) or by contacting your Hornbill customer success representative.
 * Your instance needs a [HAi Service Provider](/esp-fundamentals/core-capabilities/integration/hai-services) set before enabling any of the HAi features in Service Manager.
 * Read the [Usage Policy](/servicemanager-config/administration/hai-usage-policy).
 * The following roles can be added to user accounts to allow for configuration or use of the HAi capabilities in Service Manager:

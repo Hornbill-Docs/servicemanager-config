@@ -2,7 +2,6 @@
 
 The HAi Assistant Settings allow you to configure the behavior of the HAi Agent and User Assistants, including guardrails, customization, and data access rules.
 
-
 ## Configuration
 
 The configuration options allow you to select which HAi features are enabled.

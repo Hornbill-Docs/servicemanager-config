@@ -1,11 +1,10 @@
 ---
-title: Hornbill AI Usage 
 description: This guide covers the usage and fair usage policy of HAi (Hornbill AI) features within your environment. 
 coverImage: /_books/servicemanager-config/administration/images/hai-cover.jpg
 layout: article-toc
 ---
 
-# Hornbill AI Usage 
+# Hornbill AI Usage
 
 ## Hornbill AI Usage Policy
 

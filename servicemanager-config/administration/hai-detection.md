@@ -2,13 +2,13 @@
 
 ## Before you begin
 
-* HAi features are currently in a closed beta. You can only access these features if you are part of the beta program. Contact your Hornbill customer success representative for more information.
+* Access to HAi is currently by request only. This request can be made through the [Hornbill Success Portal](https://success.hornbill.com/hornbill) or by contacting your Hornbill customer success representative.
 
 ## Overview
 
-A HAi Detection rule analyzes requests across a set of conditions. When these conditions are met, HAi Detection creates a new event. 
+A HAi Detection rule analyzes requests across a set of conditions. When these conditions are met, HAi Detection creates a new event.
 
-An event can trigger a new request and an in-app notification to supporting teams. 
+An event can trigger a new request and an in-app notification to supporting teams.
 
 Events are a useful way surfacing issues that arise across the service desk, that might otherwise go unnoted. They are also helpful for identifying and managing major incidents.
 
