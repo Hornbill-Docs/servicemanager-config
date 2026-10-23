@@ -64,6 +64,7 @@ Select only the fields that help users identify their assets or complete their t
 | **Display company** | **Company** | Use for multi-company environments. |
 | **Display created date** | **Created date** | Use for audit or lifecycle views. |
 | **Display last updated date** | **Last updated date** | Use to show how recently information changed. |
+| **Display asset tag** | **Asset tag** | Use for physical asset identification. |
 
 ## Responsive layout
 
