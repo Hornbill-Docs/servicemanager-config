@@ -4,7 +4,7 @@ layout: article-toc
 # Sentiment Analysis Configuration
 
 ::: important
-HAi features are currently in a closed beta. You can only access these features after you register. Contact your Hornbill Customer Success representative to join the program.
+Access to HAi is currently by request only. This request can be made through the [Hornbill Success Portal](https://success.hornbill.com/hornbill) or by contacting your Hornbill customer success representative.
 :::
 
 ## Before you begin
