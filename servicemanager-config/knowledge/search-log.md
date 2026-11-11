@@ -2,6 +2,25 @@
 
 The Knowledge search log helps analyze what people are searching for. This can help provide insight into how to organize your knowledge and identify gaps.
 
+Search data is collected from
+
+* The Employee portal [search widget](/servicemanager-config/employee-portal/search-widget).
+* The Employee portal [knowledge widget](/servicemanager-config/employee-portal/knowledge-widget).
+* The Knowledge search on the [Knowledge Browse](/servicemanager-user-guide/knowledge/search-and-browse) view.
+
+## Before you begin
+
+* To access the **Search Log** in Configuration, the [Knowledge Administrator role](/servicemanager-config/setup/service-manager-roles#knowledge-roles) is required.
+
+## How to access
+
+1. Select the Configuration cog icon located at the bottom of the left hand vertical menu.
+2. Select `Service Manager`.
+3. Locate the section titled `Knowledge Base`.
+4. Select `Search Log`.
+
+## Search Log Data
+
 ![Search Data](/_books/servicemanager-config/knowledge/images/search-log.png)
 
 * **Date.** The date/time that the search was run.
