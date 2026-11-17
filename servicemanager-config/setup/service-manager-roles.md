@@ -130,7 +130,7 @@ Incident Assignee|This role should be assigned to Users who have the Incident Ma
 |Role|Description|
 |-|-|
 |HAi Request User|This role allows users to access HAi functionality inside of Service Manager Requests and Knowledge|
-|HAi Detection Events User|This role allows users to access HAi Detection Events inside of Service Manager|
+|HAi Detection Events User|This role allows users to access HAi Detection Events inside of Service Manager. This role it typically assigned to users such as the service desk manager, major incident manager, or someone tasked with making the decision if a detection is valid or should be dismissed.|
 
 ## User-created roles
 
