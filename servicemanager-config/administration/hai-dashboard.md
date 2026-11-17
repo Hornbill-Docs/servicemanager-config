@@ -40,6 +40,17 @@ Hornbill Agent Deflection is a capability that shifts routine support interactio
 
 ![Agent Deflection Dashboard](/_books/servicemanager-config/administration/images/hai-agent-deflection-dashboard.png)
 
+#### What is counted
+
+Only conversations between end users and the HAi User Assistant are counted. Chats where an Analyst is using the HAi Analyst Assistant are excluded.
+
+| Measure | What it means |
+| --- | --- |
+| Chats | The number of different conversations in which the end user sent at least one message. |
+| Solved | The number of chats the end user marked as solved. Marking a chat as solved makes it read only, so the conversation can no longer be continued. |
+| Deflections | Solved chats where the agent resolved the issue without performing an action on the user's behalf (raise request) and without handing the user over to a human. Every deflection is a solved chat, but not every solved chat is a deflection. |
+| Time | The average time taken to solve a chat, in minutes. It is measured from when the chat was created to when the end user marked it as solved, and rounded up to the next whole minute. |
+
 #### Available charts
 
 * **HAi User Assistant Overview**: This chart shows the total number of chats, the number of resolved issues, and how many of these were deflected from a real agent. It will take a few weeks of usage before this chart is properly populated.
